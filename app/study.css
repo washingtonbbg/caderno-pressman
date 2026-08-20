@@ -1,5 +1,6 @@
 .alternatives { padding: 0; }
 .generateButton { margin-top: 22px; }
+.printButton { display: inline-block; }
 
 @media (max-width: 900px) {
   .generator,
