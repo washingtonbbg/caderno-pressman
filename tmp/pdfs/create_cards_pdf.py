@@ -29,6 +29,18 @@ cards = [
     ("Qual é a natureza do incremental?", "Iterativa, com versões operacionais por incrementos."),
     ("Qual é a ênfase do espiral?", "Evolução iterativa orientada pela análise de riscos."),
     ("Evolucionário significa ágil?", "Não. São classificações diferentes no livro."),
+    ("O que é um produto essencial no incremental?", "O primeiro incremento com requisitos básicos, ainda sem todos os recursos complementares."),
+    ("O que orienta o próximo incremento?", "O uso e a avaliação do produto, somados ao feedback do cliente."),
+    ("Quando a prototipação é útil?", "Quando requisitos ou aspectos técnicos ainda estão obscuros."),
+    ("Para que serve idealmente o protótipo?", "Para identificar e refinar requisitos do software."),
+    ("Qual é um risco da prototipação?", "Transformar escolhas apressadas e inadequadas em partes do produto final."),
+    ("O que combina o modelo espiral?", "Iteração da prototipação e controle sistemático do cascata."),
+    ("O que dirige o modelo espiral?", "A consideração e a redução de riscos a cada circuito."),
+    ("O que representa o modelo concorrente?", "Atividades simultâneas em estados diferentes, ligadas por transições."),
+    ("O que dispara transições no modelo concorrente?", "Eventos ocorridos na rede de processos."),
+    ("Qual é a base do desenvolvimento por componentes?", "Pesquisar, avaliar, integrar e testar componentes previamente empacotados."),
+    ("Para que servem os métodos formais?", "Especificar, desenvolver e verificar software com notação matemática rigorosa."),
+    ("O que é uma preocupação transversal?", "Uma propriedade ou interesse que afeta várias funções ou partes da arquitetura."),
 ]
 
 W, H = A4
@@ -116,7 +128,8 @@ for start in range(0, len(cards), 4):
     c.drawString(MARGIN, H - MARGIN + 2, "CARDS DE MEMORIZAÇÃO")
     c.setFillColor(MUTED)
     c.setFont("Helvetica", 8)
-    c.drawRightString(W - MARGIN, H - MARGIN + 2, f"Engenharia de Software  |  folha {page} de 5")
+    total_pages = (len(cards) + 3) // 4
+    c.drawRightString(W - MARGIN, H - MARGIN + 2, f"Engenharia de Software  |  folha {page} de {total_pages}")
     for offset, (question, answer) in enumerate(cards[start:start + 4]):
         col = offset % 2
         row = offset // 2
