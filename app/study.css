@@ -1,0 +1,8 @@
+.alternatives { padding: 0; }
+.generateButton { margin-top: 22px; }
+
+@media (max-width: 900px) {
+  .generator,
+  .cardsHeader { grid-template-columns: 1fr; }
+  .generatorCopy { position: static; }
+}
