@@ -2,6 +2,20 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./study.css";
+import "./library.css";
+import "./uml.css";
+import "./uml-cards.css";
+import "./patterns.css";
+import "./recursion.css";
+import "./sorting.css";
+import "./factorial.css";
+import "./database.css";
+import "./oop.css";
+import "./tree.css";
+import "./poly.css";
+import "./graph.css";
+import "./conditionals.css";
+import "./operators.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,17 +28,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Caderno Pressman — Engenharia de Software",
-  description: "Questões comentadas, raio-X de alternativas e cards de memorização baseados em Pressman.",
+  title: "Cadernos de Estudo — Engenharia de Software e UML",
+  description: "Questões comentadas e estudo guiado baseados em Pressman e Guedes.",
   openGraph: {
-    title: "Caderno Pressman",
-    description: "Aprenda o conceito. Entenda a alternativa.",
-    images: [{ url: "/og.png", width: 1680, height: 945, alt: "Caderno Pressman" }],
+    title: "Cadernos de Estudo",
+    description: "Do livro à questão. Do erro ao conceito.",
+    images: [{ url: "/og.png", width: 1680, height: 945, alt: "Cadernos de Estudo" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Caderno Pressman",
-    description: "Aprenda o conceito. Entenda a alternativa.",
+    title: "Cadernos de Estudo",
+    description: "Do livro à questão. Do erro ao conceito.",
     images: ["/og.png"],
   },
   icons: {
