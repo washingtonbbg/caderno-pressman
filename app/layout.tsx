@@ -16,6 +16,8 @@ import "./poly.css";
 import "./graph.css";
 import "./conditionals.css";
 import "./operators.css";
+import "./exam-notebooks.css";
+import "./new-library-tones.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
