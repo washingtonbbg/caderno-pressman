@@ -1,76 +1,29 @@
 "use client";
-
 import Link from "next/link";
 import {useEffect,useMemo,useState} from "react";
-
-type CatalogQuestion={number:number;tecId:string;source:string;subject:string;prompt:string;options:string[]};
-
-const tidy=(value:string)=>value.replace(/30\/08\/2026, 21:04[^\n]*/g,"").replace(/https:\/\/www\.tecconcursos\.com\.br\/questoes\/cadernos\/[^\s]+/g,"").replace(/\b\d+\/33\b/g,"").replace(/\s+/g," ").trim();
-
-function parseBank(text:string):CatalogQuestion[]{
-  const marker=/www\.tecconcursos\.com\.br\/questoes\/(\d+)/g;
-  const matches=[...text.matchAll(marker)];
-  return matches.map((match,index)=>{
-    const start=(match.index??0)+match[0].length;
-    const end=index+1<matches.length?(matches[index+1].index??text.length):text.length;
-    const raw=text.slice(start,end);
-    const lines=raw.split(/\r?\n/).map(item=>item.trim()).filter(Boolean);
-    const sourceIndex=lines.findIndex(item=>item.startsWith("COCP IFMT"));
-    const source=sourceIndex>=0?lines[sourceIndex]:"COCP IFMT";
-    const subject=sourceIndex>=0?lines[sourceIndex+1]??"Assunto não identificado":"Assunto não identificado";
-    let body=sourceIndex>=0?lines.slice(sourceIndex+2).join(" "):raw;
-    body=body.replace(/\d+\)\s*$/g,"");
-    const optionMatches=[...body.matchAll(/(?:^|\s)([a-e])\)\s*/gi)];
-    const promptEnd=optionMatches[0]?.index??body.length;
-    const prompt=tidy(body.slice(0,promptEnd));
-    const options=optionMatches.map((item,itemIndex)=>{
-      const optionStart=(item.index??0)+item[0].length;
-      const optionEnd=itemIndex+1<optionMatches.length?(optionMatches[itemIndex+1].index??body.length):body.length;
-      return tidy(body.slice(optionStart,optionEnd).replace(/\d+\)\s*$/g,""));
-    }).filter(Boolean).slice(0,5);
-    return {number:index+1,tecId:match[1],source,subject:tidy(subject),prompt,options};
-  });
-}
-
-function languageSignals(question:CatalogQuestion){
-  const text=`${question.prompt} ${question.options.join(" ")}`.toLocaleLowerCase("pt-BR");
-  const signals:string[]=[];
-  if(/exceto|incorreta|não corresponde|não são/.test(text))signals.push("Comando negativo: procure a única opção que foge da regra.");
-  if(/\b(todo|toda|todos|todas|sempre|somente|apenas|nunca|estritamente|exclusivamente)\b/.test(text))signals.push("Há termo absoluto: teste se existe exceção normativa ou conceitual.");
-  if(/I\.|II\.|III\.|\(\s*\)/.test(question.prompt))signals.push("Questão combinatória: resolva primeiro a assertiva mais segura e elimine sequências.");
-  if(/lei|decreto|art\.|comissão|autoridade|pregoeiro/.test(text))signals.push("Confira agente, competência, prazo e verbo legal; a banca costuma trocar apenas um deles.");
-  if(question.options.some(item=>item.includes(" e ")))signals.push("Resposta composta: um único elemento errado invalida toda a alternativa.");
-  if(!signals.length)signals.push("Compare o núcleo técnico de cada opção; fluência textual não prova correção conceitual.");
-  return signals.slice(0,3);
-}
-
-function routeFor(subject:string){
-  if(/Ética|Direito Administrativo|AFO|Financeiro|Contabilidade|Licita/.test(subject))return "/administracao-publica";
-  if(/Materiais|Logística|Pessoas|Desempenho|Treinamento|Qualidade de Vida/.test(subject))return "/administracao-pessoas-logistica";
-  return "/administracao-gestao";
-}
-
+type Question={number:number;tecId:string;source:string;subject:string;prompt:string;options:string[]};
+const vocabulary=[["EXCETO / INCORRETA","Invertem a busca: marque a única alternativa que não pertence à regra."],["TODO / SEMPRE / NUNCA","Termos absolutos: uma única exceção derruba a proposição."],["APENAS / SOMENTE","Restringem o alcance. Verifique se existem outras hipóteses."],["DEVERÁ / PODERÁ","Dever indica obrigação; poder indica faculdade."],["E / BEM COMO","Criam resposta composta: todos os elementos precisam ser verdadeiros."],["COMPETE / INCUMBE","A ação pode existir, mas pertencer a outro agente."],["ESTRITAMENTE / ÚNICA","Procure exceção, inversão de fases ou procedimento alternativo."],["CORRESPONDE","Exige identidade precisa; proximidade semântica não basta."]];
+const cards=[
+  ["Como resolver um comando com EXCETO?","Procure a única opção que não pertence ao conjunto.","Comando"],["Por que desconfiar de “sempre”?","Basta uma exceção válida para derrubar uma afirmação universal.","Predição"],["Empenho x liquidação","Empenho cria a obrigação; liquidação verifica o direito do credor.","Orçamento"],["Pregoeiro x autoridade competente","O pregoeiro conduz; a autoridade competente homologa.","Licitações"],["Macroambiente x microambiente","Macro: forças gerais. Micro: clientes, fornecedores, concorrentes e entrantes.","Organização"],["Planejamento tático","Médio prazo, alcance departamental e desdobramento da estratégia.","Planejamento"],["Trio primário da logística","Transportes, manutenção de estoques e processamento de pedidos.","Materiais"],["TIR x TMA","O investimento é aceitável quando a TIR supera a TMA.","Finanças"],["Comissão de Ética: penalidade","Censura fundamentada em parecer, não demissão ou suspensão.","Ética"],["Alternativa ligada por “e”","Um único elemento falso invalida a opção inteira.","Linguagem"],["Sequência V/F: onde começar?","Na assertiva mais distintiva; depois elimine sequências incompatíveis.","Método"],["Alternativa tecnicamente fluente","Confira categoria, finalidade, agente, prazo e exceção.","Método"]
+] as const;
+const tidy=(v:string)=>v.replace(/30\/08\/2026, 21:04[^\n]*/g,"").replace(/https:\/\/www\.tecconcursos\.com\.br\/questoes\/cadernos\/[^\s]+/g,"").replace(/\b\d+\/33\b/g,"").replace(/\s+/g," ").trim();
+function parse(text:string):Question[]{const marker=/www\.tecconcursos\.com\.br\/questoes\/(\d+)/g;const matches=[...text.matchAll(marker)];return matches.map((m,i)=>{const raw=text.slice((m.index??0)+m[0].length,i+1<matches.length?(matches[i+1].index??text.length):text.length);const lines=raw.split(/\r?\n/).map(x=>x.trim()).filter(Boolean);const si=lines.findIndex(x=>x.startsWith("COCP IFMT"));const source=si>=0?lines[si]:"COCP IFMT";const subject=si>=0?lines[si+1]??"Assunto não identificado":"Assunto não identificado";let body=si>=0?lines.slice(si+2).join(" "):raw;body=body.replace(/\d+\)\s*$/g,"");const om=[...body.matchAll(/(?:^|\s)([a-e])\)\s*/gi)];const prompt=tidy(body.slice(0,om[0]?.index??body.length));const options=om.map((item,j)=>tidy(body.slice((item.index??0)+item[0].length,j+1<om.length?(om[j+1].index??body.length):body.length).replace(/\d+\)\s*$/g,""))).filter(Boolean).slice(0,5);return {number:i+1,tecId:m[1],source,subject:tidy(subject),prompt,options}})}
+function signals(q:Question){const t=`${q.prompt} ${q.options.join(" ")}`.toLowerCase();const s:string[]=[];if(/exceto|incorreta|não corresponde|não são/.test(t))s.push("Comando negativo: procure a única opção que foge da regra.");if(/\b(todo|toda|todos|todas|sempre|somente|apenas|nunca|estritamente|exclusivamente)\b/.test(t))s.push("Termo absoluto ou restritivo: teste se existe exceção.");if(/I\.|II\.|III\.|\(\s*\)/.test(q.prompt))s.push("Questão combinatória: resolva primeiro a assertiva mais segura.");if(/lei|decreto|art\.|comissão|autoridade|pregoeiro/.test(t))s.push("Confira agente, competência, prazo e força do verbo legal.");if(q.options.some(x=>x.includes(" e ")))s.push("Resposta composta: um elemento errado invalida a alternativa.");return (s.length?s:["Compare o núcleo técnico; fluência textual não comprova correção."]).slice(0,3)}
+function route(subject:string){if(/Ética|Direito Administrativo|AFO|Financeiro|Contabilidade|Licita/.test(subject))return "/administracao-publica";if(/Materiais|Logística|Pessoas|Desempenho|Treinamento|Qualidade de Vida/.test(subject))return "/administracao-pessoas-logistica";return "/administracao-gestao"}
 export default function CompleteAdminBank(){
-  const[questions,setQuestions]=useState<CatalogQuestion[]>([]);
-  const[query,setQuery]=useState("");
-  const[subject,setSubject]=useState("Todos os assuntos");
-  const[page,setPage]=useState(1);
-  const[error,setError]=useState("");
-  useEffect(()=>{fetch("/data/administrador-ifmt-107.txt").then(response=>{if(!response.ok)throw new Error();return response.text()}).then(text=>setQuestions(parseBank(text))).catch(()=>setError("Não foi possível carregar o banco integral."))},[]);
-  const subjects=useMemo(()=>["Todos os assuntos",...Array.from(new Set(questions.map(q=>q.subject))).sort((a,b)=>a.localeCompare(b,"pt-BR"))],[questions]);
-  const filtered=useMemo(()=>questions.filter(q=>(subject==="Todos os assuntos"||q.subject===subject)&&`${q.prompt} ${q.subject} ${q.source}`.toLocaleLowerCase("pt-BR").includes(query.toLocaleLowerCase("pt-BR"))),[questions,query,subject]);
-  const pageSize=10;
-  const pageCount=Math.max(1,Math.ceil(filtered.length/pageSize));
-  const visible=filtered.slice((page-1)*pageSize,page*pageSize);
-  const updateQuery=(value:string)=>{setQuery(value);setPage(1)};
-  const updateSubject=(value:string)=>{setSubject(value);setPage(1)};
-  return <main className="completeBank">
-    <header className="completeTop"><Link href="/" className="brand"><span>20D</span>Cadernos de Estudo</Link><nav><Link href="/administracao-gestao">Comentadas</Link><a href="#banco">Banco integral</a></nav></header>
-    <section className="catalogHero"><div><span>BANCO INTEGRAL · IFMT</span><h1>107 questões.<br/><em>46 assuntos.</em></h1><p>Todas as questões do arquivo anexado, organizadas pelo campo “assunto” e acompanhadas de pistas para avaliar linguisticamente as alternativas.</p></div><div className="catalogStats"><div><b>{questions.length||"…"}</b><small>questões catalogadas</small></div><div><b>{Math.max(0,subjects.length-1)||"…"}</b><small>assuntos distintos</small></div><div><b>18</b><small>questões com RAIO-X validado</small></div></div></section>
-    <section className="catalogControls" id="banco"><label><span>BUSCAR</span><input value={query} onChange={event=>updateQuery(event.target.value)} placeholder="Conceito, lei, palavra ou órgão…"/></label><label><span>FILTRAR POR ASSUNTO</span><select value={subject} onChange={event=>updateSubject(event.target.value)}>{subjects.map(item=><option key={item}>{item}</option>)}</select></label><div><b>{filtered.length}</b><span>resultados</span></div></section>
-    {error&&<p className="catalogError">{error}</p>}
-    {!error&&!questions.length&&<p className="catalogLoading">Organizando as questões por assunto…</p>}
-    <section className="catalogList">{visible.map(question=><article className="catalogQuestion" key={question.tecId}><div className="catalogMeta"><span>QUESTÃO {String(question.number).padStart(3,"0")}</span><a href={`https://www.tecconcursos.com.br/questoes/${question.tecId}`} target="_blank" rel="noreferrer">TEC {question.tecId} ↗</a></div><p className="catalogSubject">ASSUNTO · {question.subject}</p><small>{question.source}</small><h2>{question.prompt}</h2>{question.options.length>0?<ol type="A">{question.options.map(option=><li key={option}>{option}</li>)}</ol>:<p className="catalogWarning">Alternativas não puderam ser separadas automaticamente; consulte a questão original.</p>}<div className="languagePredictor"><strong>PREDITOR LINGUÍSTICO</strong><ul>{languageSignals(question).map(signal=><li key={signal}>{signal}</li>)}</ul><Link href={routeFor(question.subject)}>Estudar este assunto no caderno comentado →</Link></div></article>)}</section>
-    {questions.length>0&&<div className="catalogPagination"><button disabled={page===1} onClick={()=>setPage(value=>value-1)}>← Anterior</button><span>Página {page} de {pageCount}</span><button disabled={page===pageCount} onClick={()=>setPage(value=>value+1)}>Próxima →</button></div>}
-  </main>
+ const[questions,setQuestions]=useState<Question[]>([]),[query,setQuery]=useState(""),[subject,setSubject]=useState("Todos os assuntos"),[active,setActive]=useState(0),[selected,setSelected]=useState<number|null>(null),[revealed,setRevealed]=useState(false),[flipped,setFlipped]=useState<number[]>([]),[error,setError]=useState("");
+ useEffect(()=>{fetch("/data/administrador-ifmt-107.txt").then(r=>{if(!r.ok)throw new Error();return r.text()}).then(t=>setQuestions(parse(t))).catch(()=>setError("Não foi possível carregar o banco integral."))},[]);
+ const subjects=useMemo(()=>["Todos os assuntos",...Array.from(new Set(questions.map(q=>q.subject))).sort((a,b)=>a.localeCompare(b,"pt-BR"))],[questions]);
+ const filtered=useMemo(()=>questions.filter(q=>(subject==="Todos os assuntos"||q.subject===subject)&&`${q.prompt} ${q.subject}`.toLowerCase().includes(query.toLowerCase())),[questions,query,subject]);const q=filtered[active];const progress=filtered.length?Math.round(((active+1)/filtered.length)*100):0;
+ const reset=(n=0)=>{setActive(n);setSelected(null);setRevealed(false)},next=()=>reset((active+1)%filtered.length),random=()=>filtered.length&&reset(Math.floor(Math.random()*filtered.length));
+ return <main className="completeBank examNotebook adminStrategy">
+  <header className="completeTop"><Link href="/" className="brand"><span>20D</span>Cadernos de Estudo</Link><nav><a href="#vocabulario">Vocabulário</a><a href="#questoes">Estudo guiado</a><a href="#cards">Cards</a><button onClick={random}>Sortear questão</button></nav></header>
+  <section className="catalogHero"><div><span>BANCO INTEGRAL · IFMT</span><h1>Administração<br/><em>banco completo.</em></h1><p>As 107 questões do arquivo transformadas em uma experiência de leitura, julgamento e justificativa.</p></div><div className="catalogStats"><div><b>{questions.length||"…"}</b><small>questões catalogadas</small></div><div><b>{Math.max(0,subjects.length-1)||"…"}</b><small>assuntos distintos</small></div><div><b>12</b><small>cards de distinção</small></div></div></section>
+  <section className="bankVocabulary" id="vocabulario"><div><span>VOCABULÁRIO DA BANCA</span><h2>Palavras que mudam<br/><em>o valor da alternativa.</em></h2><p>Antes do conteúdo, identifique a força lógica e normativa das palavras.</p></div><div className="vocabularyGrid">{vocabulary.map(([w,n])=><article key={w}><strong>{w}</strong><p>{n}</p></article>)}</div></section>
+  <section className="guidedHeader"><span>ESTUDO GUIADO</span><h2>Leia. Julgue.<br/><em>Justifique.</em></h2><p>A análise separa o conteúdo técnico das pistas linguísticas usadas pela banca.</p></section>
+  <section className="guidedControls"><label><span>BUSCAR</span><input value={query} onChange={e=>{setQuery(e.target.value);reset()}} placeholder="Conceito, lei ou palavra…"/></label><label><span>ASSUNTO</span><select value={subject} onChange={e=>{setSubject(e.target.value);reset()}}>{subjects.map(x=><option key={x}>{x}</option>)}</select></label><div><b>{filtered.length}</b><span>questões no recorte</span></div></section>
+  {error&&<p className="catalogError">{error}</p>}{!error&&!questions.length&&<p className="catalogLoading">Organizando o caderno…</p>}
+  {q&&<section className="guidedStudy" id="questoes"><aside><span>PROGRESSO</span><h3>{active+1} de {filtered.length}</h3><div className="guidedProgress"><i style={{width:`${progress}%`}}/></div><small>{progress}% concluído</small><div className="guidedNav">{filtered.map((item,i)=><button key={item.tecId} className={active===i?"active":""} onClick={()=>reset(i)}>{i+1}</button>)}</div><button className="randomQuestion" onClick={random}>↻ Sortear deste assunto</button></aside><article className="guidedQuestion"><div className="catalogMeta"><span>QUESTÃO {String(q.number).padStart(3,"0")}</span><a href={`https://www.tecconcursos.com.br/questoes/${q.tecId}`} target="_blank" rel="noreferrer">FONTE ORIGINAL ↗</a></div><p className="catalogSubject">ASSUNTO · {q.subject}</p><small>{q.source}</small><h2>{q.prompt}</h2><div className="guidedOptions">{q.options.map((o,i)=><button key={o} className={selected===i?"selected":""} onClick={()=>!revealed&&setSelected(i)}><b>{String.fromCharCode(65+i)}</b><span>{o}</span></button>)}</div><div className="guidedActions"><button disabled={selected===null} onClick={()=>setRevealed(v=>!v)}>{revealed?"Ocultar justificativa":"Julgar e ver pistas"}</button><button onClick={next}>Próxima questão →</button></div>{revealed&&<div className="guidedAnalysis"><strong>JUSTIFIQUE ANTES DO GABARITO</strong><div><h4>LINGUÍSTICO + PREDIÇÃO</h4><ul>{signals(q).map(s=><li key={s}>{s}</li>)}</ul></div><div><h4>CONCEITUAL</h4><p>Confira categoria, agente, finalidade, etapa, prazo e exceções. O gabarito permanece em validação quando não há resposta oficial comprovada.</p></div><Link href={route(q.subject)}>Revisar no caderno comentado →</Link></div>}</article></section>}
+  <section className="activeMemory" id="cards"><header><div><span>MEMORIZAÇÃO ATIVA</span><h2>Conceito curto.<br/><em>Distinção precisa.</em></h2></div><p>Formule a resposta antes de virar cada card.</p></header><div className="memoryGrid">{cards.map((c,i)=><button key={c[0]} className={flipped.includes(i)?"flipped":""} onClick={()=>setFlipped(v=>v.includes(i)?v.filter(x=>x!==i):[...v,i])}><small>{c[2]} · {String(i+1).padStart(2,"0")}</small><strong>{flipped.includes(i)?c[1]:c[0]}</strong><span>{flipped.includes(i)?"↶ ver pergunta":"virar card ↗"}</span></button>)}</div></section>
+ </main>
 }
