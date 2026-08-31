@@ -1,0 +1,907 @@
+1) 
+2) 
+3) 
+Conhecimentos Específicos para Administrador - IFMT - 2026https://www.tecconcursos.com.br/s/Q6mVTE
+Ordenação: Por Matéria e Assunto
+www.tecconcursos.com.br/questoes/2843963
+COCP IFMT - Adm (IF MT)/IF MT/2023
+Administração de Recursos Materiais - Noções de Logística
+De acordo com a perspectiva de Ballou (1993), a logística empresarial associa estudo e administração dos fluxos de bens e serviços e da informação relacionada queos coloca em movimento. Caso fosse viável produzir todos os bens e serviços no ponto onde eles são consumidos ou caso as pessoas desejassem viver onde as matérias-primas e a produção se localizam, então a logística seria pouco relevante. Isso não ocorre na sociedade moderna. Uma região tende a especializar-se na produção do quetiver vantagem econômica para produzir. Cria-se um hiato de tempo e espaço entre matéria-prima e produção e entre produção e consumo. Vencer tempo e distância, namovimentação de bens ou na entrega de serviços de forma eficaz e eficiente, é a tarefa da logística. Isto é, sua missão é colocar as mercadorias ou os serviços certos nolugar e no instante corretos e na condição desejada, ao menor custo possível. Assim, existem as atividades-chave, que são de suma importância para atingir os objetivos logísticos (atividades primárias), e as atividades adicionais, que apoiam asatividades primárias (atividades de apoio). Identifique-as corretamente a seguir e, depois, assinale a alternativa que corresponde à sequência correta: I - Atividades primárias.II - Atividades de apoio. (   ) Obtenção.(   ) Transportes.(   ) Armazenagem.(   ) Processamento de pedidos.(   ) Manutenção de estoques.(   ) Programação de produtos.(   ) Manutenção de informação.(   ) Embalagem de proteção.(   ) Manuseio de materiais.
+a)  II, I, II, I, I, II, II, II, II.b)  II, I, II, I, I, I, I, II, II.c)  I, I, I, II, I, II, II, II, I.d)  I, I, I, II, II, II, II, I, II.e)  I, I, II, I, II, I, I, II, I.
+www.tecconcursos.com.br/questoes/2843969
+COCP IFMT - Adm (IF MT)/IF MT/2023
+Administração de Recursos Materiais - Noções de Logística
+Em relação aos fundamentos da Logística, analise os itens a seguir se verdadeiros (V) ou falsos (F): (   ) Um conceito valioso para o planejamento logístico é o da curva ABC. A curva ABC deriva da observação dos produtos em muitas empresas, que a maior partedas vendas é gerada por relativamente poucos produtos da linha comercializada e do princípio conhecido como Princípio de Pareto. (   ) Os seguintes atributos do produto influenciam a sua estratégia de distribuição: peso, volume, valor, perecibilidade, inflamabilidade, cor, design,substitutibilidade. (   ) Entre os custos de manutenção de estoques, está o custo de oportunidade do capital. Isto é, o estoque imobiliza um capital que poderia ser empregado deforma diferente dentro ou fora da firma. Marque a alternativa com a sequência correta:
+a)  V, V, V.b)  V, F, V.c)  V, F, F.d)  F, V, V.e)  F, V, F.
+www.tecconcursos.com.br/questoes/3176621
+COCP IFMT - Ass Adm (IF MT)/IF MT/2024
+Administração de Recursos Materiais - Gestão da cadeia de suprimentos
+Assinale a alternativa que NÃO corresponde ao gerenciamento da cadeia de suprimentos de uma organização:
+a)  Transporte para movimentação de insumos, materiais e produtos.b)  Armazenagem e controle de estoque.c)  Logística reversa.d)  Serviço ao cliente.e)  Obtenção da certificação de qualidade ISO-9001.
+www.tecconcursos.com.br/questoes/3076548
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 1/33
+
+4) 
+5) 
+6) 
+COCP IFMT - PEBTT (IF MT)/IF MT/Administração/2023
+Administração de Recursos Materiais - Gestão da cadeia de suprimentos
+De acordo com Melo e Alcântara (2011, p. 812-813), “para o Council of Supply Chain Management Professional  (2009), a gestão da cadeia de suprimentos, tambémchamada de Supply Chain Management (SCM), engloba o planejamento e a gestão de todas as atividades envolvidas com aquisição e suprimento, transformação eatividades de gerenciamento logístico”. Sobre a SCM, analise os itens a seguir se verdadeiros (V) ou falsos (F): I. Inclui a coordenação e colaboração com membros da cadeia, que podem ser fornecedores, intermediários, provedores de serviços de terceira parte e clientes. II. Pode ser definida como a coordenação sistêmica e estratégica das funções tradicionais e táticas de negócio dentro de uma empresa e entre empresas ao longoda cadeia de suprimentos. III. A gestão da cadeia de suprimentos para o Global Supply Chain Forum (GSCF) significa a integração dos processos- chave de negócio desde o usuário final atéo fornecedor original que provê produtos, serviços e informações que agregam valor para os clientes e outros stakeholders. IV. Retrata a influência dos stakeholders nas definições de preços e metas de pagamento de impostos e distribuição de dividendos ou juros sobre o capital próprio(JCP) pelas empresas de capital aberto (Sociedades Anônimas). Assinale a alternativa com a sequência CORRETA.
+a)  F, F, F, V.b)  V, V, V, F.c)  F, V, F, V.d)  V, V, F, F.e)  F, V, V, V. 
+Fonte: MELO, Daniela de Castro; CHICARELLI, Rosane Lúcia Alcântara. A gestão da demanda em cadeias de suprimentos: uma abordagem além da previsão de vendas. Gest. Prod., São Carlos, v.18, n. 4, p. 809-824, 2011. (adaptado).
+www.tecconcursos.com.br/questoes/2367819
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2023
+Administração de Recursos Materiais - Administração Patrimonial
+Para COLLI (2022), “a gestão patrimonial tem como uma de suas características a multidisciplinariedade, pois, para que seja realizada de maneira adequada, é precisoobservar os aspectos administrativos, financeiros, contábeis e jurídicos.” 
+(COLLI, Nicolli Anversa. Gestão Patrimonial: aspectos tributários. Editora Almedina. 2022).
+ Em relação à gestão patrimonial, analise as assertivas e marque a INCORRETA.
+a)  Tratando-se de bens patrimoniais tangíveis, a gestão patrimonial recai sobre bens móveis, imóveis, máquinas, equipamentos e instalações.b)  O inventário é o instrumento de controle para verificação dos saldos de estoques nos almoxarifados e nos depósitos, e dos equipamentos e materiaispermanentes em uso no órgão ou entidade.c)  O inventário físico pode ser rotativo ou periódico. O inventário rotativo é a contagem de todos os itens em determinados períodos, e o inventário periódico é olevantamento contínuo e seletivo dos bens em estoque ou em uso.d)  A transferência gratuita da posse de um bem, com troca de responsabilidade de um órgão para outra instituição pública, dentro do âmbito da AdministraçãoPública Federal Direta, é denominada como cessão.e)  A alienação é a operação que transfere o direito de propriedade do material mediante venda, permuta ou doação.
+www.tecconcursos.com.br/questoes/3736533
+COCP IFMT - Ass Adm (IF MT)/IF MT/2025
+Administração Geral e Pública - Organização (Introdução à Administração)
+Os Institutos Federais foram criados pela Lei nº 11.892/2008. Segundo a Lei, um dos objetivos dos Institutos Federais é “estimular e apoiar processos educativos quelevem à geração de trabalho e renda e à emancipação do cidadão na perspectiva do desenvolvimento socioeconômico local e regional”. E de acordo com o artigo 9º,“Cada Instituto Federal é organizado em estrutura multicampi, com proposta orçamentária anual identificada para cada campus e a reitoria, exceto no que diz respeito apessoal, encargos sociais e benefícios aos servidores”. No que diz respeito às Organizações, julgue as sentenças como VERDADEIRAS (V) ou FALSAS (F): ( ) A estrutura organizacional demonstra como as atividades são organizadas, subdivididas e coordenadas, podendo ser representada pelo organograma. ( )A hierarquia administrativa pode ser definida como um conjunto de níveis organizacionais estabelecidos para assegurar a realização das atividades e ocumprimento dos objetivos estabelecidos. (  ) Dentre as vantagens que a descentralização pode oferecer, estão a agilidade e a independência. (  ) Dentre as vantagens que a centralização pode oferecer, estão o controle e a diminuição de custos.
+a)  V, V, F, F.b)  V, V, V, F.c)  V, F, V, F.d)  V, V, F, V.e)  V, V, V, V.
+www.tecconcursos.com.br/questoes/2843924
+COCP IFMT - Adm (IF MT)/IF MT/2023
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 2/33
+
+7) 
+8) 
+9) 
+10) 
+Administração Geral e Pública - Organização (Introdução à Administração)
+O conceito de ambiente é inspirado na ecologia. Semelhante às espécies vivas, as organizações sobrevivem em ambientes. Devem adaptar-se às forças desseambiente, do contrário, serão eliminadas. Assim, o ambiente é um fator inerente às espécies vivas e às organizações. Assim, Marisa, já consolidada no ramo calçadista, está preocupada em diagnosticar e compreender alguns elementos da organização antes de realizar uma ampliação doseu negócio em outro estado e com uma parceria com uma nova marca, visto que o ambiente é dinâmico e está mudando rapidamente. Ademais, segundo seus estudos,muitas forças (elementos) diferentes impactam em seu negócio e foram considerados relevantes pela empreendedora. Relacione as informações buscadas pela empreendedora com o tipo de ambiente correspondente. Em seguida, assinale a alternativa que apresenta a ordem correta: I - Ambiente geral ou macroambiente.II - Ambiente operacional ou setorial ou microambiente. (   ) O levantamento de dados da distribuição da renda da população, a fim de gerar informações sobre o poder aquisitivo e a renda dos diferentes grupos,correspondendo às forças demográficas. (   ) Estudo das legislações do governo municipal, estadual e federal, as quais abordam as taxas que as organizações pagam, os direitos dos empregados e asresponsabilidades das organizações com relação aos diretos dos clientes, correspondente às forças político-legais. (   ) Possibilidade de criar barreiras de entrada como a diferenciação do produto referindo a ameaça de novos entrantes. (   ) Caracterização das pessoas que compram os produtos e serviços e que diferem fortemente em diversas características, como educação, idade, renda e estilode vida, denominadas de clientes.
+a)  I, I, I, II.b)  I, II, II, II.c)  II, I, II, I.d)  I, II, I, II.e)  I, I, II, II.
+www.tecconcursos.com.br/questoes/1089586
+COCP IFMT - Ass Adm (IF MT)/IF MT/2019
+Administração Geral e Pública - Organização (Introdução à Administração)
+No que diz respeito ao processo de administrar e ao desempenho do administrador e das organizações, assinale a alternativa INCORRETA.
+a)  Um processo é um modo sistemático de fazer coisas. A administração é o processo de planejar; organizar, liderar e controlar os esforços realizados pelosmembros da organização.b)  Um administrador eﬁcaz é aquele que obtém produtos ou resultados à altura dos insumos (trabalho, materiais e tempo) usados para alcançá-los.c)  Planejar signiﬁca pensar antecipadamente em seus objetivos e ações, e desencadear atos baseados em  métodos e não em palpites.d)  Enquanto planejar e organizar lidam com os aspectos abstratos do processo administrativo; a atividade de liderar é concreta, pois envolve o trabalho compessoas.e)  A função de controlar permite ao administrador certiﬁcar-se de que os atos dos membros da organização levam-na, de fato, em direção aos objetivosestabelecidos.
+www.tecconcursos.com.br/questoes/2843974
+COCP IFMT - Adm (IF MT)/IF MT/2023
+Administração Geral e Pública - Escola da Administração Científica
+O modelo clássico ou tradicional de desenho de cargos foi apregoado pelos engenheiros da administração científica no início do século XX: Taylor, Gantt e Gilbreth. Elesutilizaram certos princípios de racionalização do trabalho para projetar cargos, definir métodos padronizados e treinar as pessoas. Além disso, ofereciam incentivossalariais (prêmios de produção) para assegurar a adesão aos métodos de trabalho. Estabeleceram uma separação rígida entre o pensar (gerência) e o executar (operário). Os aspectos principais do modelo clássico de desenho de cargos são, exceto:
+a)  A pessoa como apêndice da máquina, ou seja, a pessoa é vista como um mero recurso produtivo.b)  Fragmentação do trabalho, ou seja, a pessoa deve realizar uma subtarefa simples e repetitiva.c)  Ênfase na eficiência, ou seja, a pessoa trabalha segundo o método e seguindo as regras e os procedimentos estabelecidos.d)  Identidade com a tarefa, ou seja, a pessoa pode efetuar um trabalho inteiro ou global e pode identificar os resultados de seus esforços.e)  Permanência, ou seja, há a ideia de estabilidade e de permanência a longo prazo do processo produtivo, pois não se cogitam mudanças.
+www.tecconcursos.com.br/questoes/2189001
+COCP IFMT - Adm (IF MT)/IF MT/2022
+Administração Geral e Pública - Escola da Teoria Clássica
+O trabalho remoto foi muito difundido desde o início da pandemia da Covid-19 e exigiu dos trabalhadores habilidades como autogerenciamento e capacidade de secomunicar e tomar decisões. Ao analisar o perfil do trabalhador em regime remoto e as concepções do homem das teorias da administração, abordadas por IdalbertoChiavenato, em sua obra Teorias da Administração, percebemos que algumas das concepções teóricas se enquadram com o trabalho remoto, e outras, não. Marque a alternativa com a concepção humana que claramente NÃO atende às habilidades exigidas para o trabalho remoto:
+a)  Homem Organizacional, da Teoria Estruturalista.b)  Homem Administrativo, da Teoria Comportamental.c)  Homem Funcional, da Teoria dos Sistemas.d)  Homem Complexo, da Teoria da Contingência.e)  Homem Econômico, da Teoria Clássica.
+www.tecconcursos.com.br/questoes/3736507
+COCP IFMT - Ass Adm (IF MT)/IF MT/2025
+Administração Geral e Pública - Planejamento Estratégico
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 3/33
+
+11) 
+12) 
+13) 
+14) 
+Antes de iniciar a construção do Planejamento de Desenvolvimento Institucional do Instituto Federal, a Reitoria determinou que a Pró-Reitoria de Administração e aPró-Reitoria de Gestão de Pessoas organizassem uma oficina de capacitação. O objetivo era apresentar aos servidores as ferramentas e metodologias disponíveis para aconstrução do Planejamento Estratégico da Instituição, que abrangerá os próximos quatro anos. Sobre as ferramentas que podem ser utilizadas para a construção de umPlanejamento Estratégico, enumere as sentenças a seguir de acordo com sua respectiva funcionalidade: 1. Matriz SWOT;2. Brainstorming;3. Balanced Scorecard;4. Modelo 7S de Mckinsey. ( ) Modelo de gestão utilizado para planejar e implementar mudanças na organização. ( ) Ferramenta que auxilia a organização a identificar forças, fraquezas, oportunidades e ameaças. ( ) Ferramenta utilizada para alinhar as operações diárias à estratégia e à melhoria do desempenho. ( ) Técnica utilizada para estimular a criatividade e coletar o maior número possível de ideias dos participantes de um grupo.
+a)  2, 1, 4, 3.b) 3, 4, 1, 2.c)  4, 1, 3, 2.d)  4, 3, 1, 2.e)  1, 3, 4, 2.
+www.tecconcursos.com.br/questoes/3176624
+COCP IFMT - Ass Adm (IF MT)/IF MT/2024
+Administração Geral e Pública - Planejamento Estratégico
+O diagnóstico estratégico compõe uma das fases do planejamento estratégico, na qual é possível promover uma avaliação real da posição da organização. Pararealizá-lo, a organização pode utilizar alguns instrumentos e técnicas para auxiliar nessa fase. A esse respeito, marque a alternativa cujos instrumentos e técnicas podem ser todas utilizadas na fase do diagnóstico estratégico:
+a)  Benchmarking e Matriz SWOT.b)  Fluxograma e histograma.c)  Diagrama de Ishikawa e ciclo PDCA.d)  Matriz SWOT e Curva ABC.e)  Ciclo PDCA e classificação das ameaças e oportunidades.
+www.tecconcursos.com.br/questoes/3076622
+COCP IFMT - PEBTT (IF MT)/IF MT/Administração/2023
+Administração Geral e Pública - Planejamento Estratégico
+Para o desenvolvimento do planejamento estratégico das organizações, algumas ferramentas são as mais utilizadas. Na prática, o estabelecimento da visão e damissão da organização, notadamente em frases curtas e de fácil compreensão pelos membros da organização, norteiam o processo. Complementos como oestabelecimento de valores a serem considerados nas decisões da organização também são usuais. Nesse contexto, acerca das principais metodologias utilizadas, julgue os itens se verdadeiros (V) ou falsos (F): I. Análise SWOT - Strengths, Weakness, Opportunities and Threats, ou seja, Forças, Fraquezas, Oportunidades e Ameaças: essa metodologia procura avaliar odesempenho da empresa e dos concorrentes de forma objetiva. II. Matriz BCG - Boston Consulting Group, que procura classificar os produtos ou serviços em fases: a) construir (aumentar a participação de mercado); b)manter (preservar a participação de mercado); c) colher (conseguir o máximo do negócio e, aos poucos, descontinuá-lo); e d) abandonar (vender ou encerrar onegócio). III. As cinco forças de Porter - a) rivalidade entre concorrentes; b) potencial de novos players no mercado de atuação; c) poder de negociação dosfornecedores; d) poder de negociação dos consumidores; e) ameaças de produtos ou serviços substitutos. IV. Análise 180º de Negócios dos Concorrentes - esse tipo de análise foca essencialmente os concorrentes e suas estratégias organizacionais. Nesse tipo deanálise, os dados do passado dos concorrentes são essenciais para o planejamento de compras. Assinale a alternativa com a sequência CORRETA.
+a)  F, F, F, V.b)  V, V, V, V.c)  V, V, F, V.d)  V, V, F, F.e)  V, V, V, F. 
+Fontes: CRUZ, Tadeu. Manual de planejamento estratégico: ferramentas para desenvolver, executar e aplicar. São Paulo: Atlas, 2017. ISBN 978- 85-97-01301-6 (adaptado). AMBRÓSIO, A.;AMBRÓSIO, V. A matriz BCG passo a passo. Sumários Revista da ESPM, [S. l.], v. 12, n. 4, p. 92–102, 2012. Disponível em: https://bibliotecasp.espm.br/espm/article/view/83. Acesso em: 4 jan.2023.
+www.tecconcursos.com.br/questoes/1091358
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2019
+Administração Geral e Pública - Planejamento Estratégico
+Em relação ao planejamento e à gestão estratégia, analise as aﬁrmativas abaixo. 
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 4/33
+
+15) 
+16) 
+I - As estratégias podem possuir três níveis: corporativa, de negócio e funcional. II - Considerando a análise estratégica do ambiente, Michael Porter apresenta um modelo de cinco forças estratégicas e elas ajudam o gestor a responder apergunta: “será que esse segmento é atraente para competirmos nele?”. III - Para Michael Porter, as estratégias genéricas de negócios são: diferenciação, liderança em custo, estoque e liderança em custo focada. IV - De acordo com Porter, as decisões estratégicas referentes ao negócio são guiadas por dois fatores básicos, escopo de mercado e fonte de vantagemcompetitiva. V - A matriz BCG analisa as oportunidades de negócio de acordo com a taxa de crescimento de mercado e o market share e auxilia as organizações, noplanejamento de portfólio de negócio. VI - Para se obter vantagem competitiva, as principais oportunidades são encontradas nas seguintes áreas: custo e qualidade, conhecimento e rapidez, barreiras àentrada e recursos ﬁnanceiros. VII - Em relação ao processo de formulação e implementação da estratégia no processo de gestão estratégia, as etapas a serem seguidas são: identiﬁcar e analisarmissão; objetivos e estratégias atuais; analisar os ambientes internos e externos; revisar a missão os objetivos; selecionar novas estratégias corporativas, denegócio e funcional; implementar as estratégias e após realizar o feedback. Está(ão) CORRETA(s):
+a)  III, IV, VI e VII.b)  I, II, V e VII.c)  I, II e VII.d)  I, II, III, IV, V, VI e VII.e)  I, IV, V, VI e VII.
+www.tecconcursos.com.br/questoes/3177895
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2024
+Administração Geral e Pública - Diagnóstico de Ambiente Organizacional - Matriz SWOT
+ Para Chiavenato (2023), toda organização opera continuamente em um ambiente que a circunda e envolve. Assim, os gestores das organizações precisam conhecere selecionar, dentro de uma infinidade de dados e informações, aqueles fatores que são potencialmente significativos e relevantes para a tomada de decisões estratégicasapropriadas.
+Fonte: CHIAVENATO, Idalberto. Planejamento estratégico: a nova jornada da intenção aos resultados. 5 ed. Atlas, 2023.
+ O diagnóstico estratégico é uma das premissas básicas do planejamento estratégico. A esse respeito, julgue as assertivas abaixo e assinale a alternativa que contém ositens CORRETOS: l. A base de aplicação da matriz SWOT é o cruzamento do que sejam as oportunidades e as ameaças externas à intenção estratégica da organização, levando-seem conta sua missão, visão, valores e objetivos estratégicos, com as forças (pontos fortes) e fragilidades (pontos fracos ou para melhoria) de cada organização aolidar com aquelas ameaças e oportunidades que a envolvem. II. O diagnóstico externo envolve duas dimensões: macroambiente e microambiente. O macroambiente é a dimensão sobre a qual a organização tem limitadainfluência. O microambiente é aquele mais próximo e imediato da organização, em que a organização é um participante efetivo, influenciando resultados e sendoao mesmo tempo influenciada por eles. III.O diagnóstico estratégico interno precisa também mapear o ambiente relacional da organização, o mais próximo e imediato de cada organização e com o qualela mantém intensa e Íntima interação. Por sua vez, o diagnóstico estratégico externo corresponde a uma avaliação das forças (pontos fortes) e fragilidades(pontos fracos).
+a)  I, apenas.b)  l e Il, apenas.c)  l e III, apenas.d)  Il e III, apenas.e)  I, Il e III.
+www.tecconcursos.com.br/questoes/2189002
+COCP IFMT - Adm (IF MT)/IF MT/2022
+Administração Geral e Pública - Diagnóstico de Ambiente Organizacional - Matriz SWOT
+O ambiente organizacional, de acordo com Reinaldo O. da Silva, em sua obra Teorias da Administração, envolve três elementos: ambiente geral, ambiente de tarefase o ambiente interno. Sobre as forças originadas nesses ambientes organizacionais, analise os itens a seguir: I - O ambiente geral é composto por forças tecnológicas, econômicas, político/legais, socioculturais e internacionais. II - O ambiente de tarefas é composto por clientes, empregados, competidores, fornecedores, reguladores e parceiros estratégicos. III - O ambiente interno é composto por proprietários, administradores e ambiente físico. Marque a alternativa CORRETA:
+a)  Apenas o item I é verdadeiro.b)  Os itens l e III são verdadeiros.c)  Apenas o item II é verdadeiro.d)  Os itens II e III são verdadeiros.e)  Apenas o item III é verdadeiro.
+www.tecconcursos.com.br/questoes/2189004
+COCP IFMT - Adm (IF MT)/IF MT/2022
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 5/33
+
+17) 
+18) 
+19) 
+Administração Geral e Pública - Diagnóstico de Ambiente Organizacional - Matriz SWOT
+De acordo com Djalma de Pinho Rebouças de Oliveira, autor do livro Planejamento Estratégico, o diagnóstico organizacional é a primeira etapa do processo deplanejamento estratégico de uma instituição. Há uma série de ferramentas para diagnóstico que permitem avaliar a organização como um todo para simplificar a tomadade decisão. A figura a seguir é o resultado da diagramação de uma ferramenta de diagnóstico organizacional disponível no Plano de Desenvolvimento Institucional 2019-2023 do IFMT: 
+ Marque a alternativa que representa o instrumento de diagnóstico organizacional da figura:
+a)  Matriz de MEG.b)  Balanced Scorecard (BSC).c)  Matriz de Porter.d)  Matriz BCG.e)  Análise SWOT.
+www.tecconcursos.com.br/questoes/3736505
+COCP IFMT - Ass Adm (IF MT)/IF MT/2025
+Administração Geral e Pública - Liderança
+modelo de liderança situacional defende que o líder deve combinar formas diferentes de orientação de equipes de acordo com a maturidade dos liderados. De acordocom esse modelo, assinale a alternativa INCORRETA:
+a)  Quando a maturidade dos liderados é baixa, o líder deve recorrer a comportamentos orientados para a tarefa.b)  Quando a maturidade dos liderados é baixa, o líder não adota comportamentos orientados para relacionamentos.c)  Quando a maturidade dos liderados aumenta, o líder deve aumentar a orientação para o relacionamento.d)  Quando a maturidade dos liderados é alta, o líder deve orientar os comportamentos apenas para as tarefas, devendo exercer supervisão excessiva e controleexacerbado.e)  Quando os liderados atingem um nível de maturidade adequado, o líder passa a adotar um estilo de gestão baseado na delegação de responsabilidades,reduzindo tanto o direcionamento de tarefas quanto o foco excessivo nos relacionamentos.
+www.tecconcursos.com.br/questoes/2367816
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2023
+Administração Geral e Pública - Liderança
+Henri Fayol foi um dos primeiros a definir as funções básicas do Administrador: prever, organizar, comandar, coordenar e controlar. Dentre essas funções, a quesofreu maior evolução foi a função comandar, que hoje é conhecida como liderança. 
+(Fonte: CHIAVENATO, Idalberto. Introdução à Teoria Geral da Administração. Editora Campus, 7? ed., pp. 81, 121-127)
+ A respeito da liderança, analise as assertivas abaixo: I. A Teoria das Relações Humanas constatou a influência da liderança sobre o comportamento das pessoas, enquanto a Teoria Clássica enfatizava a autoridadeformal, cuja liderança era realizada pela chefia nos níveis hierárquicos superiores sobre os inferiores. II. Os autores da Teoria das Relações Humanas classificaram as teorias sobre liderança em três grupos: a) teorias de traços de personalidade; b) teorias de estilosde liderança; c) teorias situacionais de liderança. III. Nas teorias dos estilos de liderança, o líder pode ser classificado em: a) autocrático; b) democrático; c) liberal; d) religioso. IV. Nas teorias de traços de personalidade, é avaliado como o líder assume os padrões de liderança em conformidade com cada tipo de subordinado. Em situaçõesem que o subordinado apresenta alto nível de eficiência, o líder pode dar-lhe maior liberdade, mas, se o subordinado apresenta erros seguidos, o líder pode dar-lhemenor liberdade de trabalho. Marque a alternativa CORRETA:
+a)  Todas estão corretas.b)  Somente I e II estão corretas.c)  Somente I e III estão corretas.d)  Somente II e III estão corretas.
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 6/33
+
+20) 
+21) 
+22) 
+e)  Somente III e IV estão corretas.
+www.tecconcursos.com.br/questoes/2843911
+COCP IFMT - Adm (IF MT)/IF MT/2023
+Administração Geral e Pública - Liderança
+Steve Jobs, cofundador da Apple, ficou conhecido por ter sido um líder disruptivo que revolucionou o mercado de computadores pessoais, filmes de animação,música, telefonia, tablets e publicação digital com produtos inovadores, como iMac, iPhone e iPad. Entre suas características marcantes, está a de ser extremamenteperfeccionista. Jobs tomava decisões arbitrárias, além de realizar exigências duras e críticas humilhantes a membros de sua equipe; era capaz de mudar de ideiarapidamente, o que podia ser desorientador para seus subordinados. O empreendedor mantinha o controle rígido e não era conhecido por sua empatia ou preocupaçãocom o bem-estar emocional de seus funcionários. Ele se concentrava principalmente nos resultados e na realização de seus objetivos. Muitas vezes, levava a uma culturade intimidação a empresa. Tais atributos conjuntamente permitem compreender o estilo de liderança de Steve Jobs como:
+a)  democrático.b)  liberal.c)  autocrático.d)  carismático.e)  técnico.
+www.tecconcursos.com.br/questoes/3076463
+COCP IFMT - PEBTT (IF MT)/IF MT/Administração/2023
+Administração Geral e Pública - Liderança
+“A má gestão das emoções e a dificuldade de assumir erros estão entre os maiores pontos fracos dos líderes de empresas brasileiras. A conclusão é de uma pesquisainédita realizada com 167 gestores seniores de companhias de diferentes portes, avaliados por suas próprias equipes de trabalho.
+(...)
+Para chegar aos resultados do relatório, cada líder foi analisado pelo time, com a ajuda de um questionário que avalia competências, com notas de 0 a 10. As cinco pioresmédias foram para 'vulnerabilidade', que recebeu 7,6 e pontuou os chefes que a demonstram, mas não conseguem reconhecer erros; e a 'dificuldade em assumir riscosnas tomadas de decisão', com 7,7.
+Em seguida, aparecem 'má gestão das emoções', 'criação de conflitos produtivos para resolver problemas' e 'oferta de treinamentos para o desenvolvimento da área' –cada uma com 7,8.”
+Disponível em: https://valor.globo.com/carreira/noticia/2022/08/27/quais-habilidades-os-executivos-brasileiros-precisam- -desenvolver-segundo-estudo.ghtml. Acesso em: 24 mar. 2023. No contexto da liderança nas organizações, assinale a alternativa CORRETA:
+a)  O bom líder é aquele que possui um elevado grau de conhecimento e habilidade técnica. O grande líder é aquele que possui inteligência emocional, capaz demaximizar o próprio desempenho e o de seus subordinados, por meio de autoconhecimento, autocontrole, apatia, conformismo e extroversão.b)  O estilo de liderança é influenciado meramente pela forma como o gestor percebe e identifica os membros da equipe.c)  Entre os pontos fracos dos líderes de empresas brasileiras, citados no estudo acima, está a deficiência na construção de relações de amizade em relação aosmembros da sua equipe.d)  O líder deve construir seu processo de autoridade moral por meio da satisfação das expectativas e aceitação por parte dos membros da equipe liderada, pois ofoco principal são os relacionamentos.e)  Independentemente da diversidade cultural existente em uma organização, o sucesso da equipe está relacionado com confiança, empatia, interação, respeito eafinidade. O papel do líder é ajudar a equipe por meio de um comportamento inspirador, motivacional, sensível, empático, de confiança, com autoridade e coragemcriativa. 
+Fontes: GOLEMAN, Daniel. Desafios da liderança. Coleção Harvard. Rio de Janeiro: Sextante, 2009. BERGUE, Sandro Trescastro. Gestão de pessoas: liderança e competências para o setor público.Brasília: ENAP, 2019. MUNIZ, Antonio et al. Jornada Ágil de Liderança: entenda como desenvolver times protagonistas para resultados inovadores e sustentáveis no mundo digital. Rio de Janeiro:Brasport, 2020.
+www.tecconcursos.com.br/questoes/2189006
+COCP IFMT - Adm (IF MT)/IF MT/2022
+Administração Geral e Pública - Liderança
+Liderança autocrática, democrática e liberal são alguns dos principais estilos de liderança difundidos na literatura, entre as quais, Teorias da Administração, deIdalberto Chiavenato. Sobre tais estilos, analise os itens a seguir: I- Liderança autocrática centraliza as decisões no líder, que determina as providências para execução das tarefas. II - A divisão de tarefas a critério do grupo é uma das características da liderança democrática, cujas diretrizes são debatidas e decididas pelo grupo, estimulado eassistido pelo líder. III - No estilo de liderança liberal, a divisão das tarefas fica a critério do grupo. Marque a alternativa CORRETA:
+a)  Apenas o item I é verdadeiro.b)  Apenas o item II é verdadeiro.c)  Os itens I e III são verdadeiros.d)  Os itens II e III são verdadeiros.e)  Os itens I, II e III são verdadeiros.
+www.tecconcursos.com.br/questoes/1091351
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2019
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 7/33
+
+23) 
+24) 
+25) 
+Administração Geral e Pública - Liderança
+A liderança estratégica cria a capacidade para uma mudança estratégica permanente (SCHERMERHORNN JÚNIOR, 2014). A partir desse conceito, analise asaﬁrmativas abaixo, considerando a perspectiva dos autores que corroboraram para o com o conceito de liderança estratégica. I - Tom Peters recomenda que devemos tirar a atenção dos gerentes e líderes das conquistas passadas para concentrá-la no papel da inovação como principalfonte de vantagem competitiva. O sucesso no passado não é garantia de sucesso no futuro. II - Peter Senge chama de organização que aprende aquela que mobiliza as pessoas, valores e sistemas de mudança contínua e atua para a melhoria dodesempenho e age guiada pelas lições adquiridas por meio da experiência e do compartilhamento. III - Os pesquisadores R. Duane Ireland e Michael Hitt deﬁnem a liderança estratégica como a capacidade de antecipar, enxergar, manter ﬂexibilidade, pensarestrategicamente e trabalhar com as pessoas para iniciar mudanças que criarão um futuro viável para a organização. IV - A meta da liderança estratégica é criar uma competência essencial a partir da capacidade de mudar de modo contínuo e bem sucedido. E essa mudança deveter um objetivo estratégico voltado para o cliente. V - A liderança estratégica possui seis componentes fundamentais: determinar o objetivo ou visão da organização; explorar e manter as competências essenciaisda organização; desenvolver o capital humano da organização; manter uma cultura organizacional eﬁcaz; enfatizar e demonstrar práticas éticas e estabelecercontroles organizacionais equilibrados. A partir dessa análise, está CORRETA a alternativa:
+a)  I, II, IV e V.b)  I, II, III e IV.c)  II e III.d)  II, III e V.e)  I, II, III, IV e V. 
+www.tecconcursos.com.br/questoes/1091355
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2019
+Administração Geral e Pública - Liderança
+Hitt, Miller e Colella (2015) descrevem o poder como uma capacidade daqueles que o detêm no sentido de alcançar os resultados que almejam. Nada seria alcançadonas organizações se os indivíduos não exercessem o poder. Com base no exposto, analise as alternativas: I - Os indivíduos são capazes de conquistar o poder de várias maneiras. As bases do poder incluem o poder individual, o poder legítimo, o poder de recompensa, opoder coercitivo, o poder da expertise e o poder da referência. II - O poder de referência é capaz de inﬂuenciar um espectro mais amplo de comportamentos do que os outros tipos de poder, porque é o poder resultante dodesejo de outras pessoas se identiﬁcarem com a pessoa objeto de referência. III - É possível obter poder identiﬁcando as contingências críticas enfrentadas pela organização, criando dependências, mostrando-se capaz de lidar com aincerteza, tornando-se insubstituível e controlando o processo de tomada de decisão. A respeito dessas assertivas, assinale a opção CORRETA:
+a)  I apenas.b)  II apenas.c)  III apenas.d)  I, II e III.e)  I e III. 
+www.tecconcursos.com.br/questoes/3174755
+COCP IFMT - Ass Adm (IF MT)/IF MT/2024
+Administração Geral e Pública - Grupos e Equipes de Trabalho
+Em muitas organizações, o trabalho em equipe é fundamental. Na Administração Pública não é diferente, contudo é muito importante que cada servidor e agentepúblico também tenham a presença do ethos público como elemento central de atuação, colocando o interesse coletivo como elemento principal. Para Emmendoerfer(2019), o ethos da administração pública está expresso nos 11 princípios básicos do art. 37 da Constituição Federal de 1988. Fontes: Fontes: EMMENDOERFER, Magnus Luiz. Inovação e empreendedorismo no setor público. Brasília: ENAP, 2019. CHIAVENATO, Idalberto. Gestão de pessoas: o novo papel dos recursos humanosnas organizações. 4. ed. Barueri, SP: Manole, 201. A respeito do trabalho em equipe, marque a alternativa INCORRETA.
+a)  A falta de confiança entre os membros da equipe atrapalha o trabalho em equipe e pode causar um desperdício de energia e de tempo, bem como desmotiva econtribui para que não haja sucesso no alcance dos objetivos.b)  A ausência de confiança entre os membros da equipe cria um ambiente propício para o conflito, porém as equipes que receiam conflitos e tentam evitá-los atodo custo podem gerar a falta de comprometimento e impedir o surgimento e a discussão de ideias positivas.c)  Uma equipe que não se responsabiliza e não se compromete com o interesse coletivo incentiva a mediocridade, gera diferentes tipos de desempenho individual eatribui ao líder o encargo de ser o único responsável pelo desempenho da equipe.d)  Diferentemente do trabalho em grupo, sabe-se que no trabalho em equipe as pessoas decidem e agem de maneira conjunta, contudo, não há uma interaçãoemocional ou afetiva e muito menos um objetivo comum, pois o que importa é vencer.e)  A organização hierárquica composta por departamentos e cargos está em extinção. O segredo agora está em juntar as pessoas em equipes ou em gruposintegrados de trabalho.
+www.tecconcursos.com.br/questoes/2843916
+COCP IFMT - Adm (IF MT)/IF MT/2023
+Administração Geral e Pública - Grupos e Equipes de Trabalho
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 8/33
+
+26) 
+27) 
+28) 
+29) 
+Uma organização é um grupo de grupos, sendo cada um deles influenciado pela existência uns dos outros. Identificar as características dos grupos de altaperformance, ou seja, aqueles que superam seus objetivos, possibilita desenvolvê-las nos outros grupos, a fim de garantir o resultado de alta performance, conformeMaximiano (2000). Segundo o autor, são características de grupos de alta performance, exceto:
+a)  coesão - interesse dos integrantes na continuidade da existência do grupo.b)  envolvimento psicológico - fatores motivacionais oferecidos pela tarefa aos integrantes.c)  confiança e controle - capacidade de manter a sintonia entre as pessoas e o processo de geração de ações corretivas e coercitivas constantes.d)  compreensão das interdependências - capacidade de entender que o grupo depende de todos.e)  autorregulação - capacidade de cuidar de si próprio.
+www.tecconcursos.com.br/questoes/2845317
+COCP IFMT - Ass Alu (IF MT)/IF MT/2023
+Administração Geral e Pública - Grupos e Equipes de Trabalho
+Segundo Idalberto Chiavenato (2014, p. 199), as organizações estão migrando rapidamente para um novo conceito de trabalho, em vez de separar as pessoas emcargos individuais e fragmentados; o segredo agora está em juntar as pessoas em equipes ou células de produção, em grupos integrados de trabalho e atividadesconjuntas. Para o autor, há uma variedade de tipos de equipes. Associe as colunas abaixo, relacionando os tipos de equipes às suas respectivas características e, emseguida, assinale a alternativa que apresenta a sequência CORRETA: Tipos de Equipes (1) Equipes funcionais cruzadas(2) Equipes de projetos(3) Equipes autodirigidas Características (   ) São compostas de pessoas altamente treinadas para desempenhar um conjunto de tarefas interdependentes dentro de uma unidade natural detrabalho. Os membros usam o consenso na tomada de decisão para desempenhar o trabalho, resolver problemas ou lidar com clientes. (   ) São compostas de pessoas vindas de diversas áreas da empresa (marketing, produção, finanças, engenharia) e são formadas para alcançar um objetivoespecífico por meio de um mix de competências. Quase sempre são designadas. (   ) São formadas especialmente para desenhar um novo produto ou serviço. Os participantes são designados na base de sua habilidade para contribuirpara o sucesso. O grupo debanda depois de completada a tarefa. 
+Fonte: CHIAVENATO, Idalberto. Gestão de pessoas: o novo papel dos recursos humanos nas organizações. 4. ed. São Paulo: Manole, 2014.
+a)  1 - 2 - 3.b)  2 - 1 - 3.c)  3 - 2 - 1.d)  1 - 3 - 2.e)  3 - 1 - 2.
+www.tecconcursos.com.br/questoes/2189008
+COCP IFMT - Adm (IF MT)/IF MT/2022
+Administração Geral e Pública - Grupos e Equipes de Trabalho
+A melhoria do trabalho em equipe é uma busca constante nas organizações. Para Stephen Robbins, em sua obra Comportamento Organizacional, a criação deequipes eficazes se dá pelo contexto, composição dos membros da equipe, projeto de trabalho e processo. Sobre o processo para criação de equipes eficazes, marque aalternativa INCORRETA:
+a)  As equipes eficazes têm um propósito comum e significativo, que oferece direção, o momentum e comprometimento a seus membros.b)  As equipes bem-sucedidas traduzem seu propósito comum em metas de desempenho específicas, mensuráveis e realistas.c)  As equipes eficazes têm confiança nelas mesmas, ou seja, eficácia de equipe.d)  Como consequência do propósito comum e confiança mútua, os conflitos devem ser evitados, especialmente aqueles ligados ao desempenho de tarefas nãorotineiras. As equipes totalmente imunes aos conflitos tendem a se tornar mais eficientes e eficazes.e)  Equipes bem-sucedidas fazem com que seus membros sejam responsáveis, individual e conjuntamente, pelos propósitos, metas e abordagem da equipe.
+www.tecconcursos.com.br/questoes/2189010
+COCP IFMT - Adm (IF MT)/IF MT/2022
+Administração Geral e Pública - Comunicação no Processo de Gestão
+Para Stephen Robbins, em sua obra Comportamento Organizacional, boa comunicação facilita a consolidação da cultura organizacional e evita ruídos, por deixar osprocessos mais claros para todos os membros da organização. Sobre comunicação interpessoal, avalie os itens a seguir: I - A comunicação tem quatro funções básicas dentro de um grupo ou de uma organização: controle, motivação, expressão emocional e informação. II - O processo de comunicação é composto de oito partes: (1) a fonte da comunicação, (2) a codificação, (3) a mensagem, (4) o canal, (5) a decodificação, (6) oreceptor, (7) o ruído e (8) o feedback. III - A comunicação pode fluir em sentido vertical (de forma ascendente e/ou descendente hierarquicamente) ou horizontal (entre os membros de um mesmogrupo ou de grupos do mesmo nível hierárquico). Marque a alternativa CORRETA:
+a)  Apenas o item I é verdadeiro.b)  Apenas o item II é verdadeiro.c)  Os itens I e III são verdadeiros.d)  Os itens II e III são verdadeiros.e)  Os itens I, II e III são verdadeiros.
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 9/33
+
+30) 
+31) 
+32) 
+www.tecconcursos.com.br/questoes/1091352
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2019
+Administração Geral e Pública - Comunicação no Processo de Gestão
+Para Hitt, Miller e Colella (2015) a comunicação é um processo interpessoal de envio e recepção de símbolos com mensagens anexadas. Com base nessa assertiva,analise os itens abaixo: I - A comunicação eﬁcaz ocorre quando a mensagem é completamente entendida. II - A comunicação eﬁciente ocorre a um custo mínimo em termos de recursos gastos. Tempo, em particular, é um importante recurso do processo decomunicação. III - A comunicação eﬁciente ocorre quando a mensagem é completamente entendida. IV - A comunicação eﬁcaz ocorre a um custo mínimo em termos de recursos gastos. Tempo, em particular, é um importante recurso do processo de comunicação. V - São ruídos no processo da comunicação, problemas de semântica, ausência de feedback, canais inadequados, distrações físicas, efeitos de status e diferençasculturais. VI - São ruídos no processo da comunicação, apenas a ausência de feedback, canais inadequados, distrações físicas e diferenças culturais. VII - O processo de comunicação interativo bidirecional de comunicação interpessoal deve possuir um emissor, um receptor, uma mensagem, um canal e umprocesso de feedback. A partir dessa análise, está CORRETA somente a alternativa:
+a)  III, IV, VI e VII.b)  I, II, V e VII.c)  I, II e VII.d)  III, IV e VII.e)  II, III, IV e V.
+www.tecconcursos.com.br/questoes/2189003
+COCP IFMT - Adm (IF MT)/IF MT/2022
+Administração Geral e Pública - Processo Decisório (Tomada de Decisão)
+Uma abordagem dentro da Perspectiva Quantitativa da Administração é a pesquisa operacional, definida por Reinaldo O. da Silva, em sua obra Teorias daAdministração, como um método quantitativo que ajuda no planejamento, na solução de problemas e no processo de tomada de decisão. Sobre pesquisa operacional,marque a alternativa INCORRETA:
+a)  Tem como foco a solução do problema, orientada por critérios lógicos e econômicos, usando técnicas e modelos matemáticos, essencialmente executados porcomputadores.b) Os passos que envolvem a pesquisa operacional são: análise do sistema; construção de uma representação do sistema; teste do modelo; solução do modelo;controle do modelo; solução e implementação dos resultados.c)  Os estados da natureza se referem ao conjunto de possíveis eventos casuais que afetam as consequências das decisões e são basicamente dois: condições deincerteza e condições de risco.d)  Análise do ponto de equilíbro, programação linear e PERT são exemplos de técnicas de pesquisa operacionais.e)  Uma das limitações da pesquisa operacional é que muitos problemas de decisão não podem ser expressos em termos quantitativos.
+www.tecconcursos.com.br/questoes/3076476
+COCP IFMT - PEBTT (IF MT)/IF MT/Administração/2023
+Administração Geral e Pública - Seleção (Gestão de Pessoas)
+De acordo com Chiavenato (2014), a seleção é um processo de decisão e escolha, a qual comporta quatro modelos de decisão: o de colocação, classificação, seleçãoe de agregação de valor. Analise as situações hipotéticas abaixo e correlacione a Coluna A com a Coluna B, de modo a identificar o correspondente modelo de decisão:
+ Coluna A Coluna B
+1
+Na empresa de logística AXY, há várias vagas em diversos cargos para o recém-criado Departamento de Logística Reversa de Resíduos. Na seleção,
+várias pessoas se candidataram, e cada candidato foi comparado com os requisitos exigidos; se aprovado, era encaminhado para admissão; se
+rejeitado, passava a ser comparado com os requisitos exigidos por outros cargos.
+( ) Modelo de
+colocação
+2Um ateliê de moda masculina necessita contratar, urgentemente, um alfaiate para trabalhar na criação de roupas sob medida. Contudo há somente
+um candidato e uma só vaga a ser preenchida e sem possibilidade de rejeição.
+( ) Modelo de
+seleção
+3
+Uma empresa de TI necessita contratar um engenheiro de computação para ocupar uma única vaga, mas o profissional deverá atender aos
+requisitos exigidos. Na seleção, mais de 10 pessoas se candidataram, e cada candidato será comparado com os requisitos exigidos, podendo ocorrer
+a rejeição ou aprovação
+do candidato.
+( ) Modelo de
+classificação
+4
+Uma empresa tradicional de comércio varejista necessita contratar um profissional que possa aumentar o capital humano da organização. Vários
+candidatos se apresentaram oferecendo várias competências individuais, e estes foram avaliados do ponto de vista dessas competências individuais;
+sendo essas competências do interesse da organização, o candidato é aceito; caso contrário, é rejeitado.
+( ) Modelo de
+agregação de
+valor
+Assinale a alternativa com a sequência CORRETA, de cima para baixo:
+a)  1, 2, 3 e 4.b)  1, 3, 4 e 2.c)  2, 4, 1 e 3.
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 10/33
+
+33) 
+34) 
+35) 
+d)  2, 3, 1 e 4.e)  4, 1, 3 e 2. 
+Fonte: CHIAVENATO, Idalberto. Gestão de pessoas:
+o novo papel dos recursos humanos nas organizações. São Paulo: Editora Manole, 2014.
+www.tecconcursos.com.br/questoes/2843980
+COCP IFMT - Adm (IF MT)/IF MT/2023
+Administração Geral e Pública - Desempenho
+Existe uma variedade de métodos para avaliar o desempenho humano. Avaliar o desempenho de um grande número de pessoas dentro das organizações, utilizandocritérios de equidade e de justiça e, ao mesmo tempo, estimulando as pessoas, não é tarefa fácil. Por essa razão, muitas organizações constroem seus próprios sistemasde avaliação ajustados às suas características particulares. A seguir, preencha a lacuna relacionando o tipo de método tradicional de avaliação de desempenho das pessoas com a sua correspondente definição e, depois, assinale aalternativa que apresenta a ordem coerente. I. O método de                                utiliza um formulário de dupla entrada, no qual as linhas horizontais representam os fatores de avaliação do desempenho,enquanto as colunas verticais representam os graus de variação daqueles fatores. Os fatores são previamente selecionados e escolhidos para definir em cadapessoa as qualidades que se pretende avaliar. II. O método de                                avalia o desempenho através de blocos de frases descritivas que focalizam determinados aspectos do comportamento. Cadabloco é composto de duas, quatro ou mais frases. O avaliador deve escolher apenas uma ou duas frases em cada bloco que mais se aplicam ao desempenho dofuncionário avaliado. III. O método de                                se baseia em uma relação de fatores de avaliação a serem considerados a respeito de cada funcionário. Cada um dessesfatores de desempenho recebe uma avaliação quantitativa. Funciona como uma espécie de lembrete para o gerente avaliar todas as características principais deum funcionário. IV. O método de                                se baseia nas características extremas que representam desempenhos altamente positivos (sucesso) ou altamentenegativos (fracasso). O método não se preocupa com o desempenho normal, mas com desempenhos excepcionais para avaliar os pontos fortes e os pontos fracosde cada funcionário. V. O método de                                requer entrevistas entre um especialista em avaliação (staff) com os gerentes (linha), para, em conjunto, avaliarem odesempenho dos respectivos funcionários. A partir da entrevista com cada gerente, o especialista preenche um formulário para cada funcionário avaliado.
+a)  escalas gráficas; listas de verificação; escolha forçada; pesquisa de campo; incidentes críticos.b)  escolha forçada; incidentes críticos; listas de verificação; pesquisa de campo; escalas gráficas.c)  escalas gráficas; escolha forçada; listas de verificação; incidentes críticos; pesquisa de campo.d)  listas de verificação; escolha forçada; escalas gráficas; incidentes críticos; pesquisa de campo.e)  pesquisa de campo; escalas gráficas; incidentes críticos; escolha forçada; listas de verificação.
+www.tecconcursos.com.br/questoes/3736531
+COCP IFMT - Ass Adm (IF MT)/IF MT/2025
+Administração Geral e Pública - Treinamento, Desenvolvimento e Educação (TDeE)
+O Plano de Desenvolvimento Institucional do IFMT do ciclo 2019-2025, disponível em: https://ifmt.edu.br/conteudo/ pagina/pdi-2019-2023/, estabelece que a“Política de Capacitação do IFMT tem como base o levantamento das necessidades de desenvolvimento de competências identificadas no mapa estratégico e nasnecessidades específicas dos departamentos ou ainda para atender uma demanda de adequação à legislação ou processos internos”. A moderna Gestão Estratégica dePessoas tem a capacitação como um dos principais métodos de permanente desenvolvimento de pessoas e de atualização das organizações. Sobre Treinamento edesenvolvimento (T&D), assinale a alternativa INCORRETA:
+a)  Treinamento: são experiências organizadas de aprendizagem. O treinamento amplia a capacidade do servidor ou funcionário de desempenhar suas funções commaior eficiência.b)  Mentoria: é uma ferramenta que procura monitorar a equipe e a atividade de cada membro para estabelecer necessidades de desenvolvimento.c)  Desenvolvimento de Gestores: são ações educacionais de desenvolvimento de habilidades e competências gerenciais, como liderança e gestão de equipes.d)  Desenvolvimento pessoal: são experiências que não se limitam ao cargo ou função atual, mas oferecem oportunidades de desenvolvimento pessoal ecrescimento profissional.e)  Coaching: busca aperfeiçoar as competências de autodesenvolvimento e promover mudanças, fortalecendo as qualidades e minimizando as fraquezas doindivíduo.
+www.tecconcursos.com.br/questoes/2843981
+COCP IFMT - Adm (IF MT)/IF MT/2023
+Administração Geral e Pública - Treinamento, Desenvolvimento e Educação (TDeE)
+Todas as pessoas, independentemente de suas diferenças individuais, podem e devem se desenvolver. Na abordagem tradicional, o desenvolvimento gerencial erareservado apenas para uma pequena fatia do pessoal: apenas para os níveis mais elevados. Com a redução de níveis hierárquicos e a formação de equipes de trabalho,os funcionários passaram a ter maior participação nos objetivos de seus cargos e maior preocupação com a qualidade e com os clientes. Hoje, as organizações estãoexigindo novas habilidades, conhecimentos e competências de todas as pessoas. E o desenvolvimento passou a envolver a totalidade dos funcionários. São métodosutilizados para o desenvolvimento de pessoas, exceto:
+a)  jogos de empresa.b)  posições de assessoria.c)  aconselhamento de funcionários.d)  estudo de casos.e)  avaliação do retorno do investimento (ROI).
+www.tecconcursos.com.br/questoes/3176627
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 11/33
+
+36) 
+37) 
+38) 
+COCP IFMT - Ass Adm (IF MT)/IF MT/2024
+Administração Geral e Pública - Qualidade de Vida no Trabalho (QVT)
+tema da qualidade de vida no trabalho vem ganhando destaque e relevância nas organizações, devido a sua influência direta sobre o clima organizacional e,consequentemente, sobre o bem-estar e o trabalho em equipe. A esse respeito, analise as preposições a seguir e em seguida avalie qual(is) assertiva(s) auxilia(m) na promoção de um ambiente de trabalho saudável: l. Manter o ambiente de trabalho organizado e ignorar as condições ergonômicas e de iluminação adequada. II. Incentivar maior produtividade e competição acirrada entre as equipes e a confrontação direta. III. Incentivar a integração e o relacionamento sócio-profissional, possibilitar o desenvolvimento de capacidades dos indivíduos e a manutenção do elo trabalho-vida social, monitorar pessoas e manter uma rotina de trabalho repetitiva. IV. Oferecer uma compensação justa, reconhecer ideias criativas e inovadoras, adotar atitudes excessivamente reativas, incentivar a empatia e a manipulaçãoentre os indivíduos e destes para com a chefia. Está(ão) CORRETA(S) a(s) assertiva(s):
+a)  I, apenas.b)  Il, apenas.c)  Il e Ill, apenas.d)  Ill e IV, apenas.e)  Nenhuma.
+www.tecconcursos.com.br/questoes/3076489
+COCP IFMT - PEBTT (IF MT)/IF MT/Administração/2023
+Administração Geral e Pública - Conceitos e Teorias de Inovação e Empreendorismo
+A respeito de empreendedorismo e inovação, julgue os itens abaixo se verdadeiros (V) ou falsos (F): I. As startups são empresas emergentes por definição e inovadoras por concepção, que adotam o plano de negócio em vez do modelo de negócio. O plano denegócio adotado pelas startups é estático, detalhado e contém todas as etapas que envolvem ou fazem parte do negócio, de modo a alcançar a lucratividade ecrescer de forma escalável e muito rapidamente, com o mínimo de risco e incerteza. II. A inovação é a ferramenta-chave dos gestores empreendedores e é o meio pelo qual exploram a mudança como uma oportunidade para propor um negócio ouserviço diferente, fomentar novos mercados, repensar serviços ou até mesmo atender às necessidades sociais. III. O modelo de tripla hélice, desenvolvido por Henry Etzkovitz e Loet Leydesdorff, envolve os seguintes agentes de empreendedorismo inovador: universidade,empresa e governo. IV. O intraempreendedorismo é o empreendedorismo dentro da própria organização; os colaboradores exploram e desenvolvem as suas ideias, propondo produtosou soluções inovadoras. Os intraempreendedores são pessoas que atuam na iniciativa privada, pois, nos órgãos públicos, não é possível ter esse tipo deprofissional, em razão da burocracia e da inexistência de incentivos ao empreendedorismo e inovação dentro do setor público. Marque a alternativa CORRETA:
+a)  Apenas o item I é verdadeiro.b)  Os itens I e III são verdadeiros.c)  Apenas o item IV é verdadeiro.d)  Os itens II e III são verdadeiros.e)  Os itens II e IV são verdadeiros.
+www.tecconcursos.com.br/questoes/3737224
+COCP IFMT - Tec (IF MT)/IF MT/Contabilidade/2025
+AFO, Direito Financeiro e Contabilidade Pública - Princípios Orçamentários
+Os Princípios Orçamentários estabelecidos e disciplinados por normas constitucionais, infraconstitucionais e pela doutrina constam no Manual de ContabilidadeAplicada ao Setor Público (11ª edição). Julgue as assertivas. I. O Princípio da Universalidade determina a existência de orçamento único para cada um dos entes federados - União, estados, Distrito Federal e municípios - coma finalidade de se evitarem múltiplos orçamentos paralelos dentro da mesma pessoa política. II. O Princípio da Exclusividade estabelece que a LOA não conterá dispositivo estranho à previsão da receita e à fixação da despesa. Ressalvam-se dessa proibiçãoa autorização para abertura de crédito suplementar e a contratação de operações de crédito, nos termos da lei. III. O Princípio da Unidade ou Totalidade determina que a LOA de cada ente federado deverá conter todas as receitas e despesas de todos os poderes, órgãos,entidades, fundos e fundações instituídas e mantidas pelo Poder Público. 
+SECRETARIA DO TESOURO NACIONAL. Manual de Contabilidade Aplicada ao Setor Público, 11ª Edição, 2024.
+ Marque a alternativa CORRETA.
+a)  Somente as assertivas II e III estão corretas.b)  Somente a assertiva II está correta.c)  Somente as assertivas I e III estão corretas.d)  Somente a assertiva I está correta.e)  Somente a assertiva III está correta.
+www.tecconcursos.com.br/questoes/2347667
+COCP IFMT - Tec (IF MT)/IF MT/Contabilidade/2023
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 12/33
+
+39) 
+40) 
+41) 
+42) 
+AFO, Direito Financeiro e Contabilidade Pública - Princípios Orçamentários
+Os Princípios Orçamentários visam estabelecer diretrizes norteadoras básicas, a fim de conferir racionalidade, eficiência e transparência para os processos deelaboração, execução e controle do orçamento público. Válidos para os Poderes Executivo, Legislativo e Judiciário de todos os entes federativos - União, estados, DistritoFederal e municípios -, são estabelecidos e disciplinados por normas constitucionais, infraconstitucionais e pela doutrina. Nesse contexto, integram o Manual deContabilidade Aplicada ao Setor Público (9º edição) os princípios orçamentários cuja existência e aplicação derivem de normas jurídicas.
+Julgue como Verdadeiras (V) ou Falsas (F) as sentenças a seguir. I. ( ) O Princípio da Universalidade determina a existência de orçamento único para cada um dos entes federados - União, estados, Distrito Federal e municípios -com a finalidade de se evitarem múltiplos orçamentos paralelos dentro da mesma pessoa política.
+II. ( ) O Princípio da Unidade ou Totalidade determina que a LOA de cada ente federado deverá conter todas as receitas e despesas de todos os poderes, órgãos,entidades, fundos e fundações instituídas e mantidas pelo Poder Público.
+III. ( ) O Princípio da Exclusividade estabelece que a LOA não conterá dispositivo estranho à previsão da receita e à fixação da despesa. Ressalvam-se dessaproibição a autorização para abertura de crédito suplementar e a contratação de operações de crédito, nos termos da lei.
+IV. ( ) O Princípio do Orçamento Bruto obriga registrarem-se receitas e despesas na LOA pelo valor total e bruto, vedadas quaisquer deduções.
+Marque a alternativa CORRETA.
+a)  F, F, V, V.b)  F, V, V, F.c)  V, V, F, F.d)  V, F, F, V.e)  F, V, F, V.
+www.tecconcursos.com.br/questoes/2190206
+COCP IFMT - Tec (IF MT)/IF MT/Contabilidade/2022
+AFO, Direito Financeiro e Contabilidade Pública - Princípios Orçamentários
+Sobre o tema “Princípios Orçamentários”, preconizados pelas normas constitucionais, infraconstitucionais e doutrina, é CORRETO afirmar, segundo o exposto noManual de Contabilidade Aplicada ao Setor Público (9ª edição):
+a)  Sobre o princípio orçamentário da não vinculação de impostos, o inciso IV do art. 167 da CF/1988 veda vinculação da receita de tributos a órgão, fundo oudespesa, salvo exceções estabelecidas pela própria Constituição federal.b)  O princípio da legalidade estabelece que a LOA não conterá dispositivo estranho à previsão da receita e à fixação da despesa.c)  O princípio da universalidade determina que a LOA de cada ente federado deverá conter todas as receitas e despesas de todos os Poderes, órgãos, entidades,fundos e fundações instituídas e mantidas pelo poder público.d)  O princípio da transparência, princípio básico da atividade da Administração Pública no regime democrático, está previsto no caput do art. 37 da Carta Magna de1988. Justifica-se especialmente pelo fato de o orçamento ser fixado em lei, sendo esta a que autoriza aos Poderes a execução de suas despesas.e)  O princípio da legalidade está previsto, de forma expressa, pelo caput do art. 2º da Lei 4.320/1964; ele determina a existência de orçamento único para cada umdos entes federados – União, estados, Distrito Federal e municípios, evitando múltiplos orçamentos paralelos dentro da mesma pessoa política.
+www.tecconcursos.com.br/questoes/1089798
+COCP IFMT - Cont (IF MT)/IF MT/2019
+AFO, Direito Financeiro e Contabilidade Pública - Princípios Orçamentários
+Considerando o exposto no Manual de Contabilidade Aplicada ao Setor Público (8ª edição), os Princípios Orçamentários visam estabelecer diretrizes norteadorasbásicas, a ﬁm de conferir racionalidade, eﬁciência e transparência para os processos de elaboração, execução e controle do orçamento público. Válidos para os PoderesExecutivo, Legislativo e Judiciário de todos os entes federativos – União, estados, Distrito Federal e municípios – são estabelecidos e disciplinados por normasconstitucionais, infraconstitucionais e pela doutrina. Nesse âmbito, marque a alternativa CORRETA.
+a)  O princípio da exclusividade, previsto no § 8º do art. 165 da Constituição Federal, estabelece que a LOA não conterá dispositivo estranho à previsão da receita eà ﬁxação da despesa. Ressalvam-se dessa proibição a autorização para abertura de crédito suplementar e a contratação de operações de crédito, nos termos da lei.b)  O princípio do orçamento bruto, previsto pelo art. 6º da Lei 4.320/1964, obriga registrarem-se receitas e despesas na LOA pelo valor líquido, ou seja, com suasdeduções.c)  O princípio da unidade ou totalidade, estabelecido, de forma expressa, pelo caput do art. 2º da Lei 4.320/1964, recepcionado e normatizado pelo § 5º do art.165 da Constituição Federal, determina que a LOA de cada ente federado deverá conter todas as receitas e despesas de todos os poderes, órgãos, entidades,fundos e fundações instituídas e mantidas pelo Poder Público.d)  O princípio da universalidade, de forma expressa, pelo caput do art. 2º da Lei 4.320/1964, determina existência de orçamento único para cada um dos entesfederados – União, estados, Distrito Federal e municípios – com a ﬁnalidade de se evitarem múltiplos orçamentos paralelos dentro da mesma pessoa política.e)  O princípio da transparência está previsto no caput do art. 37 da Carta Magna de 1988. Justiﬁca-se especialmente pelo fato de o orçamento ser ﬁxado em lei,sendo esta a que autoriza aos Poderes a execução de suas despesas.  
+www.tecconcursos.com.br/questoes/3177860
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2024
+AFO, Direito Financeiro e Contabilidade Pública - Classificação por Natureza da Receita
+De acordo com o MCASP - Manual de Contabilidade Aplicada ao Setor Público, relacionado às Receitas Públicas, “A classificação da receita orçamentária é deutilização obrigatória para todos os entes da Federação, sendo facultado seu desdobramento para atendimento das respectivas peculiaridades. Nesse sentido, as receitasorçamentárias são classificadas segundo os seguintes critérios:” l. Natureza. II. Fonte/Destinação de Recursos. III. Indicador de Resultado Primário. IV. Receitas de Exportação. 
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 13/33
+
+43) 
+44) 
+45) 
+46) 
+Estão CORRETOS apenas os itens:
+a)  I, II, III.b)  II, III e IV.c)  I, III e IV.d)  I, II e IV.e)  Todos os itens estão corretos. 
+Fonte: Manual de Contabilidade Aplicada ao Setor Público (MCASP). Disponível em: https://www.tesourotransparente.gov.br/publicacoes/
+manual-de-contabilidade-aplicada-ao-setor-publico-mcasp/2021/26. 9º Edição de 2021. Acesso em: 25 ago. 2024.
+www.tecconcursos.com.br/questoes/2190233
+COCP IFMT - Tec (IF MT)/IF MT/Contabilidade/2022
+AFO, Direito Financeiro e Contabilidade Pública - Classificação por Natureza da Receita
+Considerando a Lei 4.320/64, as receitas classificam-se em receitas correntes e receitas de capital. Analise as assertivas e marque a alternativa CORRETA. I - São receitas correntes as receitas tributária, de contribuições, patrimonial, agropecuária, industrial, de serviços. II - São receitas correntes as provenientes de recursos financeiros recebidos de outras pessoas de direito público ou privado, quando destinadas a atenderdespesas classificáveis em despesas correntes. III - São receitas de capital as provenientes da realização de recursos financeiros oriundos de constituição de dívidas; da conversão, em espécie, de bens edireitos; os recursos recebidos de outras pessoas de direito público ou privado, destinados a atender despesas classificáveis em despesas de capital e, ainda, osuperávit do orçamento corrente.
+a)  As assertivas I e II estão corretas.b)  A assertiva III está correta.c)  As assertivas I e III estão corretas.d)  As assertivas II e III estão corretas.e)  As assertivas I, II e III estão corretas.
+www.tecconcursos.com.br/questoes/1089603
+COCP IFMT - Ass Adm (IF MT)/IF MT/2019
+AFO, Direito Financeiro e Contabilidade Pública - Classificação por Natureza da Receita
+Quanto à categoria econômica, as receitas orçamentárias classiﬁcam-se em Receitas Correntes e Receitas de Capital. As Receitas Correntes são arrecadaçõesrealizadas dentro do exercício e visam aumentar as disponibilidades ﬁnanceiras do Estado e constituem instrumento para ﬁnanciar os objetivos deﬁnidos nos programas eações correspondentes às políticas públicas (MTO, 2019). Assinale a alternativa INCORRETA quanto à procedência das receitas orçamentárias do tipo "Receitascorrentes":
+a)  São receitas oriundas de impostos e taxas.b)  São receitas agropecuárias provenientes de atividades de exploração ordenada dos recursos naturais vegetais em ambiente natural e protegido.c)  São receitas de operações de crédito e decorrem de recursos ﬁnanceiros oriundos da colocação de títulos públicos ou da contratação de empréstimos junto aentidades públicas ou privadas, internas ou externas.d)  São receitas de serviços e decorrem da prestação de serviços por parte do ente público, tais como comércio, transporte, comunicação, serviços hospitalares,armazenagem, serviços recreativos, culturais etc..e)  São receitas industriais provenientes de atividades industriais exercidas pelo ente público, tais como a extração e o beneﬁciamento de matérias primas, aprodução e a comercialização de bens relacionados às indústrias mecânica, química e de transformação em geral. 
+www.tecconcursos.com.br/questoes/1091346
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2019
+AFO, Direito Financeiro e Contabilidade Pública - Classificação por Natureza da Receita
+Em uma situação hipotética, o Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso - IFMT, no ano de 2018, não estava utilizando um de seus imóveise, por isso, o alugou. Passou, então, a receber mensalmente o valor do aluguel. Nesse caso, a receita de aluguéis recebido pela Administração Pública é classiﬁcada comoreceita:
+a)  Patrimonial.b)  Tributária.c)  Contribuições.d)  Serviços.e)  Capital.
+www.tecconcursos.com.br/questoes/3177869
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2024
+AFO, Direito Financeiro e Contabilidade Pública - Estágios da Receita Pública
+A instituição, previsão e a efetiva arrecadação de todos os tributos é ressaltada pelo texto da LRF como requisito essencial da responsabilidade na gestão fiscal. Odescumprimento dessa norma terá como consequência  imediata suspensão das transferências voluntárias ao ente público que se mostrar negligente nessa questão.Para a sua previsão, além de observar as normas técnicas e legais e a respectiva metodologia de cálculo, as estimativas da receita devem estar acompanhadas dedemonstrativo da sua evolução___________.
+Fonte: Lei Complementar 101/2000-Atualizada. Disponível em: https://sisweb.tesouro.gov.br/apex/f?p=2501:9::::9:P9 ID PUBLICACAO:27789.
+Acesso em: 05 set. 2024.
+ Em relação ao “demonstrativo da sua evolução”, assinale V para proposições verdadeiras e F para proposições falsas e, em seguida, assinale o conjunto de respostas quecompleta CORRETAMENTE a lacuna. 
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 14/33
+
+47) 
+48) 
+49) 
+( ) nos cinco anos anteriores a que se referirem.
+( ) nos últimos três anos, da projeção para os dois seguintes àquele a que se referirem, e da metodologia de cálculo e premissas utilizadas.
+( ) nos cinco anos seguintes àquele a que se referirem. ( ) nos três anos anteriores e nos cincos anos seguintes àquele a que se referirem. ( ) Não se pode fazer previsões de arrecadação para o futuro pois existem outros fatores intervenientes como a inflação e despesas públicas. 
+a)  V,V,V,V,Vb)  F,V,F,F,Fc)  V,V,F,F,Fd)  F,V,V,V,Fe)  F,V,F,V,F.
+www.tecconcursos.com.br/questoes/2348800
+COCP IFMT - Tec (IF MT)/IF MT/Contabilidade/2023
+AFO, Direito Financeiro e Contabilidade Pública - Estágios da Receita Pública
+De acordo com o Manual de Contabilidade Aplicada ao Setor Público (9º edição), as etapas da receita orçamentária podem ser resumidas em: previsão, lançamento,arrecadação e recolhimento. Marque a alternativa CORRETA.
+a)  As etapas da receita orçamentária seguem a ordem de ocorrência dos fenômenos econômicos, levando-se em consideração o modelo de orçamento existente nopaís e a tecnologia utilizada.b)  O art. 53 da Lei nº 4.320/1964 define a previsão como ato da repartição competente, que verifica a procedência do crédito fiscal e a pessoa que lhe é devedorae inscreve o débito desta.c)  O recolhimento corresponde à entrega dos recursos devidos ao Tesouro pelos contribuintes ou devedores, por meio dos agentes arrecadadores ou instituiçõesfinanceiras autorizadas pelo ente.d)  A arrecadação é a transferência dos valores arrecadados à conta específica do Tesouro, responsável pela administração e controle da arrecadação e programaçãofinanceira, observando-se o princípio da unidade de tesouraria ou de caixa, conforme determina o art. 56 da Lei nº 4.320, de 1964.e)  O lançamento implica planejar e estimar a arrecadação das receitas orçamentárias que constarão na proposta orçamentária.
+www.tecconcursos.com.br/questoes/1089604
+COCP IFMT - Ass Adm (IF MT)/IF MT/2019
+AFO, Direito Financeiro e Contabilidade Pública - Estágios da Receita Pública
+As etapas da Receita Orçamentária seguem a ordem de ocorrência dos fenômenos econômicos, levando-se em consideração o modelo de orçamento existente noPaís. Dessa forma, as proposições a seguir descrevem as etapas da receita orçamentária brasileira.   I - Representa o ato da repartição competente, que veriﬁca a procedência do crédito ﬁscal e a pessoa que lhe é devedora e inscreve o débito desta por meio deprocedimento administrativo que veriﬁca a ocorrência do fato gerador da obrigação correspondente e determina a matéria tributável, calcula o montante do tributodevido, identiﬁca o sujeito passivo e, sendo o caso, propõe a aplicação da penalidade cabível. II - Consiste na transferência dos valores arrecadados à conta especíﬁca do Tesouro Nacional, responsável pela administração e controle da arrecadação e pelaprogramação ﬁnanceira, observando-se o princípio da unidade de tesouraria ou de caixa. III - etapa que estima a arrecadação das receitas que constará na proposta orçamentária e deverá ser realizada em conformidade com as normas técnicas e legaiscorrelatas e, em especial, com as disposições constantes na Lei de Responsabilidade Fiscal. IV - Corresponde à entrega dos recursos devidos ao Tesouro Nacional pelos contribuintes ou devedores, por meio dos agentes arrecadadores ou instituiçõesﬁnanceiras autorizadas pelo ente. Assinale a alternativa CORRETA que representa cada etapa, respectivamente:
+a)  Lançamento; Recolhimento; Previsão; Arrecadação.b)  Arrecadação; Recolhimento; Previsão; Lançamento.c)  Previsão; Lançamento; Arrecadação; Previsão.d)  Previsão; Arrecadação; Lançamento; Recolhimento.e)  Lançamento; Arrecadação; Previsão; Recolhimento.
+www.tecconcursos.com.br/questoes/2189018
+COCP IFMT - Adm (IF MT)/IF MT/2022
+AFO, Direito Financeiro e Contabilidade Pública - Conceitos Gerais sobre Despesa Pública
+De acordo com Sinésio Stéfano Dubiela Ostroski, em sua obra Orçamento Público, de 2010, a despesa pública é a soma dos gastos (aplicações/dispêndios) realizadospelo Estado para a realização de obras, aquisição de bens, prestação de serviços públicos e remuneração de servidores; gastos estes avalizados por uma autorizaçãolegislativa. A despesa pública deve atender alguns requisitos, EXCETO:
+a)  Exonerabilidade.b)  Utilidade.c)  Legitimidade.d)  Publicidade.e)  Legalidade.
+www.tecconcursos.com.br/questoes/3737111
+COCP IFMT - Tec (IF MT)/IF MT/Contabilidade/2025
+AFO, Direito Financeiro e Contabilidade Pública - Classificação da Despesa Orçamentária
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 15/33
+
+50) 
+51) 
+52) 
+Em conformidade com o Art. 12 da Lei nº 4.320/64, as despesas se classificam em despesas correntes e despesas de capital. Nesse ensejo, pode-se afirmarCORRETAMENTE que: 
+BRASIL. Lei Nº 4.320, de 17 de Março de 1964. Disponível em: https://www.planalto.gov.br/ccivil_03/leis//4320.htm. Acesso em: 25 abr. 2025.
+a)  Classificam-se como Transferências Correntes as dotações para manutenção de serviços anteriormente criados, inclusive as destinadas a atender a obras deconservação e adaptação de bens imóveis.b)  Classificam-se como Investimentos Correntes as dotações para despesas às quais não corresponda contraprestação direta em bens ou serviços, inclusive paracontribuições e subvenções destinadas a atender à manutenção de outras entidades de direito público ou privado.c)  As despesas de capital são classificadas em Investimentos, Inversões Financeiras e Transferência de Capital.d)  As despesas de capital são classificadas em despesas de custeio e transferências correntes.e)  Classificam-se como Transferências de Capital as dotações para manutenção de serviços anteriormente criados, inclusive as destinadas a atender a obras deconservação e adaptação de bens imóveis.
+www.tecconcursos.com.br/questoes/2342980
+COCP IFMT - Ass Adm (IF MT)/IF MT/2023
+AFO, Direito Financeiro e Contabilidade Pública - Classificação da Despesa Orçamentária
+Considere a situação hipotética abaixo: Determinado campus do IFMT executou as seguintes despesas no exercício de 2021: 
+Aquisição de um veículo automotor novo no valor de R$ 150.000,00 (cento e cinquenta mil reais);Contratação de serviço contínuo com dedicação exclusiva de mão de obra de limpeza e conservação no valor de R$ 200.000,00 (duzentos mil reais);Execução de obra de edificação de um laboratório no valor de R$ 500.000,00 (quinhentos mil reais);Contratação de serviço de internet e telefonia no valor de R$ 30.000,00 (trinta mil reais);Contratação de serviço de fornecimento de energia elétrica no valor de R$ 300.000,00 (trezentos mil reais).
+ Nos termos da Lei nº 4.320, de 17 de março de 1964, julgue as assertivas abaixo: I. O campus em questão executou em 2021 o total de R$ 650.000,00 (seiscentos e cinquenta mil reais) de Despesas de Capital e o total de R$ 530.000,00(quinhentos e trinta mil reais) de Despesas Correntes. II. O campus em questão executou em 2021 o total de R$ 650.000,00 (seiscentos e cinquenta mil reais) de Despesas de Investimentos e o total de R$ 530.000,00(quinhentos e trinta mil reais) de Despesas de Custeio. III. O campus em questão executou em 2021 o total de R$ 650.000,00 (seiscentos e cinquenta mil reais) de Despesas Correntes e o total de R$ 530.000,00(quinhentos e trinta mil reais) de Despesas de Capital. IV. O campus em questão executou em 2021 o total de R$ 650.000,00 (seiscentos e cinquenta mil reais) de Despesas de Custeio e o total de R$ 530.000,00(quinhentos e trinta mil reais) de Despesas de Investimentos. Está(ão) CORRETA(S) apena(s) a(s) assertiva(s):
+a) I e II.b) II e III.c) III e IV.d) I e IV.e)  Todas estão incorretas.
+www.tecconcursos.com.br/questoes/2367821
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2023
+AFO, Direito Financeiro e Contabilidade Pública - Classificação da Despesa Orçamentária
+Considere a situação hipotética abaixo: 
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 16/33
+
+53) 
+Nos termos da Lei n. 4.320, de 17 de março de 1964, e do Decreto 93.872, de 23 de dezembro de 1986, analise as assertivas abaixo: I. Foram empenhados em 2021: R$ 6.650.000,00 (seis milhões, seiscentos e cinquenta mil reais) como despesas de capital e R$ 150.000,00 (cento e cinquenta milreais) como despesas de custeio. II. Com a virada do exercício financeiro para 2022, foram inscritos em restos a pagar R$ 3.250.000,00 (três milhões, duzentos e cinquenta mil reais). III. Com a virada do exercício financeiro para 2022, foram inscritos em restos a pagar R$ 3.900.000,00 (três milhões e novecentos mil reais), sendo R$500.000,00 (quinhentos mil reais) em restos a pagar processados e R$ 3.400.000,00 (três milhões e quatrocentos mil reais) em restos a pagar não processados. IV. Com a virada do exercício financeiro para 2022, foram inscritos em restos a pagar R$ 3.900.000,00 (três milhões e novecentos mil reais), sendo R$ 500.000,00(quinhentos mil reais) em restos a pagar não processados e R$ 3.400.000,00 (três milhões e quatrocentos mil reais) em restos a pagar processados. V. Do total de recursos recebidos pelo IFMT em 2021, R$ 3.250.000,00 (três milhões, duzentos e cinquenta mil reais) foram pagos no corrente exercício de 2021,sendo que, dos pagamentos realizados, R$ 3.150.000,00 (três milhões, cento e cinquenta mil reais) são despesas de investimento e R$ 100.000,00 (cem mil reais)são despesas correntes. Está(ão) CORRETA(S) a(s) assertiva(s):
+a)  I e II.b)  II, III e V.c)  I, II e IV.d)  III e V.e)  Apenas IV.
+www.tecconcursos.com.br/questoes/2190234
+COCP IFMT - Tec (IF MT)/IF MT/Contabilidade/2022
+AFO, Direito Financeiro e Contabilidade Pública - Classificação da Despesa Orçamentária
+De acordo com os dispositivos legais da Lei 4.320/64, as despesas classificam-se em despesas correntes e despesas de capital. Fazem parte das despesas correntesas despesas de custeio e as transferências correntes, ao passo que integram as despesas de capital os investimentos, as inversões financeiras e as transferências decapital. Nesse contexto, analise as assertivas a seguir e marque a alternativa CORRETA. I - São transferências de capital as dotações para investimentos ou inversões financeiras que outras pessoas de direito público ou privado devam realizar,independentemente de contraprestação direta em bens ou serviços, constituindo essas transferências auxílios ou contribuições, segundo derivem diretamente daLei de Orçamento ou de lei especialmente anterior, bem como as dotações para amortização da dívida pública. II - Classificam-se como transferências correntes as dotações para o planejamento e a execução de obras, inclusive as destinadas à aquisição de imóveisconsiderados necessários à realização destas últimas, bem como para os programas especiais de trabalho, aquisição de instalações, equipamentos e materialpermanente e constituição ou aumento do capital de empresas que não sejam de caráter comercial ou financeiro. III - Classificam-se como investimentos as dotações para despesas as quais não corresponda contraprestação direta em bens ou serviços, inclusive paracontribuições e subvenções destinadas a atender à manutenção de outras entidades de direito público ou privado. IV - Classificam-se como despesas de custeio as dotações para manutenção de serviços anteriormente criados, inclusive as destinadas a atender a obras deconservação e adaptação de bens imóveis.
+a)  As assertivas I e II estão corretas.b)  A assertiva I está correta.c)  As assertivas I e IV estão corretas.d)  As assertivas II e III estão corretas.e)  As assertivas III e IV estão corretas.
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 17/33
+
+54) 
+55) 
+56) 
+57) 
+www.tecconcursos.com.br/questoes/1089804
+COCP IFMT - Cont (IF MT)/IF MT/2019
+AFO, Direito Financeiro e Contabilidade Pública - Classificação da Despesa Orçamentária
+Segundo o art. 12 da Lei 4.320/64, as despesas serão classiﬁcadas em categorias econômicas. Marque a alternativa CORRETA:
+a)  Despesas Correntes: despesas de custeio e transferências correntes; e Despesas de Capital: investimentos, inversões ﬁnanceiras, transferências de capital.b)  Despesas de Capital: despesas de custeio e transferências correntes; e Despesas Correntes: investimentos, inversões ﬁnanceiras, transferências de capital.c)  Classiﬁcam-se como transferências correntes as dotações para manutenção de serviços anteriormente criados, inclusive as destinadas a atender a obras deconservação e adaptação de bens imóveis.d)  Consideram-se despesas de custeio, para os efeitos desta lei, as transferências destinadas a cobrir despesas de custeio das entidades beneﬁciadas.e)  As subvenções econômicas são as que se destinam a instituições públicas ou privadas de caráter assistencial ou cultural, sem ﬁnalidade lucrativa. 
+www.tecconcursos.com.br/questoes/3174769
+COCP IFMT - Ass Adm (IF MT)/IF MT/2024
+AFO, Direito Financeiro e Contabilidade Pública - Estágios da Despesa Pública
+Nos termos da Lei nº 4.320, de 17 de março de 1964, julgue as assertivas a seguir: I. O empenho de despesa é o ato emanado de autoridade competente que cria para o Estado obrigação de pagamento pendente ou não de implemento decondição. Il. O empenho da despesa poderá exceder o limite dos créditos concedidos. III. É permitida a realização de despesa sem prévio empenho. IV. Para cada empenho, será extraído um documento denominado "nota de empenho", que indicará o nome do credor, a representação e a importância dadespesa, bem como a dedução desta do saldo da dotação própria. Está(ão) CORRETA(S) apena(s) a(s) assertiva(s):
+a)  l e ll.b)  Il e III.c)  Il e IV.d)  l e lV.e)  Todas estão incorretas.
+www.tecconcursos.com.br/questoes/3174770
+COCP IFMT - Ass Adm (IF MT)/IF MT/2024
+AFO, Direito Financeiro e Contabilidade Pública - Estágios da Despesa Pública
+Nos termos da Lei nº 4.320, de 17 de março de 1964, identifique a alternativa INCORRETA:
+a)  A liquidação da despesa consiste na verificação do direito adquirido pelo credor tendo por base os títulos e documentos comprobatórios do respectivo crédito.b)  A ordem de pagamento é o despacho exarado por autoridade competente, determinando que a despesa seja paga.c)  O pagamento da despesa só será efetuado quando ordenado após sua regular liquidação.d)  O pagamento da despesa será efetuado por tesouraria ou pagadoria regularmente instituídos por estabelecimentos bancários credenciados e, em casosexcepcionais, por meio de adiantamento.e)  O regime de adiantamento é aplicável aos casos de despesas expressamente definidos em lei e consiste na entrega de numerário a servidor, sendodesnecessário o empenho na dotação própria para o fim de realizar despesas que não possam subordinar-se ao processo normal de aplicação.
+www.tecconcursos.com.br/questoes/2844064
+COCP IFMT - Adm (IF MT)/IF MT/2023
+AFO, Direito Financeiro e Contabilidade Pública - Estágios da Despesa Pública
+Sobre orçamento público, relacione os atos e documentos descritos na 1ª coluna com suas definições previstas na Lei 4.320, de 17 de março de 1964, descritas na2ª coluna: I - Liquidação da despesa.II - Empenho.III - Ordem de pagamento.IV - Nota de empenho. (   ) Ato emanado de autoridade competente que cria para o Estado obrigação de pagamento pendente ou não de implemento de condição. (   ) Consiste na verificação do direito adquirido pelo credor tendo por base os títulos e documentos comprobatórios do respectivo crédito. (   ) Despacho registrado por autoridade competente, determinando que a despesa seja paga. (   ) Documento que indica o nome do credor, a representação e a importância da despesa bem como a dedução desta do saldo da dotação própria. Marque a alternativa que apresenta a sequência correta:
+a)  II, I, IV e III.b)  II, I, III e IV.c)  I, II, III e IV.d)  I, III, II e IV.e)  I, II, IV e III.
+www.tecconcursos.com.br/questoes/2189956
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 18/33
+
+58) 
+59) 
+60) 
+61) 
+62) 
+COCP IFMT - Ass Adm (IF MT)/IF MT/2022
+AFO, Direito Financeiro e Contabilidade Pública - Estágios da Despesa Pública
+Conforme previsto na Lei 4.320/64 e na 9ª edição do Manual de Contabilidade Aplicada ao Setor Público, a execução da despesa orçamentária se dá em trêsestágios. Identifique a alternativa que enumera corretamente esses três estágios:
+a)  Empenho, pagamento e prestação de contas.b)  Repasse, sub-repasse e destaque.c)  Planejamento, execução e prestação de contas.d)  Planejamento, licitação e prestação de contas.e)  Empenho, liquidação e pagamento.
+www.tecconcursos.com.br/questoes/3736530
+COCP IFMT - Ass Adm (IF MT)/IF MT/2025
+AFO, Direito Financeiro e Contabilidade Pública - Geração de Despesa e Despesa Obrigatória de Caráter Continuado (arts. 15 a 17 da LRF)
+Sobre a geração de despesas de acordo com o disposto na Lei Complementar nº 101/2000, julgue as sentenças a seguir como VERDADEIRAS (V) ou FALSAS (F): ( ) Acriação de despesas deve ser acompanhada da estimativa do impacto orçamentário-financeiro do exercício e dos dois subsequentes. ( ) O ordenador de despesas deve declarar que o aumento de gastos tem adequação orçamentária e financeira com a lei orçamentária anual e compatibilidadecom o plano plurianual e com a lei de diretrizes orçamentárias. ( ) A estimativa do impacto financeiro deve ser acompanhada das premissas e metodologia de cálculo utilizadas. ( ) Para a emissão de empenho e execução da licitação, não é obrigatória a declaração do ordenador de que o aumento de despesas tem adequação orçamentáriae financeira com a lei orçamentária anual e compatibilidade com o plano plurianual e com a lei de diretrizes orçamentárias.
+a)  V, F, F, V.b)  V, F, V, V.c)  F, V, V, F.d)  V, V, V, V.e)  V, V, V, F.
+www.tecconcursos.com.br/questoes/3177828
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2024
+AFO, Direito Financeiro e Contabilidade Pública - Geração de Despesa e Despesa Obrigatória de Caráter Continuado (arts. 15 a 17 da LRF)
+“A regra básica da LRF (art. 15), para todo e qualquer aumento de despesa, pode ser assim traduzida: toda e qualquer despesa que não esteja acompanhada deestimativa do impacto orçamentário-financeiro nos três primeiros exercícios de sua vigência, da sua adequação orçamentária e financeira com a LOA, o PPA e a LDO e, nocaso de despesa obrigatória de caráter continuado, de suas medidas compensatórias, é considerada __________".
+Fonte: Lei Complementar 101/2000-Atualizada. Disponível em: https://sisweb.tesouro.gov.br/apex/f?pID= 2P5U0BL1I:C9A:CA:O:::2977:8P99. Acesso em: 05 set. 2024.
+ Assinale a alternativa que completa CORRETAMENTE a lacuna:
+a)  não autorizada, irregular e lesiva ao patrimônio público.b)  autorizada, irregular e lesiva ao patrimônio público.c)  autorizada, regular e lesiva ao patrimônio público.d)  autorizada, irregular e apropriada ao patrimônio público.e)  não autorizada, regular e apropriada ao patrimônio público.
+www.tecconcursos.com.br/questoes/2189012
+COCP IFMT - Adm (IF MT)/IF MT/2022
+AFO, Direito Financeiro e Contabilidade Pública - Despesas com Pessoal e Seguridade Social (arts. 18 a 24 da LRF)
+A Lei de Responsabilidade Fiscal (Lei Complementar 101, de 4 de maio de 2000) estabelece normas de finanças públicas voltadas para a responsabilidade na gestãofiscal e dá outras providências. O art. 19 da referida Lei menciona que "[...] a despesa total com pessoal, em cada período de apuração e em cada ente da Federação, nãopoderá exceder os percentuais da receita corrente líquida". Para a União, esse percentual máximo é de:
+a)  25%.b)  50%.c)  75%.d)  100%.e)  125%.
+www.tecconcursos.com.br/questoes/1089813
+COCP IFMT - Cont (IF MT)/IF MT/2019
+AFO, Direito Financeiro e Contabilidade Pública - Definições, Limites e Recondução da Dívida (arts. 29 a 31 da LRF)
+Quanto à dívida pública, a Lei de Responsabilidade Fiscal, em seu art. 29, incisos I a V, estabelece algumas deﬁnições. Marque alternativa CORRETA:
+a)  Dívida pública consolidada ou fundada: montante total, apurado sem duplicidade, das obrigações ﬁnanceiras do ente da Federação, assumidas em virtude deleis, contratos, convênios ou tratados e da realização de operações de crédito, para amortização em prazo inferior a 12 meses.b)  Dívida pública mobiliária: dívida pública representada por títulos emitidos pela União, excluídos os do Banco Central do Brasil, Estados e Municípios.c)  Concessão de garantia: compromisso ﬁnanceiro assumido em razão de mútuo, abertura de crédito, emissão e aceite de título, aquisição ﬁnanciada de bens,recebimento antecipado de valores provenientes da venda a termo de bens e serviços, arrendamento mercantil e outras operações assemelhadas, inclusive com ouso de derivativos ﬁnanceiros.d)  Operação de crédito: compromisso de adimplência de obrigação ﬁnanceira ou contratual assumida por ente da Federação ou entidade a ele vinculada.e)  Reﬁnanciamento da dívida mobiliária: emissão de títulos para pagamento do principal acrescido da atualização monetária.  
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 19/33
+
+63) 
+64) 
+65) 
+66) 
+www.tecconcursos.com.br/questoes/3737153
+COCP IFMT - Tec (IF MT)/IF MT/Contabilidade/2025
+AFO, Direito Financeiro e Contabilidade Pública - Escrituração e Consolidação (arts. 50 e 51 da LRF)
+Conforme disposto no Art. 50 da Lei Complementar n° 101/2000 e alterações da Lei de Responsabilidade Fiscal, a escrituração das contas públicas obedece àsnormas de contabilidade pública e também deve observar os seguintes requisitos. Julgue VERDADEIRO (V) ou FALSO (F) cada um deles. ( ) A disponibilidade de caixa constará de registro próprio, de modo que os recursos vinculados a órgão, fundo ou despesa obrigatória fiquem identificados eescriturados de forma individualizada. ( ) As amortizações de empréstimos, as inscrições em restos a pagar e as demais formas de financiamento ou assunção de compromissos junto a terceiros deverãoser escrituradas de modo a evidenciar o montante e a variação da dívida pública no período, detalhando, pelo menos, a natureza e o tipo de credor. ( ) A despesa e a assunção de compromisso serão registradas segundo o regime de competência, apurando-se, em caráter complementar, o resultado dos fluxosfinanceiros pelo regime de caixa. ( ) As receitas e despesas previdenciárias serão apresentadas em demonstrativos financeiros e orçamentários específicos. 
+BRASIL. Lei Complementar N° 101, de 4 de Maio de 2000. Disponível em: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp101.htm. Acesso em: 25 abr. 2025.
+ Marque a alternativa com a sequência CORRETA:
+a)  F, V, F, V.b)  V, V, V, V.c)  F, V, V, F.d)  V, F, V, V.e)  V, V, F, F.
+www.tecconcursos.com.br/questoes/1089823
+COCP IFMT - Cont (IF MT)/IF MT/2019
+AFO, Direito Financeiro e Contabilidade Pública - Controle da Gestão Fiscal (arts. 56 a 59 da LRF)
+A Lei de Responsabilidade Fiscal, sobre a Prestação de Contas, aponta que:
+a)  Os Tribunais de Contas emitirão parecer prévio conclusivo sobre as contas no prazo de 90 dias do recebimento, se outro não estiver estabelecido nasconstituições estaduais ou nas leis orgânicas municipais.b)  A prestação de contas evidenciará o desempenho da arrecadação em relação à previsão, destacando as providências adotadas no âmbito da ﬁscalização dasreceitas e combate à sonegação, as ações de recuperação de créditos nas instâncias administrativa e judicial, bem como as demais medidas para incremento dasreceitas tributárias e de contribuições.c)  Os Tribunais de Contas podem entrar em recesso mesmo se existirem contas de Poder ou órgão pendentes de parecer prévio.d)  A prestação de contas evidenciará o desempenho da arrecadação em relação à previsão, destacando as providências adotadas no âmbito da ﬁscalização dasreceitas e combate à sonegação, as ações de recuperação de créditos nas instâncias administrativa e judicial, excetuando as demais medidas para incremento dasreceitas tributárias e de contribuições.e)  Os Tribunais de Contas emitirão parecer prévio conclusivo sobre as contas no prazo de 120 dias do recebimento, se outro não estiver estabelecido nasconstituições estaduais ou nas leis orgânicas municipais.
+www.tecconcursos.com.br/questoes/1089816
+COCP IFMT - Cont (IF MT)/IF MT/2019
+AFO, Direito Financeiro e Contabilidade Pública - Temas Mesclados sobre a LRF
+Sobre transparência, controle e ﬁscalização na gestão ﬁscal, de acordo com o que preconiza a Lei de Responsabilidade Fiscal, é CORRETO aﬁrmar:
+a)  São instrumentos de transparência da gestão ﬁscal, aos quais será dada ampla divulgação, inclusive em meios eletrônicos de acesso público: os planos,orçamentos e leis de diretrizes orçamentárias; as prestações de contas e o respectivo parecer prévio; o Relatório Resumido da Execução Orçamentária e o Relatóriode Gestão Fiscal; e as versões simpliﬁcadas desses documentos.b)  As contas apresentadas pelo chefe do Poder Legislativo ﬁcarão disponíveis, durante todo o exercício, no respectivo Poder Executivo e no órgão técnicoresponsável pela sua elaboração, para consulta e apreciação pelos cidadãos e instituições da sociedade.c)  Além de obedecer às demais normas de contabilidade pública, a escrituração das contas públicas observará, entre outras, a seguinte: a demonstração dasmutações do patrimônio líquido dará destaque à origem e ao destino dos recursos provenientes da alienação de ativos.d)  O Poder Executivo da União promoverá, até o dia 30 de julho, a consolidação, nacional e por esfera de governo, das contas dos entes da Federação relativas aoexercício anterior e a sua divulgação, inclusive por meio eletrônico de acesso público.e)  Os Estados e os Municípios encaminharão suas contas ao Poder Executivo da União nos seguintes prazos: Municípios, com cópia para o Poder Executivo dorespectivo Estado, até 31 de maio; Estados, até 30 de junho.  
+www.tecconcursos.com.br/questoes/1089820
+COCP IFMT - Cont (IF MT)/IF MT/2019
+AFO, Direito Financeiro e Contabilidade Pública - Temas Mesclados sobre a LRF
+Sobre transparência, controle e ﬁscalização na gestão ﬁscal, de acordo com o que preconiza a Lei de Responsabilidade Fiscal, mais especiﬁcamente no que tange aosrelatórios Resumido da Execução Orçamentária (RREO) e de Gestão Fiscal (RGF), pode-se aﬁrmar corretamente que:
+a)  O RREO conterá a indicação das medidas corretivas adotadas ou a adotar, se ultrapassado qualquer dos limites.b)  Ao ﬁnal de cada semestre, será emitido, pelos titulares dos Poderes e órgãos referidos no art. 20 da LRF, Relatório de Gestão Fiscal.c)  No RREO, os valores referentes ao reﬁnanciamento da dívida mobiliária constarão destacadamente nas receitas de operações de crédito e nas despesas comamortização da dívida.d)  Acompanharão o RGF, entre outros, os resultados nominal e primário.e)  O RREO será assinado pelo chefe do Poder Executivo, pelo chefe do Ministério Público, bem como pelas autoridades responsáveis pela administração ﬁnanceira epelo controle interno
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 20/33
+
+67) 
+68) 
+www.tecconcursos.com.br/questoes/2342977
+COCP IFMT - Ass Adm (IF MT)/IF MT/2023
+Direito Administrativo (Doutrina e Leis Federais) - Das Definições (art. 6º da Lei nº 14.133/2021)
+Na coluna da esquerda, estão elencados termos relacionados às licitações e contratos administrativos e, na da direita, as suas definições conforme a Lei nº 14.133,de 1º de abril de 2021. Numere a coluna da direita de acordo com a da esquerda. 
+1. Estudo técnico preliminar.
+2. Projeto básico.
+3. Projeto executivo.
+4. Anteprojeto.
+(  ) Conjunto de elementos necessários e
+suficientes, com nível de precisão
+adequado para definir e dimensionar a
+obra ou o serviço, ou o complexo de obras
+ou de serviços objeto da licitação,
+elaborado com base nas indicações dos
+estudos técnicos preliminares, que
+assegure a viabilidade técnica e o
+adequado tratamento do impacto
+ambiental do empreendimento e que
+possibilite a avaliação do custo da obra e
+a definição dos métodos e do prazo de
+execução.
+(  ) Peça técnica com todos os subsídios
+necessários à elaboração do projeto
+básico.
+(  ) Documento constitutivo da primeira
+etapa do planejamento de uma
+contratação que caracteriza o interesse
+público envolvido e a sua melhor solução
+e dá base ao anteprojeto, ao termo de
+referência ou ao projeto básico a serem
+elaborados caso se conclua pela
+viabilidade da contratação.
+(  ) Conjunto de elementos necessários e
+suficientes à execução completa da obra,
+com o detalhamento das soluções
+previstas no projeto básico, a identificação
+de serviços, de materiais e de
+equipamentos a serem incorporados à
+obra, bem como suas especificações
+técnicas, de acordo com as normas
+técnicas pertinentes.
+Assinale a sequência CORRETA.
+a)  1,2,3,4.b) 4,3,2,1.c) 2,1,4,3.d) 2,4,1,3.e) 3,1,4,2.
+www.tecconcursos.com.br/questoes/2342978
+COCP IFMT - Ass Adm (IF MT)/IF MT/2023
+Direito Administrativo (Doutrina e Leis Federais) - Das Definições (art. 6º da Lei nº 14.133/2021)
+Leia atentamente a definição abaixo: “Forma de manutenção do equilíbrio econômico-financeiro de contrato utilizada para serviços contínuos com regime de dedicação exclusiva de mão de obra oupredominância de mão de obra, por meio da análise da variação dos custos contratuais, devendo estar prevista no edital com data vinculada à apresentação daspropostas, para os custos decorrentes do mercado, e com data vinculada ao acordo, à convenção coletiva ou ao dissídio coletivo ao qual o orçamento esteja vinculado,para os custos decorrentes da mão de obra”. Nos termos da Lei nº 14.133, de 1º de abril de 2021, identifique qual das alternativas abaixo contém o instituto a que se refere a definição acima apresentada:
+a)  Reajustamento em sentido estrito.b)  Revisão.c)  Repactuação.d)  Atualização.e)  Reconvenção.
+www.tecconcursos.com.br/questoes/2367826
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2023
+Direito Administrativo (Doutrina e Leis Federais) - Modalidades de Licitação (arts. 28 a 32 da Lei nº 14.133/2021)
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 21/33
+
+69) 
+70) 
+71) 
+72) 
+73) 
+A Lei nº 14.133/2021 dispõe sobre a nova Lei de Licitações e Contratos Administrativos. De acordo com a referida lei, assinale a alternativa que completaCORRETAMENTE a afirmação a seguir: O pregão é uma modalidade de licitação...
+a)  para alienação de bens imóveis ou de bens móveis inservíveis ou legalmente apreendidos a quem oferecer o maior lance.b)  para contratação de bens e serviços especiais e de obras e serviços comuns e especiais de engenharia, cujo critério de julgamento poderá ser menor preço,melhor técnica ou conteúdo artístico, técnica e preço, maior retorno econômico ou maior desconto.c)  obrigatória para aquisição de bens e serviços comuns, cujo critério de julgamento poderá ser o de menor preço ou o de maior desconto.d)  para escolha de trabalho técnico, científico ou artístico, cujo critério de julgamento será o de melhor técnica ou conteúdo artístico, e para concessão de prêmioou remuneração ao vencedor.e)  para contratação de obras, serviços e compras em que a Administração Pública realiza diálogos com licitantes previamente selecionados mediante critériosobjetivos, com o intuito de desenvolver uma ou mais alternativas capazes de atender às suas necessidades, devendo os licitantes apresentar proposta final após oencerramento dos diálogos.
+www.tecconcursos.com.br/questoes/2188999
+COCP IFMT - Adm (IF MT)/IF MT/2022
+Direito Administrativo (Doutrina e Leis Federais) - Modalidades de Licitação (arts. 28 a 32 da Lei nº 14.133/2021)
+Marque a alternativa que NÃO representa modalidade de licitação prevista na Nova Lei de Licitações e Contratos, Lei 14.133/21:
+a)  Pregão.b)  Concorrência.c)  Concurso.d)  Tomada de preço.e)  Diálogo competitivo.
+www.tecconcursos.com.br/questoes/3174767
+COCP IFMT - Ass Adm (IF MT)/IF MT/2024
+Direito Administrativo (Doutrina e Leis Federais) - Disposições Setoriais, Compras, Serviços (arts. 40 a 52 da Lei nº 14.133/2021)
+Leia atentamente a definição abaixo: “Regime de contratação de obras e serviços de engenharia em que o contratado é responsável por elaborar e desenvolver o projeto executivo, executar obras e serviçosde engenharia, fornecer bens ou prestar serviços especiais e realizar montagem, teste, pré-operação e as demais operações necessárias e suficientes para a entrega finaldo objeto”. Nos termos da Lei nº 14.133, de 1º de abril de 2021, identifique qual das alternativas abaixo contém o regime de contratação a que se refere a definiçãoacima apresentada:
+a)  Empreitada por preço global.b)  Empreitada integral.c)  Contratação por tarefa.d)  Contratação integrada.e)  Contratação semi-integrada.
+www.tecconcursos.com.br/questoes/3176589
+COCP IFMT - Ass Adm (IF MT)/IF MT/2024
+Direito Administrativo (Doutrina e Leis Federais) - Fases da Licitação - Julgamento, Habilitação e Encerramento (arts. 55 a 71 da Lei nº14.133/2021)
+De acordo com a nova lei de licitações (Lei nº 14.133, de 2021), o processo de licitação, em regra, divide-se em 7 (sete) fases. Sobre as fases do processo licitatório,marque a alternativa CORRETA:
+a)  O processo de licitação é composto pelas seguintes fases: |) preparatória; Il) divulgação do edital de licitação; III) apresentação de propostas e lances, quandofor o caso; IV) habilitação; e a V) homologação.b)  Desde que motivado e expressamente previsto no edital, a fase de habilitação não poderá anteceder as fases de apresentação da proposta e de julgamento.c)  Em momento algum o órgão poderá realizar a análise, avaliação e homologação de amostras.d)  O órgão licitante poderá exigir certificação por organização independente acreditada pelo Instituto Nacional de Metrologia, Qualidade e Tecnologia (INMETRO)como condição para aceitação: 1. estudos, anteprojetos, projetos básicos e projetos executivos; 2. conclusão de fases ou de objetos de contratos; 3. material ecorpo técnico apresentados por empresa para fins de habilitação.e)  Na fase de apresentação de propostas e lances, a sessão, preferencialmente, será realizada de forma presencial mediante gravação em áudio e vídeo. Apóshomologação do certame, essa gravação será armazenada na “nuvem” e, após dez anos, poderá ser deletada.
+www.tecconcursos.com.br/questoes/3736528
+COCP IFMT - Ass Adm (IF MT)/IF MT/2025
+Direito Administrativo (Doutrina e Leis Federais) - Contratação Direta, Inexigibilidade e Dispensa (arts. 72 a 75 da Lei nº 14.133/2021)
+No Planejamento de Contratações Anual do ano de 2025, foi planejado pelo campus a aquisição de vários materiais para manutenção predial, tais como torneiras,tomadas, fios, dentre outros. Na construção do Termo de Referência, a partir da pesquisa de preços, foi previsto o valor de R$ 47.000,00 para a compra de todos osmateriais necessários para manutenção predial do campus. Ao considerar a base legal para a realização dessa aquisição, conforme disposto na Lei nº 14.133/2021, ocampus justificará que a contratação ocorrerá com fundamento no:
+a)  Inciso I do art. 75 da Lei nº 14.133/2021: Dispensa de Licitação.b)  Artigo 31 da Lei nº 14.133/2021: Leilão.c)  Artigo 32 da Lei nº 14.133/2021: Diálogo Competitivo.d)  Inciso II do art. 74 da Lei nº 14.133/2021: Inexigibilidade.e)  Inciso II do art. 75 da Lei nº 14.133/2021: Dispensa de Licitação.
+www.tecconcursos.com.br/questoes/3176619
+COCP IFMT - Ass Adm (IF MT)/IF MT/2024
+Direito Administrativo (Doutrina e Leis Federais) - Instrumentos Auxiliares (arts. 78 a 88 da Lei nº 14.133/2021)
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 22/33
+
+74) 
+75) 
+76) 
+77) 
+De acordo com Franco Neto (2023), a democratização das compras públicas é reflexo da democracia do funcionamento administrativo, em que a transparência e apadronização são instrumentos potencializadores da participação do cidadão nas compras públicas, do controle social e institucional.
+(Fonte: Franco Neto, Eduardo Grossi. Centralização de compras públicas no Brasil. Thoth, 2023)
+ Considerando a lei de licitações (Lei nº 14.133, de 2021), assinale a alternativa que melhor representa a padronização nas compras públicas:
+a)  Planos de contratação anuais.b)  Catálogos eletrônicos de compras.c)  Exigência de amostra.d)  Diálogo competitivo.e)  Dação em pagamento.
+www.tecconcursos.com.br/questoes/2367833
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2023
+Direito Administrativo (Doutrina e Leis Federais) - Conceitos e Características dos Contratos Administrativos. Formalização dos Contratos(arts. 89 a 95 da Lei nº 14.133/2021)
+No que se refere aos contratos administrativos e de acordo com a Lei nº 14.133/2021, julgue as sentenças a seguir como Verdadeiras (V) ou Falsas (F): (   ) Regular-se-ão pelas suas cláusulas e pelos preceitos de direito público. (   ) Não serão aplicados, supletivamente, os princípios da teoria geral dos contratos e as disposições de direito privado. (  ) Deverão mencionar os nomes das partes e os de seus representantes, a finalidade, o ato que autorizou sua lavratura, o número do processo da licitação ou dacontratação direta e a sujeição dos contratantes às normas da Lei n. 14.133/2021 e às cláusulas contratuais. (  ) Não é obrigatório estabelecer com clareza e precisão as condições para sua execução, nem as responsabilidades das partes, em conformidade com os termosdo edital de licitação e os da proposta vencedora, ou com os termos do ato que autorizou a contratação direta e os da respectiva proposta.
+a)  V, V, F, V.b)  V, F, V, F.c)  V, V, V, F.d)  V, F, F, V.e)  F, V, V, V.
+www.tecconcursos.com.br/questoes/3177888
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2024
+Direito Administrativo (Doutrina e Leis Federais) - Garantias (arts. 96 a 102 da Lei nº 14.133/2021)
+Leia atentamente a definição abaixo: “Tem por objetivo garantir o fiel cumprimento das obrigações assumidas pelo contratado perante a Administração, inclusive as multas, os prejuízos e as indenizaçõesdecorrentes de inadimplemento”. Nos termos da Lei nº 14.133/21, identifique qual das alternativas abaixo contém o instituto a que se refere a definição acima apresentada:
+a)  Carta fiança, emitida por instituições comerciais.b)  Matriz de riscos.c)  Certificado de avalista.d)  Termo de compromisso.e)  Seguro-garantia.
+www.tecconcursos.com.br/questoes/3177884
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2024
+Direito Administrativo (Doutrina e Leis Federais) - Hipóteses de Extinção dos Contratos (arts. 137 a 139 da Lei nº 14.133/2021)
+A Lei nº 14.133/21 elenca as hipóteses em que o contratado terá direito à extinção do contrato. À luz da legislação e considerando a temática exposta, julgue asassertivas abaixo: l. Suspensão de execução do contrato, por ordem verbal da Administração, por prazo superior a 60 (sessenta) dias. Il. Repetidas suspensões que totalizem 90 (noventa) dias úteis, independentemente do pagamento obrigatório de indenização pelas sucessivas e contratualmenteimprevistas desmobilizações e mobilizações e outras previstas. III. Atraso superior a 30 (trinta) dias, contado da emissão da nota fiscal, dos pagamentos ou de parcelas de pagamentos devidos pela Administração por despesasde obras, serviços ou fornecimentos. IV. Não liberação pela Administração, nos prazos contratuais, de área, local ou objeto, para execução de obra, serviço ou fornecimento, e de fontes de materiaisnaturais especificadas no projeto, inclusive devido a atraso ou descumprimento das obrigações atribuídas pelo contrato à Administração relacionadas adesapropriação, a desocupação de áreas públicas ou a licenciamento ambiental. Constituem hipóteses em que o contratado terá direito à extinção do contrato apenas as assertivas:
+a)  l e ll.b)  Il e III.c)  lll e IV.d)  Il e IV.e)  Todas estão corretas.
+www.tecconcursos.com.br/questoes/3736529
+COCP IFMT - Ass Adm (IF MT)/IF MT/2025
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 23/33
+
+78) 
+79) 
+80) 
+81) 
+Direito Administrativo (Doutrina e Leis Federais) - Infrações e Sanções Administrativas (arts. 155 a 163 da Lei nº 14.133/2021)
+Durante a execução da prestação de um serviço contratado pelo campus, a equipe de fiscalização deparou-se com várias situações de descumprimento, por parte dofornecedor, das cláusulas previstas no contrato e no Edital de Licitação. O gestor do contrato, cientificado pela fiscalização, deve analisar o que dispõe a legislação paraapuração de possíveis infrações cometidas pelo fornecedor. Sobre a responsabilização administrativa do fornecedor, de acordo com a Lei nº 14.133/2021, julgue asalternativas como VERDADEIRAS (V) ou FALSAS (F): ( ) Provocar atrasos na execução do contrato sem justificativa é considerado infração. ( ) Não comete infração o licitante que der causa à inexecução parcial do contrato independente da gravidade do dano. ( ) Deve ser aplicada sanção quando o contratado der causa à inexecução total do contrato. ( ) Não haverá responsabilidade administrativa do licitante quando forem apresentadas declarações fidedignas durante a execução do contrato. 
+a)  F, F, V, F.b)  V, F, V, V.c)  V, V, V, V.d)  F, F, V, V.e)  V, V, V, F.
+www.tecconcursos.com.br/questoes/3177882
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2024
+Direito Administrativo (Doutrina e Leis Federais) - Infrações e Sanções Administrativas (arts. 155 a 163 da Lei nº 14.133/2021)
+Leia atentamente a situação hipotética abaixo e responda à questão. “Fulano é servidor efetivo do IFMT e foi designado para atuar como fiscal do contrato da obra de reforma da sede de uma das unidades da Instituição, contratada sob oregime de empreitada por preço unitário. Durante o transcurso do contrato, a empresa contratada solicitou a medição do serviço de execução do piso granilite.Na sua solicitação, a contratada afirmou ter executado 200 m? (duzentos metros quadrados) de piso granilite. O servidor Fulano, confiando na medição apresentada pelomestre de obras da Contratada, não foi ao local da obra para certificar-se de que o serviço foi efetivamente executado conforme quantitativo medido pela Contratada,limitando-se a aprovar a medição em sua totalidade. Inclusive, como reconhecimento pela sua agilidade na aprovação da medição, que ocorreu dentro dos prazosestabelecidos no Contrato, a Contratada presenteou o servidor Fulano com uma garrafa devinho de boa qualidade. O setor financeiro do IFMT, por sua vez, fundamentadono parecer do fiscal do Contrato, realizou a liquidação e o pagamento do valor total da medição. Ocorre que, durante a realização de uma auditoria de rotina, o Órgão de
+Controle Interno identificou que foram executados efetivamente pela Contratada apenas 100 m2 (cem metros quadrados) de piso granilite”. Considerando a situação hipotética exposta, nos termos da Lei nº 14.133/21, identifique a alternativa CORRETA:
+a)  Na situação hipotética exposta, está configurada a ocorrência de sobrepreço, visto que houve a medição de quantidades superiores às efetivamente executadas.b)  Na situação hipotética exposta, não está configurado nenhum dano ao patrimônio da Administração Pública.c)  Na situação hipotética exposta, está configurada a ocorrência de superfaturamento, visto que houve a medição de quantidades superiores às efetivamenteexecutadas.d)  Na situação hipotética exposta, por se tratar de obra executada sob o regime de empreitada por preço unitário, no qual a contratação da execução da obra oudo serviço é por preço certo e total, não está configurada a ocorrência de superfaturamento.e)  Na situação hipotética exposta, o servidor Fulano agiu corretamente, visto não ser dever do fiscal do contrato verificar a veracidade das informações constantesna medição apresentada pela Contratada.
+www.tecconcursos.com.br/questoes/2342976
+COCP IFMT - Ass Adm (IF MT)/IF MT/2023
+Direito Administrativo (Doutrina e Leis Federais) - Disposições Transitórias e Finais (arts. 181 a 194 da Lei nº 14.133/2021)
+Em 1º de abril de 2021, foi promulgada a Lei nº 14.133, também conhecida como a nova Lei de Licitações e Contratos Administrativos. A luz da Lei em questão,julgue as assertivas abaixo: I. A Lei nº 14.133, de 1º de abril de 2021, revogou, de imediato, na data de sua publicação, a totalidade da Lei nº 8.666, de 21 de junho de 1993. II. A Lei nº 8.666, de 21 de junho de 1993, a Lei nº 10.520, de 17 de julho de 2002 (Lei do Pregão), e os arts. 1º a 47-A da Lei nº 12.462, de 4 de agosto de2011 (Lei do RDC), serão revogados após decorridos 2 (dois) anos da publicação oficial da Lei nº 14.133, de 1º de abril de 2021. III. A Seção II (Dos Crimes e das Penas) e a Seção IV (Do Processo e do Procedimento Judicial) da Lei nº 8.666, de 21 de junho de 1993, foram revogadas, deimediato, na data de publicação da Lei nº 14.133, de 1º de abril de 2021. IV. Apenas a Lei nº 8.666, de 21 de junho de 1993, será revogada após decorridos 2 (dois) anos da publicação oficial da Lei nº 14.133, de 1º de abril de 2021,permanecendo em vigor, por prazo indeterminado, a Lei nº 10.520, de 17 de julho de 2002 (Lei do Pregão), e os arts. 1º a 47-A da Lei nº 12.462, de 4 de agostode 2011 (Lei do RDC). Está(ão) CORRETA(S) apena(s) a(s) assertiva(s):
+a)  I e II.b)  II e III.c)  III e IV.d)  I e IV.e)  Todas estão corretas.
+www.tecconcursos.com.br/questoes/3177885
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2024
+Direito Administrativo (Doutrina e Leis Federais) - Tópicos Mesclados da Lei nº 14.133/2021
+Conforme disciplina a Lei nº 14.133/21, a divulgação no Portal Nacional de Contratações Públicas (PNCP) é condição indispensável para a eficácia do contrato e deseus aditamentos. Nos termos da legislação em questão, julgue as assertivas abaixo: l. A divulgação do contrato e de seus aditamentos deverá ocorrer no prazo de 20 (vinte) dias úteis, no caso de licitação, contados da data de sua assinatura.
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 24/33
+
+82) 
+83) 
+84) 
+ II. A divulgação do contrato e de seus aditamentos deverá ocorrer no prazo de 10 (dez) dias úteis, no caso de contratação direta, contados da data de suaassinatura. III.A divulgação do contrato e de seus aditamentos deverá ocorrer no prazo de 10 (dez) dias úteis, no caso de licitação, contados da data de sua assinatura. IV.A divulgação do contrato e de seus aditamentos deverá ocorrer no prazo de 05 (cinco) dias úteis, no caso de contratação direta, contados da data de suaassinatura. Estão CORRETAS apenas as assertivas:
+a)  l e ll.b)  Il e III.c)  lll e IV.d)  l e IV.e)  Todas estão corretas.
+www.tecconcursos.com.br/questoes/2844007
+COCP IFMT - Adm (IF MT)/IF MT/2023
+Direito Administrativo (Doutrina e Leis Federais) - Tópicos Mesclados da Lei nº 14.133/2021
+Sancionada em 1º de abril de 2021, a Lei 14.133 inaugurou um novo marco jurídico para realização de licitações e contratos públicos. Analise os itens a seguir sobrea referida lei: I. Entre as modalidades de licitação, estão o pregão, o concurso e o regime diferenciado de contratação (RDC). II. Todo processo licitatório deverá obedecer estritamente às seguintes fases, em única sequência possível: preparatória; divulgação do edital; apresentação depropostas e lances, quando for o caso; julgamento; habilitação; recursal; homologação. III. Entre os critérios de julgamento das propostas, estão: por menor preço; maior desconto e melhor técnica ou conteúdo artístico. Em relação à Lei 14.133/2021, está correto o que se afirma em:
+a)  I, II e III.b)  I e II.c)  II e III.d)  III.e)  Nenhum item está correto.
+www.tecconcursos.com.br/questoes/2188995
+COCP IFMT - Adm (IF MT)/IF MT/2022
+Direito Administrativo (Doutrina e Leis Federais) - Tópicos Mesclados da Lei nº 14.133/2021
+Sobre a legislação acerca de processo licitatório, marque a alternativa CORRETA:
+a) A Nova Lei de Licitações, Lei 14.133, de 1º de abril de 2021, institui normas para licitações e contratos da Administração Pública Direta, os fundos especiais, asautarquias, as fundações públicas, as empresas públicas, as sociedades de economia mista e demais entidades controladas, direta ou indiretamente, pela União,pelos Estados, pelo Distrito Federal e pelos Municípios.b)  De acordo com a Lei 14.133/21, o processo de licitação tem as fases de apresentação de proposta e julgamento anteriores à fase de habilitação; mas medianteato motivado com explicitação dos benefícios e expressamente previsto no edital de licitação, a realização da etapa de habilitação poderá anteceder as fases deproposta e julgamento.c)  A Nova Lei de Licitações, Lei 14.133, foi sancionada em 1º de abril de 2021 e revogou a Lei 8.666/93 nesta mesma data.d)  As modalidades de concorrência, pregão e tomada de preços foram mantidas na Nova Lei de Licitações, Lei 14.133/21.e)  O novo valor para dispensa de licitação, segundo a Lei 14.133/21, é de R$ 150.000,00 (cento e cinquenta mil reais) para obras ou serviços de engenharia, ouserviços de manutenção de veículos automotores.
+www.tecconcursos.com.br/questoes/3799011
+COCP IFMT - PEBTT (IF MT)/IF MT/Agronomia/2026
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+Considere a situação hipotética abaixo: “Ifetiano é servidor efetivo do IFMT, atuando na área de gestão de pessoas. Na sua rotina normal de trabalho, Ifetiano tem que lidar diretamente com o atendimento aopúblico que, no seu caso, se restringe aos próprios servidores do Instituto. Em certa ocasião, Ifetiano realizou o atendimento de uma servidora que veio indagá-lo acercado andamento do seu processo de remoção por motivo de saúde. Ifetiano, ao consultar o sistema de gestão de processos da Instituição, constatou que o pedido daservidora havia sido indeferido pela Junta Médica. Diante da constatação da negativa do pedido da servidora, Ifetiano ficou constrangido em ser o portador dessa mánotícia e optou por informar à servidora interessada que ainda não tinha sido emitido o parecer da Junta Médica no seu processo”. Nos termos do Decreto Federal nº 1.171/1994, em especial suas Regras Deontológicas, identifique a alternativa CORRETA:
+a)  Ifetiano agiu corretamente ao omitir a informação da servidora, pois a sua intenção era poupá-la do possível sofrimento causado por essa má notícia.b)  Ifetiano agiu corretamente ao omitir a informação da servidora, pois não era sua obrigação lhe dar essa informação, uma vez que ela, enquanto interessada,deveria consultar o seu processo diretamente no sistema de gestão de processos da Instituição.c)  Ifetiano agiu de forma antiética, pois toda pessoa tem direito à verdade. O servidor não pode omiti-la ou falseá- la, ainda que contrária aos interesses da própriapessoa interessada ou da Administração Pública.d)  Ifetiano agiu de forma antiética, pois se não estava se sentindo à vontade para dizer a verdade à servidora interessada, deveria simplesmente ter se negado adar a informação solicitada, alegando razão de foro íntimo.e)  Ifetiano agiu de forma antiética, pois, se não se via capaz de dizer a verdade à servidora interessada, deveria ter passado o atendimento a um servidor maisexperiente e se poupado do constrangimento.
+www.tecconcursos.com.br/questoes/3174786
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 25/33
+
+85) 
+86) 
+87) 
+COCP IFMT - Bib Doc (IF MT)/IF MT/2024
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+Em 22 de junho de 1994, o então presidente da República Itamar Franco aprovou, por meio do Decreto Federal 1.171, o Código de Ética Profissional do ServidorPúblico Civil do Poder Executivo Federal. Com base neste dispositivo legal, associe as colunas, correlacionando os deveres e as vedações dos servidores públicos às suasrespectivas condutas, e, em seguida, assinale a alternativa que apresenta a sequência correta: 
+DEVERES E VEDAÇÕES CONDUTAS
+(1) São deveres fundamentais do
+servidor público.
+(   ) Exercer atividade profissional aética ou ligar o seu nome a empreendimentos de cunho duvidoso.
+(  ) Alterar ou deturpar o teor de documentos que deva  encaminhar para providências.
+(   ) Facilitar a fiscalização de todos atos ou serviços por quem de direito.
+(2) É vedado ao servidor público.
+(   )Deixar de utilizar os avanços técnicos e científicos ao seu alcance ou do seu conhecimento para atendimento do seu mister.
+(   )Exercer, com estrita moderação, as prerrogativas funcionais que lhe sejam atribuídas, abstendo-se de fazê-lo contrariamente aos
+legítimos interesses dos usuários do serviço público e dos jurisdicionados administrativos.
+a)  2-2-1-2-1.b) 2-2-2-1-1.c)  1 -1 -2 -1-2d)  2-1-1-2-1.e)  1-1-1-2-2.
+www.tecconcursos.com.br/questoes/3176383
+COCP IFMT - Ass Alu (IF MT)/IF MT/2024
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+Decreto nº 1.171/1994, que aprova o Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal, estabelece algumas regras deontológicas quedevem ser observadas pelos servidores públicos. A luz do Decreto em questão, julgue as assertivas abaixo: l. O servidor deve prestar toda a sua atenção a toda e quaisquer ordens de seus superiores, ainda que lhe pareçam ilegais, velando atentamente por seucumprimento e, assim, evitando a conduta negligente. Os repetidos erros, o descaso e o acúmulo de desvios tornam-se, às vezes, difíceis de corrigir e caracterizamaté mesmo imprudência no desempenho da função pública. II. A função pública deve ser tida como exercício profissional e, portanto, se integra na vida particular de cada servidor público. Assim, os fatos e atos verificadosna conduta do dia a dia em sua vida privada poderão acrescer ou diminuir o seu bom conceito na vida funcional. III. Toda ausência, ainda que justificada, do servidor de seu local de trabalho é fator de desmoralização do serviço público, o que quase sempre conduz àdesordem nas relações humanas. IV. Deixar o servidor público qualquer pessoa à espera de solução que compete ao setor em que exerça suas funções, permitindo a formação de longas filas, ouqualquer outra espécie de atraso na prestação do serviço, não caracteriza apenas atitude contra a ética ou ato de desumanidade, mas principalmente grave danomoral aos usuários dos serviços públicos. Está(ão) CORRETA(S) apenas a(s) assertiva(s):
+a)  l e ll.b)  Il e III.c)  ll e lV.d)  l e IV.e)  Todas estão corretas.
+www.tecconcursos.com.br/questoes/3177848
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2024
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+João Pedro é funcionário público concursado e recentemente foi transferido para outra unidade. Na nova unidade, ele atua no setor contábil/financeiro e éresponsável pela liberação financeira das compras, de acordo com as disponibilidades orçamentárias das rubricas. Não há disponibilidade orçamentária em determinadarubrica no mês corrente e ele avisou a seu superior imediato que não poderia fazer a liberação da solicitação do setor de compras. Seu superior lhe informou que eledeveria cumprir sua determinação de liberação, pois o Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal, estabelecido por meio do Decretonº 1.171, de 1994, elenca uma série de deveres fundamentais do servidor público, dentre os quais ter respeito à hierarquia. Em relação ao caso apresentado, escolha a alternativa CORRETA:
+a)  João Pedro deve liberar a compra mesmo sem orçamento, ajustando a questão no mês seguinte, cumprindo a ordem do seu superior imediato.b)  João Pedro, conhecedor do código de ética, entende que deve ter respeito à hierarquia, porém sem nenhum temor de representar contra qualquercomprometimento indevido da estrutura em que se funda o Poder Estatal.c)  João Pedro deve cumprir suas obrigações, também deve ser probo, reto, leal e justo, demonstrando toda a integridade do seu caráter, escolhendo sempre,quando estiver diante de duas opções, a melhor e a mais vantajosa para o bem comum, que no caso implica fazer a liberação para que não faltem produtos naunidade pública, ajustando no orçamento do mês seguinte.d)  João Pedro, diante da complexidade do caso, resolveu fazer uma reunião com a equipe do setor e fazer uma votação, tomando a decisão de aceitação ou nãoem relação à liberação de acordo com a opinião da maioria, entendendo ser essa a atitude ética correta.e)  Nenhuma das alternativas anteriores corresponde a uma decisão ética e adequada à Legislação relacionada ao Código de Etica Profissional do Servidor PúblicoCivil do Poder Executivo Federal.
+Fonte: DECRETO Nº 1.171, DE 22 DE JUNHO DE 1994. Disponível em: https://www.planalto.gov.br/ccivil 03/decreto/d1171.htm. Acesso em: 25 ago. 2024.
+www.tecconcursos.com.br/questoes/3177883
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2024
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 26/33
+
+88) 
+89) 
+90) 
+91) 
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+Leia atentamente a situação hipotética abaixo e responda à questão. “Fulano é servidor efetivo do IFMT e foi designado para atuar como fiscal do contrato da obra de reforma da sede de uma das unidades da Instituição, contratada sob oregime de empreitada por preço unitário. Durante o transcurso do contrato, a empresa contratada solicitou a medição do serviço de execução do piso granilite.Na sua solicitação, a contratada afirmou ter executado 200 m? (duzentos metros quadrados) de piso granilite. O servidor Fulano, confiando na medição apresentada pelomestre de obras da Contratada, não foi ao local da obra para certificar-se de que o serviço foi efetivamente executado conforme quantitativo medido pela Contratada,limitando-se a aprovar a medição em sua totalidade. Inclusive, como reconhecimento pela sua agilidade na aprovação da medição, que ocorreu dentro dos prazosestabelecidos no Contrato, a Contratada presenteou o servidor Fulano com uma garrafa devinho de boa qualidade. O setor financeiro do IFMT, por sua vez, fundamentadono parecer do fiscal do Contrato, realizou a liquidação e o pagamento do valor total da medição. Ocorre que, durante a realização de uma auditoria de rotina, o Órgão de
+Controle Interno identificou que foram executados efetivamente pela Contratada apenas 100 m2 (cem metros quadrados) de piso granilite”. Considerando a situação hipotética exposta, nos termos do Decreto nº 1.171/94, que aprova o Código de Ética Profissional do Servidor Público Civil do Poder ExecutivoFederal, e da Resolução CONSUP IFMT nº 091/14, que aprova o Código de Ética do Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso, identifique aalternativa CORRETA:
+a)  Ao receber a garrafa de vinho dada pela Contratada, o servidor Fulano não incorreu em conduta vedada pelo Código de Etica Profissional do Servidor PúblicoCivil do Poder Executivo Federal, visto que ele apenas foi recompensado pelo bom cumprimento da sua missão institucional.b)  Ao receber a garrafa de vinho dada pela Contratada, o servidor Fulano não incorreu em conduta vedada pelo Código de Etica do Instituto Federal de Educação,Ciência e Tecnologia de Mato Grosso, visto que ele não pleiteou o presente, tendo este sido oferecido voluntariamente pela Contratada.c)  Ao recebera garrafa de vinho dada pela Contratada, o servidor Fulano incorreu em conduta vedada pelo Código de Etica Profissional do Servidor Público Civil doPoder Executivo Federal, porém não incorreu em conduta vedada pelo Código de Etica do Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso.d)  Ao recebera garrafa de vinho dada pela Contratada, o servidor Fulano incorreu em conduta vedada tanto pelo Código de Etica Profissional do Servidor PúblicoCivil do Poder Executivo Federal quanto pelo Código de Etica do Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso.e)  Ao recebera garrafa de vinho dada pela Contratada, o servidor Fulano incorreu em conduta vedada pelo Código de Etica do Instituto Federal de Educação,Ciência e Tecnologia de Mato Grosso, porém não incorreu em conduta vedada pelo Código de Etica Profissional do Servidor Público Civil do Poder Executivo Federal.
+www.tecconcursos.com.br/questoes/2342309
+COCP IFMT - PEBTT (IF MT)/IF MT/Artes/2023
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+Conforme o Decreto nº 1.171/1994, que se refere ao Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal, é correto afirmar que sãodeveres fundamentais do servidor público:
+a)  Desempenhar, a tempo, as atribuições do cargo, função ou emprego público de que seja titular.b)  Ter respeito à hierarquia, porém sem nenhum temor de representar contra qualquer comprometimento indevido da estrutura em que se funda o Poder Estatal.c)  Ter consciência de que seu trabalho é regido por princípios éticos que se materializam na adequada prestação dos serviços públicos.d)  Abster-se, de forma absoluta, de exercer sua função, poder ou autoridade com finalidade estranha ao interesse público, mesmo que observando as formalidadeslegais e não cometendo qualquer violação expressa à lei.e)  Todas as opções estão corretas.
+www.tecconcursos.com.br/questoes/2342929
+COCP IFMT - Ass Alu (IF MT)/IF MT/2023
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+Leia atentamente a situação hipotética abaixo e responda a questão. Sicrano, servidor efetivo do IFMT, após um dia exaustivo de trabalho, resolve, ao sair da repartição pública, passar em um bar próximo ao seu local de trabalho. Como lheera habitual, Sicrano resolve tomar algumas bebidas com teor alcoólico, vindo a ficar embriagado. Sicrano passa a noite no bar e, no dia seguinte, dirige-se diretamentepara a sua repartição pública e apresenta-se no seu local de trabalho completamente embriagado. Visto que essa atitude por parte do servidor Sicrano havia se tornadocorriqueira, a Comissão de Ética do IFMT, ao tomar conhecimento da situação, resolve instaurar procedimento administrativo para apuração de eventualcomprometimento ético por parte do referido servidor. Ao final do procedimento, a Comissão de Ética emite parecer fundamentado aplicando a pena de demissão, a bemdo serviço público, ao servidor Sicrano. Considerando a situação hipotética exposta, nos termos do Decreto nº 1.171, de 22 de junho de 1994, identifique a alternativa CORRETA:
+a)  A conduta do servidor Sicrano não constitui infração ética, visto que não é vedado ao servidor público apresentar- se embriagado no serviço ou fora delehabitualmente.b)  Apenas a conduta de se apresentar embriagado habitualmente no serviço constitui infração ética, não constituindo infração ética a conduta de se apresentarembriagado habitualmente fora do serviço.c)  A conduta do servidor Sicrano constitui infração ética, visto que é vedado ao servidor público apresentar-se embriagado no serviço ou fora dele habitualmente.d)  Apenas a conduta de se apresentar embriagado habitualmente fora do serviço constitui infração ética, não constituindo infração ética a conduta de se apresentarembriagado habitualmente no serviço.e)  Todas as alternativas estão incorretas.
+www.tecconcursos.com.br/questoes/2342930
+COCP IFMT - Ass Alu (IF MT)/IF MT/2023
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+Leia atentamente a situação hipotética abaixo e responda a questão. Sicrano, servidor efetivo do IFMT, após um dia exaustivo de trabalho, resolve, ao sair da repartição pública, passar em um bar próximo ao seu local de trabalho. Como lheera habitual, Sicrano resolve tomar algumas bebidas com teor alcoólico, vindo a ficar embriagado. Sicrano passa a noite no bar e, no dia seguinte, dirige-se diretamentepara a sua repartição pública e apresenta-se no seu local de trabalho completamente embriagado. Visto que essa atitude por parte do servidor Sicrano havia se tornadocorriqueira, a Comissão de Ética do IFMT, ao tomar conhecimento da situação, resolve instaurar procedimento administrativo para apuração de eventualcomprometimento ético por parte do referido servidor. Ao final do procedimento, a Comissão de Ética emite parecer fundamentado aplicando a pena de demissão, a bemdo serviço público, ao servidor Sicrano. Considerando a situação hipotética exposta, nos termos do Decreto nº 1.171, de 22 de junho de 1994, identifique a alternativa CORRETA:
+a)  A Comissão de Ética agiu corretamente ao aplicar a pena de demissão, a bem do serviço público, ao servidor Sicrano.
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 27/33
+
+92) 
+93) 
+94) 
+95) 
+b)  A Comissão de Ética agiu incorretamente ao aplicar a pena de demissão, a bem do serviço público, ao servidor Sicrano, visto que a Comissão de Ética somentepode aplicar a pena de advertência.c)  A Comissão de Ética agiu incorretamente ao aplicar a pena de demissão, a bem do serviço público, ao servidor Sicrano, visto que a Comissão de Ética somentepode aplicar a pena de suspensão.d)  A Comissão de Ética agiu incorretamente ao aplicar a pena de demissão, a bem do serviço público, ao servidor Sicrano, visto que a Comissão de Ética somentepode aplicar a pena de censura.e)  Todas as alternativas estão incorretas.
+www.tecconcursos.com.br/questoes/2843742
+COCP IFMT - Adm (IF MT)/IF MT/2023
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+Nos termos do Decreto 1.171/94, julgue as assertivas abaixo: I. Somente nos órgãos e entidades da Administração Pública Federal direta deverá ser criada uma Comissão de Ética, encarregada de orientar e aconselhar sobre aética profissional do servidor, no tratamento com as pessoas e com o patrimônio público, competindo-lhe conhecer concretamente de imputação ou deprocedimento susceptível de censura. II. À Comissão de Ética incumbe fornecer, aos organismos encarregados da execução do quadro de carreira dos servidores, os registros sobre sua conduta ética,para o efeito de instruir e fundamentar promoções e para todos os demais procedimentos próprios da carreira do servidor público. III. A pena aplicável ao servidor público pela Comissão de Ética é a de advertência, e sua fundamentação constará do respectivo parecer, assinado por todos osseus integrantes, com ciência do faltoso. IV. Para fins de apuração do comprometimento ético, entende-se por servidor público todo aquele que, por força de lei, contrato ou de qualquer ato jurídico,preste serviços de natureza permanente, temporária ou excepcional, ainda que sem retribuição financeira, desde que ligado direta ou indiretamente a qualquerórgão do poder estatal, como as autarquias, as fundações públicas, as entidades paraestatais, as empresas públicas e as sociedades de economia mista, ou emqualquer setor em que prevaleça o interesse do Estado. Está correto o que se afirma em:
+a)  I e II.b)  II e III.c)  II e IV.d)  I e IV.e)  Todas estão corretas.
+www.tecconcursos.com.br/questoes/2844013
+COCP IFMT - Adm (IF MT)/IF MT/2023
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+Sobre o Código de Ética Profissional do Servidor Público, instituído pelo Decreto 1.171, de 22 de junho de 1994, marque a alternativa incorreta:
+a)  Uma das vedações ao servidor público é fazer uso de cargo ou função, facilidades, amizades, tempo, posição e influências para obter qualquer favorecimento,para si ou para outrem.b)  Entre as regras deontológicas do Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal, há a separação entre a função pública, a qualdeve ser tida como exercício profissional, e a vida particular de cada servidor público. Assim, os fatos e atos verificados na conduta do dia a dia em sua vida privadanão acrescentam ou diminuem o seu bom conceito na vida funcional.c)  Estão entre os deveres fundamentais do servidor público: ser cortês, ter urbanidade, disponibilidade e atenção, respeitando a capacidade e as limitaçõesindividuais de todos os usuários do serviço público, sem qualquer espécie de preconceito ou distinção de raça, sexo, nacionalidade, cor, idade, religião, cunhopolítico e posição social, abstendo-se, dessa forma, de causar-lhes dano moral.d)  Em todos os órgãos e entidades da Administração Pública Federal, deverá ser criada uma Comissão de Ética, a qual tem como uma de suas incubências aaplicação de pena ao servidor público com censura, e sua fundamentação constará do respectivo parecer, assinado por todos os seus integrantes, com ciência dofaltoso.e)  É vedado ao servidor público apresentar-se embriagado no serviço ou fora dele habitualmente.
+www.tecconcursos.com.br/questoes/3076120
+COCP IFMT - PEBTT (IF MT)/IF MT/Administração/2023
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+Nos termos do Decreto 1.171/1994, que instituiu o Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal, é vedado ao servidor público,EXCETO:
+a)  O uso do cargo ou função, facilidades, amizades, tempo, posição e influências para obter qualquer favorecimento, para si ou para outrem.b)  Participar dos movimentos e estudos que se relacionem com a melhoria do exercício de suas funções, tendo por escopo a realização do bem comum.c)  Pleitear, solicitar, provocar, sugerir ou receber qualquer tipo de ajuda financeira, gratificação, prêmio, comissão, doação ou vantagem de qualquer espécie, parasi, familiares ou qualquer pessoa, para o cumprimento da sua missão ou para influenciar outro servidor para o mesmo fim.d)  Ser, em função de seu espírito de solidariedade, conivente com erro ou infração a este Código de Ética ou ao Código de Ética de sua profissão.e)  Permitir que perseguições, simpatias, antipatias, caprichos, paixões ou interesses de ordem pessoal interfiram no trato com o público, com os jurisdicionadosadministrativos ou com colegas hierarquicamente superiores ou inferiores.
+www.tecconcursos.com.br/questoes/2189019
+COCP IFMT - Adm (IF MT)/IF MT/2022
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+Segundo o Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal (Decreto 1.171, de 22 de junho de 1994), analise as afirmações sobre oque é vedado ao servidor público e assinale V para verdadeiro e F para falso. (   ) É vedado ao servidor público deixar de utilizar os avanços técnicos e científicos ao seu alcance ou do seu conhecimento para atendimento do seu mister. 
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 28/33
+
+96) 
+97) 
+98) 
+99) 
+(   ) É vedado ao servidor público apresentar-se embriagado no serviço ou fora dele habitualmente. (   ) É vedado ao servidor público facilitar a fiscalização de todos atos ou serviços por quem de direito. (   ) É vedado ao servidor público jamais retardar qualquer prestação de contas, condição essencial da gestão dos bens, direitos e serviços da coletividade a seucargo. Agora, assinale a alternativa que apresenta a sequência CORRETA:
+a)  V - V - F - F.b)  F - V - V - F.c)  F - F - V - F.d)  V - F - F - F.e)  V - F - F - V.
+www.tecconcursos.com.br/questoes/2203112
+COCP IFMT - Ass Alu (IF MT)/IF MT/2022
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+De acordo com o disposto no Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal (Decreto 1.171/1994), considere: I - Deixar o servidor público qualquer pessoa à espera de solução que compete ao setor em que exerça suas funções, permitindo a formação de longas filas, ouqualquer outra espécie de atraso na prestação do serviço, não caracteriza apenas atitude contra a ética ou ato de desumanidade, mas principalmente grave danomoral aos usuários dos serviços públicos. II -A publicidade de qualquer ato administrativo é um valor absoluto e constitui requisito de eficácia e moralidade, não comportando, dessa maneira, qualquerexceção. A omissão de publicidade enseja o comprometimento ético contra o bem comum, imputável a quem a negar. III - A função pública deve ser tida como exercício profissional e, portanto, se integra a vida particular de cada servidor público. Assim, os fatos e atos verificadosna conduta do dia a dia em sua vida privada poderão acrescer ou diminuir o seu bom conceito na vida funcional. Está CORRETO o que se afirma em:
+a) I.b) II.c) l e Ill.d) Il e III.e) I,lI e llI.
+www.tecconcursos.com.br/questoes/1088172
+COCP IFMT - Arq (IF MT)/IF MT/2019
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+Com base no Decreto 1.171/1994, assinale a assertiva CORRETA.
+a)  A dignidade, o decoro, o zelo, a eficácia e a consciência dos princípios morais são primados maiores que devem nortear o servidor público, seja no exercício docargo ou função, ou fora dele, já que refletirá o exercício da vocação do próprio poder estatal. Seus atos, comportamentos e atitudes serão direcionados para apreservação da honra e da tradição dos serviços públicos.b)  O servidor deve prestar toda a sua atenção às ordens legais de seus superiores, velando atentamente por seu cumprimento, e, assim, evitando a condutanegligente. Os repetidos erros, o descaso e o acúmulo de desvios tornam-se, às vezes, difíceis de corrigir e caracterizam até mesmo crime doloso no desempenhoda função pública.c)  Toda ausência injustificada do servidor de seu local de trabalho é fator de desmoralização do serviço público, o que quase sempre conduz à desordem nasrelações profissionais e ações trabalhistas.d)  O trabalho desenvolvido pelo servidor público perante a comunidade não deve ser entendido como acréscimo ao seu próprio bem-estar, já que, como cidadão,integrante da sociedade, o êxito desse trabalho pode ser considerado como seu maior patrimônio.e)  A moralidade da Administração Pública se limita à distinção entre o bem e o mal, devendo ser acrescida da ideia de que o fim é sempre o bem comum. Oequilíbrio entre a legalidade e a finalidade, na conduta do servidor público, é que poderá consolidar a moralidade do ato administrativo.
+www.tecconcursos.com.br/questoes/1089522
+COCP IFMT - Ass Alu (IF MT)/IF MT/2019
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+De acordo com o Decreto 1.171/1994, com as devidas atualizações, não são deveres fundamentais do servidor público, exceto:
+a)  Exercer suas atribuições com rapidez, perfeição e rendimento, pondo ﬁm ou procurando prioritariamente resolver situações procrastinatórias, principalmentediante de ﬁlas ou de qualquer outra espécie de atraso na prestação dos serviços pelo setor em que exerça suas atribuições, com o ﬁm de evitar dano moral aousuário.b)  Ser probo, demonstrando toda a integridade do seu caráter, escolhendo sempre, quando estiver diante de duas opções, a melhor e a mais vantajosa para suacarreira.c)  Jamais retardar qualquer prestação de contas, condição essencial da gestão dos bens, direitos e serviços na individualidade do seu cargo.d)  Ter respeito à hierarquia, porém sem nenhum temor de representar contra qualquer comprometimento indevido da estrutura em que se funda o PoderLegislativo.e)  Resistir a todas as pressões de superiores hierárquicos, de contratantes, interessados e outros que visem obter favor monetário, benesses ou vantagensindevidas em decorrência de ações imorais, ilegais ou aéticas e denunciá-las
+www.tecconcursos.com.br/questoes/1089525
+COCP IFMT - Ass Alu (IF MT)/IF MT/2019
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+Com base no Decreto 1.171/1994, a respeito dos principais deveres do servidor público, assinale a alternativa INCORRETA.
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 29/33
+
+100) 
+101) 
+102) 
+103) 
+a)  Ser assíduo e frequente ao serviço, na certeza de que sua ausência provoca danos ao trabalho ordenado, reﬂetindo negativamente em todo o sistema.b)  Comunicar imediatamente a seus superiores todo e qualquer ato ou fato contrário ao interesse público, deixando-os tomar providências sem interferir ou exigirprovidências cabíveis.c)  Manter limpo e em perfeita ordem o local de trabalho, seguindo os métodos mais adequados à sua organização e distribuição.d)  Participar dos movimentos e estudos que se relacionem com a melhoria do exercício de suas funções, tendo por escopo a realização do bem comum.e)  Apresentar-se ao trabalho com vestimentas adequadas ao exercício da função. 
+www.tecconcursos.com.br/questoes/1108829
+COCP IFMT - PEBTT (IF MT)/IF MT/Química/2018
+Ética no Serviço Público - Decreto nº 1.171/1994 - Código de Conduta do Servidor Público Civil do Poder Executivo Federal
+Com fulcro no Decreto 1.171 /1994, NÃO é vedado ao servidor público:
+a)  o uso de cargo ou função, facilidades, amizades, tempo, posição e influências, para obter qualquer favorecimento para si ou para outrem;b)  apresentar-se ao trabalho com vestimentas adequadas ao exercício da função;c)  ser, em função de seu espírito de solidariedade, conivente com erro ou infração a este Código de Ética ou ao Código de Ética de sua profissão;d)  usar de artifícios para procrastinar ou dificultar o exercício regular de direito por qualquer pessoa, causando-lhe dano moral ou material;e)  permitir que perseguições, simpatias, antipatias, caprichos, paixões ou interesses de ordem pessoal interfiram no trato com o público, com os jurisdicionadosadministrativos ou com colegas hierarquicamente superiores ou inferiores.
+www.tecconcursos.com.br/questoes/2844022
+COCP IFMT - Adm (IF MT)/IF MT/2023
+Ética no Serviço Público - Decreto nº 6.029/2007 - Sistema de Gestão da Ética do Poder Executivo Federal
+Analise os itens a seguir a respeito do Sistema de Gestão da Ética do Poder Executivo Federal, instituído pelo Decreto 6.029, de 1º de fevereiro de 2007: I. Integram o Sistema de Gestão da Ética do Poder Executivo Federal: a Comissão de Ética Pública (CEP); as Comissões de Ética de que trata o Decreto 1.171, de22 de junho de 1994; e as demais Comissões de Ética e equivalentes nas entidades e órgãos do Poder Executivo Federal. II. Os trabalhos nas Comissões de Ética são considerados relevantes e têm prioridade sobre as atribuições próprias dos cargos dos seus membros, quando estesnão atuarem com exclusividade na Comissão. III. A qualquer pessoa que esteja sendo investigada é assegurado o direito de saber o que lhe está sendo imputado, de conhecer o teor da acusação e de ter vistados autos no recinto das Comissões de Ética, mesmo que ainda não tenha sido notificada da existência do procedimento investigatório. Marque a alternativa correta:
+a)  Todos os itens estão corretos.b)  Apenas o item II está correto.c)  Somente os itens I e II estão corretos.d)  Somente os itens II e III estão corretos.e)  Apenas o item III está correto.
+www.tecconcursos.com.br/questoes/3076611
+COCP IFMT - PEBTT (IF MT)/IF MT/Administração/2023
+Finanças e Conhecimentos Bancários - Risco e Retorno, Análise de Risco e Desempenho
+Há uma relação direta entre retorno esperado e risco. O Modelo CAPM (Modelo de Precificação de Ativos Financeiros) considera o beta (β) como a medida de riscoentre o ativo (ou carteira) e o mercado (RM). De acordo com Berk e DeMarzo (2009, p. 385-419), “sob as suposições do CAPM, podemos identificar a carteira eficiente: éigual à carteira de mercado. Esta pode ser utilizada como benchmark. (...) O prêmio de risco de um título é igual ao prêmio de risco de mercado (o valor pelo qual oretorno esperado de mercado excede a taxa de juros livre de risco), multiplicado pelo valor de risco de mercado presente nos retornos do título, medido por seu beta (β)com o mercado”.Considerando a equação do CAPM e os seguintes valores hipotéticos (Selic: 13,75% a.a.; Ibovespa: 23,75% a.a.; beta (β)=2,0), calcule o retorno esperado ( r_i ) doTítulo “i” e assinale a alternativa com a resposta CORRETA:     
+rf = Retorno ivre de Risco(considere SELIC = 13,75% a.a).
+E[RMkt] = Retorno Esperado de Mercado( Considere IBOVESPA = 23,75% a.a).
+ = Prêmio de Risco do Ativo "i".
+ =Risco do ativo "i". Considere o valor: 2,0
+a)  13,75% a.a.b)  23,75% a.a.c)  33,75% a.a.d)  43,75% a.a.e)  20,00% a.a. 
+Fonte: BERK, Jonathan; DEMARZO, Peter. Finanças Empresariais. Tradução Christiane de Brito Andrei. Porto Alegre: Bookman, 2009. ISBN: 978- 85-7780-339-2 (adaptado).
+www.tecconcursos.com.br/questoes/3076574
+COCP IFMT - PEBTT (IF MT)/IF MT/Administração/2023
+Finanças e Conhecimentos Bancários - Orçamento e Estrutura de Capital
+Nas análises da Estrutura de Capital e nos cálculos do Custo de Capital, no Brasil, temos situação diferente entre empresas em função do enquadramento tributáriopara fins de Imposto de Renda (IRPJ) e Contribuição Social sobre o Lucro Líquido (CSLL), sendo que, nas empresas enquadradas como Lucro Real, utiliza-se a taxa T
+E[ ]= = + (E[ ]− )Ri ri rf βMKTi RMkt rf
+]− )βMkti rf
+βMkti
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 30/33
+
+104) 
+105) 
+(Alíquota Tributária Média) como redutor do custo dos capitais de terceiros de longo prazo (ELP - Exigível a Longo Prazo), enquanto que, nas empresas do SimplesNacional, ou que são enquadradas como Lucro Presumido, para fins de tributação, esse redutor do custo do ELP não é considerado, pois os tributos pagos tem por base ofaturamento, e não o lucro efetivo.
+Assim, considerando a seguinte estrutura de capital e seus custos anuais das fontes de recursos (e expectativa de retorno no caso do PL - Patrimônio Líquido), e semconsiderar a hipotética alíquota T média de 30% (ou T=0,30, em decimal), caso do Lucro Presumido e Simples Nacional, temos:
+Fontes Longo
+PrazoValor em ReaisParticipação
+Relativa
+Custo efetivo a.a.
+(sem a dedução tributária do ELP)
+e expectativa de retorno do PL.
+Parciais
+ELP 1.200.000,000,60 ou 60% 20,0% 12,0%
+PL 800.000,000,40 ou 40% 25,0% 10,0%
+TOTAL 2.000.000,001 ou 100% Custo de Capital a.a.: 22,0% a.a.
+No caso do Lucro Real, a taxa T deve ser considerada, atuando como um redutor do custo do ELP, pois as despesas financeiras correspondentes, ao serem lançadas,deduzem o lucro tributável. Diante disso, dada a estrutura de capital, calcule o Capital a.a de uma empresa enquadrada como Lucro Real, utilizando-se os valores daestrutura de capital e taxas apresentadas no quadro abaixo, considerando a alíquota T em 0,30 (ou 30%) e o Custo efetivo a.a. sem a dedução tributária do ELP em 20%a.a. 
+Fontes Longo
+PrazoValor em ReaisParticipação
+Relativa
+Custo efetivo a.a.
+(sem a dedução tributária do
+ELP) e expectativa de retorno
+do PL.
+Parciais
+ELP 1.200.000,000,60 ou 60%   
+PL 800.000,000,40 ou 40% 25,0%  
+TOTAL 2.000.000,001 ou 100%Custo de Capital a.a.: 
+Assinale a alternativa CORRETA:
+a)  22,6% a.a.b)  18,4% a.a.c)  12,6% a.a.d)  20,0% a.a.e)  15,4% a.a.
+www.tecconcursos.com.br/questoes/3149945
+COCP IFMT - PEBTT (IF MT)/IF MT/Engenharia de Computação/2024
+Gestão de Projetos (PMBOK) - Noções Introdutórias de Administração ou Gestão de Projetos
+Avalie as seguintes sentenças relativas ao Gerenciamento de projetos (Project Management Body of Knowledge / PMBOK): I- O Produto é um artefato adquirido, quantificável e que pode ser um item final ou um item componente de um projeto. Il- O Programa é um esforço temporário empreendido para criar um produto, serviço ou resultado único. A natureza temporária dos programas indica um início eum fim para o trabalho do programa. IIl- O Gerenciamento de Projetos é a aplicação de conhecimentos, habilidades, ferramentas e técnicas às atividades do projeto para cumprir os requisitosdefinidos. De acordo com o Project Management Institute (2011):
+a)  Apenas a sentença I é correta.b) Apenas a sentença Il é correta.c)  Apenas a sentença Ill é correta.d)  As sentenças l e Il são corretas.e) As sentenças Il e Ill são corretas.
+www.tecconcursos.com.br/questoes/3177890
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2024
+Gestão de Projetos (PMBOK) - Noções Introdutórias de Administração ou Gestão de Projetos
+Segundo Maximiano e Veroneze (2024), a palavra projeto foi inventada pelos romanos para indicar algo que se lança à frente - pro (frente) + jetar (lançar). Pormeio dos projetos, as pessoas e as sociedades evoluem. Sociedades sem projetos são sociedades estagnadas.
+Fonte: Maximiano, A. C. A.; Veroneze, F. Gestão de Projetos: preditiva, ágil e estratégica. 6 ed. Atlas, 2024.
+ Em relação aos conceitos básicos da gestão de projetos, analise as alternativas e marque a INCORRETA:
+a)  O projeto é um empreendimento de tempo limitado, que tem compromisso com a entrega de um resultado.b)  O resultado de um projeto é singular, mas o grau de inovação varia de um projeto para outro. Há projetos que buscam resultados inovadores; outros sãorecorrentes.c)  O resultado de um projeto, chamado entregável, combina quatro possibilidades: produtos físicos, informações/ conhecimento, eventos/serviços einstituições/organizações.d)  O programa é o conjunto dos projetos da organização. O projeto é um grupo, família ou conjunto de portfólios administrados de forma coordenada, que podemandar em paralelo ou em sequência.e)  O diagrama de precedências, também chamado diagrama de rede do projeto, é um gráfico que mostra as decisões de sequenciamento e o encadeamento dasatividades.
+www.tecconcursos.com.br/questoes/2367827
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 31/33
+
+106) 
+107) 
+COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2023
+Gestão de Projetos (PMBOK) - Noções Introdutórias de Administração ou Gestão de Projetos
+A construção e inauguração de um empreendimento, o desenvolvimento de um aplicativo e a realização de uma campanha de marketing são exemplos de projetos.Os Projetos são elaborados para alcançar resultados e para isso precisam de gestão. 
+(Fonte: Maximiano, Antonio Cesar Amaru; Veroneze, Fernando. 2022. Gestão de Projetos - Preditiva, Ágil e Estratégica. Editora Atlas)
+ A respeito da gestão de projetos, analise os itens abaixo relacionando-os com as sentenças a seguir: 1. Métodos Preditivos;2. Métodos Ágeis ou Adaptativos;3. Projeto; 4. Processo. (  ) São rotinas ou atividades continuadas, sem prazo para terminar. (  ) Enfatizam o desenvolvimento e a entrega de produtos, em detrimento de documentação e planejamento exaustivo. (  ) É o método de planejar todo o projeto antes de iniciá-lo. (  ) É um empreendimento temporário que fornece um produto específico, não rotineiro, não repetitivo, que produz mudança e benefícios.
+a)  2,1,4,3.b)  3,1,4,2.c)  4,2,1,3.d)  3,2,1,4.e)  1,2,4,3.
+www.tecconcursos.com.br/questoes/2189020
+COCP IFMT - Adm (IF MT)/IF MT/2022
+Gestão de Projetos (PMBOK) - Noções Introdutórias de Administração ou Gestão de Projetos
+Harold Kerzner, em sua obra Gestão de Projetos: as melhores práticas, publicada em 2017, destaca o crescimento substancial nos últimos anos das métricas demensuração de projetos. Hoje, há diversos benefícios às organizações quando aplicadas técnicas e ferramentas na gestão dos projetos. Assinale a alternativa que apresenta um benefício na gestão de projeto conforme aponta Kerzner (2017).
+a)  Maior custo nos programas desenvolvidos.b)  Realização de mais trabalho em menos tempo e com poucos recursos.c)  Aumento dos negócios devido à insatisfação dos clientes.d)  Menor controle dos projetos.e)  Menor controle das mudanças de escopo.
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 32/33
+
+Gabarito
+1) A  2) B  3) E  4) B  5) C  6) E  7) E8) B  9) D  10) E  11) C  12) A  13) E  14) B15) B  16) B  17) E  18) D  19) B  20) C  21) E22) E  23) E  24) D  25) D  26) C  27) E  28) D29) E  30) B  31) C  32) D  33) C  34) B  35) E36) E  37) D  38) B  39) A  40) C  41) A  42) A43) E  44) C  45) A  46) B  47) A  48) A  49) A50) C  51) A  52) D  53) C  54) A  55) D  56) E57) B  58) E  59) E  60) A  61) B  62) E  63) D64) B  65) A  66) C  67) D  68) C  69) C  70) D71) E  72) D  73) E  74) B  75) B  76) E  77) D78) B  79) C  80) B  81) A  82) D  83) B  84) C85) A  86) C  87) B  88) D  89) E  90) C  91) D92) C  93) B  94) B  95) A  96) C  97) A  98) A99) B  100) B  101) A  102) C  103) B  104) C  105) D106) C  107) B
+30/08/2026, 21:04 Caderno Conhecimentos Específicos para Administrador - IFMT - 2026
+https://www.tecconcursos.com.br/questoes/cadernos/100218736/imprimir 33/33
