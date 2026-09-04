@@ -1,0 +1,33 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+const original=fs.readFileSync(new URL('../public/data/administrador-ifmt-107.txt',import.meta.url),'utf8');
+const clean=original.split(/\r?\n/).filter(l=>!/^\s*(?:\d+\)\s*$|30\/08\/2026,|https:\/\/www\.tecconcursos\.com\.br\/questoes\/cadernos\/)/.test(l)).join('\n');
+const [body]=clean.split(/\nGabarito\s*\n/);
+const answerBlock=original.split(/\nGabarito\s*\r?\n/)[1];
+if(!answerBlock)throw Error('Gabarito não encontrado');
+const answers=new Map([...answerBlock.matchAll(/(\d+)\)\s*([A-E])/g)].map(m=>[Number(m[1]),m[2]]));
+const markers=[...body.matchAll(/www\.tecconcursos\.com\.br\/questoes\/(\d+)/g)];
+const normalize=s=>s.normalize('NFKC').replace(/\b(que|para|como|entre|sobre)(os|as)\b/gi,'$1 $2').replace(/\s+/g,' ').trim();
+const questions=markers.map((m,i)=>{
+ const raw=body.slice(m.index+m[0].length,markers[i+1]?.index??body.length);
+ const lines=raw.split('\n').map(l=>l.trim()).filter(Boolean),si=lines.findIndex(l=>l.startsWith('COCP IFMT'));
+ if(si<0)throw Error(`Sem prova: ${i+1}`);
+ const source=lines[si],subject=lines[si+1],rest=lines.slice(si+2).join('\n');
+ const opts=[...rest.matchAll(/([a-e])\)\s*/g)];
+ let start=-1;
+ for(let j=0;j<=opts.length-5;j++)if(opts.slice(j,j+5).map(o=>o[1]).join('')==='abcde')start=j;
+ if(start<0)throw Error(`Alternativas inválidas: ${i+1}`);
+ const picked=opts.slice(start,start+5),prefix=rest.slice(0,picked[0].index);let bibliography='';
+ const options=picked.map((o,j)=>{let value=rest.slice(o.index+o[0].length,picked[j+1]?.index??rest.length);
+  if(j===4){const ref=value.search(/\n\s*\(?Fontes?:/i);if(ref>=0){bibliography=normalize(value.slice(ref));value=value.slice(0,ref);}}
+  return normalize(value);
+ });
+ const letter=answers.get(i+1);if(!letter)throw Error(`Sem resposta: ${i+1}`);
+ return {id:`tec-${m[1]}`,number:i+1,tecId:m[1],source,subject,prompt:normalize(prefix),options,answer:letter.charCodeAt(0)-65,bibliography};
+});
+if(questions.length!==107||new Set(questions.map(q=>q.id)).size!==107||answers.size!==107)throw Error('Quantidade divergente');
+for(const q of questions)if(!q.subject.includes(' - ')||q.options.some(o=>!o||/30\/08\/2026|\nGabarito|imprimir \d/.test(o)))throw Error(`Revisar ${q.number}`);
+const result={revision:'admin-107-v1',inputSha256:crypto.createHash('sha256').update(original).digest('hex'),questions};
+fs.mkdirSync(new URL('../data/',import.meta.url),{recursive:true});
+fs.writeFileSync(new URL('../data/admin-bank.json',import.meta.url),JSON.stringify(result,null,2)+'\n');
+console.log(`Importadas ${questions.length} questões, ${new Set(questions.map(q=>q.subject)).size} assuntos, ${questions.filter(q=>q.bibliography).length} referências separadas das alternativas.`);
