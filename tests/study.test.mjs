@@ -44,8 +44,8 @@ test('review selection respects due dates, weak items, scope and priority while 
   assert.deepEqual(model.selectSession(newQuestions,{},'new',6,at,true).map(q=>q.subject),['A','B','C','A','B','C']);
 });
 
-test('catalog retains all notebooks, answer bounds, code and required figures',()=>{
-  assert.equal(new Set(catalog.map(q=>q.notebook)).size,24);
+test('catalog retains all notebooks, answer bounds, code, references and required figures',()=>{
+  assert.equal(new Set(catalog.map(q=>q.notebook)).size,25);
   assert.equal(new Set(catalog.map(q=>q.id)).size,catalog.length);
   for(const q of catalog) {
     assert.ok(q.options[q.answer],q.id);
@@ -56,6 +56,12 @@ test('catalog retains all notebooks, answer bounds, code and required figures',(
   assert.ok(catalog.some(q=>q.graph?.arrows));
   assert.ok(catalog.find(q=>q.prompt.includes('Qual taxa recebe idade 25')).code.includes('calcular_taxa'));
   assert.ok(catalog.find(q=>q.prompt.includes('calc(0)')).code.includes('def calc'));
+  const supplemental=catalog.filter(q=>q.notebook==='/ifmt-banco-complementar');
+  assert.equal(supplemental.length,570);
+  assert.equal(supplemental.filter(q=>q.examBlock==='portuguese').length,225);
+  assert.equal(supplemental.filter(q=>q.referenceText).length,160);
+  assert.ok(supplemental.filter(q=>q.referenceText).every(q=>q.referenceText.length>=40));
+  assert.ok(supplemental.filter(q=>q.requiresSource).every(q=>q.sourceUrl.startsWith('https://')));
 });
 
 test('exam focus excludes unrelated content and mock sessions preserve 20/10/10/10 without duplicate items',()=>{

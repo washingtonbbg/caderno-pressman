@@ -3,6 +3,7 @@ export type StudyQuestion = {
   id: string; notebook: string; notebookTitle: string; number: number; subject: string;
   label: string; source: string; prompt: string; options: string[]; answer: number;
   explanation: string; languageNote: string; code: string; image: string; imageAlt: string; sourceUrl?:string;
+  referenceText?: string; requiresSource?: boolean; examBlock?: 'specific'|'portuguese'|'general'|'technology'|null;
   graph?: { edges: string[][]; arrows?: boolean };
 };
 export type StudyProgress = {

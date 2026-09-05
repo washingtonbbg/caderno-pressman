@@ -25,6 +25,7 @@
 .learnQuestion{background:#fffdf7;border:1px solid #bdc8ba;border-top:5px solid #345c43;border-radius:5px;padding:clamp(20px,4vw,42px)}
 .learnQuestionMeta{display:flex;justify-content:space-between;gap:18px;font-size:.95rem;font-weight:700}.learnQuestionMeta a{text-decoration:underline}.learnSource{font-size:.9rem;color:#4c5c50}
 .learnQuestion h2{font:normal 1.45rem/1.55 Georgia;white-space:pre-line;margin:24px 0}.learnQuestion h2:focus{outline:none}.learnCode{max-width:100%;overflow:auto;white-space:pre;background:#edf0e9;padding:20px;border:1px solid #c7cbbf;font-size:.95rem;line-height:1.5}
+.learnReferenceText{border-left:4px solid #879b89;background:#f3f1e8;padding:18px 20px;margin:22px 0;max-height:34rem;overflow:auto}.learnReferenceText>strong{display:block;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:#455a4c;margin-bottom:10px}.learnReferenceText p{white-space:pre-line;margin:0;line-height:1.72}.learnSourceRequired{border:1px solid #bb996f;background:#fff7e6;padding:14px 16px}.learnSourceRequired a{font-weight:700;text-decoration:underline}
 .learnQuestion figure{margin:20px 0}.learnQuestion img{max-width:100%;height:auto;display:block;margin:auto}.learnGraph{display:block;width:100%;max-width:460px;height:auto;margin:20px auto}
 .learnRecall{border-top:1px solid #c7cbbf;padding-top:22px}.learnRecall button{margin:6px 12px 0 0}
 .learnOptions{display:grid;gap:10px;margin:24px 0}.learnOptions button{display:flex;align-items:flex-start;gap:14px;text-align:left;font-weight:400;background:#fff;min-height:56px;padding:14px}

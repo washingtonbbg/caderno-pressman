@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 const books = [
+  {href:"/ifmt-banco-complementar",code:"22",edition:"IFMT · quatro cadernos complementares",title:"Banco Complementar IFMT",author:"Português · transversais · tecnologia · legislação",description:"Questões extraídas dos cadernos enviados, com textos de referência preservados e aviso quando a fonte visual é necessária.",stats:["570 questões","225 de Português","textos preservados"],tone:"portuguese-notebook"},
   {href:"/tecnologia-educacional",code:"21",edition:"IFMT · treino autoral introdutório",title:"Tecnologia Aplicada à Educação",author:"Office · Google · Moodle · segurança · IA",description:"Doze questões autorais com fontes oficiais para iniciar o treino de tecnologia educacional. O bloco ainda exige complementação.",stats:["12 autorais","fontes oficiais","reta final"],tone:"education-notebook"},
   {href:"/pressman",code:"01",edition:"8ª edição · capítulos 2 e 4",title:"Engenharia de Software",author:"Pressman & Maxim",description:"Processo, métodos, modelos prescritivos e evolucionários em questões comentadas.",stats:["18 questões","32 cards","3 níveis"],tone:"pressman"},
   {href:"/uml",code:"02",edition:"3ª edição · diagramas UML 2",title:"UML 2: Uma abordagem prática",author:"Gilleanes T. A. Guedes",description:"Classificação de diagramas e leitura de interações, com foco em sequência, comunicação e temporização.",stats:["18 questões","7 com figuras","16 cards"],tone:"uml"},

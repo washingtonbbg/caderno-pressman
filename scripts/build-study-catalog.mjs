@@ -29,12 +29,14 @@ const books = literals('app/page.tsx')('books');
 const catalog = [];
 function append(book, question, index, graph) {
   if (!question.prompt || !Array.isArray(question.options) || !Number.isInteger(question.answer) || question.answer < 0 || question.answer >= question.options.length) throw Error(`Invalid question ${book.href} #${index + 1}`);
-  const fingerprint = JSON.stringify([question.prompt, question.options, question.answer, question.code || '', question.image || '', question.figure || '']);
+  const fingerprint = JSON.stringify([question.referenceText || '', question.prompt, question.options, question.answer, question.code || '', question.image || '', question.figure || '']);
   catalog.push({
     id: `${book.href.slice(1)}:${createHash('sha256').update(fingerprint).digest('hex').slice(0, 20)}`,
     notebook: book.href, notebookTitle: book.title, number: index + 1,
     subject: question.subject || book.title, label: question.level || question.tag || (question.examId ? `Questão ${question.examId}` : 'Banco de Administração'),
-    source: question.source || book.author, sourceUrl:question.sourceUrl || '', prompt: question.prompt, options: question.options, answer: question.answer,
+    source: question.source || book.author, sourceUrl:question.sourceUrl || '', referenceText:question.referenceText || '', requiresSource:!!question.requiresSource,
+    examBlock:Object.prototype.hasOwnProperty.call(question,'examBlock')?question.examBlock:undefined,
+    prompt: question.prompt, options: question.options, answer: question.answer,
     explanation: question.explanation || question.why || '', languageNote: question.languageNote || question.xray || question.trap || '',
     code: question.code || '', image: question.image || '', imageAlt: question.imageAlt || question.caption || 'Figura da questão',
     graph: question.figure ? graph?.[question.figure] : undefined,
@@ -45,7 +47,11 @@ for (const book of books) {
   const path = `app${book.href}/page.tsx`;
   if (!existsSync(path)) throw Error(`Missing notebook ${path}`);
   const get = literals(path);
-  const questions = book.href==='/tecnologia-educacional' ? JSON.parse(readFileSync('data/technology-practice.json','utf8')) : get('questions') || get('qs');
+  const questions = book.href==='/tecnologia-educacional'
+    ? JSON.parse(readFileSync('data/technology-practice.json','utf8'))
+    : book.href==='/ifmt-banco-complementar'
+      ? JSON.parse(readFileSync('data/ifmt-supplemental-questions.json','utf8'))
+      : get('questions') || get('qs');
   const sharedCodeNames = {'/arvore-busca-c':'source','/condicionais-c':'original','/fatorial':'pythonCode','/ordenacao':'phpCode','/poo-java':'code','/recursividade':'javaCode'};
   const sharedCode = sharedCodeNames[book.href] ? get(sharedCodeNames[book.href]) : '';
   if (questions) questions.forEach((q, i) => append(book, {...q,code:q.code || sharedCode}, i, get('graphData')));

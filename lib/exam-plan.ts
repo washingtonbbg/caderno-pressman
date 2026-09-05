@@ -14,6 +14,7 @@ export const examBlocks:{id:ExamBlock;title:string;count:number;gap:string}[]=[
 
 // Editorial alignment to the user-supplied syllabus, not a prediction of exam frequency.
 export function examBlock(q:StudyQuestion):ExamBlock|null {
+  if(q.examBlock!==undefined)return q.examBlock;
   if(q.notebook==='/lingua-portuguesa')return 'portuguese';
   if(q.notebook==='/tecnologia-educacional')return 'technology';
   if(q.notebook==='/mato-grosso-transversais')return [11,12,13,16].includes(q.number)?null:'general';
