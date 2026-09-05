@@ -6,10 +6,13 @@
     "node": ">=22.13.0"
   },
   "scripts": {
+    "predev": "node scripts/build-study-catalog.mjs",
+    "prebuild": "node scripts/build-study-catalog.mjs",
     "dev": "vinext dev",
     "build": "vinext build",
     "start": "vinext start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
+    "test:study": "node --test tests/study.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern tmp",
     "db:generate": "drizzle-kit generate"
   },

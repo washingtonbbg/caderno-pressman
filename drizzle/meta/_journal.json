@@ -15,6 +15,20 @@
       "when": 1788562056508,
       "tag": "0001_library_search",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1788578447854,
+      "tag": "0002_sloppy_expediter",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1788579148478,
+      "tag": "0003_fine_ultimates",
+      "breakpoints": true
     }
   ]
 }

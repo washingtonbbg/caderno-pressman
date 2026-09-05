@@ -31,3 +31,17 @@ export const citations=sqliteTable('bank_citations', {
 },t=>[index('bank_citation_question').on(t.questionId),index('bank_citation_version').on(t.versionId)]);
 export const meta=sqliteTable('library_meta',{key:text('key').primaryKey(),value:text('value').notNull()});
 export const audit=sqliteTable('library_audit',{id:text('id').primaryKey(),actor:text('actor').notNull(),action:text('action').notNull(),target:text('target').notNull(),createdAt:text('created_at').notNull()});
+
+export const studyProgress = sqliteTable('study_progress', {
+ id:text('id').primaryKey(),userId:text('user_id').notNull(),questionId:text('question_id').notNull(),
+ attempts:integer('attempts').notNull(),correct:integer('correct').notNull(),lastCorrect:integer('last_correct').notNull(),confidence:text('confidence').notNull(),
+ intervalDays:integer('interval_days').notNull(),dueAt:integer('due_at').notNull(),lastAt:integer('last_at').notNull(),
+ firstCorrect:integer('first_correct').notNull(),delayedAttempts:integer('delayed_attempts').notNull(),delayedCorrect:integer('delayed_correct').notNull(),
+ note:text('note').notNull().default(''),errorKind:text('error_kind').notNull().default(''),
+ noteRevision:integer('note_revision').notNull().default(0),
+},t=>[uniqueIndex('study_progress_user_question').on(t.userId,t.questionId)]);
+export const studyAttempts = sqliteTable('study_attempts', {
+  id:text('id').primaryKey(),userId:text('user_id').notNull(),questionId:text('question_id').notNull(),
+ ordinal:integer('ordinal').notNull(),
+  selected:integer('selected').notNull(),confidence:text('confidence').notNull(),correct:integer('correct').notNull(),createdAt:integer('created_at').notNull(),
+},t=>[uniqueIndex('study_attempts_sequence').on(t.userId,t.questionId,t.ordinal)]);

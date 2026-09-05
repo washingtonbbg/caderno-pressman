@@ -1,0 +1,194 @@
+[
+  {
+    "subject": "Windows e arquivos",
+    "prompt": "No Explorador de Arquivos do Windows, qual sequência move um arquivo de uma pasta para outra?",
+    "options": [
+      "Copiar e colar na pasta de destino.",
+      "Recortar e colar na pasta de destino.",
+      "Renomear e atualizar a pasta de origem.",
+      "Fixar no Acesso rápido.",
+      "Criar um atalho na pasta de destino."
+    ],
+    "answer": 1,
+    "explanation": "Recortar e colar transfere o arquivo. Copiar e colar mantém o original; um atalho apenas fornece outro caminho de acesso.",
+    "source": "Microsoft Support · Explorador de Arquivos",
+    "sourceUrl": "https://support.microsoft.com/pt-BR/Windows/Experience/FileExplorer/file-explorer-in-windows",
+    "examId": "Autoral 1 · Windows e arquivos"
+  },
+  {
+    "subject": "LibreOffice e formatos",
+    "prompt": "Quais extensões OpenDocument correspondem, respectivamente, a documento de texto, planilha e apresentação?",
+    "options": [
+      ".ods, .odt e .odp.",
+      ".odp, .ods e .odt.",
+      ".docx, .xlsx e .pptx.",
+      ".odt, .ods e .odp.",
+      ".odt, .odp e .ods."
+    ],
+    "answer": 3,
+    "explanation": "ODT identifica texto, ODS planilha e ODP apresentação. No LibreOffice, esses arquivos são normalmente usados por Writer, Calc e Impress, respectivamente.",
+    "source": "Ajuda do LibreOffice · Formatos XML",
+    "sourceUrl": "https://help.libreoffice.org/latest/pt-BR/text/shared/00/00000021.html",
+    "examId": "Autoral 2 · LibreOffice e formatos"
+  },
+  {
+    "subject": "Edição de textos",
+    "prompt": "Para estruturar capítulos e facilitar a criação de um sumário automático no Word, qual recurso deve ser aplicado aos títulos?",
+    "options": [
+      "Estilos de título, como Título 1 e Título 2.",
+      "Somente negrito e aumento manual da fonte.",
+      "Quebras de linha após cada palavra.",
+      "Comentários de revisão em todos os títulos.",
+      "Alinhamento central em todos os parágrafos."
+    ],
+    "answer": 0,
+    "explanation": "Estilos de título identificam a hierarquia do documento, permitindo criar e atualizar o sumário. Alterar somente a aparência não atribui automaticamente essa função ao parágrafo.",
+    "source": "Microsoft Support · Títulos no Word",
+    "sourceUrl": "https://support.microsoft.com/pt-br/word/add-a-heading-in-a-word-document",
+    "examId": "Autoral 3 · Edição de textos"
+  },
+  {
+    "subject": "Planilhas e referências",
+    "prompt": "No Excel, C2 contém =B2*$F$1. Ao copiar C2 e colar normalmente em C3, qual fórmula resulta?",
+    "options": [
+      "=B2*$F$1",
+      "=B3*$F$2",
+      "=B3*$F$1",
+      "=C2*$G$1",
+      "=B2*$F$2"
+    ],
+    "answer": 2,
+    "explanation": "B2 é relativa e passa a B3 ao descer uma linha. Em $F$1, os cifrões fixam coluna e linha durante a cópia.",
+    "source": "Microsoft Support · Fórmulas no Excel",
+    "sourceUrl": "https://support.microsoft.com/pt-br/excel/get-started/overview-of-formulas-in-excel",
+    "examId": "Autoral 4 · Planilhas e referências"
+  },
+  {
+    "subject": "Apresentações",
+    "prompt": "Uma professora quer fazer uma imagem aparecer dentro de um slide e aplicar um efeito na passagem para o próximo slide. No PowerPoint, ela deve usar, respectivamente:",
+    "options": [
+      "Transição e animação.",
+      "Tema e comentário.",
+      "Layout e hiperlink.",
+      "Animação e modo de leitura.",
+      "Animação e transição."
+    ],
+    "answer": 4,
+    "explanation": "Animações atuam nos elementos de um slide. Transições produzem o efeito da passagem entre slides.",
+    "source": "Microsoft Support · Animações e transições",
+    "sourceUrl": "https://support.microsoft.com/pt-br/powerpoint/the-difference-between-animations-and-transitions",
+    "examId": "Autoral 5 · Apresentações"
+  },
+  {
+    "subject": "Nuvem e colaboração",
+    "prompt": "No Google Drive, um colega deve ler e comentar um documento, sem alterar diretamente seu conteúdo. Ele não possui outro acesso ao arquivo. Qual papel atende à necessidade?",
+    "options": [
+      "Leitor.",
+      "Comentador.",
+      "Editor.",
+      "Proprietário.",
+      "Acesso geral: restrito."
+    ],
+    "answer": 1,
+    "explanation": "Comentador permite ler e comentar. Leitor não permite comentários; Editor permite alterações. Restrito controla quem pode acessar, não substitui a escolha do papel.",
+    "source": "Ajuda do Google Drive · Compartilhamento",
+    "sourceUrl": "https://support.google.com/drive/answer/2494822?hl=pt-br",
+    "examId": "Autoral 6 · Nuvem e colaboração"
+  },
+  {
+    "subject": "Formulários e avaliação",
+    "prompt": "Uma professora quer que o Google Forms atribua pontos automaticamente às respostas corretas de múltipla escolha. Qual configuração atende ao objetivo?",
+    "options": [
+      "Marcar perguntas como obrigatórias, sem definir respostas corretas.",
+      "Coletar e-mails, sem transformar o formulário em teste.",
+      "Alterar o tema visual e inserir imagens.",
+      "Criar um teste, definir a chave de resposta e atribuir pontos.",
+      "Embaralhar as alternativas, sem configurar a chave de resposta."
+    ],
+    "answer": 3,
+    "explanation": "No teste, a chave identifica as respostas corretas e permite atribuir pontos. Tornar uma pergunta obrigatória exige resposta, mas não identifica qual opção está correta.",
+    "source": "Ajuda do Google · Testes no Formulários",
+    "sourceUrl": "https://support.google.com/docs/answer/7032287?hl=pt-BR",
+    "examId": "Autoral 7 · Formulários e avaliação"
+  },
+  {
+    "subject": "Google Classroom",
+    "prompt": "Antes de publicar uma atividade no Classroom, uma professora anexa um modelo do Google Docs. Cada estudante deve preencher seu próprio arquivo. Qual opção do anexo deve selecionar?",
+    "options": [
+      "Permitir que todos editem o mesmo arquivo.",
+      "Permitir que os estudantes apenas vejam o arquivo.",
+      "Fazer uma cópia para cada estudante.",
+      "Remover o anexo e manter apenas o título.",
+      "Alterar a pontuação para zero."
+    ],
+    "answer": 2,
+    "explanation": "Uma cópia para cada estudante distribui arquivos individuais. Liberar edição do mesmo arquivo faz todos trabalharem no documento compartilhado. A opção de cópia é escolhida antes da publicação.",
+    "source": "Ajuda do Google Classroom · Criar atividade",
+    "sourceUrl": "https://support.google.com/edu/classroom/answer/6020265?co=GENIE.Platform%3DDesktop&hl=pt-BR",
+    "examId": "Autoral 8 · Google Classroom"
+  },
+  {
+    "subject": "Moodle e EaD",
+    "prompt": "No Moodle, estudantes devem publicar argumentos e responder aos colegas durante a semana, sem conexão simultânea obrigatória. Qual combinação atende à proposta?",
+    "options": [
+      "Fórum de discussão, com interação assíncrona.",
+      "Videoconferência ao vivo, com interação assíncrona.",
+      "Fórum, obrigatoriamente com interação síncrona.",
+      "PDF para leitura, com debate síncrono integrado.",
+      "Página estática, que substitui automaticamente as respostas dos participantes."
+    ],
+    "answer": 0,
+    "explanation": "O fórum organiza mensagens e respostas. Cada estudante pode participar em um horário diferente, caracterizando interação assíncrona. Uma videoconferência ao vivo é síncrona.",
+    "source": "MoodleDocs · Forum activity",
+    "sourceUrl": "https://docs.moodle.org/502/en/Forum_activity",
+    "examId": "Autoral 9 · Moodle e EaD"
+  },
+  {
+    "subject": "Correio eletrônico",
+    "prompt": "Ao enviar um aviso pelo Gmail, qual campo inclui destinatários sem revelar a cada um os endereços dos demais incluídos nesse mesmo campo?",
+    "options": [
+      "Para.",
+      "Cc.",
+      "Assunto.",
+      "Responder a todos.",
+      "Cco."
+    ],
+    "answer": 4,
+    "explanation": "Cco significa cópia oculta. Destinatários nesse campo não veem os outros endereços em Cco, mas continuam podendo ver os endereços colocados em Para e Cc.",
+    "source": "Ajuda do Gmail · Enviar mensagens",
+    "sourceUrl": "https://support.google.com/mail/answer/2819488?co=GENIE.Platform%3DDesktop&hl=pt-BR",
+    "examId": "Autoral 10 · Correio eletrônico"
+  },
+  {
+    "subject": "Segurança da informação",
+    "prompt": "Um servidor recebe uma mensagem aparentemente de um colega, pedindo com urgência sua senha em um link. Qual é a conduta adequada?",
+    "options": [
+      "Informar a senha, pois o nome do colega aparece no remetente.",
+      "Abrir o link porque a urgência comprova a autenticidade.",
+      "Não fornecer a senha e confirmar o pedido por outro meio de comunicação.",
+      "Encaminhar o link recomendando que todos preencham seus dados.",
+      "Confiar se a mensagem não contiver erros de português."
+    ],
+    "answer": 2,
+    "explanation": "Mensagens falsas podem se passar por conhecidos ou usar contas invadidas. Nome, urgência e boa redação não comprovam autenticidade; confirme por outro canal.",
+    "source": "CERT.br · Phishing e golpes",
+    "sourceUrl": "https://cartilha.cert.br/guardiao/fasciculo-phishing-golpes-egc.pdf",
+    "examId": "Autoral 11 · Segurança da informação"
+  },
+  {
+    "subject": "IA na educação",
+    "prompt": "Qual prática combina um prompt útil com o uso responsável de IA na preparação de material educacional?",
+    "options": [
+      "Usar um pedido genérico e publicar sem revisão.",
+      "Informar objetivo, público, restrições e formato; depois revisar a precisão e a adequação.",
+      "Omitir o público para garantir que a resposta sirva a qualquer turma.",
+      "Pedir uma resposta convincente e dispensar a verificação.",
+      "Aceitar a primeira resposta se estiver escrita com segurança."
+    ],
+    "answer": 1,
+    "explanation": "O contexto direciona a resposta, mas não garante qualidade. A revisão humana confere precisão, objetivo pedagógico e inclusão; lacunas podem exigir ajustes no prompt.",
+    "source": "Microsoft Learn · Prompts com propósito",
+    "sourceUrl": "https://learn.microsoft.com/pt-br/training/modules/prompt-with-purpose/",
+    "examId": "Autoral 12 · IA na educação"
+  }
+]

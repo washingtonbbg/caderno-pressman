@@ -19,6 +19,8 @@ import "./operators.css";
 import "./exam-notebooks.css";
 import "./new-library-tones.css";
 import "./library-workspace.css";
+import "./learning-workspace.css";
+import StudyShortcut from './components/StudyShortcut';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -61,6 +63,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <StudyShortcut/>
       </body>
     </html>
   );

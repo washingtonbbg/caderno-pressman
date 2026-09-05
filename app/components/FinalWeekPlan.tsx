@@ -1,0 +1,34 @@
+"use client";
+import Link from 'next/link';
+import { useState } from 'react';
+import { EXAM_ID, examBlock, examBlocks, finalWeek } from '@/lib/exam-plan';
+import type { StudyQuestion } from '@/lib/study-model';
+
+export default function FinalWeekPlan({questions}:{questions:StudyQuestion[]}){
+  const [hours,setHours]=useState(4);
+  const [weak,setWeak]=useState('balanced');
+  const total=hours*60;
+  const share=(id:string)=>{
+    const base=examBlocks.find(b=>b.id===id)!.count/50;
+    if(weak==='balanced')return base;
+    if(weak===id)return base+.1;
+    return base-.1*base/(1-examBlocks.find(b=>b.id===weak)!.count/50);
+  };
+  const minutes=examBlocks.map(b=>Math.round(total*share(b.id)));
+  minutes[0]+=total-minutes.reduce((a,b)=>a+b,0);
+  const studyLink=(block='all')=>`/estudar?edital=${EXAM_ID}&bloco=${block}`;
+  return <main className="learnWorkspace"><header className="learnTop"><Link href="/">← Cadernos</Link><span>IFMT · Administrador</span><Link href={studyLink()}>Praticar agora →</Link></header><div className="learnContainer">
+    <div className="learnIntro"><div><p className="learnEyebrow">PROVA 13/09/2026 · RETA FINAL</p><h1>Uma semana com foco.</h1></div><p>05 a 12 de setembro: oito dias de preparação.<br/>Priorize o edital e os erros que ainda pode corrigir.</p></div>
+    <div className="learnNotice"><p><strong>50 questões:</strong> Administração 20; Português 10; Gerais e transversais 10; Tecnologia aplicada à educação 10. Essa divisão considera quantidade de questões, não presume pesos em pontos ou nota de corte.</p><p>A notícia oficial informa 13/09 às 14h. Confirme local, apresentação, duração, materiais permitidos e regras de pontuação no edital vigente e no cartão.</p><a href="https://seletivo.ifmt.edu.br/edital/visualizar/172/" target="_blank" rel="noreferrer">Edital 002/2026 e comunicados ↗</a></div>
+    <section className="learnPlanner"><h2>Seu tempo disponível</h2><div className="learnFilters"><label>Horas líquidas por dia<select value={hours} onChange={e=>setHours(Number(e.target.value))}>{[2,3,4,5,6,8].map(h=><option key={h} value={h}>{h} horas, sem contar pausas</option>)}</select></label><label>Prioridade após o diagnóstico<select value={weak} onChange={e=>setWeak(e.target.value)}><option value="balanced">Distribuição pelo nº de questões</option>{examBlocks.map(b=><option key={b.id} value={b.id}>{b.title}</option>)}</select></label></div><p>São {hours*8} horas se mantiver essa carga nos oito dias. No sábado, reduza a carga e encerre cedo. A área mais fraca recebe 10 pontos percentuais extras; esse ajuste é uma regra prática, não uma previsão da prova.</p>
+      <div className="learnStats">{examBlocks.map((b,i)=><div key={b.id}><strong>{minutes[i]}<small> min/dia</small></strong><span>{b.title} · {b.count} questões</span></div>)}</div>
+      <p><strong>Dentro de cada bloco:</strong> use cerca de metade do tempo tentando responder sem consulta, um terço corrigindo na referência e o restante retomando os erros anteriores. Tema ainda desconhecido: comece com um exemplo resolvido curto, depois tente outro sozinho. Faça pausas entre blocos.</p>
+      <div className="learnStart"><Link className="examPlanAction" href={studyLink()}>Começar o diagnóstico →</Link><button onClick={()=>window.print()}>Imprimir estratégia</button></div>
+    </section>
+    <section className="learnJournal"><h2>O que o projeto cobre — e o que precisa de complemento</h2><p>O treino desta semana usa questões alinhadas ao programa de Administrador. Programação, UML, engenharia de software e carreira docente ficam fora desse recorte.</p><div className="examCoverage">{examBlocks.map(b=><article key={b.id}><h3>{b.title}</h3><p><strong>{questions.filter(q=>examBlock(q)===b.id).length} itens no recorte</strong> · pode haver sobreposição de conceitos entre itens.</p><p>{b.gap}</p><Link href={studyLink(b.id)}>Treinar este bloco →</Link></article>)}</div><p>Questões antigas conservam o recorte da fonte. Valores, prazos de transição e indicadores históricos não comprovam a regra vigente em 2026. O item sobre transição da Lei 14.133 e conteúdos docentes fora do programa foram retirados desta fila.</p></section>
+    <section className="examCalendar" aria-label="Plano diário">{finalWeek.map(day=><article key={day.date} className="learnPlanner"><p className="learnEyebrow">{day.label}</p><h2>{day.title}</h2><div className="examDayGrid">{examBlocks.map((b,i)=><div key={b.id}><h3>{b.title}{day.kind==='study'||day.kind==='diagnostic'?` · ${minutes[i]} min`:''}</h3><p>{day[b.id]}</p></div>)}</div><p className="examDeliverable"><strong>Resultado do dia:</strong> {day.deliverable}</p>{day.kind==='simulation'?<Link className="examPlanAction" href={`${studyLink()}&formato=simulado`}>Fazer ensaio de 50 questões →</Link>:<Link href={studyLink()}>Praticar e revisar →</Link>}</article>)}</section>
+    <section className="learnPlanner"><h2>Como decidir o que fazer amanhã</h2><p>Marque cada erro como falta de conceito, dificuldade de aplicar, leitura do comando ou chute. Dê prioridade aos erros repetidos, especialmente quando você respondeu com confiança. Acerto por chute continua na revisão.</p><p>Retome erros no dia seguinte e faça outra tentativa depois de dois ou três dias, quando houver tempo antes da prova. A fila da reta final limita revisões longas ao dia 12. Uma questão reaprendida hoje ainda precisa de uma tentativa posterior.</p><p>Se o plano atrasar, preserve uma passagem pelos quatro blocos, corrija os erros e reduza o volume. Evite compensar com uma maratona de leitura passiva ou deixando toda a correção para sábado.</p></section>
+    <section className="learnPlanner"><h2>No domingo, 13/09</h2><p>Faça a rotina habitual e, se ajudar, uma revisão curta das suas próprias anotações. Na prova, comece pelas questões que resolve com segurança, marque as demoradas e volte depois. Reserve tempo para conferir a folha de respostas, observando as regras do edital.</p><p>A distribuição de tempo deve usar a duração oficial e o tempo medido no ensaio. Nenhuma meta deste plano é uma nota de corte ou garantia de aprovação.</p></section>
+    <details className="learnMethods"><summary>Fontes e limites da estratégia</summary><p>Programa fornecido por você; <a href="https://ifmt.edu.br/blog/ifmt-lanca-edital-de-concurso-publico-para-docentes-e-tecnico-administrativos-inscricoes-abertas/" target="_blank" rel="noreferrer">comunicado oficial do IFMT sobre data e horário</a>. Métodos: <a href="https://doi.org/10.1038/s44159-022-00089-1" target="_blank" rel="noreferrer">recuperação e espaçamento</a>, <a href="https://doi.org/10.1007/s10648-018-9434-x" target="_blank" rel="noreferrer">autoexplicação</a>. O plano de oito dias é uma adaptação prática ao prazo, não uma fórmula validada de aprovação.</p></details>
+  </div></main>;
+}

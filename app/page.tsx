@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 const books = [
+  {href:"/tecnologia-educacional",code:"21",edition:"IFMT · treino autoral introdutório",title:"Tecnologia Aplicada à Educação",author:"Office · Google · Moodle · segurança · IA",description:"Doze questões autorais com fontes oficiais para iniciar o treino de tecnologia educacional. O bloco ainda exige complementação.",stats:["12 autorais","fontes oficiais","reta final"],tone:"education-notebook"},
   {href:"/pressman",code:"01",edition:"8ª edição · capítulos 2 e 4",title:"Engenharia de Software",author:"Pressman & Maxim",description:"Processo, métodos, modelos prescritivos e evolucionários em questões comentadas.",stats:["18 questões","32 cards","3 níveis"],tone:"pressman"},
   {href:"/uml",code:"02",edition:"3ª edição · diagramas UML 2",title:"UML 2: Uma abordagem prática",author:"Gilleanes T. A. Guedes",description:"Classificação de diagramas e leitura de interações, com foco em sequência, comunicação e temporização.",stats:["18 questões","7 com figuras","16 cards"],tone:"uml"},
   {href:"/padroes",code:"03",edition:"GoF · padrões selecionados",title:"Padrões de Projeto",author:"Gamma, Helm, Johnson & Vlissides",description:"Intenção, aplicabilidade e diferenças entre padrões de criação e comportamentais.",stats:["12 questões","18 cards","2 exemplos oficiais"],tone:"patterns"},
@@ -28,6 +29,7 @@ const books = [
 
 export default function LibraryHome(){return <main className="libraryPage">
   <header className="libraryHeader"><Link className="brand" href="/"><span>ES</span>Cadernos de Estudo</Link><div>Engenharia de Software · biblioteca de questões</div></header>
+  <section className="studyEntry"><div><h2>IFMT Administrador · prova em 13/09</h2><p>Plano de oito dias, treino alinhado aos quatro blocos do edital e revisões dos seus erros e dúvidas.</p></div><Link href="/reta-final">Abrir minha estratégia →</Link></section>
   <section className="libraryHero"><div className="eyebrow">Escolha um caderno</div><h1>Do livro à questão.<br/><em>Do erro ao conceito.</em></h1><p>Cada caderno usa um banco próprio, limitado à obra de referência e aos assuntos cobrados nas questões-modelo.</p></section>
   <section className="bookShelf" aria-label="Livros disponíveis">{books.map(book=><Link href={book.href} className={`bookTile ${book.tone}`} key={book.href}>
     <div className="bookTop"><span>{book.code}</span><small>{book.edition}</small></div><div className="bookBody"><p>{book.author}</p><h2>{book.title}</h2><div>{book.description}</div></div><div className="bookFoot"><ul>{book.stats.map(item=><li key={item}>{item}</li>)}</ul><strong>Abrir caderno →</strong></div>
