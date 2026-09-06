@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { recordAttempt, selectSession, type Confidence, type StudyMode, type StudyProgress, type StudyQuestion } from '@/lib/study-model';
 import { EXAM_ID, capExamReview, examBlock, examBlocks, examSession, type ExamBlock } from '@/lib/exam-plan';
+import QuestionExplanation from './QuestionExplanation';
+import FeedbackEvidence from './FeedbackEvidence';
 
 const confidenceLabels: Record<Confidence,string> = {guess:'Chute',unsure:'Em dúvida',sure:'Consigo justificar'};
 const modeLabels: Record<StudyMode,string> = {recommended:'Revisões + novas',due:'Revisões pendentes',errors:'Erros e dúvidas',new:'Questões novas'};
@@ -172,7 +174,7 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
   }
 
   return <main className="learnWorkspace">
-    <header className="learnTop"><Link href="/">← Cadernos de Estudo</Link><Link href="/reta-final">Estratégia até 13/09</Link><a href="#metodo">Como estudar</a></header>
+    <header className="learnTop"><Link href="/">← Cadernos de Estudo</Link><Link href="/reta-final">Estratégia até 13/09</Link>{questions.some(item=>item.explanationMethod)&&<Link href="/revisao-portugues">Revisão conceitual</Link>}<a href="#metodo">Como estudar</a></header>
     <div className="learnContainer">
       <div className="learnIntro"><div><p className="learnEyebrow">SEU ESTUDO, UMA TENTATIVA POR VEZ</p><h1>Estudar hoje</h1></div><p>Recupere da memória. Confira a explicação.<br/>Volte ao conteúdo depois de um intervalo.</p></div>
       {connection==='loading'&&<p role="status">Carregando seu histórico…</p>}
@@ -219,11 +221,7 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
           {answered&&!mockExam&&<div className="learnFeedback"><p className="learnVerdict">{selected===q.answer?'Você acertou.':selected===-1?'Vamos construir essa resposta.':'A resposta precisa de revisão.'} Gabarito: {String.fromCharCode(65+q.answer)}.</p>
             {selected===q.answer&&confidence!=='sure'&&<p>Acertar com dúvida ou por chute pede nova tentativa; isso não é tratado como lembrança segura.</p>}
             {selected!==q.answer&&confidence==='sure'&&<p>Este erro com confiança merece atenção: identifique qual regra parecia correta e compare com a referência.</p>}
-            <h3>Entenda a resposta</h3><p>{q.explanation||'Este item tem gabarito no banco, mas ainda não tem uma justificativa conceitual cadastrada. Confira a fonte no caderno antes de criar sua regra de revisão.'}</p>
-            {q.sourceUrl&&<a href={q.sourceUrl} target="_blank" rel="noreferrer">Conferir a fonte desta explicação ↗</a>}
-            {q.optionAnalysis?.length===5&&<details className="learnAnalysisDetails"><summary>Análise das cinco alternativas</summary><ol className="learnOptionAnalysis">{q.optionAnalysis.map((analysis,i)=><li key={`${q.id}-analysis-${i}`}><strong>{String.fromCharCode(65+i)}.</strong> {analysis}</li>)}</ol></details>}
-            {q.bankAnalysis&&<details className="learnAnalysisDetails"><summary>Como a banca construiu este item</summary><p className="learnBankAnalysis">{q.bankAnalysis}</p>{q.reviewStatus&&<p className={`learnReviewStatus ${q.reviewStatus}`}><strong>{q.reviewStatus==='needs_review'?'Conferência pendente':'Revisão estrutural registrada'}:</strong> {q.reviewNote||'Confira a fonte original antes de consolidar a regra.'}</p>}</details>}
-            {q.citations?.length ? <details className="learnAnalysisDetails"><summary>Fonte guardada para análise da banca</summary><ul className="learnCitationList">{q.citations.map(citation=><li key={citation.id}><strong>{citation.title}</strong><span>{citation.locator} · {citation.label}</span>{citation.official_url&&<a href={citation.official_url} target="_blank" rel="noreferrer">Abrir fonte ↗</a>}<small>{citation.note}</small></li>)}</ul></details> : null}
+            <QuestionExplanation question={q}/>
             {q.languageNote&&<details><summary>Pistas e distinções do caderno</summary><p>{q.languageNote}</p><p>Uma pista linguística ajuda a conferir a proposição; não substitui o conceito ou a fonte.</p></details>}
             {recall&&<details><summary>O que você lembrou antes de responder</summary><p>{recall}</p></details>}
             {!pending&&progress[q.id]&&<p>Próxima revisão: <strong>{date(progress[q.id].dueAt)}</strong>{!examFocus&&<> · intervalo de {progress[q.id].intervalDays} dia(s)</>}{connection!=='saved'?' nesta sessão temporária':''}.</p>}
@@ -242,6 +240,7 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
         <p><strong>Autoexplicação e confiança:</strong> escreva a regra que faltou e observe a diferença entre acertar com segurança e acertar por chute. Nenhuma nota de confiança, sozinha, comprova domínio.</p>
         <p>O indicador “após 24h” mede revisões dessas mesmas questões. Ele não é um teste independente de transferência para questões inéditas.</p>
         <ul><li><a href="https://doi.org/10.1038/s44159-022-00089-1" target="_blank" rel="noreferrer">Carpenter, Pan e Butler (2022): espaçamento e recuperação</a></li><li><a href="https://doi.org/10.1002/rev3.3266" target="_blank" rel="noreferrer">Firth, Rivers e Boyle (2021): intercalação e limites da evidência</a></li><li><a href="https://doi.org/10.1007/s10648-018-9434-x" target="_blank" rel="noreferrer">Bisra et al. (2018): meta-análise de autoexplicação</a></li><li><a href="https://doi.org/10.1007/s10648-025-10035-1" target="_blank" rel="noreferrer">Murray, Horner e Göbel (2025): espaçamento e recuperação em matemática</a></li></ul>
+        <FeedbackEvidence />
       </div></details>
     </div>
   </main>;

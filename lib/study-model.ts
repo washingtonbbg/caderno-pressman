@@ -10,6 +10,8 @@ export type StudyQuestion = {
   referenceText?: string; requiresSource?: boolean; examBlock?: 'specific'|'portuguese'|'general'|'technology'|null;
   optionAnalysis?: string[]; bankAnalysis?: string; reviewStatus?: 'reviewed'|'needs_review'; reviewNote?: string;
   suggestedAnswer?: number; citations?: StudyCitation[];
+  explanationMethod?: string; reviewedAt?: string; reviewedBy?: string; sourceHighlight?: string; scoring?: string;
+  selfExplanation?: string; selfExplanationAnswer?: string;
   graph?: { edges: string[][]; arrows?: boolean };
 };
 export type StudyProgress = {
@@ -48,6 +50,8 @@ export function recordAttempt(questionId: string, previous: StudyProgress | unde
 
 export function selectSession(questions: StudyQuestion[], progress: Record<string, StudyProgress>, mode: StudyMode, limit: number, at: number, mixed: boolean) {
   const eligible = questions.filter(q => {
+    // Contested classifications remain accessible for discussion, not scoring.
+    if (q.scoring === 'discussion') return false;
     const p = progress[q.id];
     if (mode === 'new') return !p;
     if (mode === 'due') return p && p.dueAt <= at;

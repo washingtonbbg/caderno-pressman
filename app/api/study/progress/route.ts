@@ -16,6 +16,7 @@ export async function POST(request: Request) {
     const questionId = field(body.questionId,'Questão',200,true);
     const question = catalog.find(q=>q.id===questionId);
     if (!question) throw new HttpError(404,'Questão não encontrada.');
+    if (question.scoring === 'discussion') throw new HttpError(409,'Esta questão está disponível para discussão conceitual, sem pontuação enquanto a classificação permanece em dúvida.');
     const confidence = choice(body.confidence,['guess','unsure','sure'],'Confiança') as Confidence;
     const selected = body.selected;
     if (!Number.isInteger(selected) || selected < -1 || selected >= question.options.length) throw new HttpError(400,'Resposta inválida.');

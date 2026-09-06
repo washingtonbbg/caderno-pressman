@@ -2,6 +2,7 @@
 import ts from 'typescript';
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { isGenericExplanation } from '../lib/explanation-policy.mjs';
 
 function literals(path) {
   const file = ts.createSourceFile(path, readFileSync(path, 'utf8'), ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
@@ -31,9 +32,13 @@ function append(book, question, index, graph) {
   if (!question.prompt || !Array.isArray(question.options) || !Number.isInteger(question.answer) || question.answer < 0 || question.answer >= question.options.length) throw Error(`Invalid question ${book.href} #${index + 1}`);
   const supplemental = book.href === '/ifmt-banco-complementar';
   if (supplemental) {
-    if (!question.explanation?.trim()) throw Error(`Missing conceptual explanation in ${book.href} #${index + 1}`);
-    if (!Array.isArray(question.optionAnalysis) || question.optionAnalysis.length !== 5 || question.optionAnalysis.some(item => !String(item || '').trim())) throw Error(`Missing five alternative analyses in ${book.href} #${index + 1}`);
-    if (!question.bankAnalysis?.trim()) throw Error(`Missing bank analysis in ${book.href} #${index + 1}`);
+    if ([question.explanation, question.bankAnalysis, ...(question.optionAnalysis || [])].some(isGenericExplanation)) throw Error(`Unreviewed template in ${book.href} #${index + 1}`);
+    if (question.reviewStatus === 'reviewed' || question.explanationMethod) {
+      if (!question.explanation?.trim() || question.optionAnalysis?.length !== 5 || question.optionAnalysis.some(item => !item.trim())) throw Error(`Incomplete editorial review #${index + 1}`);
+      if (!question.explanationMethod || !question.reviewedAt || !question.citations?.some(c => c.role === 'concept' && c.verified === 1)) throw Error(`Missing conceptual evidence #${index + 1}`);
+      const reviewedHash = createHash('sha256').update(JSON.stringify([question.referenceText || '', question.prompt, question.options, question.answer])).digest('hex');
+      if (question.contentHash !== reviewedHash) throw Error(`Stale editorial review #${index + 1}`);
+    }
     if (typeof question.sourceUrl !== 'string' || !question.sourceUrl.startsWith('https://')) throw Error(`Missing HTTPS source in ${book.href} #${index + 1}`);
     if (!Array.isArray(question.citations) || !question.citations.length) throw Error(`Missing citation in ${book.href} #${index + 1}`);
   }
@@ -51,6 +56,9 @@ function append(book, question, index, graph) {
     optionAnalysis: question.optionAnalysis || [], bankAnalysis: question.bankAnalysis || '', reviewStatus: question.reviewStatus || undefined,
     reviewNote: question.reviewNote || '', suggestedAnswer: Number.isInteger(question.suggestedAnswer) ? question.suggestedAnswer : undefined,
     citations: question.citations || [],
+    explanationMethod: question.explanationMethod || '', reviewedAt: question.reviewedAt || '', reviewedBy: question.reviewedBy || '',
+    sourceHighlight: question.sourceHighlight || '', scoring: question.scoring || 'standard',
+    selfExplanation: question.selfExplanation || '', selfExplanationAnswer: question.selfExplanationAnswer || '',
     code: question.code || '', image: question.image || '', imageAlt: question.imageAlt || question.caption || 'Figura da questão',
     graph: question.figure ? graph?.[question.figure] : undefined,
   });

@@ -1,0 +1,289 @@
+{
+  "https://www.tecconcursos.com.br/questoes/3798900": {
+    "explanationMethod": "concept-application-contrast-v1",
+    "reviewedAt": "2026-09-05",
+    "reviewedBy": "Revisão assistida por IA com consulta às fontes; não homologação pela banca",
+    "reviewStatus": "needs_review",
+    "scoring": "discussion",
+    "contentHash": "3267a3013d6baae2c9393928ea85f2cec5e03b670ad941704e55ff0c7524dc49",
+    "sourceHighlight": "revolução",
+    "explanation": "A palavra cobrada é “revolução”. Na prova original ela está em negrito e sublinhada; o gabarito definitivo do IFMT indica C, derivação parassintética.\n\nAqui precisamos separar a resposta oficial da regra linguística. Parassíntese é a formação de uma palavra com prefixo e sufixo associados à mesma base, como en- + frac- + -ecer → enfraquecer. Não basta enxergar uma possível partícula “re-” no começo e “-ção” no final de uma palavra.\n\nOs dicionários consultados registram a origem latina de “revolução”. Isso não demonstra parassíntese em português, e não localizamos a fundamentação da banca para essa classificação. Portanto, não vou inventar uma decomposição para justificar C. Guarde C como gabarito desta prova, com ressalva; aprenda o processo por exemplos cuja formação é clara.",
+    "optionAnalysis": [
+      "Sufixal: acrescenta um sufixo a uma base. No próprio trecho, lenta + -mente → lentamente é um exemplo: o adjetivo passa a advérbio. Mas “lentamente” não é a palavra destacada na prova. Para classificar “revolução” por sufixação, seria preciso justificar a base e a etapa de formação; só reconhecer a terminação “-ção” não basta. A não é o gabarito oficial, mas isso não autoriza descartar a hipótese sem análise.",
+      "Imprópria: a palavra muda de classe gramatical sem receber afixos. Compare “vamos jantar” (verbo) e “o jantar estava pronto” (substantivo). Em “nenhuma revolução”, “revolução” já é um substantivo; não ocorre essa passagem de outra classe para substantivo no trecho. Por isso a derivação imprópria não explica o caso.",
+      "Parassintética: prefixo e sufixo participam juntos da formação a partir da base. Em enfraquecer, en- + frac- + -ecer transforma a ideia de “fraco” em um verbo. É diferente de simplesmente encontrar afixos nas duas pontas: eles podem ter sido acrescentados em etapas independentes. C é o gabarito oficial, mas a aplicação desse critério a “revolução” continua sem fundamentação verificável nas fontes localizadas. Não trate esta palavra como exemplo-modelo de parassíntese.",
+      "Aglutinação: duas bases se unem com alteração de sua forma sonora. Plano + alto → planalto ilustra a perda de parte da primeira base. Para aplicar isso a “revolução”, seria necessário identificar as bases e a alteração que a união produziu; essa formação não está demonstrada. Um prefixo não equivale, por si só, a uma segunda palavra.",
+      "Justaposição: bases se unem preservando sua forma sonora, como guarda + roupa → guarda-roupa. “Revolução” não apresenta essa união de bases. Compare: “guarda-roupa” permite reconhecer os dois elementos; olhar apenas o início e o fim de “revolução” não fornece uma composição desse tipo."
+    ],
+    "bankAnalysis": "O primeiro ponto observável é o destaque: analisar “lentamente” levaria a uma classificação correta para a palavra errada. As alternativas contrastam cinco processos, exigindo distinguir afixos, bases e mudança de classe. Este item isolado não permite concluir uma estratégia geral da banca. Sua particularidade é a separação entre o gabarito oficial C e a ressalva linguística não resolvida.",
+    "reviewNote": "Gabarito oficial C confirmado na questão 3 de Agronomia (06/02/2026). O destaque de “revolução” foi conferido na prova, p. 3, e no caderno enviado, p. 7 (questão 16; gabarito p. 95). Classificação conceitual ainda em discussão: item retirado das sessões pontuadas e sem pontuação, sem apagar o histórico anterior.",
+    "selfExplanation": "Sem olhar acima: por que “lentamente” é um exemplo claro de sufixação? O que precisaria ser demonstrado para classificar outra palavra como parassintética?",
+    "selfExplanationAnswer": "Lenta é a base adjetival, e -mente forma o advérbio. Na parassíntese, é preciso justificar a atuação conjunta de prefixo e sufixo sobre uma base; não basta reconhecer letras que parecem afixos.",
+    "citations": [
+      {
+        "id": "origin-ifmt-agronomia",
+        "title": "IFMT — Prova de Agronomia, edital 002/2025",
+        "kind": "official-exam",
+        "label": "Consultado em 05/09/2026",
+        "locator": "p. 3 · questão 3",
+        "role": "origin",
+        "verified": 1,
+        "official_url": "https://seletivo.ifmt.edu.br/edital/arquivos/4348/",
+        "note": "Destaque em “revolução”, enunciado e alternativas conferidos no original. No caderno do estudante, corresponde à questão 16."
+      },
+      {
+        "id": "key-ifmt-agronomia",
+        "title": "IFMT — Gabarito definitivo de Agronomia",
+        "kind": "official-exam",
+        "label": "Consultado em 05/09/2026",
+        "locator": "p. 1 · questão 3 · 06/02/2026",
+        "role": "answer-key",
+        "verified": 1,
+        "official_url": "https://seletivo.ifmt.edu.br/edital/arquivos/4467/",
+        "note": "Confirma a letra C. O documento não apresenta a justificativa linguística."
+      },
+      {
+        "id": "concept-parassintese",
+        "title": "Ciberdúvidas — O conceito de parassíntese",
+        "kind": "reference",
+        "label": "Consultado em 05/09/2026",
+        "locator": "Definição e exemplo enfraquecer",
+        "role": "concept",
+        "verified": 1,
+        "official_url": "https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/o-conceito-de-parassintese/25042",
+        "note": "Sustenta o conceito de parassíntese; não classifica revolução."
+      },
+      {
+        "id": "concept-impropria",
+        "title": "Ciberdúvidas — Sobre derivação imprópria",
+        "kind": "reference",
+        "label": "Consultado em 05/09/2026",
+        "locator": "Mudança de categoria gramatical",
+        "role": "concept",
+        "verified": 1,
+        "official_url": "https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/sobre-derivacao-impropria/23378",
+        "note": "Definição de derivação imprópria/conversão."
+      },
+      {
+        "id": "concept-formacao",
+        "title": "Secretaria de Educação de Bela Vista do Toldo — Formação de palavras",
+        "kind": "reference",
+        "label": "Consultado em 05/09/2026",
+        "locator": "Seção Formação de palavras",
+        "role": "concept",
+        "verified": 1,
+        "official_url": "https://www.pmbvt.sc.gov.br/uploads/sites/401/2021/12/1843068_5_apostila___8_ano.pdf",
+        "note": "Referência didática para justaposição, aglutinação e exemplos. Não é a justificativa oficial do IFMT."
+      },
+      {
+        "id": "concept-revolução",
+        "title": "Infopédia — revolução",
+        "kind": "reference",
+        "label": "Consultado em 05/09/2026",
+        "locator": "Etimologia do verbete",
+        "role": "concept",
+        "verified": 1,
+        "official_url": "https://www.infopedia.pt/dicionarios/lingua-portuguesa/revolu%C3%A7%C3%A3o",
+        "note": "Registra origem no latim revolutione. Essa etimologia não demonstra a classificação parassintética em português."
+      },
+      {
+        "id": "concept-mente",
+        "title": "Ciberdúvidas — Advérbios de modo coordenados",
+        "kind": "reference",
+        "label": "Consultado em 05/09/2026",
+        "locator": "Formação de advérbios com -mente",
+        "role": "concept",
+        "verified": 1,
+        "official_url": "https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/adverbios-de-modo-coordenados/33758",
+        "note": "Sustenta a formação com -mente a partir de adjetivos; aplicado aqui a lenta → lentamente."
+      }
+    ]
+  },
+  "https://www.tecconcursos.com.br/questoes/4005555": {
+    "explanationMethod": "concept-application-contrast-v1",
+    "reviewedAt": "2026-09-05",
+    "reviewedBy": "Revisão assistida por IA com consulta às fontes; não homologação pela banca",
+    "reviewStatus": "reviewed",
+    "scoring": "standard",
+    "contentHash": "78b4002d360bb262d638c5d8fecd21e640fa47c16425922efd23671b32b5bb8a",
+    "explanation": "“Guarda-roupa” reúne guarda e roupa, preservando seus sons: é composição por justaposição, alternativa E.\n\nDerivação trabalha com uma base e seus processos de formação, como a adição de afixos. Composição combina bases. Dentro da composição, compare guarda + roupa → guarda-roupa (sons preservados) com plano + alto → planalto (alteração na união). O hífen, sozinho, não decide a classificação.",
+    "optionAnalysis": [
+      "“Girassol” reúne gira e sol: portanto, é composição, não derivação. A escrita com “ss” preserva o som de /s/ entre vogais; essa adaptação ortográfica não é perda de sons. É justaposição, mesmo sem hífen. O erro de A é chamar a união de duas bases de derivação.",
+      "“Pé-de-meia” é um composto por justaposição: os elementos continuam reconhecíveis. A preposição “de” não impede a composição. A alternativa seria adequada se afirmasse essa classificação; torna-se falsa porque diz “não representa”.",
+      "Justaposição é uma modalidade de composição, não a única. Aglutinação também existe: plano + alto → planalto é um contraexemplo à exclusividade afirmada. “Somente” é errado aqui por excluir um processo real, não por ser uma palavra sempre proibida em provas.",
+      "Aglutinação une bases com alteração sonora, mas não esgota a composição. “Guarda-roupa” é o contraexemplo: une bases sem essa perda. A alternativa erra ao restringir toda composição à aglutinação.",
+      "Correta. “Guarda-roupa” combina guarda e roupa sem perda dos sons das bases; isso corresponde à definição de justaposição. Compare com “planalto”: lá a forma de “plano” se altera na união, então o processo é aglutinação."
+    ],
+    "bankAnalysis": "A troca de categoria aparece em A (“derivação” para girassol); a negação altera uma classificação válida em B; C e D excluem uma modalidade existente ao usar “somente”. Esses erros foram identificados pelo conteúdo de cada alternativa, não por uma regra de palavras suspeitas.",
+    "reviewNote": "Comentário conferido com referências de morfologia. Letra E preservada do caderno enviado; não implica nova conferência de um gabarito oficial definitivo.",
+    "selfExplanation": "“Girassol” não tem hífen. Por que ainda é justaposição, enquanto “planalto” é aglutinação?",
+    "selfExplanationAnswer": "Em girassol, os sons de gira e sol são preservados; “ss” mantém /s/. Em planalto, a união de plano e alto modifica a forma da primeira base. O critério é a formação, não o hífen.",
+    "citations": [
+      {
+        "id": "concept-formacao",
+        "title": "Secretaria de Educação de Bela Vista do Toldo — Formação de palavras",
+        "kind": "reference",
+        "label": "Consultado em 05/09/2026",
+        "locator": "Seção Formação de palavras",
+        "role": "concept",
+        "verified": 1,
+        "official_url": "https://www.pmbvt.sc.gov.br/uploads/sites/401/2021/12/1843068_5_apostila___8_ano.pdf",
+        "note": "Referência didática para justaposição, aglutinação e exemplos. Não é a justificativa oficial do IFMT."
+      },
+      {
+        "id": "concept-girassol",
+        "title": "eduCAPES — Estudos Morfológicos e Lexicais na Universidade",
+        "kind": "reference",
+        "label": "Consultado em 05/09/2026",
+        "locator": "Discussão de composição e girassol",
+        "role": "concept",
+        "verified": 1,
+        "official_url": "https://educapes.capes.gov.br/bitstream/capes/778200/2/Estudos%20Morfol%C3%B3gicos%20e%20Lexicais%20na%20Universidade.pdf",
+        "note": "A adaptação ortográfica em girassol não representa perda fônica."
+      }
+    ]
+  },
+  "https://www.tecconcursos.com.br/questoes/4005557": {
+    "explanationMethod": "concept-application-contrast-v1",
+    "reviewedAt": "2026-09-05",
+    "reviewedBy": "Revisão assistida por IA com consulta às fontes; não homologação pela banca",
+    "reviewStatus": "reviewed",
+    "scoring": "standard",
+    "contentHash": "eda2cada23483c5a3da73dfefaeca5dff0402236da6fa0c54b40f3eb02560dd7",
+    "explanation": "O comando pede a INCORRETA. D nega a relação de formação entre “telha” e “telhado”, mas essa relação existe: telha → telhar (cobrir com telhas) → telhado. O dicionário registra “telhado” como particípio substantivado de telhar. Assim, negar essa família de formação é o erro decisivo.\n\nHá uma distinção importante nas outras opções: a formação de uma palavra e seu emprego na frase não são a mesma pergunta. “Amanhecer” é um verbo de formação parassintética; em “no amanhecer”, recebe emprego substantivo. Uma análise não apaga a outra.",
+    "optionAnalysis": [
+      "A enumeração usa classificações tradicionais. Prefixação e sufixação acrescentam afixos; parassíntese associa prefixo e sufixo na formação; imprópria muda a classe sem adicionar afixos; regressiva forma uma palavra por redução, como combater → combate na análise escolar. A lista não contém o erro que o comando procura.",
+      "Em entardecer, en- + tarde + -ecer forma um verbo a partir da base “tarde”. É o processo chamado parassíntese. A alternativa classifica esse processo, por isso não é a afirmação incorreta.",
+      "O verbo amanhecer forma-se de a- + manhã + -ecer, em análise parassintética. Já no trecho “no amanhecer do rio”, no = em + o: o verbo tem uso substantivado. A opção fala da formação da palavra; o emprego nominal no verso é outra etapa, não um motivo para negar a formação do verbo.",
+      "D é a incorreta. “Telhado” pertence à família de telha/telhar. A referência consultada explicita a etapa telhar → particípio substantivado telhado; por isso é mais preciso explicar a cadeia do que afirmar apenas “telha + -ado”. A negação da relação entre as palavras é o problema da alternativa.",
+      "“Amada” relaciona-se a amar por sua forma participial amado/amada; no poema, designa a pessoa amada e funciona como chamamento. O comentário deve distinguir a forma participial do seu emprego no texto. A letra inicial “a” faz parte da base am-, não é um prefixo que permita classificar a palavra como parassintética."
+    ],
+    "bankAnalysis": "O comando negativo exige encontrar a afirmação falsa, não a palavra com o processo mais chamativo. O contraste entre “amanhecer” como verbo formado e como substantivo no verso pede separar formação e uso. Em D, é a negação da família telha/telhar/telhado que determina a escolha.",
+    "reviewNote": "Comentário conceitual individual. Letra D mantida do caderno. As ressalvas sobre particípio e substantivação evitam tratar a classificação escolar como descrição única de todas as etapas.",
+    "selfExplanation": "Em “o amanhecer foi bonito”, qual é a classe de “amanhecer” no trecho? Isso desfaz a formação parassintética do verbo?",
+    "selfExplanationAnswer": "Nesse trecho, amanhecer tem uso substantivo, introduzido pelo artigo “o”. Essa substantivação não desfaz a formação parassintética da base verbal.",
+    "citations": [
+      {
+        "id": "concept-parassintese",
+        "title": "Ciberdúvidas — O conceito de parassíntese",
+        "kind": "reference",
+        "label": "Consultado em 05/09/2026",
+        "locator": "Definição e exemplo enfraquecer",
+        "role": "concept",
+        "verified": 1,
+        "official_url": "https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/o-conceito-de-parassintese/25042",
+        "note": "Sustenta o conceito de parassíntese; não classifica revolução."
+      },
+      {
+        "id": "concept-impropria",
+        "title": "Ciberdúvidas — Sobre derivação imprópria",
+        "kind": "reference",
+        "label": "Consultado em 05/09/2026",
+        "locator": "Mudança de categoria gramatical",
+        "role": "concept",
+        "verified": 1,
+        "official_url": "https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/sobre-derivacao-impropria/23378",
+        "note": "Definição de derivação imprópria/conversão."
+      },
+      {
+        "id": "concept-entardecer",
+        "title": "Infopédia — entardecer",
+        "kind": "reference",
+        "label": "Consultado em 05/09/2026",
+        "locator": "Etimologia do verbete",
+        "role": "concept",
+        "verified": 1,
+        "official_url": "https://www.infopedia.pt/dicionarios/lingua-portuguesa/entardecer",
+        "note": "Registra en- + tarde + -ecer."
+      },
+      {
+        "id": "concept-amanhecer",
+        "title": "Infopédia — amanhecer",
+        "kind": "reference",
+        "label": "Consultado em 05/09/2026",
+        "locator": "Etimologia do verbete",
+        "role": "concept",
+        "verified": 1,
+        "official_url": "https://www.infopedia.pt/dicionarios/lingua-portuguesa/amanhecer",
+        "note": "Registra a- + manhã + -ecer."
+      },
+      {
+        "id": "concept-telhado",
+        "title": "Infopédia — telhado",
+        "kind": "reference",
+        "label": "Consultado em 05/09/2026",
+        "locator": "Etimologia do verbete",
+        "role": "concept",
+        "verified": 1,
+        "official_url": "https://www.infopedia.pt/dicionarios/lingua-portuguesa/telhado",
+        "note": "Registra particípio substantivado de telhar."
+      },
+      {
+        "id": "concept-telhar",
+        "title": "Infopédia — telhar",
+        "kind": "reference",
+        "label": "Consultado em 05/09/2026",
+        "locator": "Etimologia do verbete",
+        "role": "concept",
+        "verified": 1,
+        "official_url": "https://www.infopedia.pt/dicionarios/lingua-portuguesa/telhar",
+        "note": "Registra telha + -ar; sustenta a cadeia telha → telhar → telhado."
+      }
+    ]
+  },
+  "https://www.tecconcursos.com.br/questoes/2203108": {
+    "explanationMethod": "concept-application-contrast-v1",
+    "reviewedAt": "2026-09-05",
+    "reviewedBy": "Revisão assistida por IA com consulta às fontes; não homologação pela banca",
+    "reviewStatus": "reviewed",
+    "scoring": "standard",
+    "contentHash": "f372203d73ca75e57b5b4c44ca9c3cf528163fd398bfea808d2c42a714ae00e5",
+    "explanation": "“Bora!” é uma forma coloquial reduzida de “embora”, usada como convite à ação. No primeiro balão da tirinha do caderno, os personagens são chamados a assumir um erro e pedir perdão. O processo que produz bora a partir de embora é o encurtamento: alternativa C, redução.\n\nNão confunda duas etapas: em boa hora → embora é um exemplo tradicional de aglutinação; embora → bora é redução. A questão pede a segunda transformação.",
+    "optionAnalysis": [
+      "Justaposição une bases preservando seus sons, como guarda + roupa → guarda-roupa. “Bora” não reúne duas bases dessa maneira; encurta uma forma que já existia. Por isso A não descreve o processo cobrado.",
+      "Aglutinação combina bases com alteração sonora. Ela explica a formação histórica em boa hora → embora, mas não a transformação embora → bora. B parece plausível porque remete a uma etapa anterior; a palavra perguntada é “bora”.",
+      "Correta. Redução encurta uma palavra ou expressão: embora → bora. Fotografia → foto ilustra o mesmo princípio de encurtamento, embora a parte retirada seja diferente. No contexto, “bora” preserva a função de convidar à ação.",
+      "Reduplicação repete uma palavra ou parte dela, como quebra-quebra. Em “bora” não há repetição: o que ocorreu foi a supressão de parte da forma maior. Reduzir e reduplicar não são o mesmo processo, apesar da semelhança dos nomes.",
+      "Hibridismo combina elementos de línguas diferentes, como auto- (grego) e móvel (latim) em automóvel. A formação de “bora” não depende de unir elementos de duas línguas: é um encurtamento dentro do português."
+    ],
+    "bankAnalysis": "O contraste mais útil está entre B e C: reconhecer “embora” como exemplo de aglutinação não basta para classificar “bora”. O enunciado exige localizar a etapa de formação da palavra efetivamente perguntada. Isso é uma observação deste item, não uma frequência estimada para toda a banca.",
+    "reviewNote": "Letra C preservada do caderno; contexto do primeiro balão conferido visualmente no PDF enviado, p. 7. A tirinha completa continua acessível pela fonte original. A explicação da redução foi conferida no verbete bora.",
+    "selfExplanation": "Por que a origem de “embora” não faz de “bora” uma nova composição por aglutinação?",
+    "selfExplanationAnswer": "São duas etapas distintas. Em boa hora → embora reúne elementos; embora → bora encurta uma forma já existente. A classificação precisa acompanhar a etapa que a questão pede.",
+    "citations": [
+      {
+        "id": "concept-bora",
+        "title": "Infopédia — bora",
+        "kind": "reference",
+        "label": "Consultado em 05/09/2026",
+        "locator": "Etimologia do verbete",
+        "role": "concept",
+        "verified": 1,
+        "official_url": "https://www.infopedia.pt/dicionarios/lingua-portuguesa/bora",
+        "note": "Registra explicitamente a redução de embora."
+      },
+      {
+        "id": "concept-formacao",
+        "title": "Secretaria de Educação de Bela Vista do Toldo — Formação de palavras",
+        "kind": "reference",
+        "label": "Consultado em 05/09/2026",
+        "locator": "Seção Formação de palavras",
+        "role": "concept",
+        "verified": 1,
+        "official_url": "https://www.pmbvt.sc.gov.br/uploads/sites/401/2021/12/1843068_5_apostila___8_ano.pdf",
+        "note": "Referência didática para justaposição, aglutinação e exemplos. Não é a justificativa oficial do IFMT."
+      },
+      {
+        "id": "concept-outros-processos",
+        "title": "UENP — artigo sobre processos de formação de palavras",
+        "kind": "reference",
+        "label": "Consultado em 05/09/2026",
+        "locator": "Discussão de hibridismo e reduplicação",
+        "role": "concept",
+        "verified": 1,
+        "official_url": "https://periodicos.uenp.edu.br/index.php/claraboia/article/download/1537/1147/3363",
+        "note": "Referência para distinguir combinação de origens linguísticas e repetição."
+      }
+    ]
+  }
+}

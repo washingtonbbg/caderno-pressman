@@ -4,6 +4,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import ts from 'typescript';
 import { Miniflare, convertV4MiniflareOptions } from 'miniflare';
+import { isGenericExplanation } from '../lib/explanation-policy.mjs';
 
 const require=createRequire(import.meta.url);
 function load(path,dependencies={}) {
@@ -62,21 +63,32 @@ test('catalog retains all notebooks, answer bounds, code, references and require
   assert.equal(supplemental.filter(q=>q.referenceText).length,160);
   assert.ok(supplemental.filter(q=>q.referenceText).every(q=>q.referenceText.length>=40));
   assert.ok(supplemental.filter(q=>q.requiresSource).every(q=>q.sourceUrl.startsWith('https://')));
-  assert.ok(supplemental.every(q=>q.explanation.length>=120));
-  assert.ok(supplemental.every(q=>Array.isArray(q.optionAnalysis)&&q.optionAnalysis.length===5&&q.optionAnalysis.every(item=>item.length>=40)));
-  assert.ok(supplemental.every(q=>q.bankAnalysis.length>=120));
+  assert.equal(supplemental.filter(q=>q.explanationMethod).length,4);
+  assert.equal(supplemental.filter(q=>q.reviewStatus==='needs_review').length,567);
+  assert.equal(supplemental.filter(q=>!q.explanation).length,566);
   assert.ok(supplemental.every(q=>['reviewed','needs_review'].includes(q.reviewStatus)));
+  assert.ok(supplemental.filter(q=>q.explanationMethod).every(q=>q.explanation.length>=120&&Array.isArray(q.optionAnalysis)&&q.optionAnalysis.length===5&&q.optionAnalysis.every(item=>item.length>=40)&&q.bankAnalysis.length>=120));
+  assert.ok(supplemental.filter(q=>!q.explanationMethod).every(q=>!q.optionAnalysis.length&&!q.bankAnalysis&&!/O gabarito do caderno indica|distrator por troca de núcleo|Padrão identificado pela revisão:/i.test(q.reviewNote)));
+  const disputed=supplemental.find(q=>q.sourceUrl.endsWith('/3798900'));
+  assert.equal(disputed.sourceHighlight,'revolução');
+  assert.equal(disputed.scoring,'discussion');
+  assert.match(disputed.reviewNote,/sem pontuação/);
+  assert.ok(disputed.citations.some(c=>c.role==='answer-key'&&c.verified===1));
   assert.ok(supplemental.every(q=>Array.isArray(q.citations)&&q.citations.length&&q.citations[0].official_url.startsWith('https://')));
 });
 
 test('future question registration requires a source and explanatory evidence',()=>{
-  const helpers=load('lib/library-model.ts');
+  const helpers=load('lib/library-model.ts',{'./explanation-policy.mjs':{isGenericExplanation}});
   const base={prompt:'Enunciado de teste',subject:'Assunto',source:'Caderno de teste',options:['A','B','C','D','E'],answer:0,explanation:'Justificativa conceitual suficiente para a revisão.',optionAnalysis:['Análise A','Análise B','Análise C','Análise D','Análise E'],bankAnalysis:'O item usa comando direto e alternativas paralelas.',reviewStatus:'needs_review'};
   assert.throws(()=>helpers.normalizeDraft(base),/HTTPS/);
   const normalized=helpers.normalizeDraft({...base,sourceUrl:'https://example.org/fonte'});
   assert.equal(normalized.options.length,5);
   assert.equal(normalized.sourceUrl,'https://example.org/fonte');
   assert.equal(normalized.optionAnalysis.length,5);
+  assert.throws(()=>helpers.normalizeDraft({...base,sourceUrl:'https://example.org/fonte',reviewStatus:'reviewed'}),/referência conceitual/);
+  const reviewed=helpers.normalizeDraft({...base,sourceUrl:'https://example.org/fonte',reviewStatus:'reviewed',conceptSource:'Manual de referência',conceptSourceUrl:'https://example.org/conceito',conceptLocator:'seção 2',explanationMethod:'conceito → aplicação → contraste',reviewedAt:'2026-09-05',reviewedBy:'equipe'});
+  assert.equal(reviewed.conceptSourceUrl,'https://example.org/conceito');
+  assert.equal(reviewed.reviewedBy,'equipe');
 });
 
 test('exam focus excludes unrelated content and mock sessions preserve 20/10/10/10 without duplicate items',()=>{
@@ -98,7 +110,7 @@ test('D1 API isolates users, preserves notes, rejects invalid writes and dedupli
   const DB=await mf.getD1Database('DB');
   const schema=['drizzle/0000_known_kylun.sql','drizzle/0001_library_search.sql','drizzle/0002_sloppy_expediter.sql','drizzle/0003_fine_ultimates.sql','drizzle/0004_famous_miss_america.sql'].flatMap(file=>readFileSync(file,'utf8').split('--> statement-breakpoint').map(s=>s.trim()).filter(Boolean));
   await DB.batch(schema.map(sql=>DB.prepare(sql)));
-  const helpers=load('lib/library-model.ts');
+  const helpers=load('lib/library-model.ts',{'./explanation-policy.mjs':{isGenericExplanation}});
   const server=load('lib/study-server.ts',{'cloudflare:workers':{env:{DB}},'./library-model':helpers});
   const route=load('app/api/study/progress/route.ts',{'@/data/study-catalog.json':catalog,'@/lib/library-model':helpers,'@/lib/study-model':model,'@/lib/study-server':server,'@/lib/exam-plan':exam});
   const req=(method,user,body,origin='https://study.example')=>new Request('https://study.example/api/study/progress',{method,headers:{...(user?{'oai-authenticated-user-id':user,'oai-authenticated-user-email':`${user}@example.org`}:{}),origin,'content-type':'application/json'},...(body?{body:JSON.stringify(body)}:{})});
@@ -136,12 +148,13 @@ test('question bank registration persists conceptual evidence and its source',as
   const DB=await mf.getD1Database('DB');
   const schema=['drizzle/0000_known_kylun.sql','drizzle/0001_library_search.sql','drizzle/0002_sloppy_expediter.sql','drizzle/0003_fine_ultimates.sql','drizzle/0004_famous_miss_america.sql'].flatMap(file=>readFileSync(file,'utf8').split('--> statement-breakpoint').map(s=>s.trim()).filter(Boolean));
   await DB.batch(schema.map(sql=>DB.prepare(sql)));
-  const helpers=load('lib/library-model.ts');
+  const helpers=load('lib/library-model.ts',{'./explanation-policy.mjs':{isGenericExplanation}});
   const server=load('lib/library-server.ts',{'cloudflare:workers':{env:{DB,LIBRARY_ADMIN_EMAILS:'alice@example.org'}}});
   const route=load('app/api/bank/questions/route.ts',{'cloudflare:workers':{env:{DB,LIBRARY_ADMIN_EMAILS:'alice@example.org'}},'@/lib/library-model':helpers,'@/lib/library-server':server});
   const body={source:'Caderno de teste',sourceUrl:'https://example.org/caderno',locator:'p. 4 · questão 1',subject:'Administração',prompt:'Qual conceito se aplica?',options:['A correta','B distrator','C distrator','D distrator','E distrator'],answer:0,explanation:'A alternativa A preserva a definição apresentada e a finalidade do conceito.',optionAnalysis:['A coincide com a definição.','B troca o critério.','C mistura categorias.','D inverte a relação.','E amplia sem fundamento.'],bankAnalysis:'Comando direto e alternativas paralelas com troca de núcleo.',reviewStatus:'needs_review'};
   const request=(payload)=>new Request('https://study.example/api/bank/questions',{method:'POST',headers:{'origin':'https://study.example','content-type':'application/json','oai-authenticated-user-id':'alice','oai-authenticated-user-email':'alice@example.org'},body:JSON.stringify(payload)});
   assert.equal((await route.POST(request({...body,sourceUrl:''}))).status,400);
+  assert.equal((await route.POST(request({...body,reviewStatus:'reviewed'}))).status,400);
   const created=await route.POST(request(body));
   assert.equal(created.status,201);
   const saved=(await created.json()).question;

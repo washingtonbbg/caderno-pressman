@@ -1,4 +1,6 @@
-export type BankQuestion={id:string;number:number;tecId:string;source:string;sourceUrl?:string;referenceText?:string;subject:string;prompt:string;options:string[];answer:number;explanation?:string;reviewNote?:string;optionAnalysis?:string[];analyses?:string[];bankAnalysis?:string;reviewStatus?:'reviewed'|'needs_review';suggestedAnswer?:number;citations?:Citation[]};
+import { isGenericExplanation } from './explanation-policy.mjs';
+
+export type BankQuestion={id:string;number:number;tecId:string;source:string;sourceUrl?:string;referenceText?:string;subject:string;prompt:string;options:string[];answer:number;explanation?:string;reviewNote?:string;optionAnalysis?:string[];analyses?:string[];bankAnalysis?:string;reviewStatus?:'reviewed'|'needs_review';suggestedAnswer?:number;citations?:Citation[];conceptSource?:string;conceptSourceUrl?:string;conceptLocator?:string;explanationMethod?:string;reviewedAt?:string;reviewedBy?:string};
 export type Citation={id:string;title:string;kind:string;label:string;locator:string;role:string;verified:number;official_url:string;note:string};
 export class HttpError extends Error { constructor(public status:number,message:string){super(message);} }
 export function field(value:unknown,name:string,max=1000,required=false){if(typeof value!=='string'){if(required)throw new HttpError(400,`${name}: obrigatório.`);return '';}const s=value.trim();if(s.length>max||required&&!s)throw new HttpError(400,`${name}: tamanho inválido.`);return s;}
@@ -19,8 +21,16 @@ export function normalizeDraft(p:Record<string,unknown>){
   const answer=Number(p.answer);if(!Number.isInteger(answer)||answer<0||answer>4)throw new HttpError(400,'Selecione o gabarito.');
   const referenceText=field(p.referenceText,'Texto de referência',20000);
   const reviewStatus=choice(p.reviewStatus??'needs_review',['reviewed','needs_review'],'Status de revisão') as 'reviewed'|'needs_review';
+  const conceptSource=field(p.conceptSource,'Título da referência conceitual',1000);
+  const conceptSourceUrl=safeUrl(p.conceptSourceUrl);
+  const conceptLocator=field(p.conceptLocator,'Localizador conceitual',300);
+  const explanationMethod=field(p.explanationMethod,'Método da explicação',500);
+  const reviewedAt=date(p.reviewedAt);
+  const reviewedBy=field(p.reviewedBy,'Revisor',300);
+  if (reviewStatus==='reviewed' && (!conceptSource || !conceptSourceUrl || !explanationMethod || !reviewedAt || !reviewedBy)) throw new HttpError(400,'Uma questão marcada como revisada precisa de referência conceitual, método, data e revisor.');
+  if ([explanation, bankAnalysis, ...optionAnalysis].some(isGenericExplanation)) throw new HttpError(400,'A justificativa automática foi rejeitada. Explique o conceito e a aplicação específica de cada alternativa.');
   const suggestedAnswer=p.suggestedAnswer===undefined||p.suggestedAnswer===null||p.suggestedAnswer===''?undefined:Number(p.suggestedAnswer);
   if(suggestedAnswer!==undefined&&(!Number.isInteger(suggestedAnswer)||suggestedAnswer<0||suggestedAnswer>4))throw new HttpError(400,'Gabarito sugerido inválido.');
-  return {prompt,subject,source,sourceUrl,referenceText,explanation,bankAnalysis,reviewNote,optionAnalysis,options,answer,reviewStatus,suggestedAnswer};
+  return {prompt,subject,source,sourceUrl,referenceText,explanation,bankAnalysis,reviewNote,optionAnalysis,options,answer,reviewStatus,suggestedAnswer,conceptSource,conceptSourceUrl,conceptLocator,explanationMethod,reviewedAt,reviewedBy};
 }
 export function searchExpression(query:string){return (query.match(/[\p{L}\p{N}]+/gu)??[]).slice(0,12).map(s=>`"${s}"`).join(' AND ');}

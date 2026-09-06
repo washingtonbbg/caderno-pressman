@@ -67,6 +67,16 @@ export async function POST(request: Request) {
       VALUES(?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET title=excluded.title,official_url=excluded.official_url`).bind(sourceId, "question-bank", draft.source, "", "", sourceId, draft.sourceUrl, draft.subject, stamp).run();
     await env.DB.prepare(`INSERT OR IGNORE INTO library_versions (id,source_id,label,captured_at,status,created_by) VALUES(?,?,?,?,?,?)`)
       .bind(versionId, sourceId, "Fonte declarada no cadastro", stamp, "declared", actor.email).run();
+    let conceptVersionId = "";
+    if (draft.conceptSourceUrl) {
+      const conceptKey = draft.conceptSourceUrl.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 90) || "referencia-conceitual";
+      const conceptSourceId = `source-concept-${conceptKey}`;
+      conceptVersionId = `${conceptSourceId}-declared`;
+      await env.DB.prepare(`INSERT INTO library_sources (id,kind,title,authors,publisher,identifier,official_url,topics,created_at)
+        VALUES(?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET title=excluded.title,official_url=excluded.official_url`).bind(conceptSourceId, "concept", draft.conceptSource || "Referência conceitual", "", "", conceptSourceId, draft.conceptSourceUrl, draft.subject, stamp).run();
+      await env.DB.prepare(`INSERT OR IGNORE INTO library_versions (id,source_id,label,captured_at,status,created_by) VALUES(?,?,?,?,?,?)`)
+        .bind(conceptVersionId, conceptSourceId, "Referência conceitual declarada", stamp, "declared", actor.email).run();
+    }
     await env.DB.prepare(`INSERT INTO bank_questions (id,legacy_number,tec_id,source,subject,prompt,answer_id,status,origin,explanation,review_note,source_url,reference_text,bank_analysis,review_status,suggested_answer,created_at,updated_at)
       VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET legacy_number=excluded.legacy_number,tec_id=excluded.tec_id,source=excluded.source,subject=excluded.subject,prompt=excluded.prompt,answer_id=excluded.answer_id,status=excluded.status,explanation=excluded.explanation,review_note=excluded.review_note,source_url=excluded.source_url,reference_text=excluded.reference_text,bank_analysis=excluded.bank_analysis,review_status=excluded.review_status,suggested_answer=excluded.suggested_answer,updated_at=excluded.updated_at`)
       .bind(questionId, legacyNumber, tecId, draft.source, draft.subject, draft.prompt, `${questionId}-option-${draft.answer}`, draft.reviewStatus, "user-library", draft.explanation, draft.reviewNote, draft.sourceUrl, draft.referenceText, draft.bankAnalysis, draft.reviewStatus, draft.suggestedAnswer ?? null, stamp, stamp).run();
@@ -75,6 +85,10 @@ export async function POST(request: Request) {
     const citationId = `citation-${questionId}-${sourceId}`.slice(0, 180);
     await env.DB.prepare(`INSERT INTO bank_citations (id,question_id,version_id,role,locator,note,verified) VALUES(?,?,?,?,?,?,?)
       ON CONFLICT(id) DO UPDATE SET version_id=excluded.version_id,locator=excluded.locator,note=excluded.note`).bind(citationId, questionId, versionId, "origin", field(body.locator, "Localizador", 300), "Fonte HTTPS obrigatória no cadastro; conferir a página original antes de publicar como material revisado.", 0).run();
+    if (conceptVersionId) {
+      await env.DB.prepare(`INSERT INTO bank_citations (id,question_id,version_id,role,locator,note,verified) VALUES(?,?,?,?,?,?,?)
+        ON CONFLICT(id) DO UPDATE SET version_id=excluded.version_id,locator=excluded.locator,note=excluded.note,verified=excluded.verified`).bind(`citation-${questionId}-concept`, questionId, conceptVersionId, "concept", draft.conceptLocator, `${draft.explanationMethod}${draft.reviewedBy ? ` · Revisor: ${draft.reviewedBy}` : ""}`, draft.reviewStatus === "reviewed" ? 1 : 0).run();
+    }
     await env.DB.prepare("INSERT INTO library_audit (id,actor,action,target,created_at) VALUES(?,?,?,?,?)")
       .bind(`audit-${crypto.randomUUID()}`, actor.email, "question.upsert", questionId, stamp).run();
     const saved = await env.DB.prepare("SELECT * FROM bank_questions WHERE id=?").bind(questionId).first<Row>();
