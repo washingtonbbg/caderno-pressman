@@ -1,6 +1,6 @@
 # Estudo orientado por evidências
 
-`/estudar` reúne 970 questões de 25 cadernos, incluindo 12 exercícios autorais introdutórios de tecnologia educacional e 570 itens dos cadernos complementares enviados. O catálogo é gerado por `scripts/build-study-catalog.mjs` antes de iniciar ou compilar o site. O gerador lê literais TypeScript sem executar páginas, preserva enunciados, textos de referência, alternativas, gabaritos, código compartilhado e figuras. IDs incorporam o conteúdo avaliável para evitar que uma questão alterada herde automaticamente um histórico incompatível.
+`/estudar` reúne 970 questões de 25 cadernos, incluindo 12 exercícios autorais introdutórios de tecnologia educacional e 570 itens dos cadernos complementares enviados. O catálogo é gerado por `scripts/build-study-catalog.mjs` antes de iniciar ou compilar o site. O gerador lê literais TypeScript sem executar páginas, preserva enunciados, textos de referência, alternativas, gabaritos, código compartilhado e figuras. IDs incorporam o conteúdo avaliável para evitar que uma questão alterada herde automaticamente um histórico incompatível. Os 570 itens IFMT também guardam `explanation` (Entenda a resposta), cinco análises de alternativa, `bankAnalysis`, status de revisão e uma citação com a fonte HTTPS; o enriquecimento reprodutível está em `scripts/enrich-ifmt-supplemental.mjs` (`npm run enrich:ifmt`).
 
 O recorte padrão é IFMT Administrador, com prova em 13/09/2026. `/reta-final` oferece o plano ajustável de 05 a 12/09. A classificação por questão está em `lib/exam-plan.ts`; ela exclui assuntos de programação/engenharia de software, conteúdos docentes sem correspondência e itens históricos de transição selecionados. A biblioteca inteira continua acessível. O ensaio de 50 itens distribui 20/10/10/10 e mostra correção somente após a conclusão. Ele usa itens existentes, não promete ineditismo nem pontuação oficial. No recorte do concurso, o agendamento limita revisões longas a 12/09 às 18h, antes da prova. As lacunas de cobertura estão visíveis no plano.
 
@@ -8,7 +8,7 @@ O recorte padrão é IFMT Administrador, com prova em 13/09/2026. `/reta-final` 
 
 1. Tentar recuperar a regra antes de ver alternativas; escrita opcional.
 2. Registrar resposta e confiança antes do feedback, incluindo a opção “Não sei ainda”.
-3. Ler a explicação existente e a referência; ausência de explicação é declarada.
+3. Ler a explicação existente e a referência; a área “Entenda a resposta” separa justificativa conceitual, análise das cinco alternativas, padrão da banca e fonte registrada.
 4. Escrever uma autoexplicação e identificar o tipo de dificuldade, se útil.
 5. Retomar a questão em outra sessão. Revisões vencidas têm prioridade sobre novas questões.
 
@@ -20,7 +20,7 @@ A alternância usa os assuntos já catalogados, com rodízio dentro da mesma pri
 
 O histórico da nova área e as anotações são salvos em D1, separados pelo identificador autenticado fornecido pelo Sites. As páginas antigas continuam disponíveis para consulta; suas interações anteriores não constituem tentativas registradas nesta área. Visitantes sem autenticação podem praticar temporariamente, com aviso explícito de que nada é salvo. Não há fonte de verdade em localStorage.
 
-Aplicar as migrações novas 0002 e 0003 antes de disponibilizar a versão. Nenhum histórico anterior é apagado. Tentativas têm chave idempotente e sequência exclusiva por usuário/questão; anotações usam controle de versão para detectar conflitos entre abas. A fila atualiza ao recuperar foco e a cada minuto, sem alterar uma sessão em andamento.
+Aplicar as migrações novas 0002, 0003 e 0004 antes de disponibilizar a versão. A 0004 acrescenta URL, texto de referência, análise da banca, status de revisão e gabarito sugerido ao cadastro persistido. Nenhum histórico anterior é apagado. O cadastro futuro em `/api/bank/questions` exige fonte HTTPS, justificativa conceitual, cinco análises e uma análise do padrão da banca; a tela Biblioteca oferece o mesmo contrato. Tentativas têm chave idempotente e sequência exclusiva por usuário/questão; anotações usam controle de versão para detectar conflitos entre abas. A fila atualiza ao recuperar foco e a cada minuto, sem alterar uma sessão em andamento.
 
 Validação: `npm run test:study` cobre agendamento, seleção, integridade de catálogo, migrações em D1 local, isolamento entre usuários, duplicação e conflitos. `npm run build` valida o pacote completo. A suíte antiga `tests/rendered-html.test.mjs` ainda descreve o skeleton do starter e não representa esta interface.
 

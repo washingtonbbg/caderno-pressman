@@ -18,12 +18,12 @@ export async function POST(request: Request) {
     for (const question of bankSeed.questions) {
       const questionId = String(question.id);
       const stamp = now();
-      await env.DB.prepare(`INSERT INTO bank_questions (id,legacy_number,tec_id,source,subject,prompt,answer_id,status,origin,explanation,review_note,created_at,updated_at)
-        VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET prompt=excluded.prompt,subject=excluded.subject,answer_id=excluded.answer_id,updated_at=excluded.updated_at`)
-        .bind(questionId, question.number, question.tecId, question.source, question.subject, question.prompt, `${questionId}-option-${question.answer}`, "imported", "admin-bank", "", "", stamp, stamp).run();
+      await env.DB.prepare(`INSERT INTO bank_questions (id,legacy_number,tec_id,source,subject,prompt,answer_id,status,origin,explanation,review_note,source_url,reference_text,bank_analysis,review_status,suggested_answer,created_at,updated_at)
+        VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET prompt=excluded.prompt,subject=excluded.subject,answer_id=excluded.answer_id,source_url=excluded.source_url,review_note=excluded.review_note,updated_at=excluded.updated_at`)
+        .bind(questionId, question.number, question.tecId, question.source, question.subject, question.prompt, `${questionId}-option-${question.answer}`, "imported", "admin-bank", question.explanation ?? "", question.bibliography ?? "Fonte identificada na transcrição; conferir a edição e a página.", question.sourceUrl ?? "", question.referenceText ?? "", question.bankAnalysis ?? "", question.reviewStatus ?? "needs_review", question.suggestedAnswer ?? null, stamp, stamp).run();
       for (let position = 0; position < question.options.length; position++) {
         await env.DB.prepare(`INSERT INTO bank_options (id,question_id,position,content,analysis) VALUES(?,?,?,?,?)
-          ON CONFLICT(id) DO UPDATE SET content=excluded.content`).bind(`${questionId}-option-${position}`, questionId, position, question.options[position], "").run();
+          ON CONFLICT(id) DO UPDATE SET content=excluded.content,analysis=excluded.analysis`).bind(`${questionId}-option-${position}`, questionId, position, question.options[position], question.optionAnalysis?.[position] ?? "").run();
       }
       for (const source of sourceSeed.filter((entry) => entry.qs.includes(question.number))) {
         const versionId = sourceVersions.get(source.id);

@@ -1,9 +1,15 @@
 export type Confidence = 'guess' | 'unsure' | 'sure';
+export type StudyCitation = {
+  id: string; title: string; kind: string; label: string; locator: string; role: string;
+  verified: number; official_url: string; note: string;
+};
 export type StudyQuestion = {
   id: string; notebook: string; notebookTitle: string; number: number; subject: string;
   label: string; source: string; prompt: string; options: string[]; answer: number;
   explanation: string; languageNote: string; code: string; image: string; imageAlt: string; sourceUrl?:string;
   referenceText?: string; requiresSource?: boolean; examBlock?: 'specific'|'portuguese'|'general'|'technology'|null;
+  optionAnalysis?: string[]; bankAnalysis?: string; reviewStatus?: 'reviewed'|'needs_review'; reviewNote?: string;
+  suggestedAnswer?: number; citations?: StudyCitation[];
   graph?: { edges: string[][]; arrows?: boolean };
 };
 export type StudyProgress = {

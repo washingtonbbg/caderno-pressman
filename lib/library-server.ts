@@ -27,7 +27,8 @@ export function requireLibraryAdmin(request: Request): LibraryActor {
 export function jsonError(error: unknown) {
   if (error instanceof Response) return error;
   const message = error instanceof Error ? error.message : "Erro inesperado.";
-  return Response.json({ error: message }, { status: 500 });
+  const status = typeof error === "object" && error !== null && "status" in error && Number.isInteger(Number((error as { status?: unknown }).status)) ? Number((error as { status: unknown }).status) : 500;
+  return Response.json({ error: message }, { status: status >= 400 && status < 600 ? status : 500 });
 }
 
 export function now() { return new Date().toISOString(); }

@@ -29,6 +29,16 @@ const books = literals('app/page.tsx')('books');
 const catalog = [];
 function append(book, question, index, graph) {
   if (!question.prompt || !Array.isArray(question.options) || !Number.isInteger(question.answer) || question.answer < 0 || question.answer >= question.options.length) throw Error(`Invalid question ${book.href} #${index + 1}`);
+  const supplemental = book.href === '/ifmt-banco-complementar';
+  if (supplemental) {
+    if (!question.explanation?.trim()) throw Error(`Missing conceptual explanation in ${book.href} #${index + 1}`);
+    if (!Array.isArray(question.optionAnalysis) || question.optionAnalysis.length !== 5 || question.optionAnalysis.some(item => !String(item || '').trim())) throw Error(`Missing five alternative analyses in ${book.href} #${index + 1}`);
+    if (!question.bankAnalysis?.trim()) throw Error(`Missing bank analysis in ${book.href} #${index + 1}`);
+    if (typeof question.sourceUrl !== 'string' || !question.sourceUrl.startsWith('https://')) throw Error(`Missing HTTPS source in ${book.href} #${index + 1}`);
+    if (!Array.isArray(question.citations) || !question.citations.length) throw Error(`Missing citation in ${book.href} #${index + 1}`);
+  }
+  // Explanations, alternative analyses and citations are metadata. Keep them out
+  // of the identity so enriching a question never discards the learner's history.
   const fingerprint = JSON.stringify([question.referenceText || '', question.prompt, question.options, question.answer, question.code || '', question.image || '', question.figure || '']);
   catalog.push({
     id: `${book.href.slice(1)}:${createHash('sha256').update(fingerprint).digest('hex').slice(0, 20)}`,
@@ -38,6 +48,9 @@ function append(book, question, index, graph) {
     examBlock:Object.prototype.hasOwnProperty.call(question,'examBlock')?question.examBlock:undefined,
     prompt: question.prompt, options: question.options, answer: question.answer,
     explanation: question.explanation || question.why || '', languageNote: question.languageNote || question.xray || question.trap || '',
+    optionAnalysis: question.optionAnalysis || [], bankAnalysis: question.bankAnalysis || '', reviewStatus: question.reviewStatus || undefined,
+    reviewNote: question.reviewNote || '', suggestedAnswer: Number.isInteger(question.suggestedAnswer) ? question.suggestedAnswer : undefined,
+    citations: question.citations || [],
     code: question.code || '', image: question.image || '', imageAlt: question.imageAlt || question.caption || 'Figura da questão',
     graph: question.figure ? graph?.[question.figure] : undefined,
   });
