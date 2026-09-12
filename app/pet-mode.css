@@ -1,27 +1,3 @@
 .petCompanion{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;margin:18px 0;padding:14px 16px;background:#edf3ee;border:1px solid #9eb8a2;border-radius:8px;color:#24402e}.petAvatar{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#315f74;color:white;font-size:25px}.petCompanion strong{font-size:14px}.petCompanion p{margin:3px 0 0;font-size:13px;color:#52655a;line-height:1.35}.petActions{display:flex;gap:7px}.petActions button{padding:9px 10px;background:#315f74;color:white;font-size:12px;font-weight:700}.petActions button:disabled{opacity:.55}.petOn{background:#b96542!important}.petListening .petAvatar{animation:petPulse 1s infinite alternate}@keyframes petPulse{to{transform:scale(1.12);box-shadow:0 0 0 8px #b7d0bd}}
 @media(max-width:700px){.petCompanion{grid-template-columns:auto 1fr}.petActions{grid-column:1/-1}.petActions button{flex:1}}
-.petFullBody{display:none}
-@media(min-width:851px){.petFullBody{display:block;position:fixed;left:2vw;bottom:0;width:220px;height:58vh;z-index:4;pointer-events:none}.petFullBody img{width:100%;height:100%;object-fit:cover;object-position:center top;mix-blend-mode:multiply;filter:saturate(1.05)}.petFullBody span{position:absolute;left:18px;bottom:10px;background:#efc56d;color:#162536;padding:7px 18px;border-radius:18px;font-weight:800}}
-@media(max-width:850px){.petFullBody{display:block;position:relative;height:280px;margin:-20px -22px 18px;overflow:hidden;background:#d9a17e}.petFullBody img{width:100%;height:100%;object-fit:cover;object-position:center 18%;filter:saturate(1.05)}.petFullBody span{position:absolute;left:18px;bottom:14px;background:#efc56d;color:#162536;padding:7px 18px;border-radius:18px;font-weight:800}}
-.petCompanion .petAvatar{display:none}.petCompanion{grid-template-columns:1fr}.petCompanion .petActions{grid-column:auto}
-/* Modo diálogo casual: personagem ao fundo, escolhas acima da caixa inferior. */
-.guidedStudy:has(.petFullBody){display:block;position:relative;min-height:820px;padding:24px 6vw 34px;overflow:hidden;background:#17202b}
-.guidedStudy:has(.petFullBody) aside{display:none}
-.guidedStudy:has(.petFullBody) .guidedQuestion{position:static;max-width:760px;margin:0 auto;padding:0;background:transparent;box-shadow:none;color:#fff}
-.guidedStudy:has(.petFullBody) .catalogMeta,.guidedStudy:has(.petFullBody) .catalogSubject,.guidedStudy:has(.petFullBody) .guidedQuestion>small,.guidedStudy:has(.petFullBody) .questionPrompt{display:none}
-.guidedStudy:has(.petFullBody) .petFullBody{position:absolute;inset:0;width:100%;height:100%;margin:0;background:#c98467;z-index:0}
-.guidedStudy:has(.petFullBody) .petFullBody img{object-fit:cover;object-position:center 20%;opacity:.96}
-.guidedStudy:has(.petFullBody) .petFullBody:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,25,38,.05) 45%,rgba(13,25,38,.72) 78%,rgba(13,25,38,.92) 100%)}
-.guidedStudy:has(.petFullBody) .petFullBody span{z-index:1;font-size:16px}
-.guidedStudy:has(.petFullBody) .guidedOptions{position:absolute;left:10%;right:10%;bottom:240px;z-index:3;display:grid;gap:8px}
-.guidedStudy:has(.petFullBody) .guidedOptions button{min-height:48px;border:2px solid #fff;background:rgba(255,255,255,.96);border-radius:12px;box-shadow:0 3px 0 rgba(0,0,0,.22);font-size:16px}
-.guidedStudy:has(.petFullBody) .guidedActions{position:absolute;right:10%;bottom:186px;z-index:3;margin:0}
-.guidedStudy:has(.petFullBody) .guidedActions button:first-child{display:none}
-.guidedStudy:has(.petFullBody) .guidedActions button:last-child{border-radius:22px;padding:11px 20px;background:#ef765d;color:#fff;border:0}
-.guidedStudy:has(.petFullBody) .petCompanion{position:absolute;left:6%;right:6%;bottom:28px;z-index:4;margin:0;padding:26px 20px 18px;background:rgba(255,255,255,.96);border:0;border-radius:22px;color:#263342;box-shadow:0 6px 0 rgba(0,0,0,.2)}
-.guidedStudy:has(.petFullBody) .petCompanion:before{top:-14px;left:24px;border-radius:18px;background:#43a8a5;color:#fff;font-size:14px;padding:8px 22px;letter-spacing:0}
-.guidedStudy:has(.petFullBody) .petCompanion p{font-size:17px;line-height:1.45;color:#263342;margin:2px 0 12px;min-height:48px}
-.guidedStudy:has(.petFullBody) .petActions{justify-content:flex-end}
-.guidedStudy:has(.petFullBody) .petActions button{min-height:44px;border-radius:12px;font-size:14px}
-@media(max-width:600px){.guidedStudy:has(.petFullBody){min-height:760px;padding-left:0;padding-right:0}.guidedStudy:has(.petFullBody) .guidedOptions{left:6%;right:6%;bottom:245px}.guidedStudy:has(.petFullBody) .guidedActions{right:6%;bottom:190px}.guidedStudy:has(.petFullBody) .petCompanion{left:4%;right:4%;bottom:20px}.guidedStudy:has(.petFullBody) .petFullBody img{object-position:center 12%}}
 .petCompanion{position:relative;background:linear-gradient(135deg,#13263a,#203f55);border:3px solid #efc56d;border-radius:5px;box-shadow:8px 8px 0 #101923;color:#fff;padding:20px 18px 15px}.petCompanion::before{content:'GUIA DO CADERNO';position:absolute;top:-15px;left:16px;background:#efc56d;color:#162536;padding:3px 10px;font-size:10px;font-weight:900;letter-spacing:.12em}.petCompanion strong{font-family:Georgia,serif;color:#ffe0a0}.petCompanion p{color:#e4edf0}.petCompanion .petAvatar{border:2px solid #efc56d;background:#0d1a29;color:#efc56d;box-shadow:inset 0 0 0 3px #315f74}.petCompanion .petActions button{border:1px solid #efc56d;background:#315f74}.petCompanion .petActions button:last-child{background:#a94b35}
