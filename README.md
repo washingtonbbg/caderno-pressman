@@ -94,6 +94,14 @@ actions tied to the current ChatGPT user. Leave public content anonymous.
 - `npm test`: build the starter and verify its rendered loading skeleton
 - `npm run db:generate`: generate Drizzle migrations after schema changes
 
+## AI-generated memory palace
+
+The study flow in `/estudar` can generate one mnemonic locus after each corrected
+question. Configure `OPENAI_API_KEY` as a server-side secret. Optionally set
+`OPENAI_MEMORY_MODEL`; the default is `gpt-5.6-luna`. The API key is read only by
+`/api/study/memory-palace` and is never sent to the browser. Generation requires a
+visitor authenticated with ChatGPT.
+
 ## Learn More
 
 - [vinext Documentation](https://github.com/cloudflare/vinext)

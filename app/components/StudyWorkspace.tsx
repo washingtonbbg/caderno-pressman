@@ -6,6 +6,8 @@ import { recordAttempt, selectSession, type Confidence, type StudyMode, type Stu
 import { EXAM_ID, capExamReview, examBlock, examBlocks, examSession, type ExamBlock } from '@/lib/exam-plan';
 import QuestionExplanation from './QuestionExplanation';
 import FeedbackEvidence from './FeedbackEvidence';
+import MemoryPalace from './MemoryPalace';
+import type { MemoryLocus } from '@/lib/memory-palace';
 
 const confidenceLabels: Record<Confidence,string> = {guess:'Chute',unsure:'Em dúvida',sure:'Consigo justificar'};
 const modeLabels: Record<StudyMode,string> = {recommended:'Revisões + novas',due:'Revisões pendentes',errors:'Erros e dúvidas',new:'Questões novas'};
@@ -53,6 +55,9 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
   const [noteConflict,setNoteConflict] = useState<StudyProgress|null>(null);
   const [now,setNow] = useState(0);
   const [journalOpen,setJournalOpen] = useState(false);
+  const [memories,setMemories] = useState<MemoryLocus[]>([]);
+  const [memoryBusy,setMemoryBusy] = useState(false);
+  const [memoryError,setMemoryError] = useState('');
   const heading = useRef<HTMLHeadingElement>(null);
   const inSession = useRef(false);
   const q = session[active];
@@ -113,6 +118,7 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
   function resetQuestion() {
     setOptionsOpen(mockExam);setSelected(null);setConfidence(null);setRecall('');setAnswered(false);
     setPending(null);setMessage('');setNote('');setErrorKind('');setNoteDirty(false);setNoteConflict(null);
+    setMemoryError('');setMemoryBusy(false);
   }
   function start() {
     let chosen:StudyQuestion[];
@@ -123,7 +129,7 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
     } else chosen=examFocus&&block==='all'&&notebook==='all'?examSession(scope,progress,mode,limit,Date.now(),mixed):selectSession(scope,progress,mode,limit,Date.now(),mixed);
     inSession.current=chosen.length>0;
     startedAt.current=Date.now();setElapsed(0);setResponseLog([]);
-    setNow(Date.now());setSession(chosen);setActive(0);setAnswers([]);setFinished(false);resetQuestion();
+    setNow(Date.now());setSession(chosen);setActive(0);setAnswers([]);setMemories([]);setFinished(false);resetQuestion();
     requestAnimationFrame(()=>heading.current?.focus());
   }
   async function persist(attempt:Attempt) {
@@ -138,12 +144,26 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
     } catch(error) { setMessage(`${error instanceof Error?error.message:'Falha de conexão.'} Use “Tentar salvar novamente”.`); }
     finally {setBusy(false);}
   }
+  async function generateMemory() {
+    if(!q||memoryBusy)return;
+    setMemoryBusy(true);setMemoryError('');
+    try {
+      const response=await fetch('/api/study/memory-palace',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({
+        questionId:q.id,position:active,prompt:q.prompt,correctAnswer:`${String.fromCharCode(65+q.answer)} — ${q.options[q.answer]}`,explanation:q.explanation,previous:memories,
+      })});
+      const data=await response.json();
+      if(!response.ok)throw Error(data.error||'Não foi possível gerar a cena agora.');
+      setMemories(current=>[...current.filter(item=>item.questionId!==q.id),data]);
+    } catch(error) {setMemoryError(error instanceof Error?error.message:'Não foi possível gerar a cena agora.');}
+    finally {setMemoryBusy(false);}
+  }
   async function answer(value:number,certainty:Confidence) {
     if(answered || busy) return;
     setSelected(value);setConfidence(certainty);setAnswered(true);setOptionsOpen(true);
     const correct=value===q.answer;
     setAnswers(a=>[...a,correct]);
     setResponseLog(log=>[...log,{question:q,selected:value}]);
+    if(!mockExam)void generateMemory();
     if(connection!=='saved') {
       const record=recordAttempt(q.id,progress[q.id],correct,certainty,Date.now());
       const result=examFocus?capExamReview(record,Date.now()):record;
@@ -222,13 +242,14 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
             {selected===q.answer&&confidence!=='sure'&&<p>Acertar com dúvida ou por chute pede nova tentativa; isso não é tratado como lembrança segura.</p>}
             {selected!==q.answer&&confidence==='sure'&&<p>Este erro com confiança merece atenção: identifique qual regra parecia correta e compare com a referência.</p>}
             <QuestionExplanation question={q}/>
+            <MemoryPalace memory={memories.find(item=>item.questionId===q.id)} loading={memoryBusy} error={memoryError} onRetry={generateMemory}/>
             {q.languageNote&&<details><summary>Pistas e distinções do caderno</summary><p>{q.languageNote}</p><p>Uma pista linguística ajuda a conferir a proposição; não substitui o conceito ou a fonte.</p></details>}
             {recall&&<details><summary>O que você lembrou antes de responder</summary><p>{recall}</p></details>}
             {!pending&&progress[q.id]&&<p>Próxima revisão: <strong>{date(progress[q.id].dueAt)}</strong>{!examFocus&&<> · intervalo de {progress[q.id].intervalDays} dia(s)</>}{connection!=='saved'?' nesta sessão temporária':''}.</p>}
             <div className="learnAnnotation"><label htmlFor="study-note">Com suas palavras: qual regra decide esta questão? O que muda na alternativa errada?</label><textarea id="study-note" rows={3} value={note} maxLength={3000} disabled={!!pending||busy} onChange={e=>{setNote(e.target.value);setNoteDirty(true);}} placeholder="Uma ou duas frases para sua próxima revisão (opcional)."/><label>O que dificultou a resposta?<select value={errorKind} disabled={!!pending||busy} onChange={e=>{setErrorKind(e.target.value);setNoteDirty(true);}}><option value="">Não registrar motivo</option><option value="concept">Ainda não conhecia o conceito</option><option value="attention">Leitura do comando ou atenção</option><option value="application">Dificuldade de aplicar o conceito</option><option value="guess">Chute ou dúvida entre alternativas</option></select></label>{noteDirty&&<button disabled={busy||!!pending||!!noteConflict} onClick={saveNote}>Salvar anotação</button>}</div>
             {noteConflict&&<div className="learnNotice" role="alert"><p>A versão salva em outra aba:</p><blockquote>{noteConflict.note||'(sem texto)'}</blockquote><p>Seu rascunho continua no campo acima.</p><button onClick={()=>{setProgress(p=>({...p,[q.id]:noteConflict}));setNote(n=>[noteConflict.note,n].filter(Boolean).join('\n\n'));setNoteConflict(null);setNoteDirty(true);}}>Reunir os textos para revisar</button><button onClick={()=>{setProgress(p=>({...p,[q.id]:noteConflict}));setNote(noteConflict.note);setErrorKind(noteConflict.errorKind);setNoteConflict(null);setNoteDirty(false);}}>Usar a versão salva</button></div>}
             <p role="status" aria-live="polite">{busy?'Salvando…':message}</p>{pending&&!busy&&<button onClick={()=>persist(pending)}>Tentar salvar novamente</button>}
-            <button className="learnPrimary" disabled={busy||!!pending||noteDirty} onClick={next}>{active+1===session.length?'Concluir sessão':'Próxima questão →'}</button>{noteDirty&&<p>Salve sua anotação para continuar.</p>}
+            <button className="learnPrimary" disabled={busy||!!pending||noteDirty||memoryBusy} onClick={next}>{active+1===session.length?'Concluir sessão':'Próxima questão →'}</button>{noteDirty&&<p>Salve sua anotação para continuar.</p>}
           </div>}
         </article>
       </section>}
@@ -238,6 +259,7 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
         <p>No recorte IFMT Administrador, revisões que ultrapassariam 12/09 são antecipadas para a revisão final desse dia, às 18h. Na véspera, o plano recomenda uma carga leve.</p>
         <p><strong>Intercalação:</strong> alterne assuntos para distinguir conceitos. Quando o tema for novo, estude exemplos no caderno e pratique com foco antes de misturar.</p>
         <p><strong>Autoexplicação e confiança:</strong> escreva a regra que faltou e observe a diferença entre acertar com segurança e acertar por chute. Nenhuma nota de confiança, sozinha, comprova domínio.</p>
+        <p><strong>Palácio da Memória:</strong> depois de cada correção, a IA transforma a regra decisiva em uma cena concreta e exagerada, colocada em um ponto de um percurso familiar. Ao revisar, percorra mentalmente local, imagem e regra — a cena é uma pista, não substitui a compreensão.</p>
         <p>O indicador “após 24h” mede revisões dessas mesmas questões. Ele não é um teste independente de transferência para questões inéditas.</p>
         <ul><li><a href="https://doi.org/10.1038/s44159-022-00089-1" target="_blank" rel="noreferrer">Carpenter, Pan e Butler (2022): espaçamento e recuperação</a></li><li><a href="https://doi.org/10.1002/rev3.3266" target="_blank" rel="noreferrer">Firth, Rivers e Boyle (2021): intercalação e limites da evidência</a></li><li><a href="https://doi.org/10.1007/s10648-018-9434-x" target="_blank" rel="noreferrer">Bisra et al. (2018): meta-análise de autoexplicação</a></li><li><a href="https://doi.org/10.1007/s10648-025-10035-1" target="_blank" rel="noreferrer">Murray, Horner e Göbel (2025): espaçamento e recuperação em matemática</a></li></ul>
         <FeedbackEvidence />

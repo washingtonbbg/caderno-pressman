@@ -3,6 +3,18 @@
 .printButton { display: inline-block; }
 .questionCard h3 { white-space: pre-line; }
 
+.memoryPalace { margin: 24px 0; padding: 20px; border: 1px solid #b99962; border-radius: 16px; background: linear-gradient(135deg,#fffaf0,#f4ead8); color: #342719; }
+.memoryPalaceHeading { display:flex; align-items:flex-start; justify-content:space-between; gap:16px; }
+.memoryPalaceHeading > div { display:flex; align-items:center; gap:12px; }
+.memoryPalaceHeading > div > span { display:grid; place-items:center; width:42px; height:42px; border-radius:50%; background:#5b3b22; color:#fff8e8; font-size:24px; }
+.memoryPalaceHeading small { display:block; color:#76522f; font-weight:800; letter-spacing:.12em; }
+.memoryPalaceHeading h3 { margin:3px 0 0; }
+.memoryPalaceHeading > b { white-space:nowrap; color:#76522f; }
+.memoryScene { font-size:1.05rem; line-height:1.65; }
+.memoryRecall { margin:16px 0; padding:14px 16px; border-left:4px solid #a66b2d; background:rgba(255,255,255,.6); }
+.memoryRecall p { margin:5px 0 0; }
+.memoryPalace button { border-color:#76522f; color:#4b301c; }
+
 @media (max-width: 900px) {
   .generator,
   .cardsHeader { grid-template-columns: 1fr; }
