@@ -99,6 +99,10 @@ test('exam focus excludes unrelated content and mock sessions preserve 20/10/10/
   assert.equal(selected.length,50);
   assert.equal(new Set(selected.map(q=>q.id)).size,50);
   for(const block of exam.examBlocks)assert.equal(selected.filter(q=>exam.examBlock(q)===block.id).length,block.count);
+  const predicted=exam.predictedExamSession(scoped);
+  assert.equal(predicted.length,20);
+  assert.equal(new Set(predicted.map(q=>q.id)).size,20);
+  assert.deepEqual(exam.examBlocks.map(block=>predicted.filter(q=>exam.examBlock(q)===block.id).length),[8,4,4,4]);
   const record=model.recordAttempt('q',undefined,true,'sure',exam.FINAL_REVIEW_AT-day);
   assert.equal(exam.capExamReview(record,exam.FINAL_REVIEW_AT-day).dueAt,exam.FINAL_REVIEW_AT);
   assert.equal(exam.capExamReview(record,exam.EXAM_AT).dueAt,record.dueAt);

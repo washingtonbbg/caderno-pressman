@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { recordAttempt, selectSession, type Confidence, type StudyMode, type StudyProgress, type StudyQuestion } from '@/lib/study-model';
-import { EXAM_ID, capExamReview, examBlock, examBlocks, examSession, type ExamBlock } from '@/lib/exam-plan';
+import { EXAM_ID, capExamReview, examBlock, examBlocks, examSession, predictedExamSession, type ExamBlock } from '@/lib/exam-plan';
 import QuestionExplanation from './QuestionExplanation';
 import FeedbackEvidence from './FeedbackEvidence';
 import MemoryPalace from './MemoryPalace';
@@ -31,6 +31,7 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
   const [examFocus,setExamFocus] = useState(true);
   const [block,setBlock] = useState<ExamBlock|'all'>('all');
   const [mockExam,setMockExam] = useState(false);
+  const [predictedExam,setPredictedExam] = useState(false);
   const [responseLog,setResponseLog] = useState<{question:StudyQuestion;selected:number}[]>([]);
   const [elapsed,setElapsed] = useState(0);
   const startedAt = useRef(0);
@@ -67,7 +68,7 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
   const canMix=new Set(scope.map(q=>q.subject)).size>1;
   const records = scope.flatMap(q=>progress[q.id]?[progress[q.id]]:[]);
   const due = records.filter(p=>p.dueAt<=now).length;
-  const available = mockExam?examSession(relevant,{},'new',50,now,true):examFocus&&block==='all'&&notebook==='all'?examSession(scope,progress,mode,limit,now,mixed):selectSession(scope,progress,mode,limit,now,mixed);
+  const available = predictedExam?predictedExamSession(relevant):mockExam?examSession(relevant,{},'new',50,now,true):examFocus&&block==='all'&&notebook==='all'?examSession(scope,progress,mode,limit,now,mixed):selectSession(scope,progress,mode,limit,now,mixed);
 
   useEffect(()=>{
     let live=true;
@@ -87,6 +88,7 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
       const chosenBlock=params.get('bloco');
       if(examBlocks.some(b=>b.id===chosenBlock))setBlock(chosenBlock as ExamBlock);
       if(params.get('formato')==='simulado')setMockExam(true);
+      if(params.get('formato')==='predicao'){setMockExam(true);setPredictedExam(true);}
     });
     return ()=>{live=false;};
   },[questions]);
@@ -122,7 +124,8 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
   }
   function start() {
     let chosen:StudyQuestion[];
-    if(mockExam) {
+    if(predictedExam)chosen=predictedExamSession(relevant);
+    else if(mockExam) {
       const shuffled=[...relevant];
       for(let i=shuffled.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[shuffled[i],shuffled[j]]=[shuffled[j],shuffled[i]];}
       chosen=examSession(shuffled,{},'new',50,Date.now(),true);
@@ -204,7 +207,7 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
       {!session.length&&<>
         {examFocus&&<div className="learnNotice"><strong>Recorte IFMT Administrador · prova 13/09</strong><p>20 específicos + 10 Português + 10 Gerais + 10 Tecnologia. O treino misto distribui itens nessa proporção quando há material disponível. O número de itens cadastrados não comprova cobertura integral do edital.</p><Link href="/reta-final">Ver plano diário e lacunas →</Link></div>}
         {finished&&<section className="learnComplete" aria-live="polite"><h2>Sessão concluída</h2><p>{answers.filter(Boolean).length} acertos em {answers.length} tentativas. Confira as revisões pendentes nos próximos dias.</p><p>Conseguir responder agora é um passo. Lembrar novamente depois de um intervalo ajuda a avaliar a retenção.</p></section>}
-        {finished&&mockExam&&<section className="learnPlanner"><h2>Correção do ensaio</h2><p>Tempo decorrido: {Math.floor(elapsed/60)} min {elapsed%60} s. Este treino usa itens do banco, incluindo autorais; não estima nota de corte.</p><div className="learnStats">{examBlocks.map(b=>{const items=responseLog.filter(r=>examBlock(r.question)===b.id);return <div key={b.id}><strong>{items.filter(r=>r.selected===r.question.answer).length}/{items.length}</strong><span>{b.title}</span></div>;})}</div><details className="examSimulationReview"><summary>Conferir as {responseLog.length} respostas e explicações</summary>{responseLog.map(({question,selected},i)=><article key={question.id}><h3>{i+1}. {question.prompt}</h3><p>Sua resposta: {selected<0?'Não sei':String.fromCharCode(65+selected)} · Gabarito: {String.fromCharCode(65+question.answer)} — {question.options[question.answer]}</p><p>{question.explanation||'Justificativa ainda não cadastrada; confira a fonte no caderno.'}</p><Link href={question.notebook}>Consultar caderno →</Link></article>)}</details><p>Depois da correção, escolha “Erros e dúvidas” para praticar novamente com explicação e anotações.</p></section>}
+        {finished&&mockExam&&<section className="learnPlanner"><h2>Correção do {predictedExam?'simulado preditivo':'ensaio'}</h2><p>Tempo decorrido: {Math.floor(elapsed/60)} min {elapsed%60} s. Este treino usa itens do banco e {predictedExam?'uma curadoria heurística por aderência ao edital; não prevê nem garante questões reais.':'não estima nota de corte.'}</p><div className="learnStats">{examBlocks.map(b=>{const items=responseLog.filter(r=>examBlock(r.question)===b.id);return <div key={b.id}><strong>{items.filter(r=>r.selected===r.question.answer).length}/{items.length}</strong><span>{b.title}</span></div>;})}</div><details className="examSimulationReview"><summary>Conferir as {responseLog.length} respostas e explicações</summary>{responseLog.map(({question,selected},i)=><article key={question.id}><h3>{i+1}. {question.prompt}</h3><p>Sua resposta: {selected<0?'Não sei':String.fromCharCode(65+selected)} · Gabarito: {String.fromCharCode(65+question.answer)} — {question.options[question.answer]}</p><p>{question.explanation||'Justificativa ainda não cadastrada; confira a fonte no caderno.'}</p><Link href={question.notebook}>Consultar caderno →</Link></article>)}</details><p>Depois da correção, escolha “Erros e dúvidas” para praticar novamente com explicação e anotações.</p></section>}
         <section className="learnStats" aria-label="Seu progresso no recorte selecionado">
           <div><strong>{due}</strong><span>revisões pendentes</span></div>
           <div><strong>{records.length}<small> / {scope.length}</small></strong><span>questões tentadas</span></div>
@@ -212,8 +215,8 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
           <div><strong>{percent(records.reduce((s,p)=>s+p.delayedCorrect,0),records.reduce((s,p)=>s+p.delayedAttempts,0))}</strong><span>acerto após 24h ou mais</span></div>
         </section>
         <section className="learnPlanner" aria-labelledby="session-title"><div><h2 id="session-title">Sua próxima sessão</h2><p>Revisões vencidas entram antes de questões novas. Se precisar aprender a base, abra o caderno e estude um exemplo resolvido.</p></div>
-          <div className="learnFilters"><label>Programa<select value={examFocus?'exam':'library'} onChange={e=>{setExamFocus(e.target.value==='exam');setNotebook('all');setBlock('all');setMockExam(false);setFinished(false);}}><option value="exam">IFMT Administrador · 13/09/2026</option><option value="library">Biblioteca inteira</option></select></label>{examFocus&&<><label>Bloco do edital<select value={block} disabled={mockExam} onChange={e=>{setBlock(e.target.value as ExamBlock|'all');setNotebook('all');}}><option value="all">Os quatro blocos</option>{examBlocks.map(b=><option value={b.id} key={b.id}>{b.title}</option>)}</select></label><label>Formato<select value={mockExam?'mock':'practice'} onChange={e=>{setMockExam(e.target.value==='mock');setFinished(false);}}><option value="practice">Prática com correção a cada questão</option><option value="mock">Ensaio de 50 · correção somente no fim</option></select></label></>}</div>
-          {mockExam&&<p>O ensaio usa todos os blocos, sem os filtros abaixo, e pode repetir itens já vistos. O cronômetro mede seu tempo; confirme a duração oficial no edital. {available.length<50&&'O banco deste recorte ainda não contém 50 itens; o ensaio será parcial.'}</p>}
+          <div className="learnFilters"><label>Programa<select value={examFocus?'exam':'library'} onChange={e=>{setExamFocus(e.target.value==='exam');setNotebook('all');setBlock('all');setMockExam(false);setPredictedExam(false);setFinished(false);}}><option value="exam">IFMT Administrador · 13/09/2026</option><option value="library">Biblioteca inteira</option></select></label>{examFocus&&<><label>Bloco do edital<select value={block} disabled={mockExam} onChange={e=>{setBlock(e.target.value as ExamBlock|'all');setNotebook('all');}}><option value="all">Os quatro blocos</option>{examBlocks.map(b=><option value={b.id} key={b.id}>{b.title}</option>)}</select></label><label>Formato<select value={predictedExam?'prediction':mockExam?'mock':'practice'} onChange={e=>{setPredictedExam(e.target.value==='prediction');setMockExam(e.target.value!=='practice');setFinished(false);}}><option value="practice">Prática com correção a cada questão</option><option value="prediction">Predição de hoje · 20 questões</option><option value="mock">Ensaio de 50 · correção somente no fim</option></select></label></>}</div>
+          {mockExam&&<p>{predictedExam?'O simulado preditivo seleciona 8 questões específicas e 4 de cada bloco básico, priorizando núcleos centrais do edital e variedade de assuntos. É uma heurística de treino, não uma previsão garantida da prova.':'O ensaio usa todos os blocos, sem os filtros abaixo, e pode repetir itens já vistos.'} O cronômetro mede seu tempo; confirme a duração oficial no edital. {available.length<(predictedExam?20:50)&&'O banco deste recorte não contém itens suficientes; o ensaio será parcial.'}</p>}
           <div className="learnFilters"><label>Caderno<select value={notebook} disabled={mockExam} onChange={e=>setNotebook(e.target.value)}><option value="all">Todos os cadernos do recorte</option>{notebooks.map(([href,title])=><option key={href} value={href}>{title}</option>)}</select></label>
             <label>Objetivo<select value={mode} onChange={e=>setMode(e.target.value as StudyMode)}>{Object.entries(modeLabels).map(([value,label])=><option key={value} value={value}>{label}</option>)}</select></label>
             <label>Questões por sessão<select value={limit} onChange={e=>setLimit(Number(e.target.value))}>{[5,10,20].map(n=><option key={n} value={n}>{n} questões</option>)}</select></label>

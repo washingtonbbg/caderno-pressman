@@ -34,6 +34,39 @@ export function examSession(questions:StudyQuestion[],progress:Record<string,Stu
   return selected;
 }
 
+const predictionSignals:Record<ExamBlock,RegExp[]>={
+  specific:[/licita|contrata|lei 14\.133|planejamento|orçamento|despesa|receita|pessoas|logística|estoque|risco|projeto|liderança/i,/ética|controle|inovação|financeir|tir|vpl/i],
+  portuguese:[/interpreta|sentido|coesão|conector|concordância|regência|crase|pontuação|oração|período/i,/pronome|verbo|semântica|acentuação/i],
+  general:[/mato grosso|pantanal|cerrado|amazônia|constitui|servidor|lei 8\.112|rede federal|instituto federal|ética|improbidade|usuário|racial/i,/administração pública|cidadania|diversidade|meio ambiente/i],
+  technology:[/inteligência artificial|\bia\b|moodle|ambiente virtual|tecnologia.*educação|planilha|excel|calc|segurança|dados|lgpd/i,/nuvem|drive|acessibilidade|inclusão|phishing|backup/i],
+};
+
+function predictionScore(question:StudyQuestion,block:ExamBlock) {
+  const text=`${question.subject} ${question.prompt}`;
+  let score=predictionSignals[block].reduce((total,signal,index)=>total+(signal.test(text)?8-index*3:0),0);
+  if(question.reviewStatus==='reviewed')score+=3;
+  if(question.explanation)score+=2;
+  if(question.source.toLowerCase().includes('ifmt'))score+=2;
+  if(question.scoring==='discussion')score-=100;
+  return score;
+}
+
+// Curadoria heurística baseada no edital e na cobertura do banco. Não estima a
+// probabilidade real de uma questão nem usa informação privilegiada da prova.
+export function predictedExamSession(questions:StudyQuestion[]) {
+  const quotas:Record<ExamBlock,number>={specific:8,portuguese:4,general:4,technology:4};
+  const selected:StudyQuestion[]=[];
+  for(const block of examBlocks.map(item=>item.id)) {
+    const candidates=questions.filter(q=>examBlock(q)===block).sort((a,b)=>predictionScore(b,block)-predictionScore(a,block)||a.id.localeCompare(b.id));
+    const chosen:StudyQuestion[]=[];
+    const subjects=new Set<string>();
+    for(const question of candidates)if(!subjects.has(question.subject)){chosen.push(question);subjects.add(question.subject);if(chosen.length===quotas[block])break;}
+    for(const question of candidates)if(chosen.length<quotas[block]&&!chosen.includes(question))chosen.push(question);
+    selected.push(...chosen);
+  }
+  return selected;
+}
+
 export function capExamReview(progress:StudyProgress,at:number):StudyProgress {
   if(at>=FINAL_REVIEW_AT||progress.dueAt<=FINAL_REVIEW_AT)return progress;
   return {...progress,dueAt:FINAL_REVIEW_AT,intervalDays:Math.ceil((FINAL_REVIEW_AT-at)/86400000)};
