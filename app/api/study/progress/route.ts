@@ -1,6 +1,6 @@
 import catalog from '@/data/study-catalog.json';
 import { HttpError, choice, field } from '@/lib/library-model';
-import { recordAttempt, type Confidence } from '@/lib/study-model';
+import { FSRS_VERSION, memoryGrade, recordAttempt, type Confidence, type MemoryGrade } from '@/lib/study-model';
 import { EXAM_ID, capExamReview, examBlock } from '@/lib/exam-plan';
 import { readProgress, readQuestionProgress, studyDb, studyError, studyJson, studyUser } from '@/lib/study-server';
 
@@ -30,21 +30,30 @@ export async function POST(request: Request) {
     }
     const previous = await readQuestionProgress(user,questionId);
     const at=Date.now();
-    let next = recordAttempt(questionId,previous,selected === question.answer,confidence,at);
+    const correct=selected===question.answer;
+    const rating=body.memoryRating===undefined?memoryGrade(correct,confidence):body.memoryRating;
+    if(!Number.isInteger(rating)||rating<1||rating>4)throw new HttpError(400,'Avaliação da memória inválida.');
+    const ratingSource=body.ratingSource===undefined?'inferred':choice(body.ratingSource,['declared','inferred'],'Origem da avaliação');
+    const responseMs=body.responseMs??0;
+    if(!Number.isInteger(responseMs)||responseMs<0||responseMs>86_400_000)throw new HttpError(400,'Tempo de resposta inválido.');
+    const elapsedDays=previous?Math.max(0,Math.round((at-previous.lastAt)/86_400_000)):0;
+    let next = recordAttempt(questionId,previous,correct,confidence,at,rating as MemoryGrade);
     if(body.examId) {
       if(body.examId!==EXAM_ID||!examBlock(question))throw new HttpError(400,'Questão fora do recorte do edital.');
       next=capExamReview(next,at);
     }
     try {
       await studyDb().batch([
-        studyDb().prepare('INSERT INTO study_attempts (id,user_id,question_id,ordinal,selected,confidence,correct,created_at) VALUES(?,?,?,?,?,?,?,?)')
-          .bind(id,user,questionId,next.attempts,selected,confidence,Number(next.lastCorrect),next.lastAt),
-        studyDb().prepare(`INSERT INTO study_progress (id,user_id,question_id,attempts,correct,last_correct,confidence,interval_days,due_at,last_at,first_correct,delayed_attempts,delayed_correct,note,error_kind)
-          VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(user_id,question_id) DO UPDATE SET
+        studyDb().prepare('INSERT INTO study_attempts (id,user_id,question_id,ordinal,selected,confidence,correct,created_at,memory_rating,rating_source,response_ms,scheduled_days,elapsed_days,scheduler_version) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)')
+          .bind(id,user,questionId,next.attempts,selected,confidence,Number(next.lastCorrect),next.lastAt,rating,ratingSource,responseMs,next.intervalDays,elapsedDays,FSRS_VERSION),
+        studyDb().prepare(`INSERT INTO study_progress (id,user_id,question_id,attempts,correct,last_correct,confidence,interval_days,due_at,last_at,first_correct,delayed_attempts,delayed_correct,note,error_kind,stability,difficulty,lapses,fsrs_state,fsrs_reps,learning_steps)
+          VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(user_id,question_id) DO UPDATE SET
           attempts=excluded.attempts,correct=excluded.correct,last_correct=excluded.last_correct,confidence=excluded.confidence,
           interval_days=excluded.interval_days,due_at=excluded.due_at,last_at=excluded.last_at,
-          delayed_attempts=excluded.delayed_attempts,delayed_correct=excluded.delayed_correct`)
-          .bind(`${user}:${questionId}`,user,questionId,next.attempts,next.correct,Number(next.lastCorrect),confidence,next.intervalDays,next.dueAt,next.lastAt,Number(next.firstCorrect),next.delayedAttempts,next.delayedCorrect,next.note,next.errorKind),
+          delayed_attempts=excluded.delayed_attempts,delayed_correct=excluded.delayed_correct,
+          stability=excluded.stability,difficulty=excluded.difficulty,lapses=excluded.lapses,
+          fsrs_state=excluded.fsrs_state,fsrs_reps=excluded.fsrs_reps,learning_steps=excluded.learning_steps`)
+          .bind(`${user}:${questionId}`,user,questionId,next.attempts,next.correct,Number(next.lastCorrect),confidence,next.intervalDays,next.dueAt,next.lastAt,Number(next.firstCorrect),next.delayedAttempts,next.delayedCorrect,next.note,next.errorKind,next.stability,next.difficulty,next.lapses,next.fsrsState,next.fsrsReps,next.learningSteps),
       ]);
     } catch (error) {
       // The unique ordinal makes concurrent updates atomic; a repeated request is safe to retry.

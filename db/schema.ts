@@ -1,4 +1,4 @@
-import {sqliteTable, text, integer, index, uniqueIndex} from 'drizzle-orm/sqlite-core';
+import {sqliteTable, text, integer, real, index, uniqueIndex} from 'drizzle-orm/sqlite-core';
 export const sources = sqliteTable('library_sources', {
  id:text('id').primaryKey(),kind:text('kind').notNull(),title:text('title').notNull(),authors:text('authors').notNull().default(''),
  publisher:text('publisher').notNull().default(''),identifier:text('identifier').notNull().default(''),officialUrl:text('official_url').notNull().default(''),
@@ -39,9 +39,14 @@ export const studyProgress = sqliteTable('study_progress', {
  firstCorrect:integer('first_correct').notNull(),delayedAttempts:integer('delayed_attempts').notNull(),delayedCorrect:integer('delayed_correct').notNull(),
  note:text('note').notNull().default(''),errorKind:text('error_kind').notNull().default(''),
  noteRevision:integer('note_revision').notNull().default(0),
+ stability:real('stability').notNull().default(1),difficulty:real('difficulty').notNull().default(5),
+ lapses:integer('lapses').notNull().default(0),
+ fsrsState:integer('fsrs_state').notNull().default(2),fsrsReps:integer('fsrs_reps').notNull().default(0),learningSteps:integer('learning_steps').notNull().default(0),
 },t=>[uniqueIndex('study_progress_user_question').on(t.userId,t.questionId)]);
 export const studyAttempts = sqliteTable('study_attempts', {
   id:text('id').primaryKey(),userId:text('user_id').notNull(),questionId:text('question_id').notNull(),
  ordinal:integer('ordinal').notNull(),
   selected:integer('selected').notNull(),confidence:text('confidence').notNull(),correct:integer('correct').notNull(),createdAt:integer('created_at').notNull(),
+  memoryRating:integer('memory_rating').notNull().default(0),ratingSource:text('rating_source').notNull().default('inferred'),
+  responseMs:integer('response_ms').notNull().default(0),scheduledDays:integer('scheduled_days').notNull().default(0),elapsedDays:integer('elapsed_days').notNull().default(0),schedulerVersion:text('scheduler_version').notNull().default('legacy'),
 },t=>[uniqueIndex('study_attempts_sequence').on(t.userId,t.questionId,t.ordinal)]);

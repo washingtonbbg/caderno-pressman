@@ -11,8 +11,9 @@ export function studyUser(request: Request, write = false) {
 }
 const columns = `question_id AS questionId, attempts, correct, last_correct AS lastCorrect, confidence,
  interval_days AS intervalDays, due_at AS dueAt, last_at AS lastAt, first_correct AS firstCorrect,
- delayed_attempts AS delayedAttempts, delayed_correct AS delayedCorrect, note, error_kind AS errorKind, note_revision AS noteRevision`;
-function normalize(row: StudyProgress) { return {...row, lastCorrect: !!row.lastCorrect, firstCorrect: !!row.firstCorrect}; }
+ delayed_attempts AS delayedAttempts, delayed_correct AS delayedCorrect, note, error_kind AS errorKind, note_revision AS noteRevision,
+ stability, difficulty, lapses, fsrs_state AS fsrsState, fsrs_reps AS fsrsReps, learning_steps AS learningSteps`;
+function normalize(row: StudyProgress) { return {...row, lastCorrect: !!row.lastCorrect, firstCorrect: !!row.firstCorrect, stability:row.stability||Math.max(.2,row.intervalDays), difficulty:row.difficulty||5, lapses:row.lapses||0,fsrsState:row.fsrsState??2,fsrsReps:row.fsrsReps??row.attempts,learningSteps:row.learningSteps??0}; }
 export async function readProgress(user: string) {
   const rows = await studyDb().prepare(`SELECT ${columns} FROM study_progress WHERE user_id=?`).bind(user).all<StudyProgress>();
   return Object.fromEntries(rows.results.map(row => [row.questionId, normalize(row)]));

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { recordAttempt, selectSession, type Confidence, type StudyMode, type StudyProgress, type StudyQuestion } from '@/lib/study-model';
+import { memoryGrade, recordAttempt, retrievability, selectSession, type Confidence, type MemoryGrade, type StudyMode, type StudyProgress, type StudyQuestion } from '@/lib/study-model';
 import { EXAM_ID, capExamReview, examBlock, examBlocks, examSession, predictedExamSession, type ExamBlock } from '@/lib/exam-plan';
 import QuestionExplanation from './QuestionExplanation';
 import FeedbackEvidence from './FeedbackEvidence';
@@ -10,10 +10,12 @@ import MemoryPalace from './MemoryPalace';
 import type { MemoryLocus } from '@/lib/memory-palace';
 
 const confidenceLabels: Record<Confidence,string> = {guess:'Chute',unsure:'Em dúvida',sure:'Consigo justificar'};
+const ratingLabels:Record<MemoryGrade,{label:string;description:string}>={1:{label:'Esqueci',description:'Não consegui recuperar a resposta.'},2:{label:'Difícil',description:'Lembrei com muito esforço ou após pistas.'},3:{label:'Bom',description:'Lembrei corretamente com algum esforço.'},4:{label:'Fácil',description:'Lembrei imediatamente e consigo justificar.'}};
 const modeLabels: Record<StudyMode,string> = {recommended:'Revisões + novas',due:'Revisões pendentes',errors:'Erros e dúvidas',new:'Questões novas'};
 const date = (at: number) => new Date(at).toLocaleDateString('pt-BR',{day:'2-digit',month:'short'});
 const percent = (hits:number,total:number) => total ? `${Math.round(hits/total*100)}%` : '—';
-type Attempt = {attemptId:string;questionId:string;selected:number;confidence:Confidence;examId?:string};
+const memoryStrength = (progress:StudyProgress,at:number) => `${Math.round(retrievability(progress,at)*100)}%`;
+type Attempt = {attemptId:string;questionId:string;selected:number;confidence:Confidence;memoryRating:MemoryGrade;ratingSource:'declared'|'inferred';responseMs:number;examId?:string};
 
 function QuestionGraph({graph}:{graph:NonNullable<StudyQuestion['graph']>}) {
   const pos:Record<string,number[]> = {A:[35,85],B:[135,30],C:[135,140],D:[245,85],E:[245,140]};
@@ -35,6 +37,7 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
   const [responseLog,setResponseLog] = useState<{question:StudyQuestion;selected:number}[]>([]);
   const [elapsed,setElapsed] = useState(0);
   const startedAt = useRef(0);
+  const questionStartedAt = useRef(0);
   const [mode,setMode] = useState<StudyMode>('recommended');
   const [mixed,setMixed] = useState(true);
   const [limit,setLimit] = useState(10);
@@ -47,6 +50,8 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
   const [confidence,setConfidence] = useState<Confidence|null>(null);
   const [recall,setRecall] = useState('');
   const [answered,setAnswered] = useState(false);
+  const [memoryRating,setMemoryRating] = useState<MemoryGrade|null>(null);
+  const [responseMs,setResponseMs] = useState(0);
   const [busy,setBusy] = useState(false);
   const [pending,setPending] = useState<Attempt|null>(null);
   const [message,setMessage] = useState('');
@@ -119,6 +124,7 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
 
   function resetQuestion() {
     setOptionsOpen(mockExam);setSelected(null);setConfidence(null);setRecall('');setAnswered(false);
+    setMemoryRating(null);setResponseMs(0);questionStartedAt.current=Date.now();
     setPending(null);setMessage('');setNote('');setErrorKind('');setNoteDirty(false);setNoteConflict(null);
     setMemoryError('');setMemoryBusy(false);
   }
@@ -163,17 +169,32 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
   async function answer(value:number,certainty:Confidence) {
     if(answered || busy) return;
     setSelected(value);setConfidence(certainty);setAnswered(true);setOptionsOpen(true);
+    const measuredResponse=Math.max(0,Date.now()-questionStartedAt.current);setResponseMs(measuredResponse);
     const correct=value===q.answer;
     setAnswers(a=>[...a,correct]);
     setResponseLog(log=>[...log,{question:q,selected:value}]);
-    if(!mockExam)void generateMemory();
+    if(!mockExam){void generateMemory();return;}
+    const inferred=memoryGrade(correct,certainty);setMemoryRating(inferred);
     if(connection!=='saved') {
-      const record=recordAttempt(q.id,progress[q.id],correct,certainty,Date.now());
+      const record=recordAttempt(q.id,progress[q.id],correct,certainty,Date.now(),inferred);
       const result=examFocus?capExamReview(record,Date.now()):record;
       setProgress(p=>({...p,[q.id]:result}));setNote(result.note);setErrorKind(result.errorKind);
       setMessage('Tentativa temporária: será perdida ao sair desta página.');return;
     }
-    const attempt={attemptId:crypto.randomUUID(),questionId:q.id,selected:value,confidence:certainty,...(examFocus?{examId:EXAM_ID}:{})};
+    const attempt={attemptId:crypto.randomUUID(),questionId:q.id,selected:value,confidence:certainty,memoryRating:inferred,ratingSource:'inferred' as const,responseMs:measuredResponse,...(examFocus?{examId:EXAM_ID}:{})};
+    setPending(attempt);await persist(attempt);
+  }
+  async function rateMemory(rating:MemoryGrade) {
+    if(!answered||memoryRating||busy||selected===null||!confidence)return;
+    setMemoryRating(rating);
+    const correct=selected===q.answer;
+    if(connection!=='saved') {
+      const record=recordAttempt(q.id,progress[q.id],correct,confidence,Date.now(),rating);
+      const result=examFocus?capExamReview(record,Date.now()):record;
+      setProgress(p=>({...p,[q.id]:result}));setNote(result.note);setErrorKind(result.errorKind);
+      setMessage('Avaliação mantida somente nesta sessão.');return;
+    }
+    const attempt={attemptId:crypto.randomUUID(),questionId:q.id,selected,confidence,memoryRating:rating,ratingSource:'declared' as const,responseMs,...(examFocus?{examId:EXAM_ID}:{})};
     setPending(attempt);await persist(attempt);
   }
   async function saveNote() {
@@ -226,7 +247,7 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
           {!available.length&&connection!=='loading'&&<p role="status">Nenhuma questão neste recorte agora. Escolha outro objetivo ou volte na próxima revisão{records.length?` (${date(Math.min(...records.map(p=>p.dueAt)))})`:''}.</p>}
         </section>
         <section className="learnJournal"><div className="learnSectionLine"><h2>Caderno de erros e dúvidas</h2><button onClick={()=>setJournalOpen(v=>!v)} aria-expanded={journalOpen}>{journalOpen?'Recolher':'Ver histórico'}</button></div><p>{records.filter(p=>!p.lastCorrect&&p.confidence==='sure').length} erros com confiança · {records.filter(p=>p.lastCorrect&&p.confidence!=='sure').length} acertos com dúvida ou chute</p>
-          {journalOpen&&<div className="learnJournalList">{scope.filter(q=>progress[q.id]&&(!progress[q.id].lastCorrect||progress[q.id].confidence!=='sure'||progress[q.id].note)).map(item=>{const p=progress[item.id];return <article key={item.id}><small>{item.notebookTitle} · revisão {date(p.dueAt)}</small><h3>{item.prompt}</h3><p>{p.lastCorrect?'Acerto com necessidade de revisão':'Última tentativa incorreta'} · {confidenceLabels[p.confidence]}</p>{p.note&&<blockquote>{p.note}</blockquote>}<Link href={item.notebook}>Abrir caderno →</Link></article>;})}{!records.length&&<p>As tentativas feitas aqui formarão seu histórico. Anote a regra que decidiu cada questão.</p>}</div>}
+          {journalOpen&&<div className="learnJournalList">{scope.filter(q=>progress[q.id]&&(!progress[q.id].lastCorrect||progress[q.id].confidence!=='sure'||progress[q.id].note)).map(item=>{const p=progress[item.id];return <article key={item.id}><small>{item.notebookTitle} · revisão {date(p.dueAt)}</small><h3>{item.prompt}</h3><p>{p.lastCorrect?'Acerto com necessidade de revisão':'Última tentativa incorreta'} · {confidenceLabels[p.confidence]} · força estimada {memoryStrength(p,now)}</p>{p.lapses>0&&<p>{p.lapses} esquecimento(s) registrado(s); a fila reduziu o intervalo automaticamente.</p>}{p.note&&<blockquote>{p.note}</blockquote>}<Link href={item.notebook}>Abrir caderno →</Link></article>;})}{!records.length&&<p>As tentativas feitas aqui formarão seu histórico. Anote a regra que decidiu cada questão.</p>}</div>}
         </section>
       </>}
       {!!session.length&&q&&<section className="learnSession">
@@ -245,26 +266,33 @@ export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) 
             {selected===q.answer&&confidence!=='sure'&&<p>Acertar com dúvida ou por chute pede nova tentativa; isso não é tratado como lembrança segura.</p>}
             {selected!==q.answer&&confidence==='sure'&&<p>Este erro com confiança merece atenção: identifique qual regra parecia correta e compare com a referência.</p>}
             <QuestionExplanation question={q}/>
+            <fieldset className="learnMemoryRating"><legend>Depois de conferir: como foi recuperar esta resposta?</legend><p>Considere sua lembrança real, não apenas o acerto. Essa avaliação define o próximo intervalo.</p><div>{(Object.entries(ratingLabels) as [string,{label:string;description:string}][]).map(([value,item])=>{const rating=Number(value) as MemoryGrade;return <button type="button" key={value} disabled={!!memoryRating||busy} aria-pressed={memoryRating===rating} onClick={()=>rateMemory(rating)}><strong>{item.label}</strong><span>{item.description}</span></button>;})}</div></fieldset>
             <MemoryPalace memory={memories.find(item=>item.questionId===q.id)} loading={memoryBusy} error={memoryError} onRetry={generateMemory}/>
             {q.languageNote&&<details><summary>Pistas e distinções do caderno</summary><p>{q.languageNote}</p><p>Uma pista linguística ajuda a conferir a proposição; não substitui o conceito ou a fonte.</p></details>}
             {recall&&<details><summary>O que você lembrou antes de responder</summary><p>{recall}</p></details>}
-            {!pending&&progress[q.id]&&<p>Próxima revisão: <strong>{date(progress[q.id].dueAt)}</strong>{!examFocus&&<> · intervalo de {progress[q.id].intervalDays} dia(s)</>}{connection!=='saved'?' nesta sessão temporária':''}.</p>}
-            <div className="learnAnnotation"><label htmlFor="study-note">Com suas palavras: qual regra decide esta questão? O que muda na alternativa errada?</label><textarea id="study-note" rows={3} value={note} maxLength={3000} disabled={!!pending||busy} onChange={e=>{setNote(e.target.value);setNoteDirty(true);}} placeholder="Uma ou duas frases para sua próxima revisão (opcional)."/><label>O que dificultou a resposta?<select value={errorKind} disabled={!!pending||busy} onChange={e=>{setErrorKind(e.target.value);setNoteDirty(true);}}><option value="">Não registrar motivo</option><option value="concept">Ainda não conhecia o conceito</option><option value="attention">Leitura do comando ou atenção</option><option value="application">Dificuldade de aplicar o conceito</option><option value="guess">Chute ou dúvida entre alternativas</option></select></label>{noteDirty&&<button disabled={busy||!!pending||!!noteConflict} onClick={saveNote}>Salvar anotação</button>}</div>
+            {memoryRating&&!pending&&progress[q.id]&&<p>Próxima revisão: <strong>{date(progress[q.id].dueAt)}</strong> · intervalo FSRS de {progress[q.id].intervalDays} dia(s) · força estimada {memoryStrength(progress[q.id],now)}{connection!=='saved'?' nesta sessão temporária':''}.</p>}
+            <div className="learnAnnotation"><label htmlFor="study-note">Com suas palavras: qual regra decide esta questão? O que muda na alternativa errada?</label><textarea id="study-note" rows={3} value={note} maxLength={3000} disabled={!memoryRating||!!pending||busy} onChange={e=>{setNote(e.target.value);setNoteDirty(true);}} placeholder={memoryRating?'Uma ou duas frases para sua próxima revisão (opcional).':'Avalie primeiro como foi recuperar a resposta.'}/><label>O que dificultou a resposta?<select value={errorKind} disabled={!memoryRating||!!pending||busy} onChange={e=>{setErrorKind(e.target.value);setNoteDirty(true);}}><option value="">Não registrar motivo</option><option value="concept">Ainda não conhecia o conceito</option><option value="attention">Leitura do comando ou atenção</option><option value="application">Dificuldade de aplicar o conceito</option><option value="guess">Chute ou dúvida entre alternativas</option></select></label>{noteDirty&&<button disabled={busy||!!pending||!!noteConflict} onClick={saveNote}>Salvar anotação</button>}</div>
             {noteConflict&&<div className="learnNotice" role="alert"><p>A versão salva em outra aba:</p><blockquote>{noteConflict.note||'(sem texto)'}</blockquote><p>Seu rascunho continua no campo acima.</p><button onClick={()=>{setProgress(p=>({...p,[q.id]:noteConflict}));setNote(n=>[noteConflict.note,n].filter(Boolean).join('\n\n'));setNoteConflict(null);setNoteDirty(true);}}>Reunir os textos para revisar</button><button onClick={()=>{setProgress(p=>({...p,[q.id]:noteConflict}));setNote(noteConflict.note);setErrorKind(noteConflict.errorKind);setNoteConflict(null);setNoteDirty(false);}}>Usar a versão salva</button></div>}
             <p role="status" aria-live="polite">{busy?'Salvando…':message}</p>{pending&&!busy&&<button onClick={()=>persist(pending)}>Tentar salvar novamente</button>}
-            <button className="learnPrimary" disabled={busy||!!pending||noteDirty||memoryBusy} onClick={next}>{active+1===session.length?'Concluir sessão':'Próxima questão →'}</button>{noteDirty&&<p>Salve sua anotação para continuar.</p>}
+            <button className="learnPrimary" disabled={busy||!!pending||noteDirty||memoryBusy||!memoryRating} onClick={next}>{active+1===session.length?'Concluir sessão':'Próxima questão →'}</button>{!memoryRating&&<p>Avalie a recuperação para calcular a próxima revisão.</p>}{noteDirty&&<p>Salve sua anotação para continuar.</p>}
           </div>}
         </article>
       </section>}
       <details className="learnMethods" id="metodo"><summary>Como este estudo funciona — e em que evidências se apoia</summary><div>
-        <p><strong>Recuperação ativa:</strong> tente formular a resposta antes de consultar. Depois confronte sua tentativa com o gabarito, a explicação e a referência.</p>
-        <p><strong>Prática espaçada:</strong> erros, chutes e primeiras dúvidas voltam em 1 dia; um primeiro acerto seguro volta em 3 dias. Acertos seguros após pelo menos 24 horas ampliam o intervalo, até 60 dias. Esta é uma regra prática do aplicativo, não um calendário universal nem uma previsão exata da sua memória.</p>
-        <p>No recorte IFMT Administrador, revisões que ultrapassariam 12/09 são antecipadas para a revisão final desse dia, às 18h. Na véspera, o plano recomenda uma carga leve.</p>
-        <p><strong>Intercalação:</strong> alterne assuntos para distinguir conceitos. Quando o tema for novo, estude exemplos no caderno e pratique com foco antes de misturar.</p>
-        <p><strong>Autoexplicação e confiança:</strong> escreva a regra que faltou e observe a diferença entre acertar com segurança e acertar por chute. Nenhuma nota de confiança, sozinha, comprova domínio.</p>
-        <p><strong>Palácio da Memória:</strong> depois de cada correção, a IA transforma a regra decisiva em uma cena concreta e exagerada, colocada em um ponto de um percurso familiar. Ao revisar, percorra mentalmente local, imagem e regra — a cena é uma pista, não substitui a compreensão.</p>
-        <p>O indicador “após 24h” mede revisões dessas mesmas questões. Ele não é um teste independente de transferência para questões inéditas.</p>
-        <ul><li><a href="https://doi.org/10.1038/s44159-022-00089-1" target="_blank" rel="noreferrer">Carpenter, Pan e Butler (2022): espaçamento e recuperação</a></li><li><a href="https://doi.org/10.1002/rev3.3266" target="_blank" rel="noreferrer">Firth, Rivers e Boyle (2021): intercalação e limites da evidência</a></li><li><a href="https://doi.org/10.1007/s10648-018-9434-x" target="_blank" rel="noreferrer">Bisra et al. (2018): meta-análise de autoexplicação</a></li><li><a href="https://doi.org/10.1007/s10648-025-10035-1" target="_blank" rel="noreferrer">Murray, Horner e Göbel (2025): espaçamento e recuperação em matemática</a></li></ul>
+        <h3>Estratégia da sessão</h3>
+        <p><strong>1. Recuperar antes de reconhecer:</strong> formule a regra ou o conceito antes de abrir as alternativas. Essa tentativa reduz a dependência de pistas visuais e torna a correção mais informativa.</p>
+        <p><strong>2. Responder e declarar confiança:</strong> a confiança é registrada antes da correção. Uma resposta errada volta como “reaprender”; um acerto por chute é tratado como difícil; um acerto com dúvida, como recordação parcial; e um acerto justificável, como recordação forte. Confiança não comprova domínio sozinha.</p>
+        <p><strong>3. Corrigir com contraste:</strong> confira o gabarito, explique a regra decisiva e identifique por que a alternativa escolhida falhou. Quando necessário, registre se a dificuldade veio de conceito, atenção, aplicação ou chute.</p>
+        <p><strong>4. Revisar no momento adaptativo:</strong> o agendador oficial FSRS para TypeScript estima dificuldade, estabilidade e probabilidade de recuperação para cada questão, com retenção-alvo de 90%. Depois da correção, “Esqueci”, “Difícil”, “Bom” e “Fácil” atualizam o estado e calculam o próximo intervalo. A configuração privilegia revisões diárias e não cria etapas obrigatórias de poucos minutos.</p>
+        <p><strong>5. Intercalar com prioridade:</strong> revisões vencidas e memórias mais frágeis entram antes das questões novas. Dentro da mesma prioridade, assuntos diferentes são alternados para exercitar discriminação entre conceitos. Conteúdo ainda novo deve primeiro ser estudado com exemplos.</p>
+        <p><strong>6. Criar uma pista memorável:</strong> o Palácio da Memória transforma a regra decisiva em uma cena concreta e exagerada dentro de um percurso familiar. A cena serve como pista de recuperação; não substitui compreensão, fonte ou prática.</p>
+        <h3>O que fica registrado para análise futura</h3>
+        <p>Por questão, o histórico conserva número de tentativas e acertos, primeira resposta, último resultado, confiança prévia, avaliação posterior, origem declarada ou inferida da avaliação, tempo de resposta, intervalo efetivo e programado, versão do agendador, próxima revisão, dificuldade, estabilidade, estado FSRS, lapsos, motivo do erro e anotações. Esses dados permitem acompanhar evolução sem guardar o texto digitado antes de abrir as alternativas.</p>
+        <p>Em melhorias futuras será possível avaliar calibração da confiança, retenção depois de 24 horas ou mais, frequência de lapsos, assuntos mais frágeis e diferença entre recuperação estimada e desempenho observado. Ajustes do algoritmo deverão usar dados agregados suficientes e preservar a separação entre desempenho no treino e aprendizagem transferível.</p>
+        <h3>Limites da interpretação</h3>
+        <p>A “força estimada” é uma previsão operacional para ordenar revisões, não uma medição direta do cérebro nem um diagnóstico individual. O indicador “após 24h” usa novas tentativas das mesmas questões e não substitui testes com itens inéditos. Resultados podem variar conforme familiaridade, qualidade das questões, sono, atenção e contexto.</p>
+        <p>No recorte histórico IFMT Administrador, revisões que ultrapassariam a revisão final de 12/09/2026 foram antecipadas para aquele marco. Fora desse período, prevalece o calendário adaptativo normal.</p>
+        <ul><li><a href="https://psychclassics.yorku.ca/Ebbinghaus/" target="_blank" rel="noreferrer">Ebbinghaus (1885/1913): Memory — fundamento histórico e método experimental</a></li><li><a href="https://github.com/open-spaced-repetition/ts-fsrs" target="_blank" rel="noreferrer">Open Spaced Repetition: implementação ts-fsrs utilizada pelo aplicativo</a></li><li><a href="https://doi.org/10.1038/s44159-022-00089-1" target="_blank" rel="noreferrer">Carpenter, Pan e Butler (2022): espaçamento e recuperação</a></li><li><a href="https://doi.org/10.1002/rev3.3266" target="_blank" rel="noreferrer">Firth, Rivers e Boyle (2021): intercalação e limites da evidência</a></li><li><a href="https://doi.org/10.1007/s10648-018-9434-x" target="_blank" rel="noreferrer">Bisra et al. (2018): meta-análise de autoexplicação</a></li><li><a href="https://doi.org/10.1007/s10648-025-10035-1" target="_blank" rel="noreferrer">Murray, Horner e Göbel (2025): espaçamento e recuperação em matemática</a></li></ul>
         <FeedbackEvidence />
       </div></details>
     </div>

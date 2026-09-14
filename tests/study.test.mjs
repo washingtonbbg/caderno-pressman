@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import ts from 'typescript';
 import { Miniflare, convertV4MiniflareOptions } from 'miniflare';
@@ -17,21 +17,28 @@ const model=load('lib/study-model.ts');
 const exam=load('lib/exam-plan.ts',{'./study-model':model});
 const catalog=JSON.parse(readFileSync('data/study-catalog.json','utf8'));
 const at=Date.UTC(2026,8,5,12),day=86400000;
+const migrationFiles=()=>readdirSync('drizzle').filter(file=>/^\d+.*\.sql$/.test(file)).sort().map(file=>`drizzle/${file}`);
 
-test('same-day retries cannot inflate retention or spacing; uncertain hits return early',()=>{
+test('official FSRS ratings update memory state and distinguish recall quality',()=>{
   const first=model.recordAttempt('q',undefined,false,'sure',at);
   const immediate=model.recordAttempt('q',first,true,'sure',at+1000);
   assert.equal(immediate.firstCorrect,false);
-  assert.equal(immediate.intervalDays,1);
+  assert.ok(immediate.intervalDays>=first.intervalDays);
   assert.equal(immediate.delayedAttempts,0);
-  assert.equal(immediate.dueAt,first.dueAt);
   const later=model.recordAttempt('q',immediate,true,'sure',at+day+2000);
   assert.equal(later.delayedCorrect,1);
-  assert.equal(later.intervalDays,3);
+  assert.ok(later.stability>immediate.stability);
   const forgotten=model.recordAttempt('q',later,false,'sure',at+8*day);
   assert.equal(forgotten.intervalDays,1);
-  assert.equal(model.recordAttempt('q',undefined,true,'guess',at).intervalDays,1);
-  assert.equal(model.recordAttempt('q',undefined,true,'unsure',at).intervalDays,1);
+  assert.ok(model.recordAttempt('q',undefined,true,'guess',at).intervalDays<model.recordAttempt('q',undefined,true,'unsure',at).intervalDays);
+  assert.ok(model.recordAttempt('q',undefined,true,'unsure',at).intervalDays<model.recordAttempt('q',undefined,true,'sure',at).intervalDays);
+  assert.equal(model.memoryGrade(false,'sure'),1);
+  assert.equal(model.memoryGrade(true,'guess'),2);
+  assert.equal(model.memoryGrade(true,'unsure'),3);
+  assert.equal(model.memoryGrade(true,'sure'),4);
+  assert.ok(forgotten.stability<later.stability);
+  assert.equal(forgotten.lapses,1);
+  assert.equal(model.FSRS_VERSION,'ts-fsrs@5.4.2/fsrs6');
 });
 
 test('review selection respects due dates, weak items, scope and priority while interleaving',()=>{
@@ -112,7 +119,7 @@ test('D1 API isolates users, preserves notes, rejects invalid writes and dedupli
   const mf=new Miniflare(convertV4MiniflareOptions({modules:true,script:'export default {fetch(){return new Response("ok")}}',compatibilityDate:'2026-08-20',d1Databases:['DB']}));
   t.after(()=>mf.dispose());
   const DB=await mf.getD1Database('DB');
-  const schema=['drizzle/0000_known_kylun.sql','drizzle/0001_library_search.sql','drizzle/0002_sloppy_expediter.sql','drizzle/0003_fine_ultimates.sql','drizzle/0004_famous_miss_america.sql'].flatMap(file=>readFileSync(file,'utf8').split('--> statement-breakpoint').map(s=>s.trim()).filter(Boolean));
+  const schema=migrationFiles().flatMap(file=>readFileSync(file,'utf8').split('--> statement-breakpoint').map(s=>s.trim()).filter(Boolean));
   await DB.batch(schema.map(sql=>DB.prepare(sql)));
   const helpers=load('lib/library-model.ts',{'./explanation-policy.mjs':{isGenericExplanation}});
   const server=load('lib/study-server.ts',{'cloudflare:workers':{env:{DB}},'./library-model':helpers});
@@ -144,13 +151,20 @@ test('D1 API isolates users, preserves notes, rejects invalid writes and dedupli
   assert.equal(final.note,'Minha regra');
   assert.equal(final.firstCorrect,true);
   assert.equal(final.delayedAttempts,0);
+  assert.ok(final.stability>=.2);
+  assert.ok(final.difficulty>=1&&final.difficulty<=10);
+  const logged=await DB.prepare('SELECT memory_rating,rating_source,response_ms,scheduler_version FROM study_attempts WHERE user_id=? LIMIT 1').bind('alice').first();
+  assert.equal(logged.memory_rating,2);
+  assert.equal(logged.rating_source,'inferred');
+  assert.equal(logged.response_ms,0);
+  assert.equal(logged.scheduler_version,model.FSRS_VERSION);
 });
 
 test('question bank registration persists conceptual evidence and its source',async t=>{
   const mf=new Miniflare(convertV4MiniflareOptions({modules:true,script:'export default {fetch(){return new Response("ok")}}',compatibilityDate:'2026-08-20',d1Databases:['DB']}));
   t.after(()=>mf.dispose());
   const DB=await mf.getD1Database('DB');
-  const schema=['drizzle/0000_known_kylun.sql','drizzle/0001_library_search.sql','drizzle/0002_sloppy_expediter.sql','drizzle/0003_fine_ultimates.sql','drizzle/0004_famous_miss_america.sql'].flatMap(file=>readFileSync(file,'utf8').split('--> statement-breakpoint').map(s=>s.trim()).filter(Boolean));
+  const schema=migrationFiles().flatMap(file=>readFileSync(file,'utf8').split('--> statement-breakpoint').map(s=>s.trim()).filter(Boolean));
   await DB.batch(schema.map(sql=>DB.prepare(sql)));
   const helpers=load('lib/library-model.ts',{'./explanation-policy.mjs':{isGenericExplanation}});
   const server=load('lib/library-server.ts',{'cloudflare:workers':{env:{DB,LIBRARY_ADMIN_EMAILS:'alice@example.org'}}});
