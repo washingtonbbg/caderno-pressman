@@ -27,13 +27,17 @@ const books = [
   {href:"/administracao-publica",code:"20C",edition:"IFMT · Administrador 2023",title:"Gestão Pública e Controle",author:"Licitações · ética · orçamento · informação",description:"Competência, fases, exceções legais e ferramentas gerenciais para a atuação administrativa institucional.",stats:["7 oficiais","2 anuladas excluídas","13 cards"],tone:"admin-public"},
   {href:"/administracao-banco-completo",code:"20D",edition:"Arquivo integral · 2026",title:"Banco Completo de Administração",author:"107 questões · 46 assuntos · COCP/IFMT",description:"Todas as questões do arquivo anexado com busca, filtro por assunto e preditores linguísticos para avaliar distratores.",stats:["107 questões","46 assuntos","busca e filtros"],tone:"admin-strategy"},
 ];
+const shelves = [
+  {title:"Cadernos de Engenharia e Computação", subtitle:"Obras técnicas, algoritmos e modelagem", items:books.filter(book=>/^0\d$/.test(book.code)||/^1\d$/.test(book.code))},
+  {title:"Cadernos IFMT e Administração", subtitle:"Provas, legislação e preparação institucional", items:books.filter(book=>book.code.startsWith("20")||book.code==="21"||book.code==="22")},
+];
 
 export default function LibraryHome(){return <main className="libraryPage">
   <header className="libraryHeader"><Link className="brand" href="/"><span>ES</span>Cadernos de Estudo</Link><div>Engenharia de Software · biblioteca de questões</div></header>
   <section className="studyEntry"><div><h2>IFMT Administrador · prova em 13/09</h2><p>Plano de oito dias, treino alinhado aos quatro blocos do edital e revisões dos seus erros e dúvidas.</p></div><Link href="/reta-final">Abrir minha estratégia →</Link></section>
   <section className="libraryHero"><div className="eyebrow">Escolha um caderno</div><h1>Do livro à questão.<br/><em>Do erro ao conceito.</em></h1><p>Cada caderno usa um banco próprio, limitado à obra de referência e aos assuntos cobrados nas questões-modelo.</p></section>
-  <section className="bookShelf" aria-label="Livros disponíveis">{books.map(book=><Link href={book.href} className={`bookTile ${book.tone}`} key={book.href}>
-    <div className="bookTop"><span>{book.code}</span><small>{book.edition}</small></div><div className="bookBody"><p>{book.author}</p><h2>{book.title}</h2><div>{book.description}</div></div><div className="bookFoot"><ul>{book.stats.map(item=><li key={item}>{item}</li>)}</ul><strong>Abrir caderno →</strong></div>
-  </Link>)}</section>
+  <section className="bookShelves" aria-label="Livros disponíveis">{shelves.map(shelf=><div className="bookShelfRow" key={shelf.title}><div className="shelfHeading"><div><span>ESTANTE</span><h2>{shelf.title}</h2></div><p>{shelf.subtitle}</p></div><div className="bookShelf">{shelf.items.map(book=><Link href={book.href} className={`bookTile ${book.tone}`} key={book.href}>
+    <div className="bookCover"><span>{book.code}</span><strong>{book.title}</strong><small>{book.author}</small></div><div className="bookBody"><p>{book.edition}</p><h2>{book.title}</h2><div>{book.description}</div></div><div className="bookFoot"><ul>{book.stats.map(item=><li key={item}>{item}</li>)}</ul><strong>Abrir →</strong></div>
+  </Link>)}</div></div>)}</section>
   <footer className="libraryFooter"><span>Conteúdo educacional baseado nas referências indicadas.</span><span>Novos livros podem ser adicionados à estante.</span></footer>
 </main>}
