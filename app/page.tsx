@@ -39,5 +39,6 @@ export default function LibraryHome(){return <main className="libraryPage">
   <section className="bookShelves" aria-label="Livros disponíveis">{shelves.map(shelf=><div className="bookShelfRow" key={shelf.title}><div className="shelfHeading"><div><span>ESTANTE</span><h2>{shelf.title}</h2></div><p>{shelf.subtitle}</p></div><div className="bookShelf">{shelf.items.map(book=><Link href={book.href} className={`bookTile ${book.tone}`} key={book.href}>
     <div className="bookCover"><span>{book.code}</span><strong>{book.title}</strong><small>{book.author}</small></div><div className="bookBody"><p>{book.edition}</p><h2>{book.title}</h2><div>{book.description}</div></div><div className="bookFoot"><ul>{book.stats.map(item=><li key={item}>{item}</li>)}</ul><strong>Abrir →</strong></div>
   </Link>)}</div></div>)}</section>
+  <section className="studyEntry"><div><h2>Pesquisa da banca</h2><p>Analise conceitos, vocabulário, linguagem e proveniência das questões.</p></div><Link href="/pesquisa-banca">Abrir pesquisa →</Link></section>
   <footer className="libraryFooter"><span>Conteúdo educacional baseado nas referências indicadas.</span><span>Novos livros podem ser adicionados à estante.</span></footer>
 </main>}

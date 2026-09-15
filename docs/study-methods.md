@@ -12,7 +12,7 @@ O recorte padrão é IFMT Administrador, com prova em 13/09/2026. `/reta-final` 
 4. Escrever uma autoexplicação e identificar o tipo de dificuldade, se útil.
 5. Retomar a questão em outra sessão. Revisões vencidas têm prioridade sobre novas questões.
 
-O agendamento é uma heurística transparente: erro/chute voltam em um dia; primeiro acerto seguro, em três; acertos seguros após 24 horas ampliam o intervalo até 60 dias. Repetições imediatas não ampliam nem adiam a revisão existente. Não é FSRS nem uma estimativa probabilística de memória individual. Acerto inicial e acerto após pelo menos 24 horas são indicadores distintos; nenhum significa domínio ou transferência para questões inéditas.
+O agendamento usa FSRS 6 via `ts-fsrs@5.4.2`, com retenção-alvo de 0,9, intervalo máximo de 365 dias e fuzz e short-term desativados. A avaliação pós-correção distingue Esqueci, Difícil, Bom e Fácil; ensaios usam avaliação inferida, identificada como tal. Os parâmetros não foram calibrados individualmente nem validados como intervenção neste projeto. Acerto inicial e acerto após pelo menos 24 horas são indicadores distintos; nenhum significa domínio ou transferência para questões inéditas.
 
 A alternância usa os assuntos já catalogados, com rodízio dentro da mesma prioridade. O controle fica desabilitado quando há apenas um assunto no recorte. A taxonomia existente não distingue todos os subconceitos de todos os cadernos.
 
@@ -25,6 +25,18 @@ Aplicar as migrações novas 0002, 0003 e 0004 antes de disponibilizar a versão
 Validação: `npm run test:study` cobre agendamento, seleção, integridade de catálogo, migrações em D1 local, isolamento entre usuários, duplicação e conflitos. `npm run build` valida o pacote completo. A suíte antiga `tests/rendered-html.test.mjs` ainda descreve o skeleton do starter e não representa esta interface.
 
 ## Evidências e limites
+
+### Pesquisa de conceitos, vocabulário e banca
+
+`/pesquisa-banca` implementa o protocolo descritivo `corpus-descritivo-v1`: filtros pelos metadados existentes de fonte e assunto; remoção de duplicatas com enunciado e alternativas iguais após normalização lexical; frequências absolutas, presença por item e ocorrências por mil palavras; sinais linguísticos definidos por expressões regulares. Enunciado e alternativas entram nas contagens; explicações não entram, evitando confundir linguagem editorial do apoio com a questão. Não há lematização, teste de keyness contra corpus externo ou detecção de duplicatas semânticas. Uma palavra restritiva não determina a falsidade da alternativa.
+
+As fichas manuais registram conceito-alvo, definição, confusões nos distratores, conhecimento/evidência/tarefa do ECD, referências e hipóteses. Anotações existem somente na sessão e podem ser exportadas/importadas em JSON, com versão, data, IDs do corpus, filtros e estatísticas. Não são salvas em D1 nem automaticamente adicionadas ao SRS. Importações aceitam apenas IDs do catálogo e campos textuais conhecidos.
+
+Autoria é desconhecida por padrão. Humana, IA ou híbrida são declarações documentais pendentes de revisão, não resultados de um detector. Autor/instituição, modelo/versão e evidência são campos separados. Prova oficial, ano ou estilo não demonstram autoria humana ou identificam o modelo. Sem documento/log não é possível atribuir origem com segurança.
+
+Protocolo de evolução: delimitar banca/cargo/tempo; criar manual de códigos; revisar amostra independentemente e registrar divergências; reservar provas posteriores antes de ajustar hipóteses, removendo duplicatas entre conjuntos; revisar itens experimentais pelo ECD; medir dificuldade e distratores com respostas reais apropriadas. Repetições do mesmo estudante no SRS não devem ser tratadas como participantes independentes. A versão atual não executa estas etapas de validação, psicometria, geração ou busca bibliográfica automaticamente.
+
+Bases: análise de conteúdo (https://doi.org/10.1111/nhs.12048); ECD (https://www.ets.org/Media/Research/pdf/session1-cameto-cheng-haertel-paper-tea2012.pdf); linguística de corpus (https://www.lancaster.ac.uk/fss/courses/ling/corpus/blue/l03_2.htm); limites de detecção de texto gerado (https://aclanthology.org/2024.acl-long.160/). Estas bases orientam o desenho; não validam diretamente nossa ferramenta.
 
 - Carpenter, Pan & Butler (2022), *The science of effective learning with spacing and retrieval practice*: https://doi.org/10.1038/s44159-022-00089-1
 - Firth, Rivers & Boyle (2021), revisão de intercalação: https://doi.org/10.1002/rev3.3266
