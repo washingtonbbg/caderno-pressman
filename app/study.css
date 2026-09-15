@@ -17,6 +17,8 @@
 .memoryPalaceIllustration { margin:18px 0 20px; }
 .memoryPalaceIllustration img { display:block; width:100%; max-height:330px; object-fit:cover; object-position:center; border:1px solid #d1b987; border-radius:12px; box-shadow:0 8px 20px rgba(66,42,20,.12); }
 .memoryPalaceIllustration figcaption { margin-top:8px; color:#76522f; font-size:.9rem; }
+.memoryImageAction { margin:12px 0 4px; }
+.memoryImageAction p { margin:8px 0 0; color:#8c3d29; font-size:.9rem; }
 
 @media (max-width: 900px) {
   .generator,

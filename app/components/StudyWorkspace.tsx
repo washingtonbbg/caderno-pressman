@@ -66,6 +66,8 @@ export default function StudyWorkspace({questions:initial}:{questions:StudyQuest
   const [memories,setMemories] = useState<MemoryLocus[]>([]);
   const [memoryBusy,setMemoryBusy] = useState(false);
   const [memoryError,setMemoryError] = useState('');
+  const [memoryImageBusy,setMemoryImageBusy] = useState(false);
+  const [memoryImageError,setMemoryImageError] = useState('');
   const heading = useRef<HTMLHeadingElement>(null);
   const inSession = useRef(false);
   const q = session[active];
@@ -129,6 +131,7 @@ export default function StudyWorkspace({questions:initial}:{questions:StudyQuest
     setMemoryRating(null);setResponseMs(0);questionStartedAt.current=Date.now();
     setPending(null);setMessage('');setNote('');setErrorKind('');setNoteDirty(false);setNoteConflict(null);
     setMemoryError('');setMemoryBusy(false);
+    setMemoryImageBusy(false);setMemoryImageError('');
   }
   function start() {
     let chosen:StudyQuestion[];
@@ -167,6 +170,18 @@ export default function StudyWorkspace({questions:initial}:{questions:StudyQuest
       setMemories(current=>[...current.filter(item=>item.questionId!==q.id),data]);
     } catch(error) {setMemoryError(error instanceof Error?error.message:'Não foi possível gerar a cena agora.');}
     finally {setMemoryBusy(false);}
+  }
+  async function generateMemoryImage() {
+    const current=memories.find(item=>item.questionId===q?.id);
+    if(!current||memoryImageBusy||current.imageUrl)return;
+    setMemoryImageBusy(true);setMemoryImageError('');
+    try {
+      const response=await fetch('/api/study/memory-palace/image',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({locus:current.locus,scene:current.scene})});
+      const data=await response.json();
+      if(!response.ok)throw Error(data.error||'Não foi possível gerar a imagem agora.');
+      setMemories(items=>items.map(item=>item.questionId===current.questionId?{...item,imageUrl:data.imageUrl}:item));
+    } catch(error) {setMemoryImageError(error instanceof Error?error.message:'Não foi possível gerar a imagem agora.');}
+    finally {setMemoryImageBusy(false);}
   }
   async function answer(value:number,certainty:Confidence) {
     if(answered || busy) return;
@@ -269,7 +284,7 @@ export default function StudyWorkspace({questions:initial}:{questions:StudyQuest
             {selected!==q.answer&&confidence==='sure'&&<p>Este erro com confiança merece atenção: identifique qual regra parecia correta e compare com a referência.</p>}
             <QuestionExplanation question={q}/>
             <fieldset className="learnMemoryRating"><legend>Depois de conferir: como foi recuperar esta resposta?</legend><p>Considere sua lembrança real, não apenas o acerto. Essa avaliação define o próximo intervalo.</p><div>{(Object.entries(ratingLabels) as [string,{label:string;description:string}][]).map(([value,item])=>{const rating=Number(value) as MemoryGrade;return <button type="button" key={value} disabled={!!memoryRating||busy} aria-pressed={memoryRating===rating} onClick={()=>rateMemory(rating)}><strong>{item.label}</strong><span>{item.description}</span></button>;})}</div></fieldset>
-            <MemoryPalace memory={memories.find(item=>item.questionId===q.id)} loading={memoryBusy} error={memoryError} onRetry={generateMemory}/>
+            <MemoryPalace memory={memories.find(item=>item.questionId===q.id)} loading={memoryBusy} error={memoryError} onRetry={generateMemory} onGenerateImage={generateMemoryImage} imageBusy={memoryImageBusy} imageError={memoryImageError}/>
             {q.languageNote&&<details><summary>Pistas e distinções do caderno</summary><p>{q.languageNote}</p><p>Uma pista linguística ajuda a conferir a proposição; não substitui o conceito ou a fonte.</p></details>}
             {recall&&<details><summary>O que você lembrou antes de responder</summary><p>{recall}</p></details>}
             {memoryRating&&!pending&&progress[q.id]&&<p>Próxima revisão: <strong>{date(progress[q.id].dueAt)}</strong> · intervalo FSRS de {progress[q.id].intervalDays} dia(s) · força estimada {memoryStrength(progress[q.id],now)}{connection!=='saved'?' nesta sessão temporária':''}.</p>}
