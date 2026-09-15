@@ -8,6 +8,7 @@ import QuestionExplanation from './QuestionExplanation';
 import FeedbackEvidence from './FeedbackEvidence';
 import MemoryPalace from './MemoryPalace';
 import type { MemoryLocus } from '@/lib/memory-palace';
+import {useBankCatalog} from '@/lib/use-bank-catalog';
 
 const confidenceLabels: Record<Confidence,string> = {guess:'Chute',unsure:'Em dúvida',sure:'Consigo justificar'};
 const ratingLabels:Record<MemoryGrade,{label:string;description:string}>={1:{label:'Esqueci',description:'Não consegui recuperar a resposta.'},2:{label:'Difícil',description:'Lembrei com muito esforço ou após pistas.'},3:{label:'Bom',description:'Lembrei corretamente com algum esforço.'},4:{label:'Fácil',description:'Lembrei imediatamente e consigo justificar.'}};
@@ -26,7 +27,8 @@ function QuestionGraph({graph}:{graph:NonNullable<StudyQuestion['graph']>}) {
   </svg>;
 }
 
-export default function StudyWorkspace({questions}:{questions:StudyQuestion[]}) {
+export default function StudyWorkspace({questions:initial}:{questions:StudyQuestion[]}) {
+  const questions=useBankCatalog(initial);
   const [progress,setProgress] = useState<Record<string,StudyProgress>>({});
   const [connection,setConnection] = useState<'loading'|'saved'|'guest'|'error'>('loading');
   const [notebook,setNotebook] = useState('all');

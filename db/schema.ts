@@ -1,4 +1,7 @@
 import {sqliteTable, text, integer, real, index, uniqueIndex} from 'drizzle-orm/sqlite-core';
+export const researchNotes=sqliteTable('research_notes',{
+ userId:text('user_id').notNull(),questionId:text('question_id').notNull(),content:text('content').notNull(),revision:integer('revision').notNull().default(1),updatedAt:integer('updated_at').notNull(),
+},t=>[uniqueIndex('research_notes_user_question').on(t.userId,t.questionId)]);
 export const sources = sqliteTable('library_sources', {
  id:text('id').primaryKey(),kind:text('kind').notNull(),title:text('title').notNull(),authors:text('authors').notNull().default(''),
  publisher:text('publisher').notNull().default(''),identifier:text('identifier').notNull().default(''),officialUrl:text('official_url').notNull().default(''),

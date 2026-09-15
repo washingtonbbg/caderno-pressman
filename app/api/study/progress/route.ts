@@ -14,7 +14,11 @@ export async function POST(request: Request) {
     const user = studyUser(request,true);
     const body = await request.json();
     const questionId = field(body.questionId,'Questão',200,true);
-    const question = catalog.find(q=>q.id===questionId);
+    let question = catalog.find(q=>q.id===questionId);
+    if(!question){
+      const row=await studyDb().prepare('SELECT id,subject,prompt,answer_id,source FROM bank_questions WHERE id=?').bind(questionId).first<{id:string;subject:string;prompt:string;answer_id:string;source:string}>();
+      if(row){const opts=await studyDb().prepare('SELECT content FROM bank_options WHERE question_id=? ORDER BY position').bind(questionId).all<{content:string}>();const answer=Number(row.answer_id.match(/-option-([0-4])$/)?.[1]??-1);if(answer>=0&&answer<opts.results.length)question={...catalog[0],...row,notebook:'/biblioteca',notebookTitle:'Questões cadastradas',options:opts.results.map(o=>o.content),answer,scoring:'',explanation:'',citations:[]};}
+    }
     if (!question) throw new HttpError(404,'Questão não encontrada.');
     if (question.scoring === 'discussion') throw new HttpError(409,'Esta questão está disponível para discussão conceitual, sem pontuação enquanto a classificação permanece em dúvida.');
     const confidence = choice(body.confidence,['guess','unsure','sure'],'Confiança') as Confidence;

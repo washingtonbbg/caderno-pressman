@@ -43,6 +43,13 @@
       "when": 1789365478746,
       "tag": "0005_eminent_arachne",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1789491855759,
+      "tag": "0006_graceful_sir_ram",
+      "breakpoints": true
     }
   ]
 }
