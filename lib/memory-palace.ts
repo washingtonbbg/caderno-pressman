@@ -5,6 +5,7 @@ export type MemoryLocus = {
   scene: string;
   recallCue: string;
   retrieval: string;
+  imageUrl?: string;
 };
 
 export const MEMORY_PALACE_LOCI = [
