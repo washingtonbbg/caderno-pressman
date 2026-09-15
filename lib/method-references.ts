@@ -1,0 +1,18 @@
+export const methodReferences=[
+ ['Memória e revisão','Ebbinghaus (1885/1913) — Memory','https://psychclassics.yorku.ca/Ebbinghaus/','Fundamento histórico experimental; não valida os parâmetros individuais do aplicativo.'],
+ ['Memória e revisão','Open Spaced Repetition — ts-fsrs','https://github.com/open-spaced-repetition/ts-fsrs','Implementação técnica utilizada; repositório não equivale a validação de eficácia deste produto.'],
+ ['Memória e revisão','Carpenter, Pan e Butler (2022)','https://doi.org/10.1038/s44159-022-00089-1','Revisão sobre espaçamento e recuperação ativa.'],
+ ['Memória e revisão','Firth, Rivers e Boyle (2021)','https://doi.org/10.1002/rev3.3266','Intercalação; benefícios dependem do material e da tarefa.'],
+ ['Memória e revisão','Murray, Horner e Göbel (2025)','https://doi.org/10.1007/s10648-025-10035-1','Espaçamento em matemática; evidência de recuperação versus reestudo inconclusiva nesse domínio.'],
+ ['Feedback e explicação','Bisra et al. (2018)','https://doi.org/10.1007/s10648-018-9434-x','Meta-análise de autoexplicação; ler explicação pronta não equivale a produzir uma.'],
+ ['Feedback e explicação','Ryan et al. (2020)','https://doi.org/10.1007/s40037-020-00606-z','Feedback elaborado em questões médicas; não demonstra eficácia em concursos IFMT.'],
+ ['Feedback e explicação','Butler, Godbole e Marsh (2013)','https://doi.org/10.1037/a0031026','Explicações e transferência em perguntas de inferência; estudo com respostas curtas.'],
+ ['Feedback e explicação','Shute (2008)','https://doi.org/10.3102/0034654307313795','Revisão sobre feedback formativo específico e centrado na tarefa.'],
+ ['Sinalização e tipografia','Schneider et al. (2018)','https://doi.org/10.1016/j.edurev.2017.11.001','Meta-análise de sinalização: apoia pistas relevantes, não uma paleta específica de cores.'],
+ ['Sinalização e tipografia','Dunlosky et al. (2013)','https://doi.org/10.1177/1529100612453266','Grifar isoladamente tem baixa utilidade geral; recuperação e prática distribuída têm evidências mais consistentes.'],
+ ['Sinalização e tipografia','Wetzler, Pyke e Werner (2021)','https://doi.org/10.1177/21582440211056624','Sans Forgetica não melhorou recordação após uma semana; não adotamos fontes difíceis de ler.'],
+ ['Pesquisa da banca','Vaismoradi et al. (2013)','https://doi.org/10.1111/nhs.12048','Análise de conteúdo e análise temática; adaptação ao corpus de questões exige revisão.'],
+ ['Pesquisa da banca','ECD — Cameto, Cheng e Haertel (2012)','https://www.ets.org/Media/Research/pdf/session1-cameto-cheng-haertel-paper-tea2012.pdf','Conhecimento, evidência e tarefa como base para desenho de avaliações.'],
+ ['Pesquisa da banca','Lancaster — análise de palavras-chave','https://www.lancaster.ac.uk/fss/courses/ling/corpus/blue/l03_2.htm','Distintividade exige corpus de comparação; nossa frequência é apenas descritiva.'],
+ ['Pesquisa da banca','Stumbling Blocks — ACL (2024)','https://aclanthology.org/2024.acl-long.160/','Limites de robustez de detectores; estilo não comprova autoria humana, IA ou modelo específico.'],
+];

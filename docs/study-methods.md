@@ -26,6 +26,12 @@ Validação: `npm run test:study` cobre agendamento, seleção, integridade de c
 
 ## Evidências e limites
 
+### Sinalização visual e referências consolidadas (15/09/2026)
+
+`QuestionExplanation` sinaliza somente o feedback, nunca as opções durante a tentativa. Há controle para desligar cores, rótulos redundantes, fonte legível e texto original preservado. Azul organiza explicações; vermelho é usado apenas para comentários com prefixo explícito “Erro:”, “Incorreta:” ou “Incorreto:”, não inferido a partir da letra do gabarito (importante em perguntas negativas). Âmbar indica condição linguística, sem afirmar falsidade. O aluno é convidado a recuperar a distinção sem olhar. Não há teste A/B nem comprovação de ganho individual implementados.
+
+Referências metodológicas foram consolidadas em `lib/method-references.ts` e `/referencias`, com função e limites de cada fonte. A página inventaria citações existentes do catálogo sem alterar sua verificação ou inventar páginas. Novos fundamentos: Schneider et al. (2018), https://doi.org/10.1016/j.edurev.2017.11.001; Dunlosky et al. (2013), https://doi.org/10.1177/1529100612453266; Wetzler et al. (2021), https://doi.org/10.1177/21582440211056624. Não existe paleta comprovadamente ótima; sinalização não equivale a grifar indiscriminadamente nem substitui recuperação e espaçamento.
+
 ### Pesquisa de conceitos, vocabulário e banca
 
 `/pesquisa-banca` implementa o protocolo descritivo `corpus-descritivo-v1`: filtros pelos metadados existentes de fonte e assunto; remoção de duplicatas com enunciado e alternativas iguais após normalização lexical; frequências absolutas, presença por item e ocorrências por mil palavras; sinais linguísticos definidos por expressões regulares. Enunciado e alternativas entram nas contagens; explicações não entram, evitando confundir linguagem editorial do apoio com a questão. Não há lematização, teste de keyness contra corpus externo ou detecção de duplicatas semânticas. Uma palavra restritiva não determina a falsidade da alternativa.

@@ -281,6 +281,7 @@ export default function StudyWorkspace({questions:initial}:{questions:StudyQuest
         </article>
       </section>}
       <details className="learnMethods" id="metodo"><summary>Como este estudo funciona — e em que evidências se apoia</summary><div>
+        <p><strong>Sinalização após a resposta:</strong> explicações usam cores com rótulos para organizar a leitura, com opção de desligar. Nenhuma pista de correção é acrescentada durante a tentativa. É uma aplicação do princípio de sinalização, não uma paleta cientificamente ótima nem substituto de recuperação ativa. <Link href="/referencias">Referências consolidadas, aplicações e limites →</Link></p>
         <h3>Estratégia da sessão</h3>
         <p><strong>1. Recuperar antes de reconhecer:</strong> formule a regra ou o conceito antes de abrir as alternativas. Essa tentativa reduz a dependência de pistas visuais e torna a correção mais informativa.</p>
         <p><strong>2. Responder e declarar confiança:</strong> a confiança é registrada antes da correção. Uma resposta errada volta como “reaprender”; um acerto por chute é tratado como difícil; um acerto com dúvida, como recordação parcial; e um acerto justificável, como recordação forte. Confiança não comprova domínio sozinha.</p>
