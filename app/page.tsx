@@ -33,7 +33,7 @@ const shelves = [
 ];
 
 export default function LibraryHome(){return <main className="libraryPage">
-  <header className="libraryHeader"><Link className="brand" href="/"><span>ES</span>Cadernos de Estudo</Link><div>Engenharia de Software · biblioteca de questões</div></header>
+  <header className="libraryHeader"><Link className="brand" href="/"><span>ES</span>Cadernos de Estudo</Link><div>Engenharia de Software · biblioteca de questões</div><Link className="reviewLink" href="/review">Revisar código →</Link></header>
   <section className="studyEntry"><div><h2>IFMT Administrador · prova em 13/09</h2><p>Plano de oito dias, treino alinhado aos quatro blocos do edital e revisões dos seus erros e dúvidas.</p></div><Link href="/reta-final">Abrir minha estratégia →</Link></section>
   <section className="libraryHero"><div className="eyebrow">Escolha um caderno</div><h1>Do livro à questão.<br/><em>Do erro ao conceito.</em></h1><p>Cada caderno usa um banco próprio, limitado à obra de referência e aos assuntos cobrados nas questões-modelo.</p></section>
   <section className="bookShelves" aria-label="Livros disponíveis">{shelves.map(shelf=><div className="bookShelfRow" key={shelf.title}><div className="shelfHeading"><div><span>ESTANTE</span><h2>{shelf.title}</h2></div><p>{shelf.subtitle}</p></div><div className="bookShelf">{shelf.items.map(book=><Link href={book.href} className={`bookTile ${book.tone}`} key={book.href}>
