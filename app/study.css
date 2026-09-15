@@ -14,11 +14,17 @@
 .memoryRecall { margin:16px 0; padding:14px 16px; border-left:4px solid #a66b2d; background:rgba(255,255,255,.6); }
 .memoryRecall p { margin:5px 0 0; }
 .memoryPalace button { border-color:#76522f; color:#4b301c; }
+.memoryPalaceIllustration { margin:18px 0 20px; }
+.memoryPalaceIllustration img { display:block; width:100%; max-height:330px; object-fit:cover; object-position:center; border:1px solid #d1b987; border-radius:12px; box-shadow:0 8px 20px rgba(66,42,20,.12); }
+.memoryPalaceIllustration figcaption { margin-top:8px; color:#76522f; font-size:.9rem; }
 
 @media (max-width: 900px) {
   .generator,
   .cardsHeader { grid-template-columns: 1fr; }
   .generatorCopy { position: static; }
+}
+@media (max-width: 560px) {
+  .memoryPalaceIllustration img { max-height:240px; }
 }
 /* Post-answer signaling: redundant text labels, never answer cues. */
 .feedbackToggle{display:flex;align-items:center;gap:10px;margin:12px 0;font-size:1rem}.feedbackToggle input{width:auto}.feedbackLegend{display:flex;flex-wrap:wrap;gap:8px;font-size:1rem}.feedbackRule,.feedbackAttention,.feedbackError{padding:10px 12px;border-radius:5px;line-height:1.6}.feedbackRule{background:#eaf2ff;color:#173f78;border-left:3px solid #3569af}.feedbackAttention{background:#fff5da;color:#664500;border-left:3px solid #a76b00}.feedbackError{background:#ffeded;color:#862020;border-left:3px solid #b53939}.feedbackLabel{font-weight:700}

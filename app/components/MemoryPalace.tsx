@@ -3,6 +3,10 @@ import type { MemoryLocus } from '@/lib/memory-palace';
 export default function MemoryPalace({memory,loading,error,onRetry}:{memory?:MemoryLocus;loading:boolean;error:string;onRetry:()=>void}) {
   return <aside className="memoryPalace" aria-live="polite">
     <div className="memoryPalaceHeading"><div><span aria-hidden="true">⌂</span><div><small>PALÁCIO DA MEMÓRIA</small><h3>{memory?.locus || 'Preparando o próximo local…'}</h3></div></div>{memory&&<b>Local {memory.position+1}</b>}</div>
+    <figure className="memoryPalaceIllustration">
+      <img src="/memory-palace-study-room.png" alt="Ilustração de um percurso de estudo com porta, estante, luminária, calendário e baú como pontos de referência" />
+      <figcaption>Associe cada conceito a um ponto marcante do percurso.</figcaption>
+    </figure>
     {loading&&<p>Transformando o conceito em uma imagem mental vívida…</p>}
     {!loading&&error&&<div><p>{error}</p><button type="button" onClick={onRetry}>Tentar gerar novamente</button></div>}
     {memory&&!loading&&<>
