@@ -20,6 +20,7 @@ import "./exam-notebooks.css";
 import "./new-library-tones.css";
 import "./library-workspace.css";
 import "./learning-workspace.css";
+import "./review.css";
 import StudyShortcut from './components/StudyShortcut';
 
 const geistSans = Geist({
