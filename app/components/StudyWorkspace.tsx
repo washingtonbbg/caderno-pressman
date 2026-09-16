@@ -27,12 +27,12 @@ function QuestionGraph({graph}:{graph:NonNullable<StudyQuestion['graph']>}) {
   </svg>;
 }
 
-export default function StudyWorkspace({questions:initial}:{questions:StudyQuestion[]}) {
+export default function StudyWorkspace({questions:initial,config}:{questions:StudyQuestion[];config?:{defaultExamFocus?:boolean;introTitle?:string;introDescription?:string}}) {
   const questions=useBankCatalog(initial);
   const [progress,setProgress] = useState<Record<string,StudyProgress>>({});
   const [connection,setConnection] = useState<'loading'|'saved'|'guest'|'error'>('loading');
   const [notebook,setNotebook] = useState('all');
-  const [examFocus,setExamFocus] = useState(true);
+  const [examFocus,setExamFocus] = useState(config?.defaultExamFocus ?? true);
   const [block,setBlock] = useState<ExamBlock|'all'>('all');
   const [mockExam,setMockExam] = useState(false);
   const [predictedExam,setPredictedExam] = useState(false);
@@ -237,7 +237,7 @@ export default function StudyWorkspace({questions:initial}:{questions:StudyQuest
   return <main className="learnWorkspace">
     <header className="learnTop"><Link href="/">← Cadernos de Estudo</Link><Link href="/reta-final">Estratégia até 13/09</Link>{questions.some(item=>item.explanationMethod)&&<Link href="/revisao-portugues">Revisão conceitual</Link>}<a href="#metodo">Como estudar</a></header>
     <div className="learnContainer">
-      <div className="learnIntro"><div><p className="learnEyebrow">SEU ESTUDO, UMA TENTATIVA POR VEZ</p><h1>Estudar hoje</h1></div><p>Recupere da memória. Confira a explicação.<br/>Volte ao conteúdo depois de um intervalo.</p></div>
+      <div className="learnIntro"><div><p className="learnEyebrow">SEU ESTUDO, UMA TENTATIVA POR VEZ</p><h1>{config?.introTitle || 'Estudar hoje'}</h1></div><p>{config?.introDescription || <>Recupere da memória. Confira a explicação.<br/>Volte ao conteúdo depois de um intervalo.</>}</p></div>
       {connection==='loading'&&<p role="status">Carregando seu histórico…</p>}
       {connection==='saved'&&<p className="learnStorage">Histórico e anotações salvos na sua conta.</p>}
       {connection==='guest'&&<div className="learnNotice"><p>Entre para salvar suas revisões e continuar em outro dispositivo. Sem entrar, você pode praticar apenas nesta sessão.</p><a href="/signin-with-chatgpt?return_to=%2Festudar" target="_top">Entrar com ChatGPT →</a></div>}

@@ -26,10 +26,12 @@ const books = [
   {href:"/administracao-pessoas-logistica",code:"20B",edition:"IFMT · Administrador 2023",title:"Pessoas, Materiais e Processos",author:"Logística · estoques · desempenho · desenvolvimento",description:"Distinções conceituais e vocabulares para gestão de pessoas, recursos materiais e processos logísticos.",stats:["5 oficiais","assunto visível","8 cards"],tone:"admin-people"},
   {href:"/administracao-publica",code:"20C",edition:"IFMT · Administrador 2023",title:"Gestão Pública e Controle",author:"Licitações · ética · orçamento · informação",description:"Competência, fases, exceções legais e ferramentas gerenciais para a atuação administrativa institucional.",stats:["7 oficiais","2 anuladas excluídas","13 cards"],tone:"admin-public"},
   {href:"/administracao-banco-completo",code:"20D",edition:"Arquivo integral · 2026",title:"Banco Completo de Administração",author:"107 questões · 46 assuntos · COCP/IFMT",description:"Todas as questões do arquivo anexado com busca, filtro por assunto e preditores linguísticos para avaliar distratores.",stats:["107 questões","46 assuntos","busca e filtros"],tone:"admin-strategy"},
+  {href:"/sema-mt-ti",code:"23",edition:"SEMA-MT · Edital nº 1/2026",title:"Analista em Tecnologia da Informação",author:"Segurança · desenvolvimento · dados · governança",description:"Guia de estudos alinhado ao perfil 2 do edital, com 800 questões de quatro cadernos e trilha de revisão adaptativa.",stats:["800 questões","5 eixos","prova em 13/12"],tone:"database-foundations"},
 ];
 const shelves = [
   {title:"Cadernos de Engenharia e Computação", subtitle:"Obras técnicas, algoritmos e modelagem", items:books.filter(book=>/^0\d$/.test(book.code)||/^1\d$/.test(book.code))},
   {title:"Cadernos IFMT e Administração", subtitle:"Provas, legislação e preparação institucional", items:books.filter(book=>book.code.startsWith("20")||book.code==="21"||book.code==="22")},
+  {title:"Cadernos SEMA-MT", subtitle:"Concurso 2026 · Analista em Tecnologia da Informação", items:books.filter(book=>book.code==="23")},
 ];
 
 export default function LibraryHome(){return <main className="libraryPage">
