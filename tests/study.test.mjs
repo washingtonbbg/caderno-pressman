@@ -53,7 +53,7 @@ test('review selection respects due dates, weak items, scope and priority while 
 });
 
 test('catalog retains all notebooks, answer bounds, code, references and required figures',()=>{
-  assert.equal(new Set(catalog.map(q=>q.notebook)).size,25);
+  assert.equal(new Set(catalog.map(q=>q.notebook)).size,26);
   assert.equal(new Set(catalog.map(q=>q.id)).size,catalog.length);
   for(const q of catalog) {
     assert.ok(q.options[q.answer],q.id);
@@ -68,6 +68,9 @@ test('catalog retains all notebooks, answer bounds, code, references and require
   assert.equal(supplemental.length,570);
   assert.equal(supplemental.filter(q=>q.examBlock==='portuguese').length,225);
   assert.equal(supplemental.filter(q=>q.referenceText).length,160);
+  const sema=catalog.filter(q=>q.notebook==='/sema-mt-ti');
+  assert.equal(sema.length,800);
+  assert.ok(sema.every(q=>q.sourceUrl.startsWith('https://')));
   assert.ok(supplemental.filter(q=>q.referenceText).every(q=>q.referenceText.length>=40));
   assert.ok(supplemental.filter(q=>q.requiresSource).every(q=>q.sourceUrl.startsWith('https://')));
   assert.equal(supplemental.filter(q=>q.explanationMethod).length,4);
