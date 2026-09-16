@@ -52,4 +52,9 @@ export const studyAttempts = sqliteTable('study_attempts', {
   selected:integer('selected').notNull(),confidence:text('confidence').notNull(),correct:integer('correct').notNull(),createdAt:integer('created_at').notNull(),
   memoryRating:integer('memory_rating').notNull().default(0),ratingSource:text('rating_source').notNull().default('inferred'),
   responseMs:integer('response_ms').notNull().default(0),scheduledDays:integer('scheduled_days').notNull().default(0),elapsedDays:integer('elapsed_days').notNull().default(0),schedulerVersion:text('scheduler_version').notNull().default('legacy'),
+  studyMs:integer('study_ms').notNull().default(0),
 },t=>[uniqueIndex('study_attempts_sequence').on(t.userId,t.questionId,t.ordinal)]);
+
+export const studyPlans=sqliteTable('study_plans',{
+ userId:text('user_id').notNull(),program:text('program').notNull(),minutes:integer('minutes').notNull(),days:text('days').notNull(),updatedAt:integer('updated_at').notNull(),
+},t=>[uniqueIndex('study_plans_user_program').on(t.userId,t.program)]);

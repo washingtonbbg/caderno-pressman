@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./study.css";
+import "./sema-plan.css";
 import "./library.css";
 import "./uml.css";
 import "./uml-cards.css";

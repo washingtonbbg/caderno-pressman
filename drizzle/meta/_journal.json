@@ -50,6 +50,13 @@
       "when": 1789491855759,
       "tag": "0006_graceful_sir_ram",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1789590022121,
+      "tag": "0007_numerous_arclight",
+      "breakpoints": true
     }
   ]
 }

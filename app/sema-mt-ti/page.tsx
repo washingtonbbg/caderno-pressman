@@ -12,8 +12,9 @@ export default function SemaMtTiPage() {
     questions={catalog.filter(q => q.notebook === '/sema-mt-ti')}
     config={{
       defaultExamFocus: false,
+      sema: true,
       introTitle: 'SEMA-MT · Analista em TI',
-      introDescription: <>Segurança, desenvolvimento, dados, governança e fundamentos essenciais.<br/>Pratique por eixo e retome seus pontos frágeis.</>,
+      introDescription: 'Cronograma para iniciantes, prática orientada e acompanhamento do tempo por questão.',
     }}
   />;
 }

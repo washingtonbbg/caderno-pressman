@@ -9,6 +9,9 @@ import FeedbackEvidence from './FeedbackEvidence';
 import MemoryPalace from './MemoryPalace';
 import type { MemoryLocus } from '@/lib/memory-palace';
 import {useBankCatalog} from '@/lib/use-bank-catalog';
+import SemaPlanner from './SemaPlanner';
+import {semaTopic,semaTopics,semaSession,type SemaTopic} from '@/lib/sema-plan';
+import {activeStudyDelta} from '@/lib/active-study-clock';
 
 const confidenceLabels: Record<Confidence,string> = {guess:'Chute',unsure:'Em dúvida',sure:'Consigo justificar'};
 const ratingLabels:Record<MemoryGrade,{label:string;description:string}>={1:{label:'Esqueci',description:'Não consegui recuperar a resposta.'},2:{label:'Difícil',description:'Lembrei com muito esforço ou após pistas.'},3:{label:'Bom',description:'Lembrei corretamente com algum esforço.'},4:{label:'Fácil',description:'Lembrei imediatamente e consigo justificar.'}};
@@ -16,7 +19,7 @@ const modeLabels: Record<StudyMode,string> = {recommended:'Revisões + novas',du
 const date = (at: number) => new Date(at).toLocaleDateString('pt-BR',{day:'2-digit',month:'short'});
 const percent = (hits:number,total:number) => total ? `${Math.round(hits/total*100)}%` : '—';
 const memoryStrength = (progress:StudyProgress,at:number) => `${Math.round(retrievability(progress,at)*100)}%`;
-type Attempt = {attemptId:string;questionId:string;selected:number;confidence:Confidence;memoryRating:MemoryGrade;ratingSource:'declared'|'inferred';responseMs:number;examId?:string};
+type Attempt = {attemptId:string;questionId:string;selected:number;confidence:Confidence;memoryRating:MemoryGrade;ratingSource:'declared'|'inferred';responseMs:number;studyMs?:number;examId?:string};
 
 function QuestionGraph({graph}:{graph:NonNullable<StudyQuestion['graph']>}) {
   const pos:Record<string,number[]> = {A:[35,85],B:[135,30],C:[135,140],D:[245,85],E:[245,140]};
@@ -27,8 +30,9 @@ function QuestionGraph({graph}:{graph:NonNullable<StudyQuestion['graph']>}) {
   </svg>;
 }
 
-export default function StudyWorkspace({questions:initial,config}:{questions:StudyQuestion[];config?:{defaultExamFocus?:boolean;introTitle?:string;introDescription?:string}}) {
-  const questions=useBankCatalog(initial);
+export default function StudyWorkspace({questions:initial,config}:{questions:StudyQuestion[];config?:{defaultExamFocus?:boolean;sema?:boolean;introTitle?:string;introDescription?:React.ReactNode}}) {
+  const bankQuestions=useBankCatalog(initial);
+  const questions=useMemo(()=>config?.sema?bankQuestions.filter(q=>semaTopic(q)!==null):bankQuestions,[bankQuestions,config?.sema]);
   const [progress,setProgress] = useState<Record<string,StudyProgress>>({});
   const [connection,setConnection] = useState<'loading'|'saved'|'guest'|'error'>('loading');
   const [notebook,setNotebook] = useState('all');
@@ -70,7 +74,16 @@ export default function StudyWorkspace({questions:initial,config}:{questions:Stu
   const [memoryImageError,setMemoryImageError] = useState('');
   const heading = useRef<HTMLHeadingElement>(null);
   const inSession = useRef(false);
+  const activeMs=useRef(0);
+  const lastTick=useRef(0);
+  const lastActivity=useRef(0);
+  const pausedRef=useRef(false);
+  const visibleRef=useRef(true);
+  const savedAttempt=useRef<Attempt|null>(null);
+  const [activeSeconds,setActiveSeconds]=useState(0);
+  const [paused,setPaused]=useState(false);
   const q = session[active];
+  const lesson=semaTopics.find(t=>t.id===(q?semaTopic(q):null));
   const relevant = useMemo(()=>questions.filter(q=>!examFocus||examBlock(q)),[questions,examFocus]);
   const notebooks = useMemo(()=>Array.from(new Map(relevant.map(q=>[q.notebook,q.notebookTitle]))),[relevant]);
   const scope = useMemo(()=>relevant.filter(q=>(notebook==='all'||q.notebook===notebook)&&(!examFocus||block==='all'||examBlock(q)===block)),[relevant,notebook,examFocus,block]);
@@ -126,21 +139,44 @@ export default function StudyWorkspace({questions:initial,config}:{questions:Stu
     return ()=>window.clearInterval(timer);
   },[session.length,mockExam]);
 
+  useEffect(()=>{
+    if(!config?.sema||!session.length)return;
+    const tick=()=>{
+      const at=Date.now();
+      activeMs.current+=activeStudyDelta(lastTick.current,at,lastActivity.current,visibleRef.current,pausedRef.current);
+      lastTick.current=at;setActiveSeconds(Math.floor(activeMs.current/1000));
+      setPaused(pausedRef.current||!visibleRef.current||at-lastActivity.current>=90000);
+    };
+    const activity=()=>{tick();lastActivity.current=Date.now();};
+    const visibility=()=>{tick();visibleRef.current=!document.hidden&&document.hasFocus();lastTick.current=Date.now();if(visibleRef.current)lastActivity.current=Date.now();};
+    visibleRef.current=!document.hidden&&document.hasFocus();
+    const checkpoint=()=>{if(savedAttempt.current&&connection==='saved'){void fetch('/api/study/sema',{method:'PATCH',headers:{'content-type':'application/json'},body:JSON.stringify({attemptId:savedAttempt.current.attemptId,studyMs:Math.floor(activeMs.current)}),keepalive:true}).catch(()=>{});}};
+    const hide=()=>{visibility();checkpoint();};
+    document.addEventListener('visibilitychange',hide);window.addEventListener('blur',hide);window.addEventListener('focus',visibility);
+    window.addEventListener('pagehide',hide);
+    for(const event of ['pointerdown','keydown','scroll'])window.addEventListener(event,activity,{passive:true});
+    const timer=window.setInterval(tick,1000),backup=window.setInterval(checkpoint,15000);
+    return ()=>{window.clearInterval(timer);window.clearInterval(backup);document.removeEventListener('visibilitychange',hide);window.removeEventListener('blur',hide);window.removeEventListener('focus',visibility);window.removeEventListener('pagehide',hide);for(const event of ['pointerdown','keydown','scroll'])window.removeEventListener(event,activity);};
+  },[config?.sema,session.length,connection]);
+
   function resetQuestion() {
+    activeMs.current=0;lastTick.current=Date.now();lastActivity.current=Date.now();pausedRef.current=false;savedAttempt.current=null;setActiveSeconds(0);setPaused(false);
     setOptionsOpen(mockExam);setSelected(null);setConfidence(null);setRecall('');setAnswered(false);
     setMemoryRating(null);setResponseMs(0);questionStartedAt.current=Date.now();
     setPending(null);setMessage('');setNote('');setErrorKind('');setNoteDirty(false);setNoteConflict(null);
     setMemoryError('');setMemoryBusy(false);
     setMemoryImageBusy(false);setMemoryImageError('');
   }
-  function start() {
+  function start(topic?:SemaTopic,count=3) {
     let chosen:StudyQuestion[];
-    if(predictedExam)chosen=predictedExamSession(relevant);
+    if(topic)chosen=semaSession(questions,progress,topic,count,Date.now());
+    else if(predictedExam)chosen=predictedExamSession(relevant);
     else if(mockExam) {
       const shuffled=[...relevant];
       for(let i=shuffled.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[shuffled[i],shuffled[j]]=[shuffled[j],shuffled[i]];}
       chosen=examSession(shuffled,{},'new',50,Date.now(),true);
     } else chosen=examFocus&&block==='all'&&notebook==='all'?examSession(scope,progress,mode,limit,Date.now(),mixed):selectSession(scope,progress,mode,limit,Date.now(),mixed);
+    if(!chosen.length){setMessage('Nenhuma questão nova ou pendente neste eixo. Consulte a base ou escolha outro bloco.');return;}
     inSession.current=chosen.length>0;
     startedAt.current=Date.now();setElapsed(0);setResponseLog([]);
     setNow(Date.now());setSession(chosen);setActive(0);setAnswers([]);setMemories([]);setFinished(false);resetQuestion();
@@ -152,7 +188,7 @@ export default function StudyWorkspace({questions:initial,config}:{questions:Stu
       const response=await fetch('/api/study/progress',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(attempt)});
       const data=await response.json();
       if(!response.ok) throw Error(data.error || 'Não foi possível salvar a tentativa.');
-      setProgress(p=>({...p,[attempt.questionId]:data.progress}));setPending(null);
+      setProgress(p=>({...p,[attempt.questionId]:data.progress}));setPending(null);savedAttempt.current=attempt;
       setNote(data.progress.note);setErrorKind(data.progress.errorKind);
       setMessage('Tentativa salva.');
     } catch(error) { setMessage(`${error instanceof Error?error.message:'Falha de conexão.'} Use “Tentar salvar novamente”.`); }
@@ -186,7 +222,7 @@ export default function StudyWorkspace({questions:initial,config}:{questions:Stu
   async function answer(value:number,certainty:Confidence) {
     if(answered || busy) return;
     setSelected(value);setConfidence(certainty);setAnswered(true);setOptionsOpen(true);
-    const measuredResponse=Math.max(0,Date.now()-questionStartedAt.current);setResponseMs(measuredResponse);
+    const measuredResponse=config?.sema?Math.floor(activeMs.current):Math.max(0,Date.now()-questionStartedAt.current);setResponseMs(measuredResponse);
     const correct=value===q.answer;
     setAnswers(a=>[...a,correct]);
     setResponseLog(log=>[...log,{question:q,selected:value}]);
@@ -211,7 +247,7 @@ export default function StudyWorkspace({questions:initial,config}:{questions:Stu
       setProgress(p=>({...p,[q.id]:result}));setNote(result.note);setErrorKind(result.errorKind);
       setMessage('Avaliação mantida somente nesta sessão.');return;
     }
-    const attempt={attemptId:crypto.randomUUID(),questionId:q.id,selected,confidence,memoryRating:rating,ratingSource:'declared' as const,responseMs,...(examFocus?{examId:EXAM_ID}:{})};
+    const attempt={attemptId:crypto.randomUUID(),questionId:q.id,selected,confidence,memoryRating:rating,ratingSource:'declared' as const,responseMs,...(config?.sema?{studyMs:Math.floor(activeMs.current)}:{}),...(examFocus?{examId:EXAM_ID}:{})};
     setPending(attempt);await persist(attempt);
   }
   async function saveNote() {
@@ -229,20 +265,28 @@ export default function StudyWorkspace({questions:initial,config}:{questions:Stu
     } catch(error) {setMessage(error instanceof Error?error.message:'Não foi possível salvar a anotação.');}
     finally {setBusy(false);}
   }
-  function next() {
+  async function next() {
+    if(config?.sema&&connection==='saved'&&savedAttempt.current){
+      setBusy(true);
+      try{const r=await fetch('/api/study/sema',{method:'PATCH',headers:{'content-type':'application/json'},body:JSON.stringify({attemptId:savedAttempt.current.attemptId,studyMs:Math.floor(activeMs.current)})});if(!r.ok)throw Error();}
+      catch{setMessage('Não foi possível salvar o tempo de estudo. Sua resposta está salva; clique novamente para tentar concluir.');setBusy(false);return;}
+      setBusy(false);
+    }
     if(active+1===session.length) {inSession.current=false;setFinished(true);setSession([]);setNow(Date.now());}
     else {setActive(a=>a+1);resetQuestion();requestAnimationFrame(()=>heading.current?.focus());}
   }
 
   return <main className="learnWorkspace">
-    <header className="learnTop"><Link href="/">← Cadernos de Estudo</Link><Link href="/reta-final">Estratégia até 13/09</Link>{questions.some(item=>item.explanationMethod)&&<Link href="/revisao-portugues">Revisão conceitual</Link>}<a href="#metodo">Como estudar</a></header>
+    <header className="learnTop"><Link href="/">← Cadernos de Estudo</Link><Link href={config?.sema?"#cronograma":"/reta-final"}>{config?.sema?"Meu cronograma":"Estratégia até 13/09"}</Link>{questions.some(item=>item.explanationMethod)&&<Link href="/revisao-portugues">Revisão conceitual</Link>}<a href="#metodo">Como estudar</a></header>
     <div className="learnContainer">
       <div className="learnIntro"><div><p className="learnEyebrow">SEU ESTUDO, UMA TENTATIVA POR VEZ</p><h1>{config?.introTitle || 'Estudar hoje'}</h1></div><p>{config?.introDescription || <>Recupere da memória. Confira a explicação.<br/>Volte ao conteúdo depois de um intervalo.</>}</p></div>
       {connection==='loading'&&<p role="status">Carregando seu histórico…</p>}
       {connection==='saved'&&<p className="learnStorage">Histórico e anotações salvos na sua conta.</p>}
-      {connection==='guest'&&<div className="learnNotice"><p>Entre para salvar suas revisões e continuar em outro dispositivo. Sem entrar, você pode praticar apenas nesta sessão.</p><a href="/signin-with-chatgpt?return_to=%2Festudar" target="_top">Entrar com ChatGPT →</a></div>}
+      {connection==='guest'&&<div className="learnNotice"><p>Entre para salvar suas revisões e continuar em outro dispositivo. Sem entrar, você pode praticar apenas nesta sessão.</p><a href={config?.sema?"/signin-with-chatgpt?return_to=%2Fsema-mt-ti":"/signin-with-chatgpt?return_to=%2Festudar"} target="_top">Entrar com ChatGPT →</a></div>}
       {connection==='error'&&<div className="learnNotice" role="alert"><p>Seu histórico não carregou. A prática ficará temporária até a conexão ser restabelecida; não será adicionada ao histórico salvo.</p><button onClick={()=>window.location.reload()}>Recarregar histórico</button></div>}
       {!session.length&&<>
+        {config?.sema&&<SemaPlanner questions={questions} progress={progress} connection={connection} now={now} onStart={start}/>}
+        {config?.sema&&message&&<p role="status">{message}</p>}
         {examFocus&&<div className="learnNotice"><strong>Recorte IFMT Administrador · prova 13/09</strong><p>20 específicos + 10 Português + 10 Gerais + 10 Tecnologia. O treino misto distribui itens nessa proporção quando há material disponível. O número de itens cadastrados não comprova cobertura integral do edital.</p><Link href="/reta-final">Ver plano diário e lacunas →</Link></div>}
         {finished&&<section className="learnComplete" aria-live="polite"><h2>Sessão concluída</h2><p>{answers.filter(Boolean).length} acertos em {answers.length} tentativas. Confira as revisões pendentes nos próximos dias.</p><p>Conseguir responder agora é um passo. Lembrar novamente depois de um intervalo ajuda a avaliar a retenção.</p></section>}
         {finished&&mockExam&&<section className="learnPlanner"><h2>Correção do {predictedExam?'simulado preditivo':'ensaio'}</h2><p>Tempo decorrido: {Math.floor(elapsed/60)} min {elapsed%60} s. Este treino usa itens do banco e {predictedExam?'uma curadoria heurística por aderência ao edital; não prevê nem garante questões reais.':'não estima nota de corte.'}</p><div className="learnStats">{examBlocks.map(b=>{const items=responseLog.filter(r=>examBlock(r.question)===b.id);return <div key={b.id}><strong>{items.filter(r=>r.selected===r.question.answer).length}/{items.length}</strong><span>{b.title}</span></div>;})}</div><details className="examSimulationReview"><summary>Conferir as {responseLog.length} respostas e explicações</summary>{responseLog.map(({question,selected},i)=><article key={question.id}><h3>{i+1}. {question.prompt}</h3><p>Sua resposta: {selected<0?'Não sei':String.fromCharCode(65+selected)} · Gabarito: {String.fromCharCode(65+question.answer)} — {question.options[question.answer]}</p><p>{question.explanation||'Justificativa ainda não cadastrada; confira a fonte no caderno.'}</p><Link href={question.notebook}>Consultar caderno →</Link></article>)}</details><p>Depois da correção, escolha “Erros e dúvidas” para praticar novamente com explicação e anotações.</p></section>}
@@ -253,14 +297,14 @@ export default function StudyWorkspace({questions:initial,config}:{questions:Stu
           <div><strong>{percent(records.reduce((s,p)=>s+p.delayedCorrect,0),records.reduce((s,p)=>s+p.delayedAttempts,0))}</strong><span>acerto após 24h ou mais</span></div>
         </section>
         <section className="learnPlanner" aria-labelledby="session-title"><div><h2 id="session-title">Sua próxima sessão</h2><p>Revisões vencidas entram antes de questões novas. Se precisar aprender a base, abra o caderno e estude um exemplo resolvido.</p></div>
-          <div className="learnFilters"><label>Programa<select value={examFocus?'exam':'library'} onChange={e=>{setExamFocus(e.target.value==='exam');setNotebook('all');setBlock('all');setMockExam(false);setPredictedExam(false);setFinished(false);}}><option value="exam">IFMT Administrador · 13/09/2026</option><option value="library">Biblioteca inteira</option></select></label>{examFocus&&<><label>Bloco do edital<select value={block} disabled={mockExam} onChange={e=>{setBlock(e.target.value as ExamBlock|'all');setNotebook('all');}}><option value="all">Os quatro blocos</option>{examBlocks.map(b=><option value={b.id} key={b.id}>{b.title}</option>)}</select></label><label>Formato<select value={predictedExam?'prediction':mockExam?'mock':'practice'} onChange={e=>{setPredictedExam(e.target.value==='prediction');setMockExam(e.target.value!=='practice');setFinished(false);}}><option value="practice">Prática com correção a cada questão</option><option value="prediction">Predição de hoje · 20 questões</option><option value="mock">Ensaio de 50 · correção somente no fim</option></select></label></>}</div>
+          <div className="learnFilters">{!config?.sema&&<label>Programa<select value={examFocus?'exam':'library'} onChange={e=>{setExamFocus(e.target.value==='exam');setNotebook('all');setBlock('all');setMockExam(false);setPredictedExam(false);setFinished(false);}}><option value="exam">IFMT Administrador · 13/09/2026</option><option value="library">Biblioteca inteira</option></select></label>}{examFocus&&<><label>Bloco do edital<select value={block} disabled={mockExam} onChange={e=>{setBlock(e.target.value as ExamBlock|'all');setNotebook('all');}}><option value="all">Os quatro blocos</option>{examBlocks.map(b=><option value={b.id} key={b.id}>{b.title}</option>)}</select></label><label>Formato<select value={predictedExam?'prediction':mockExam?'mock':'practice'} onChange={e=>{setPredictedExam(e.target.value==='prediction');setMockExam(e.target.value!=='practice');setFinished(false);}}><option value="practice">Prática com correção a cada questão</option><option value="prediction">Predição de hoje · 20 questões</option><option value="mock">Ensaio de 50 · correção somente no fim</option></select></label></>}</div>
           {mockExam&&<p>{predictedExam?'O simulado preditivo seleciona 8 questões específicas e 4 de cada bloco básico, priorizando núcleos centrais do edital e variedade de assuntos. É uma heurística de treino, não uma previsão garantida da prova.':'O ensaio usa todos os blocos, sem os filtros abaixo, e pode repetir itens já vistos.'} O cronômetro mede seu tempo; confirme a duração oficial no edital. {available.length<(predictedExam?20:50)&&'O banco deste recorte não contém itens suficientes; o ensaio será parcial.'}</p>}
           <div className="learnFilters"><label>Caderno<select value={notebook} disabled={mockExam} onChange={e=>setNotebook(e.target.value)}><option value="all">Todos os cadernos do recorte</option>{notebooks.map(([href,title])=><option key={href} value={href}>{title}</option>)}</select></label>
             <label>Objetivo<select value={mode} onChange={e=>setMode(e.target.value as StudyMode)}>{Object.entries(modeLabels).map(([value,label])=><option key={value} value={value}>{label}</option>)}</select></label>
             <label>Questões por sessão<select value={limit} onChange={e=>setLimit(Number(e.target.value))}>{[5,10,20].map(n=><option key={n} value={n}>{n} questões</option>)}</select></label>
           </div>
           <label className="learnToggle"><input type="checkbox" checked={mixed&&canMix} disabled={!canMix} onChange={e=>setMixed(e.target.checked)}/>{canMix?'Alternar os assuntos disponíveis dentro da fila.':'Este recorte tem um único assunto catalogado; a sessão permanece focada nele.'}</label>
-          <div className="learnStart"><button className="learnPrimary" disabled={!available.length||connection==='loading'} onClick={start}>Começar {available.length} questões →</button><span>{scope.length-records.length} novas · {records.filter(p=>!p.lastCorrect||p.confidence!=='sure').length} com erro ou dúvida</span></div>
+          <div className="learnStart"><button className="learnPrimary" disabled={!available.length||connection==='loading'} onClick={()=>start()}>Começar {available.length} questões →</button><span>{scope.length-records.length} novas · {records.filter(p=>!p.lastCorrect||p.confidence!=='sure').length} com erro ou dúvida</span></div>
           {!available.length&&connection!=='loading'&&<p role="status">Nenhuma questão neste recorte agora. Escolha outro objetivo ou volte na próxima revisão{records.length?` (${date(Math.min(...records.map(p=>p.dueAt)))})`:''}.</p>}
         </section>
         <section className="learnJournal"><div className="learnSectionLine"><h2>Caderno de erros e dúvidas</h2><button onClick={()=>setJournalOpen(v=>!v)} aria-expanded={journalOpen}>{journalOpen?'Recolher':'Ver histórico'}</button></div><p>{records.filter(p=>!p.lastCorrect&&p.confidence==='sure').length} erros com confiança · {records.filter(p=>p.lastCorrect&&p.confidence!=='sure').length} acertos com dúvida ou chute</p>
@@ -269,6 +313,8 @@ export default function StudyWorkspace({questions:initial,config}:{questions:Stu
       </>}
       {!!session.length&&q&&<section className="learnSession">
         <div className="learnSessionBar"><span>Questão {active+1} de {session.length} · {answers.length} respondidas{mockExam?` · ${Math.floor(elapsed/60)} min ${elapsed%60} s`:''}</span><progress value={answers.length} max={session.length} aria-label="Tentativas nesta sessão"/></div>
+        {config?.sema&&<div className="semaTimer"><span>{Math.floor(activeSeconds/60)} min {activeSeconds%60} s de estudo nesta questão · {paused?'pausado':'em andamento'}</span><button onClick={()=>{pausedRef.current=!paused;setPaused(!paused);lastActivity.current=Date.now();lastTick.current=Date.now();}}>{paused?'Retomar contagem':'Pausar'}</button><span>Sem pressa: tempo não é nota.</span></div>}
+        {config?.sema&&lesson&&!answered&&<details className="semaLesson"><summary>Sou iniciante · revisar a base de {lesson.title.toLowerCase()}</summary><p>{lesson.lesson}</p><p><strong>Exemplo:</strong> {lesson.example}</p><p>Introdução ao eixo, sem antecipar o gabarito desta questão.</p></details>}
         <article className="learnQuestion"><div className="learnQuestionMeta"><span>{q.notebookTitle}</span>{!mockExam&&<Link href={q.notebook} target="_blank">Consultar caderno ↗</Link>}</div><p className="learnSource">{q.label} · {q.source}</p>
           {q.referenceText&&<div className="learnReferenceText"><strong>Texto de referência</strong><p>{q.referenceText}</p></div>}
           <h2 ref={heading} tabIndex={-1}>{q.prompt}</h2>

@@ -40,6 +40,8 @@ export async function POST(request: Request) {
     const ratingSource=body.ratingSource===undefined?'inferred':choice(body.ratingSource,['declared','inferred'],'Origem da avaliação');
     const responseMs=body.responseMs??0;
     if(!Number.isInteger(responseMs)||responseMs<0||responseMs>86_400_000)throw new HttpError(400,'Tempo de resposta inválido.');
+    const studyMs=body.studyMs??0;
+    if(!Number.isInteger(studyMs)||studyMs<0||studyMs>86400000)throw new HttpError(400,'Tempo de estudo inválido.');
     const elapsedDays=previous?Math.max(0,Math.round((at-previous.lastAt)/86_400_000)):0;
     let next = recordAttempt(questionId,previous,correct,confidence,at,rating as MemoryGrade);
     if(body.examId) {
@@ -48,8 +50,8 @@ export async function POST(request: Request) {
     }
     try {
       await studyDb().batch([
-        studyDb().prepare('INSERT INTO study_attempts (id,user_id,question_id,ordinal,selected,confidence,correct,created_at,memory_rating,rating_source,response_ms,scheduled_days,elapsed_days,scheduler_version) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)')
-          .bind(id,user,questionId,next.attempts,selected,confidence,Number(next.lastCorrect),next.lastAt,rating,ratingSource,responseMs,next.intervalDays,elapsedDays,FSRS_VERSION),
+        studyDb().prepare('INSERT INTO study_attempts (id,user_id,question_id,ordinal,selected,confidence,correct,created_at,memory_rating,rating_source,response_ms,scheduled_days,elapsed_days,scheduler_version,study_ms) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)')
+          .bind(id,user,questionId,next.attempts,selected,confidence,Number(next.lastCorrect),next.lastAt,rating,ratingSource,responseMs,next.intervalDays,elapsedDays,FSRS_VERSION,studyMs),
         studyDb().prepare(`INSERT INTO study_progress (id,user_id,question_id,attempts,correct,last_correct,confidence,interval_days,due_at,last_at,first_correct,delayed_attempts,delayed_correct,note,error_kind,stability,difficulty,lapses,fsrs_state,fsrs_reps,learning_steps)
           VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(user_id,question_id) DO UPDATE SET
           attempts=excluded.attempts,correct=excluded.correct,last_correct=excluded.last_correct,confidence=excluded.confidence,

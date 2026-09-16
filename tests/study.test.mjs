@@ -15,9 +15,52 @@ function load(path,dependencies={}) {
 }
 const model=load('lib/study-model.ts');
 const exam=load('lib/exam-plan.ts',{'./study-model':model});
+const sema=load('lib/sema-plan.ts');
+const clock=load('lib/active-study-clock.ts');
 const catalog=JSON.parse(readFileSync('data/study-catalog.json','utf8'));
 const at=Date.UTC(2026,8,5,12),day=86400000;
 const migrationFiles=()=>readdirSync('drizzle').filter(file=>/^\d+.*\.sql$/.test(file)).sort().map(file=>`drizzle/${file}`);
+
+test('SEMA planner reserves missing subjects, respects availability and ends at exam date',()=>{
+  const qs=catalog.filter(q=>q.notebook==='/sema-mt-ti');
+  assert.equal(qs.filter(q=>sema.semaTopic(q)).length,800);
+  assert.equal(sema.semaTopic({notebook:'/biblioteca',subject:'other'}),null);
+  const now=Date.parse('2026-09-16T12:00:00-04:00');
+  const week=sema.semaWeek(qs,{},[],sema.defaultSemaSettings,now);
+  assert.equal(week.length,7);
+  assert.equal(week.filter(d=>!d.rest).length,6);
+  for(const d of week.filter(d=>!d.rest))assert.equal(d.blocks.reduce((s,b)=>s+b.minutes,0),30);
+  const topics=new Set(week.flatMap(d=>d.blocks.map(b=>b.topic)));
+  for(const topic of sema.semaTopics)assert.ok(topics.has(topic.id),topic.id);
+  assert.ok(week.flatMap(d=>d.blocks).filter(b=>['portuguese','mt','ethics'].includes(b.topic)).every(b=>b.count===0));
+  assert.ok(sema.semaWeek(qs,{},[],sema.defaultSemaSettings,Date.parse('2026-12-13T12:00:00-04:00')).every(d=>d.rest));
+  assert.equal(sema.semaDay(Date.parse('2026-09-17T02:00:00Z')),'2026-09-16');
+  assert.equal(sema.validSemaSettings({minutes:30,days:[]}),false);
+  assert.equal(sema.validSemaSettings({minutes:30,days:[1,1]}),false);
+  assert.equal(sema.validSemaSettings({minutes:30,days:[0,6]}),true);
+});
+
+test('SEMA adapts workload to time without equating speed with mastery',()=>{
+ const qs=catalog.filter(q=>q.notebook==='/sema-mt-ti'),q=qs.find(q=>sema.semaTopic(q)==='fundamentals');
+ const now=Date.now(),p=model.recordAttempt(q.id,undefined,false,'sure',now);
+ const progress={[q.id]:p};
+ const timing=[{questionId:q.id,attempts:1,timedAttempts:1,responseMs:60000,studyMs:900000,lastResponseMs:60000,lastAt:now}];
+ const slow=sema.semaAnalysis(qs,progress,timing,now).find(t=>t.id==='fundamentals');
+ const baseline=sema.semaAnalysis(qs,progress,[],now).find(t=>t.id==='fundamentals');
+ assert.equal(slow.priority,baseline.priority);assert.ok(slow.avgMs>baseline.avgMs);
+ const study=sema.semaSession(qs,progress,'fundamentals',3,now);
+ assert.equal(study[0].id,q.id);assert.equal(study.length,3);
+ const strong=model.recordAttempt(q.id,undefined,true,'sure',now);
+ assert.ok(!sema.semaSession([q],{[q.id]:strong},'fundamentals',3,now).length);
+});
+
+test('active study clock excludes hidden, paused and idle time',()=>{
+ assert.equal(clock.activeStudyDelta(1000,2000,1000,true,false),1000);
+ assert.equal(clock.activeStudyDelta(1000,2000,1000,false,false),0);
+ assert.equal(clock.activeStudyDelta(1000,2000,1000,true,true),0);
+ assert.equal(clock.activeStudyDelta(89000,95000,0,true,false),1000);
+ assert.equal(clock.activeStudyDelta(95000,99000,0,true,false),0);
+});
 
 test('official FSRS ratings update memory state and distinguish recall quality',()=>{
   const first=model.recordAttempt('q',undefined,false,'sure',at);
@@ -161,6 +204,19 @@ test('D1 API isolates users, preserves notes, rejects invalid writes and dedupli
   assert.equal(logged.rating_source,'inferred');
   assert.equal(logged.response_ms,0);
   assert.equal(logged.scheduler_version,model.FSRS_VERSION);
+  const semaRoute=load('app/api/study/sema/route.ts',{'@/lib/study-server':server,'@/lib/library-model':helpers,'@/lib/sema-plan':sema});
+  assert.equal((await semaRoute.GET(req('GET',null))).status,401);
+  assert.equal((await semaRoute.PUT(req('PUT','alice',{minutes:30,days:[1]},'https://evil.example'))).status,403);
+  assert.equal((await semaRoute.PUT(req('PUT','alice',{minutes:30,days:[]}))).status,400);
+  assert.equal((await semaRoute.PUT(req('PUT','alice',{minutes:45,days:[1,3,5]}))).status,200);
+  assert.deepEqual((await (await semaRoute.GET(req('GET','alice'))).json()).settings,{minutes:45,days:[1,3,5]});
+  assert.deepEqual((await (await semaRoute.GET(req('GET','bob'))).json()).settings,sema.defaultSemaSettings);
+  assert.equal((await semaRoute.PATCH(req('PATCH','bob',{attemptId:attempt.attemptId,studyMs:4000}))).status,404);
+  assert.equal((await semaRoute.PATCH(req('PATCH','alice',{attemptId:attempt.attemptId,studyMs:-1}))).status,400);
+  for(const studyMs of [60000,60000,40000])assert.equal((await semaRoute.PATCH(req('PATCH','alice',{attemptId:attempt.attemptId,studyMs}))).status,200);
+  const stats=(await (await semaRoute.GET(req('GET','alice'))).json()).timing.find(t=>t.questionId===q.id);
+  assert.equal(stats.studyMs,60000);assert.equal(stats.timedAttempts,1);
+  assert.deepEqual((await (await semaRoute.GET(req('GET','bob'))).json()).timing,[]);
 });
 
 test('question bank registration persists conceptual evidence and its source',async t=>{
