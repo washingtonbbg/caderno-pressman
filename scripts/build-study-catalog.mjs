@@ -71,7 +71,10 @@ for (const book of books) {
   const questions = book.href==='/tecnologia-educacional'
     ? JSON.parse(readFileSync('data/technology-practice.json','utf8'))
     : book.href==='/sema-mt-ti'
-      ? JSON.parse(readFileSync('data/sema-ti-questions.json','utf8'))
+      ? [
+          ...JSON.parse(readFileSync('data/sema-ti-questions.json','utf8')),
+          ...JSON.parse(readFileSync('data/sema-general-cesgranrio.json','utf8')),
+        ]
     : book.href==='/ifmt-banco-complementar'
       ? JSON.parse(readFileSync('data/ifmt-supplemental-questions.json','utf8'))
       : get('questions') || get('qs');

@@ -1,5 +1,6 @@
 import data from '../data/admin-bank.json';
-export const bankSeed=data;
+type SeedQuestion={id:string;number:number;tecId:string;source:string;subject:string;prompt:string;options:string[];answer:number;bibliography?:string;explanation?:string;sourceUrl?:string;referenceText?:string;bankAnalysis?:string;reviewStatus?:'reviewed'|'needs_review';suggestedAnswer?:number;optionAnalysis?:string[]};
+export const bankSeed=data as {questions:SeedQuestion[]};
 type Entry={id:string;kind:string;title:string;authors:string;label:string;qs:number[];url?:string;locator?:string};
 export const sourceSeed:Entry[]=[
  {id:'ballou-1993',kind:'book',title:'Referência a Ballou (título não informado no enunciado)',authors:'Ronald H. Ballou',label:'1993 · edição a conferir',qs:[1]},

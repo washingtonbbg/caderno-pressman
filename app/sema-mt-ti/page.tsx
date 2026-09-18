@@ -4,7 +4,7 @@ import StudyWorkspace from '../components/StudyWorkspace';
 
 export const metadata: Metadata = {
   title: 'SEMA-MT — Analista em Tecnologia da Informação',
-  description: 'Guia de estudos para o perfil 2 do concurso SEMA-MT 2026, com 800 questões organizadas por eixo.',
+  description: 'Guia de estudos para o perfil 2 do concurso SEMA-MT 2026, com 842 questões organizadas por eixo.',
 };
 
 export default function SemaMtTiPage() {

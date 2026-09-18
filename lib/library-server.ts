@@ -16,7 +16,7 @@ export function actorFromRequest(request: Request): LibraryActor | null {
 export function requireLibraryAdmin(request: Request): LibraryActor {
   const actor = actorFromRequest(request);
   if (!actor) throw new Response(JSON.stringify({ error: "Autenticação ChatGPT necessária." }), { status: 401, headers: { "content-type": "application/json" } });
-  const configured = String((env as Record<string, unknown>).LIBRARY_ADMIN_EMAILS ?? "")
+  const configured = String(env.LIBRARY_ADMIN_EMAILS ?? "")
     .split(",").map((value) => value.trim().toLowerCase()).filter(Boolean);
   if (!configured.includes(actor.email)) {
     throw new Response(JSON.stringify({ error: "Acesso restrito ao administrador da biblioteca." }), { status: 403, headers: { "content-type": "application/json" } });

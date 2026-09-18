@@ -12,6 +12,7 @@
     "build": "vinext build",
     "start": "vinext start",
     "enrich:ifmt": "node scripts/enrich-ifmt-supplemental.mjs",
+    "import:sema-general": "node scripts/import-sema-general-html.mjs tmp/sema-general-html data/sema-general-cesgranrio.json",
     "test": "npm run build && node --test tests/study.test.mjs",
     "test:study": "node --test tests/study.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern tmp",

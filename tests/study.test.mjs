@@ -21,9 +21,9 @@ const catalog=JSON.parse(readFileSync('data/study-catalog.json','utf8'));
 const at=Date.UTC(2026,8,5,12),day=86400000;
 const migrationFiles=()=>readdirSync('drizzle').filter(file=>/^\d+.*\.sql$/.test(file)).sort().map(file=>`drizzle/${file}`);
 
-test('SEMA planner reserves missing subjects, respects availability and ends at exam date',()=>{
+test('SEMA planner reserves missing subjects, uses imported general knowledge and ends at exam date',()=>{
   const qs=catalog.filter(q=>q.notebook==='/sema-mt-ti');
-  assert.equal(qs.filter(q=>sema.semaTopic(q)).length,800);
+  assert.equal(qs.filter(q=>sema.semaTopic(q)).length,842);
   assert.equal(sema.semaTopic({notebook:'/biblioteca',subject:'other'}),null);
   const now=Date.parse('2026-09-16T12:00:00-04:00');
   const week=sema.semaWeek(qs,{},[],sema.defaultSemaSettings,now);
@@ -32,7 +32,9 @@ test('SEMA planner reserves missing subjects, respects availability and ends at 
   for(const d of week.filter(d=>!d.rest))assert.equal(d.blocks.reduce((s,b)=>s+b.minutes,0),30);
   const topics=new Set(week.flatMap(d=>d.blocks.map(b=>b.topic)));
   for(const topic of sema.semaTopics)assert.ok(topics.has(topic.id),topic.id);
-  assert.ok(week.flatMap(d=>d.blocks).filter(b=>['portuguese','mt','ethics'].includes(b.topic)).every(b=>b.count===0));
+  assert.ok(week.flatMap(d=>d.blocks).filter(b=>b.topic==='portuguese').every(b=>b.count===0));
+  assert.ok(sema.semaAnalysis(qs,{},[],now).find(topic=>topic.id==='mt').items>0);
+  assert.ok(sema.semaAnalysis(qs,{},[],now).find(topic=>topic.id==='ethics').items>0);
   assert.ok(sema.semaWeek(qs,{},[],sema.defaultSemaSettings,Date.parse('2026-12-13T12:00:00-04:00')).every(d=>d.rest));
   assert.equal(sema.semaDay(Date.parse('2026-09-17T02:00:00Z')),'2026-09-16');
   assert.equal(sema.validSemaSettings({minutes:30,days:[]}),false);
@@ -112,7 +114,7 @@ test('catalog retains all notebooks, answer bounds, code, references and require
   assert.equal(supplemental.filter(q=>q.examBlock==='portuguese').length,225);
   assert.equal(supplemental.filter(q=>q.referenceText).length,160);
   const sema=catalog.filter(q=>q.notebook==='/sema-mt-ti');
-  assert.equal(sema.length,800);
+  assert.equal(sema.length,842);
   assert.ok(sema.every(q=>q.sourceUrl.startsWith('https://')));
   assert.ok(supplemental.filter(q=>q.referenceText).every(q=>q.referenceText.length>=40));
   assert.ok(supplemental.filter(q=>q.requiresSource).every(q=>q.sourceUrl.startsWith('https://')));
