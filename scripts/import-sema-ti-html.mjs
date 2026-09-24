@@ -16,6 +16,17 @@ function cleanPrompt(raw, number) {
   const value = text(raw).replace(new RegExp(`^${number}\\)\\s*`), '').trim();
   return value;
 }
+function media(rawHtml, sourceUrl) {
+  const src = rawHtml.match(/<img\b[^>]*\bsrc=(?:["']([^"']+)["']|([^\s>]+))/i)?.slice(1).find(Boolean);
+  if (!src) return {};
+  try {
+    const image = new URL(decode(src), sourceUrl).href;
+    if (!image.startsWith('https://')) return {};
+    const imageAlt = text(rawHtml.match(/<img\b[^>]*\balt=(?:["']([^"']*)["']|([^\s>]+))/i)?.slice(1).find(Boolean) || '') || 'Figura da questão';
+    return { image, imageAlt };
+  } catch { return {}; }
+}
+const needsVisual = value => /\b(gráfico|figura|imagem|mapa|diagrama|quadro|tabela|tirinha|charge)\b/i.test(value);
 
 const questions = [];
 const files = fs.readdirSync(inputDir).filter(name => name.toLowerCase().endsWith('.html')).sort();
@@ -40,14 +51,19 @@ for (const file of files) {
     const number = Number(numberMatch[1]);
     const answerLetter = answers.get(number);
     const answer = answerLetter ? answerLetter.charCodeAt(0) - 65 : 0;
+    const prompt = cleanPrompt(promptMatch[1], number);
+    const sourceUrl = decode(info[1]);
+    const visual = media(promptMatch[1], sourceUrl);
     questions.push({
       number,
-      prompt: cleanPrompt(promptMatch[1], number),
+      prompt,
       options,
       answer,
       subject: text(info[3]),
       source: text(info[2]),
-      sourceUrl: info[1],
+      sourceUrl,
+      ...visual,
+      requiresSource: needsVisual(`${prompt} ${options.join(' ')}`) && !visual.image,
       level: 'SEMA-MT · Analista em Tecnologia da Informação',
     });
   }

@@ -14,6 +14,19 @@ function text(html) {
   return decode(html.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim());
 }
 
+function media(rawHtml, sourceUrl) {
+  const src = rawHtml.match(/<img\b[^>]*\bsrc=(?:["']([^"']+)["']|([^\s>]+))/i)?.slice(1).find(Boolean);
+  if (!src) return {};
+  try {
+    const image = new URL(decode(src), sourceUrl).href;
+    if (!image.startsWith('https://')) return {};
+    const imageAlt = text(rawHtml.match(/<img\b[^>]*\balt=(?:["']([^"']*)["']|([^\s>]+))/i)?.slice(1).find(Boolean) || '') || 'Figura da questão';
+    return { image, imageAlt };
+  } catch { return {}; }
+}
+
+const needsVisual = value => /\b(gráfico|figura|imagem|mapa|diagrama|quadro|tabela|tirinha|charge)\b/i.test(value);
+
 const questions = [];
 const seen = new Set();
 const files = fs.readdirSync(inputDir).filter(name => name.toLowerCase().endsWith('.html')).sort();
@@ -42,13 +55,17 @@ for (const file of files) {
     const answer = answerLetter.charCodeAt(0) - 65;
     if (answer >= options.length) throw new Error(`Gabarito fora das alternativas: ${file}, questão ${number}`);
     seen.add(sourceUrl);
+    const prompt = text(promptMatch[1]).replace(new RegExp(`^${number}\\)\\s*`), '').trim();
+    const visual = media(promptMatch[1], sourceUrl);
     questions.push({
-      prompt: text(promptMatch[1]).replace(new RegExp(`^${number}\\)\\s*`), '').trim(),
+      prompt,
       options,
       answer,
       subject: text(info[3]),
       source,
       sourceUrl,
+      ...visual,
+      requiresSource: needsVisual(prompt) && !visual.image,
       level: 'SEMA-MT · Conhecimentos Gerais · Cesgranrio',
     });
   }

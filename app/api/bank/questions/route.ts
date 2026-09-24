@@ -22,6 +22,8 @@ async function hydrateQuestion(row: Row) {
     tecId: row.tec_id ?? null,
     sourceUrl: row.source_url ?? "",
     referenceText: row.reference_text ?? "",
+    image: row.image ?? "",
+    imageAlt: row.image_alt ?? "Figura da questão",
     bankAnalysis: row.bank_analysis ?? "",
     reviewStatus: row.review_status ?? "needs_review",
     suggestedAnswer: row.suggested_answer ?? null,
@@ -53,6 +55,9 @@ export async function POST(request: Request) {
     const idInput = typeof body.id === "string" && body.id.trim() ? field(body.id, "ID", 160) : "";
     const tecId = typeof body.tecId === "string" && body.tecId.trim() ? field(body.tecId, "ID Tec", 160) : null;
     const legacyNumber = body.number === undefined || body.number === null || body.number === "" ? null : Number(body.number);
+    const image = typeof body.image === "string" ? field(body.image, "Imagem", 1200) : "";
+    if (image && !image.startsWith("/") && !/^https:\/\//i.test(image)) throw new HttpError(400, "A imagem deve usar um caminho local ou uma URL HTTPS.");
+    const imageAlt = image ? field(body.imageAlt || "Figura da questão", "Descrição da imagem", 500) : "";
     if (legacyNumber !== null && (!Number.isInteger(legacyNumber) || legacyNumber < 1)) throw new HttpError(400, "Número da questão inválido.");
     let questionId = idInput || `bank-${crypto.randomUUID()}`;
     if (!idInput && tecId) {
@@ -77,9 +82,9 @@ export async function POST(request: Request) {
       await env.DB.prepare(`INSERT OR IGNORE INTO library_versions (id,source_id,label,captured_at,status,created_by) VALUES(?,?,?,?,?,?)`)
         .bind(conceptVersionId, conceptSourceId, "Referência conceitual declarada", stamp, "declared", actor.email).run();
     }
-    await env.DB.prepare(`INSERT INTO bank_questions (id,legacy_number,tec_id,source,subject,prompt,answer_id,status,origin,explanation,review_note,source_url,reference_text,bank_analysis,review_status,suggested_answer,created_at,updated_at)
-      VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET legacy_number=excluded.legacy_number,tec_id=excluded.tec_id,source=excluded.source,subject=excluded.subject,prompt=excluded.prompt,answer_id=excluded.answer_id,status=excluded.status,explanation=excluded.explanation,review_note=excluded.review_note,source_url=excluded.source_url,reference_text=excluded.reference_text,bank_analysis=excluded.bank_analysis,review_status=excluded.review_status,suggested_answer=excluded.suggested_answer,updated_at=excluded.updated_at`)
-      .bind(questionId, legacyNumber, tecId, draft.source, draft.subject, draft.prompt, `${questionId}-option-${draft.answer}`, draft.reviewStatus, "user-library", draft.explanation, draft.reviewNote, draft.sourceUrl, draft.referenceText, draft.bankAnalysis, draft.reviewStatus, draft.suggestedAnswer ?? null, stamp, stamp).run();
+    await env.DB.prepare(`INSERT INTO bank_questions (id,legacy_number,tec_id,source,subject,prompt,answer_id,status,origin,explanation,review_note,source_url,reference_text,image,image_alt,bank_analysis,review_status,suggested_answer,created_at,updated_at)
+      VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET legacy_number=excluded.legacy_number,tec_id=excluded.tec_id,source=excluded.source,subject=excluded.subject,prompt=excluded.prompt,answer_id=excluded.answer_id,status=excluded.status,explanation=excluded.explanation,review_note=excluded.review_note,source_url=excluded.source_url,reference_text=excluded.reference_text,image=excluded.image,image_alt=excluded.image_alt,bank_analysis=excluded.bank_analysis,review_status=excluded.review_status,suggested_answer=excluded.suggested_answer,updated_at=excluded.updated_at`)
+      .bind(questionId, legacyNumber, tecId, draft.source, draft.subject, draft.prompt, `${questionId}-option-${draft.answer}`, draft.reviewStatus, "user-library", draft.explanation, draft.reviewNote, draft.sourceUrl, draft.referenceText, image, imageAlt, draft.bankAnalysis, draft.reviewStatus, draft.suggestedAnswer ?? null, stamp, stamp).run();
     await env.DB.batch(draft.options.map((content, position) => env.DB.prepare(`INSERT INTO bank_options (id,question_id,position,content,analysis) VALUES(?,?,?,?,?)
       ON CONFLICT(id) DO UPDATE SET content=excluded.content,analysis=excluded.analysis`).bind(`${questionId}-option-${position}`, questionId, position, content, draft.optionAnalysis[position])));
     const citationId = `citation-${questionId}-${sourceId}`.slice(0, 180);

@@ -21,7 +21,7 @@ export const passages=sqliteTable('library_passages', {
 export const questions=sqliteTable('bank_questions', {
  id:text('id').primaryKey(),legacyNumber:integer('legacy_number').unique(),tecId:text('tec_id').unique(),source:text('source').notNull(),
  subject:text('subject').notNull(),prompt:text('prompt').notNull(),answerId:text('answer_id').notNull(),status:text('status').notNull(),origin:text('origin').notNull(),
- explanation:text('explanation').notNull().default(''),reviewNote:text('review_note').notNull().default(''),sourceUrl:text('source_url').notNull().default(''),referenceText:text('reference_text').notNull().default(''),bankAnalysis:text('bank_analysis').notNull().default(''),reviewStatus:text('review_status').notNull().default('needs_review'),suggestedAnswer:integer('suggested_answer'),createdAt:text('created_at').notNull(),updatedAt:text('updated_at').notNull(),
+ explanation:text('explanation').notNull().default(''),reviewNote:text('review_note').notNull().default(''),sourceUrl:text('source_url').notNull().default(''),referenceText:text('reference_text').notNull().default(''),image:text('image').notNull().default(''),imageAlt:text('image_alt').notNull().default(''),bankAnalysis:text('bank_analysis').notNull().default(''),reviewStatus:text('review_status').notNull().default('needs_review'),suggestedAnswer:integer('suggested_answer'),createdAt:text('created_at').notNull(),updatedAt:text('updated_at').notNull(),
 },t=>[index('bank_question_status').on(t.status)]);
 export const options=sqliteTable('bank_options', {
  id:text('id').primaryKey(),questionId:text('question_id').notNull().references(()=>questions.id),position:integer('position').notNull(),

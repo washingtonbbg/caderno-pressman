@@ -46,10 +46,11 @@ function append(book, question, index, graph) {
   // of the identity so enriching a question never discards the learner's history.
   const fingerprint = JSON.stringify([question.referenceText || '', question.prompt, question.options, question.answer, question.code || '', question.image || '', question.figure || '']);
   catalog.push({
-    id: `${book.href.slice(1)}:${createHash('sha256').update(fingerprint).digest('hex').slice(0, 20)}`,
+    id: question.id || `${book.href.slice(1)}:${createHash('sha256').update(fingerprint).digest('hex').slice(0, 20)}`,
     notebook: book.href, notebookTitle: book.title, number: index + 1,
     subject: question.subject || book.title, label: question.level || question.tag || (question.examId ? `Questão ${question.examId}` : 'Banco de Administração'),
-    source: question.source || book.author, sourceUrl:question.sourceUrl || '', referenceText:question.referenceText || '', requiresSource:!!question.requiresSource,
+    source: question.source || book.author, sourceUrl:question.sourceUrl || '', referenceText:question.referenceText || '',
+    requiresSource:!!question.requiresSource || (!question.image && /\b(gráfico|figura|imagem|mapa|diagrama|quadro|tabela|tirinha|charge)\b/i.test(`${question.prompt} ${(question.options || []).join(' ')}`)),
     examBlock:Object.prototype.hasOwnProperty.call(question,'examBlock')?question.examBlock:undefined,
     prompt: question.prompt, options: question.options, answer: question.answer,
     explanation: question.explanation || question.why || '', languageNote: question.languageNote || question.xray || question.trap || '',

@@ -9,7 +9,7 @@
     "source": "Conhecimentos Transversais para Professor - IFMT - 2026 · parte 1 · COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2367828",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "specific",
     "prompt": "Sobre a cultura organizacional, julgue as sentenças a seguir como Verdadeiras (V) ou Falsas (F): ( ) O clima organizacional é resultado da história da organização, suas crenças, valores, tipos de pessoas que compõem o seu quadro funcional, dos processos detrabalho e da estrutura administrativa e hierarquia estabelecida. ( ) A cultura organizacional é um reflexo de cada organização, refletindo sua evolução, capacidade de adaptação a seu meio ambiente interno e externo. ( ) Entender a cultura organizacional não é um requisito básico para implementar mudanças e inovações na organização. ( ) A cultura organizacional não influencia na vantagem competitiva, produtividade, inovação, pessoas, comportamentos e na qualidade.",
     "options": [
@@ -468,7 +468,7 @@
     "source": "Conhecimentos Transversais para Professor - IFMT - 2026 · parte 1 · COCP IFMT - Ass Adm (IF MT)/IF MT/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3736493",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "general",
     "prompt": "Leia a manchete e o trecho da matéria a seguir e responda ao que se pede. MT aprova norma que “converte” para Cerrado áreas do bioma amazônico Objetivo é reduzir de 80% para 35% áreas que precisam ser protegidas. Segundo especialistas, mais de 5 milhões de hectares de floresta estão sob ameaça.Por: Cristiane Prizibisczki8 de janeiro de 2025 “Deputados de Mato Grosso aprovaram, na tarde desta quarta-feira (8), um projeto de lei complementar que muda o código ambiental matogrossense, com o objetivo decategorizar formações vegetais com características de floresta, reinterpretando-as como pertencentes ao bioma Cerrado.” Disponível em: https://oeco.org.br/noticias/mt-aprova-norma-que-converte-para-cerrado-areas-do-bioma-amazonico/. Acesso em: 13 abr. 2025. Assinale a alternativa que apresenta uma crítica relevante de professores de instituições de pesquisa mato-grossenses, entre elas a Universidade Federal de Mato Grosso(UFMT) e a Universidade do Estado do Mato Grosso (Unemat), à nova Lei aprovada pela Assembleia Legislativa do estado.",
     "options": [
@@ -2049,7 +2049,7 @@
     "source": "Conhecimentos Transversais para Professor - IFMT - 2026 · parte 1 · COCP IFMT - Ass Alu (IF MT)/IF MT/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3176438",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "general",
     "prompt": "Observe a tabela abaixo e responda ao que se pede: Cor ou raça 2010 População (pessoas) 2022 População (pessoas) Cor ou raçaUnidade da Federação 1.137.150 1.181.590 ? Mato Grosso 229.890 360.698 ? Mato Grosso 34.642 10.813 ? Mato Grosso 1.590,707 2.048,782 ? Mato Grosso 42.538 56.867 ? Mato Grosso Fonte: IBGE, 2022. Disponível em: https://censo2022.ibge.gov.br/panorama/indicadores.htmPlocalidade=BR. Acesso em; 29 jun. 2024, Segundo as informações sobre “cor ou raça” da população mato-grossense, publicadas no site oficial do IBGE, percebemos a redução de um número expressivo depessoas referente a essa cor ou raça, sendo 34.642 em 2010 e 10.813 em 2022. Dentre as alternativas abaixo, assinale aquela em que consta a população, segundo cor ou raça, que apresentou queda em 2022 em comparação a 2010.",
     "options": [
@@ -4191,7 +4191,7 @@
     "source": "Conhecimentos Transversais para Professor - IFMT - 2026 · parte 1 · COCP IFMT - Ass Adm (IF MT)/IF MT/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2189935",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "general",
     "prompt": "A respeito da segurança pública no estado de Mato Grosso, analise a tabela a seguir e marque a alternativa CORRETA. Homicídios dolosos, por número de vítimas e ocorrências, no Brasil e em Mato Grosso 2016-2017 Brasil e Mato Grosso Nº de Vítimas Nº de Ocorrências Números Absolutos Taxas Números Absolutos Taxas 2016 2017 2016 2017Variação (%) 2016 2017 2016 2017Variação (%) Brasil 54.338 55.900 26,4 26,9 2,1 45.724 48.003 22,2 23,1 4,2 Mato Grosso1.086 985 32,9 29,5 -10,4 1.086 924 32,9 27,6 -15,9 Fonte: Anuário Brasileiro de Segurança Pública 2018.",
     "options": [
@@ -5721,7 +5721,7 @@
     "source": "Conhecimentos Transversais para Professor - IFMT - 2026 · parte 1 · COCP IFMT - Adm (IF MT)/IF MT/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2843733",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "general",
     "prompt": "Na primeira coluna estão elencados alguns institutos jurídicos previstos na Lei 8.112/90; e na segunda, as suas conceituações. Nos termos da Lei 8.112/90, numerea segunda coluna de acordo com a primeira. 1. Reintegração.2. Recondução.3. Remoção.4. Redistribuição. ( ) É o retorno do servidor estável ao cargo anteriormente ocupado. ( ) É a reinvestidura do servidor estável no cargo anteriormente ocupado, ou no cargo resultante de sua transformação, quando invalidada a sua demissão pordecisão administrativa ou judicial. ( ) É o deslocamento de cargo de provimento efetivo, ocupado ou vago no âmbito do quadro geral de pessoal, para outro órgão ou entidade do mesmo Poder. ( ) É o deslocamento do servidor, a pedido ou de ofício, no âmbito do mesmo quadro, com ou sem mudança de sede. Assinale a sequência correta:",
     "options": [
@@ -5823,7 +5823,7 @@
     "source": "Conhecimentos Transversais para Professor - IFMT - 2026 · parte 1 · COCP IFMT - Arq (IF MT)/IF MT/2019",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/1088164",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "general",
     "prompt": "Com base na Lei 8.112/1990, assinale a alternativa CORRETA:",
     "options": [
@@ -6078,7 +6078,7 @@
     "source": "Conhecimentos Transversais para Professor - IFMT - 2026 · parte 1 · COCP IFMT - Ass Alu (IF MT)/IF MT/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3176380",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "general",
     "prompt": "Conforme a Leinº 8.112/1990, a redistribuição é o deslocamento de cargo de provimento efetivo, ocupado ou vago no âmbito do quadro geral de pessoal, paraoutro órgão ou entidade do mesmo Poder, com prévia apreciação do órgão central do SIPEC. Para que seja efetivada uma redistribuição, a lei em questão exige quesejam observados alguns preceitos. Identifique, dentre as alternativas abaixo, qual NÃO constitui um desses preceitos:",
     "options": [
@@ -6741,7 +6741,7 @@
     "source": "Conhecimentos Transversais para Professor - IFMT - 2026 · parte 1 · COCP IFMT - PEBTT (IF MT)/IF MT/Direito/2018",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/1108983",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": null,
     "prompt": "Das afirmações abaixo, acerca dos direitos e das garantias fundamentais disciplinados na Carta Magna, assinale a alternativa correta.",
     "options": [
@@ -8577,7 +8577,7 @@
     "source": "Conhecimentos Transversais para Professor - IFMT - 2026 · parte 1 · COCP IFMT - Tec Lab (IF MT)/IF MT/Informática/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2204408",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "technology",
     "prompt": "A Lei Geral de Proteção de Dados Pessoais foi promulgada em 2018 e dispõe sobre o tratamento que deve ser dispensado aos dados pessoais, com objetivo deproteger os direitos fundamentais da pessoa natural. Sobre esta lei, é CORRETO afirmar que:",
     "options": [
@@ -10209,7 +10209,7 @@
     "source": "Conhecimentos Transversais para Professor - IFMT - 2026 · parte 2 · COCP IFMT - Ass Alu (IF MT)/IF MT/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2342927",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "general",
     "prompt": "À luz da Lei nº 11.892/08, julgue as assertivas abaixo: I. Os Reitores serão nomeados pelo Presidente da República. II. Os Pró-Reitores são nomeados pelo Ministro da Educação, nos termos da legislação aplicável à nomeação de cargos de direção. III. Poderão candidatar-se ao cargo de Reitor os docentes e técnicos-administrativos pertencentes ao Quadro de Pessoal Ativo Permanente de qualquer dos campique integram o Instituto Federal. IV. Os campi serão dirigidos por Diretores-Gerais, nomeados pelo Reitor para mandato de 4 (quatro) anos. Está(ão) CORRETA(S) apena(s) a(s) assertiva(s):",
     "options": [
@@ -10362,7 +10362,7 @@
     "source": "Conhecimentos Transversais para Professor - IFMT - 2026 · parte 2 · COCP IFMT - Ass Adm (IF MT)/IF MT/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2189101",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "general",
     "prompt": "Nos termos da Lei 11.892/08, julgue as assertivas abaixo: I - Os Institutos Federais possuem natureza jurídica de fundação e são detentores de autonomia administrativa, patrimonial, financeira, didático-pedagógica edisciplinar. II - Os Institutos Federais são instituições de educação superior, básica e profissional, pluricurriculares e multicampi, especializados na oferta de educaçãoprofissional e tecnológica nas diferentes modalidades de ensino, com base na conjugação de conhecimentos técnicos e tecnológicos com as suas práticaspedagógicas, nos termos desta Lei. III - Os Institutos Federais terão autonomia para criar e extinguir cursos, nos limites de sua área de atuação territorial, bem como para registrar diplomas doscursos por eles oferecidos, mediante autorização do seu Colégio de Dirigentes, aplicando-se, no caso da oferta de cursos a distância, a legislação específica. IV - O Colégio Pedro II é equiparado aos Institutos Federais para efeito de incidência das disposições que regem a autonomia e a utilização dos instrumentos degestão do quadro de pessoal e de ações de regulação, avaliação e supervisão das instituições e dos cursos de educação profissional e superior. Estão CORRETAS as assertivas:",
     "options": [
@@ -11892,7 +11892,7 @@
     "source": "Conhecimentos Transversais para Professor - IFMT - 2026 · parte 2 · COCP IFMT - Adm (IF MT)/IF MT/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2843742",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "general",
     "prompt": "Nos termos do Decreto 1.171/94, julgue as assertivas abaixo: I. Somente nos órgãos e entidades da Administração Pública Federal direta deverá ser criada uma Comissão de Ética, encarregada de orientar e aconselhar sobre aética profissional do servidor, no tratamento com as pessoas e com o patrimônio público, competindo-lhe conhecer concretamente de imputação ou deprocedimento susceptível de censura. II. À Comissão de Ética incumbe fornecer, aos organismos encarregados da execução do quadro de carreira dos servidores, os registros sobre sua conduta ética,para o efeito de instruir e fundamentar promoções e para todos os demais procedimentos próprios da carreira do servidor público. III. A pena aplicável ao servidor público pela Comissão de Ética é a de advertência, e sua fundamentação constará do respectivo parecer, assinado por todos osseus integrantes, com ciência do faltoso. IV. Para fins de apuração do comprometimento ético, entende-se por servidor público todo aquele que, por força de lei, contrato ou de qualquer ato jurídico,preste serviços de natureza permanente, temporária ou excepcional, ainda que sem retribuição financeira, desde que ligado direta ou indiretamente a qualquerórgão do poder estatal, como as autarquias, as fundações públicas, as entidades paraestatais, as empresas públicas e as sociedades de economia mista, ou emqualquer setor em que prevaleça o interesse do Estado. Está correto o que se afirma em:",
     "options": [
@@ -13881,7 +13881,7 @@
     "source": "Conhecimentos Transversais para Professor - IFMT - 2026 · parte 2 · COCP IFMT - PEBTT (IF MT)/IF MT/História/2018",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/1110507",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "general",
     "prompt": "Na Fronteira Oeste, sudoeste de Mato Grosso e leste da Bolívia, habitam os chiquitanos. A identidade cultural chiquitana foi forjada pela experiência reducionaljesuíta hispânica durante o período colonial. Em que pese a prevalência da língua chiquita, outros grupos étnicos indígenas ajudaram a compor a complexa elaboraçãoidentitária dos chiquitanos. Em meio às disputas territoriais entre as monarquias portuguesa e espanhola e, principalmente, após a expulsão dos jesuítas da AméricaHispânica (1767), os indígenas passaram a se deslocar pelo espaço fronteiriço, recriando-se em ambos os lados dos frágeis limites políticos constituídos.Contemporaneamente, os “índios bolivianos” — como são designados por segmentos da sociedade mato-grossense — são protagonistas das discussões que envolvem ademarcação de suas terras. Diante desse quadro, identifique a assertiva que NÃO corresponde às análises sobre os indígenas chiquitanos na atualidade:",
     "options": [
@@ -16890,7 +16890,7 @@
     "source": "Conhecimentos Transversais para Professor - IFMT - 2026 · parte 2 · COCP IFMT - PEBTT (IF MT)/IF MT/Educação Física/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3149793",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "technology",
     "prompt": "As experiências pedagógicas com o uso das TICs no ambiente educacional têm se mostrado cada vez mais frequentes, inclusive na Educação Física escolar. A esserespeito, Diniz e Darido (2021) reconhecem o potencial das TICs como um recurso a mais na sala de aula, entretanto as autoras destacam “que, apesar dos seusbenefícios, não podemos analisá-las sob um viés maniqueísta, tratando-as como “solução” para os problemas da educação, mais sim, como uma possível aliada doprocesso educacional\" (p. 16). Sobre o uso das TICs no processo do ensino da dança com os alunos do Ensino Médio, assinale a alternativa INCORRETA, de acordo comas autoras supracitadas. DINIZ, |. K. D.S.; DARIDO, S. C. Dança no ensino médio: experiência com o uso das TICs. Revista Motrivivência, v. 33, p. 1-22, 2021. Disponível em: <https://periodicos.ufsc.br/index.php/motrivivencia/article/view/80116/47220>. Acesso em: 12 out. 2023.",
     "options": [
@@ -26853,7 +26853,7 @@
     "source": "Português - IFMT · parte 1 · COCP IFMT - Adm (IF MT)/IF MT/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2843695",
     "referenceText": "Texto Brasileiros têm deficiência ou insuficiência de vitamina D, até no verão Uma pesquisa brasileira que acaba de ser publicada pelo jornal científico inglês Journal of the Endocrine Society comprovou que, mesmo em pleno verão, uma parcelasignificativa dos brasileiros apresenta insuficiência ou deficiência de vitamina D. Os índices foram de 50,7% e 15,3%, respectivamente, no grupo de 1.029 participantes. O estudo, chamado Epidemiology of Vitamin D (EpiVida) - A Study of Vitamin D Status Among Healthy Adults in Brazil, foi produzido por pesquisadores das UniversidadesFederais do Paraná e de São Paulo, Fundação Oswaldo Cruz e Obras Sociais Irmã Dulce. A amostra foi composta por adultos saudáveis, entre 18 e 45 anos, de São Paulo(SP), Curitiba (PR) e Salvador (BA). O objetivo foi estimar a prevalência da vitamina D em associação a estilo de vida, demografia socioeconômica e hábitos culturais nestas três regiões metropolitanas. Paraisso, foram avaliadas amostras de sangue e considerados dados de um questionário respondido pelos participantes. A constatação de deficiência ou insuficiência de vitamina D em pleno verão — período de maior exposição solar e que favoreceria a síntese deste micronutriente peloorganismo — é explicada por diversos fatores. “Variáveis como genética, demografia e estilo de vida influenciam a produção de vitamina D. Os hábitos recém-adquiridos durante a pandemia da COVID-19, que levoumaioria da rotina da população para dentro de casa, por exemplo, também podem contribuir para este quadro”, esclarece Marise Lazaretti Castro, endocrinologista, livre-docente, professora-adjunta de endocrinologia e chefe do setor de osteometabolismo da Escola Paulista de Medicina (Unifesp). Em São Paulo, 20% dos participantes apresentaram deficiência de vitamina D e em mais da metade (52%) foi constatada insuficiência desta vitamina. Em Curitiba, osÍndices são parecidos: 12% e 52% respectivamente. Já em Salvador, os índices de deficiência e insuficiência de vitamina D foram, respectivamente, de 12% e 47% dototal de participantes locais do estudo. Já no inverno, a situação pode agravar em mais 10%, apontam os pesquisadores. O estudo considerou como deficiência de vitamina D os níveis abaixo de 20ng/ml. Já a insuficiência do micronutriente foi considerada para níveis abaixo 30ng/ml. Além da falta de atividades ao ar livre, a pesquisa constatou que a deficiência de vitamina D teve grandes correlações com a obesidade e o sobrepeso da populaçãobrasileira. Por outro lado, os pesquisadores afirmam que a exposição solar, atividades físicas e o uso de suplementos podem ajudar significativamente na reposição do hormônio. “Asuplementação orientada por um profissional, por exemplo, diminui 60% de chances de os pacientes terem deficiência de vitamina D, de acordo com o estudo”, ressalta oespecialista. Outro resultado da pesquisa se refere à questão étnico-racial. Embora Salvador tenha maior percentual de negros que Curitiba, a média dos níveis de vitamina D dosparticipantes não foram diferentes entre si, segundo o estudo. “Esses achados sugerem que a maior abundância de radiação solar existente em Salvador, devido a sua maior proximidade com o Equador, pode ultrapassar a barreira damelanina na pele para produzir vitamina D. Então, a pele negra seria um fator de risco para deficiência de vitamina D apenas em regiões com radiação solar limitada”,afirmam os pesquisadores. Disponível em: https://www.correiobraziliense.com.br/ciencia-e-saude/2023/03/5079602-brasileiros-tem-deficiencia-ou-insuficiencia-de-vitamina-d-ate-no-verao.html. Acesso em: 14 mar. 2023, Acerca das informações contidas",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "portuguese",
     "prompt": "no texto, só não podemos afirmar que:",
     "options": [
@@ -27312,7 +27312,7 @@
     "source": "Português - IFMT · parte 1 · COCP IFMT - PEBTT (IF MT)/IF MT/Administração/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3076033",
     "referenceText": "TEXTO II Cinderela Aparecida Abracadabra, vou rogar uma pragaTira esse vestido michoJoga o avental no lixoDá-lhe, CinderelaMostra com quantas belas se faz uma feraA bordo de um tomara-que-caiaÀ la Sarita MontielUm rabo-de-saiaBrinco, broche, pulseira, colar e anelAbracadabra, não mexe com a cabraAdeus, escrava do tanqueAlô, baronesa punkDá-lhe, CinderelaMostra com quantas feras se faz uma belaQue tal uma princesa chiqueCaroline, Lady DiOu a filha do caciqueVenerável, honorável gueixa chá-de-XangaiCida, Cida, CidaCinderela Aparecida[...] Rita Lee Disponível em: https://www.letras.mus.br/rita-lee/277591/. Acesso em: 17 fev. 2023.",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "portuguese",
     "prompt": "Sobre o Texto II, só NÃO podemos afirmar que:",
     "options": [
@@ -27414,7 +27414,7 @@
     "source": "Português - IFMT · parte 1 · COCP IFMT - Adm (IF MT)/IF MT/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2188959",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "portuguese",
     "prompt": "Texto O Autorretrato No retrato que me faço- traço a traço -às vezes me pinto nuvem,às vezes me pinto árvore... as vezes me pinto coisasde que nem há mais lembrança...ou coisas que não existem mas que um dia existirão... e, desta lida, em que busco- pouco a pouco -minha eterna semelhança, no final, que restará?Um desenho de criança...Corrigido por um louco! Mário Quintana, em Apontamentos de História Sobrenatural. Disponível em: http://www.citador.pt/poemas/o-autoretrato-mario-quintana. Acesso em: 10 fev. 2022. Sobre o poema, só NÃO podemos afirmar que:",
     "options": [
@@ -27465,7 +27465,7 @@
     "source": "Português - IFMT · parte 1 · COCP IFMT - Adm (IF MT)/IF MT/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2188963",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "portuguese",
     "prompt": "Texto O Autorretrato No retrato que me faço- traço a traço -às vezes me pinto nuvem,às vezes me pinto árvore... as vezes me pinto coisasde que nem há mais lembrança...ou coisas que não existem mas que um dia existirão... e, desta lida, em que busco- pouco a pouco -minha eterna semelhança, no final, que restará?Um desenho de criança...Corrigido por um louco! Mário Quintana, em Apontamentos de História Sobrenatural. Disponível em: http://www.citador.pt/poemas/o-autoretrato-mario-quintana. Acesso em: 10 fev. 2022. No poema \"O Autorretrato\", de Mário Quintana, o eu lírico tenta encontrar sua perfeita identidade em um autorretrato, em que:",
     "options": [
@@ -28230,7 +28230,7 @@
     "source": "Português - IFMT · parte 2 · COCP IFMT - Ass Alu (IF MT)/IF MT/2019",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/1089508",
     "referenceText": "Disponível em: http://paulo-matheus.blogspot.com/2012/08/30-tirinhas-mafalda.html",
-    "requiresSource": false,
+    "requiresSource": true,
     "examBlock": "portuguese",
     "prompt": "Com base no Texto III, assinale a opção correta quanto à interpretação desse texto verbo-visual:",
     "options": [
@@ -29449,7 +29449,7 @@
     "source": "Microsoft Support · Animações e transições",
     "sourceUrl": "https://support.microsoft.com/pt-br/powerpoint/the-difference-between-animations-and-transitions",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Uma professora quer fazer uma imagem aparecer dentro de um slide e aplicar um efeito na passagem para o próximo slide. No PowerPoint, ela deve usar, respectivamente:",
     "options": [
       "Transição e animação.",
@@ -30411,7 +30411,7 @@
     "source": "Guedes (2009) · síntese dos diagramas",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Assinale a alternativa que representa somente diagramas de interação da Linguagem UML:",
     "options": [
       "Diagrama de Atividades, Diagrama de Estados, Diagrama de Perfil.",
@@ -30448,7 +30448,7 @@
     "source": "Guedes (2009) · síntese dos diagramas",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Assinale a alternativa que NÃO representa um tipo de diagrama estrutural da Linguagem UML:",
     "options": [
       "Diagrama de Classes.",
@@ -30781,7 +30781,7 @@
     "source": "Guedes (2009) · seção 1.4.15",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Qual diagrama comportamental NÃO pertence à subdivisão de diagramas de interação?",
     "options": [
       "Sequência.",
@@ -30818,7 +30818,7 @@
     "source": "Guedes (2009) · seção 1.4.5",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "O que distingue principalmente o diagrama de sequência?",
     "options": [
       "A distribuição física dos componentes em servidores.",
@@ -30855,7 +30855,7 @@
     "source": "Guedes (2009) · seções 1.4.5 e 1.4.6",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Em comparação com o diagrama de sequência, o diagrama de comunicação concentra-se principalmente em:",
     "options": [
       "Como os elementos estão vinculados e quais mensagens trocam.",
@@ -30892,7 +30892,7 @@
     "source": "Guedes (2009) · cap. 8",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Em um diagrama de comunicação, como a ordem das mensagens costuma ser representada?",
     "options": [
       "Pela posição vertical das lifelines.",
@@ -30929,7 +30929,7 @@
     "source": "Guedes (2009) · seção 8.7",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "No exemplo de emissão de extrato, o asterisco diante de consultarMovimento(Date) indica:",
     "options": [
       "Criação de uma nova lifeline.",
@@ -31003,7 +31003,7 @@
     "source": "Guedes (2009) · seção 1.4.13",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "O diagrama de temporização é especialmente adequado para representar:",
     "options": [
       "Apenas a estrutura lógica de classes.",
@@ -33112,7 +33112,7 @@
     "source": "Operação",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Depois da troca de servidor, qual ação é recomendada?",
     "options": [
       "Apagar o backup imediatamente.",
@@ -34888,7 +34888,7 @@
     "source": "Busca, ordenação, AGM e caminhos mínimos",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Qual estrutura apoia eficientemente Kruskal?",
     "options": [
       "Pilha apenas",
@@ -35110,7 +35110,7 @@
     "source": "Busca, ordenação, AGM e caminhos mínimos",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "No grafo não dirigido da figura, quais vértices são adjacentes a A?",
     "options": [
       "Somente B",
@@ -35400,7 +35400,7 @@
     "source": "Busca, ordenação, AGM e caminhos mínimos",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Qual estrutura lista, para cada vértice, apenas os seus vizinhos?",
     "options": [
       "Lista de adjacências",
@@ -35659,7 +35659,7 @@
     "source": "Equivalência lógica e fluxo de controle",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Qual técnica demonstra que duas versões preservam o comportamento?",
     "options": [
       "Comparar apenas o número de linhas",
@@ -36510,7 +36510,7 @@
     "source": "Modelo Entidade-Relacionamento",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Em relação ao MER, podemos afirmar que: I - Baseia-se em uma percepção do mundo real, retratando uma coleção de conceitos ou objetos com características e relacionamentos entre si. II - Retrata um conjunto de entidades que possuem características denominadas, métodos as quais interferem no seu modo de comportamento, frente a alterações e interações com outras entidades do banco. III - Pode ser expresso graficamente através do diagrama E-R, tendo como componentes retângulos, elipses, losangos e linhas. É correto o que se afirma em:",
     "options": [
       "I e II, apenas.",
@@ -36732,7 +36732,7 @@
     "source": "Consultas SQL",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Um desenvolvedor está desenvolvendo um sistema web utilizando PHP e MySQL para avaliar os serviços prestados por uma hamburgueria. O banco de dados é chamado de “DBAvalia” e é composto por uma tabela chamada “avaliacao”, com as colunas “id, servico e nota”. Para os testes do sistema, o desenvolvedor fez registros hipotéticos para 3 serviços: atendimento, comida e ambiente, com a devida avaliação, sendo atribuída uma nota. Assinale a alternativa que representa a forma correta para o desenvolvedor fazer uma consulta SQL para contar quantos registros foram realizados para o serviço “ambiente”.",
     "options": [
       "SELECT SUM(nota) as soma FROM avaliacao WHERE servico = “ambiente”",
@@ -40057,7 +40057,7 @@
     "source": "CEBRASPE (CESPE) - Proc (PGE ES)/PGE ES/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3684835",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A Lei Geral de Proteção de Dados Pessoais (LGPD) dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais, por pessoa natural ou por pessoa jurídica de direito público ou privado, com o objetivo de proteger",
     "options": [
       "o respeito à privacidade e à inviolabilidade da intimidade, da honra e da imagem.",
@@ -40094,7 +40094,7 @@
     "source": "CEBRASPE (CESPE) - AECE (TCE MS)/TCE MS/Tecnologia da Informação/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3684958",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Com base na Lei Geral de Proteção de Dados Pessoais (Lei n.º 13.709/2018), a disciplina da proteção de dados pessoais tem como fundamentos   I o desenvolvimento econômico e tecnológico e a inovação.   II a proteção da autodeterminação informativa.   III a inviolabilidade da intimidade, da honra e da imagem.   IV a liberdade de expressão, de informação, de comunicação e de opinião.   Assinale a opção correta .",
     "options": [
       "Apenas os itens I, II e III estão certos.",
@@ -40131,7 +40131,7 @@
     "source": "CEBRASPE (CESPE) - Ana Sau (Pref Boa Vista)/Pref Boa Vista/Enfermeiro/Intensivista Pediátrico/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3698678",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considerado o conjunto de leis e normas que se associam ao prontuário do paciente e a suas informações pessoais associadas à saúde, assinale a opção correta.",
     "options": [
       "É vedada, em qualquer hipótese, a comunicação ou o uso compartilhado, entre controladores, de dados pessoais sensíveis referentes à saúde com o objetivo de obter vantagem econômica.",
@@ -43765,7 +43765,7 @@
     "source": "CESGRANRIO - Tec Ban III (BANESE)/BANESE/Informática/Desenvolvimento/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3346871",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "O diagrama ER, a seguir, apresenta uma generalização exclusiva e parcial.     Os conjuntos A e B fazem parte de um banco de dados relacional cujo esquema se baseia no diagrama acima.  A={x 1 , x 2 , x 3 , x 4 , x 5 , x 6 }  B={x 2 , x 4 , x 6 }    Qual conjunto, relativo à entidade C, completa esse banco de dados, sem violar as propriedades da generalização apresentada?",
     "options": [
       "C={   }",
@@ -43876,7 +43876,7 @@
     "source": "CESGRANRIO - Tec Ban III (BANESE)/BANESE/Informática/Desenvolvimento/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3347155",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Durante o mapeamento do Modelo Entidade-Relacionamento (MER) para o modelo relacional de dados, aplicam-se regras específicas para transformar cada componente conceitual em elementos do modelo relacional. Considere as seguintes situações:  • Autorrelacionamentos - quando uma entidade se relaciona consigo mesma. • Hierarquias IS-A - generalização/especialização de entidades. • Relacionamentos 1:N - em que cada instância de uma entidade do lado “1” pode associar-se a várias instâncias da entidade do lado “N”, mas cada instância do lado “N” está associada a exatamente uma do lado “1”. • Relacionamentos N:N - em que cada instância de uma entidade pode relacionar-se com várias instâncias da outra e vice-versa. • Entidades com atributos multivalorados - em que um atributo pode ter múltiplos valores para uma mesma instância.   Nesse contexto, as transformações recomendadas para essas cinco situações são as seguintes:",
     "options": [
       "Autorrelacionamentos - crie uma nova tabela separada para representar os relacionamentos entre as instâncias da entidade. Hierarquias IS-A - mapeie toda a hierarquia em uma única tabela que contenha todos os atributos, com uma coluna discriminadora, mesmo que resulte em muitos valores nulos. Relacionamentos 1:N - incorpore a chave da entidade do lado “N” na tabela da entidade do lado “1”. Relacionamentos N:N - adicione colunas extras em cada tabela original para representar os relacionamentos. Atributos multivalorados - represente os valores na mesma tabela da entidade, separando-os por vírgulas.",
@@ -43950,7 +43950,7 @@
     "source": "CEBRASPE (CESPE) - Sup Ped (UNIVESP)/UNIVESP/Computação e Áreas Afins/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3429757",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A figura precedente é um DER, que representa a modelagem de uma clínica médica na qual um mesmo médico pode realizar consulta com vários pacientes, sendo possível que o mesmo paciente se consulte com o mesmo médico mais de uma vez.   A partir das informações apresentadas, assinale a opção correta.",
     "options": [
       "Pode haver várias consultas entre um MÉDICO e determinado PACIENTE , mas, se for este o caso, o atributo data/hora deve ser movido para PACIENTE , de modo que seja possível distinguir consultas dos mesmos paciente e médico.",
@@ -44135,7 +44135,7 @@
     "source": "CESGRANRIO - TPP (IPEA)/IPEA/Infraestrutura de Tecnologia da Informação/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2780915",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Em um diagrama de entidades e relacionamentos (DER), as entidades são representadas por meio de retângulos, e os relacionamentos, por meio de losangos. No DER, um retângulo representa um conjunto de entidades. Tanto as entidades quanto os relacionamentos podem possuir atributos. Todas as entidades em um DER precisam possuir um atributo especial, denominado atributo identificador. Nesse contexto, considere que uma entidade PESQUISADOR, em um DER, representa um conjunto de pessoas que são pesquisadores.   Nesse caso, o atributo identificador da entidade PESQUISADOR",
     "options": [
       "informa a versão do DER.",
@@ -44209,7 +44209,7 @@
     "source": "CESGRANRIO - SPF (CNU)/CNU/Bloco Temático 2/Tecnologia, Dados e Informação/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3038281",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Os conjuntos A, B, C, D e E a seguir fazem parte de um banco de dados.   A  = { x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12 } B = { x1, x2, x3, x4, x5, x6, x7, x8 } C = { x8, x9, x10 } D = { x1, x2, x3, x4, x5 } E = { x6, x7, x8 }   Admita que esses conjuntos correspondam às entidades de mesmo nome de um diagrama Entidade-Relacionamento (E-R).   Com qual diagrama E-R esse banco de dados é compatível?",
     "options": [
       "[Figura da alternativa A]",
@@ -44246,7 +44246,7 @@
     "source": "CESGRANRIO - Ana (BNDES)/BNDES/Análise de Sistemas - Desenvolvimento/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3117554",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "O Diagrama de Entidades e Relacionamentos (DER) é uma ferramenta bastante conhecida e útil para a modelagem conceitual dos dados que um determinado sistema de informação deve tratar. Em particular, os relacionamentos, representados por meio de losangos no DER, são utilizados para indicar que",
     "options": [
       "atributos de uma entidade têm uma relação mais forte entre si.",
@@ -44283,7 +44283,7 @@
     "source": "CESGRANRIO - Tec Cien (BASA)/BASA/Tecnologia da Informação/\"Sem Especialidade\"/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3135438",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "O Modelo Entidade Relacionamento (MER) foi proposto por Peter Chen em 1976 com o objetivo de capturar informação semântica a respeito do mundo real e, por meio do seu diagrama (Diagrama Entidade-Relacionamento — DER), ser uma ferramenta para projeto de banco de dados.   Ao criar um DER, deve-se considerar que",
     "options": [
       "as tabelas com chave primária composta possuem uma notação especial.",
@@ -44320,7 +44320,7 @@
     "source": "CESGRANRIO - Ana Desenv (AgeRIO)/AgeRIO/Tecnologia da Informação/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2462831",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Uma empresa de turismo que opera na Web vai realizar uma grande promoção para tentar vender mais hospedagens para o próximo verão. Ela irá conceder um bônus (em reais) para a compra de passagens aéreas para todos os seus clientes que fizerem reservas para os meses de janeiro e fevereiro. A empresa resolveu criar um banco de dados especialmente para essa promoção. Nele serão registrados os clientes que fizerem pelo menos uma reserva, além de todos os hotéis e companhias aéreas com os quais a empresa de turismo opera. No modelo conceitual desse banco de dados, os participantes serão representados pelas entidades a seguir. As regras para a concessão dos bônus são as seguintes: • Só participará da promoção o cliente que fizer, pelo menos, uma reserva até a data de término da promoção; • Um cliente poderá fazer reservas em vários hotéis; • Uma reserva será associada a, pelo menos, uma companhia aérea; • O banco de dados terá de ser capaz de informar a qual reserva um bônus está associado; • O bônus de uma reserva poderá ser usado em qualquer uma das companhias aéreas associadas à reserva; • Alguns hotéis e algumas companhias aéreas, embora presentes no banco de dados, poderão ficar ausentes da promoção.   Qual modelo E-R representa adequadamente as regras de negócio dessa promoção?",
     "options": [
       "[Figura da alternativa A]",
@@ -44357,7 +44357,7 @@
     "source": "CEBRASPE (CESPE) - AIS (EMPREL)/EMPREL/Banco de Dados/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2575680",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Com relação ao modelo entidade-relacionamento (MER) ilustrado na figura precedente, assinale a opção correta .",
     "options": [
       "Um treinamento pode ser solicitado por no máximo um cliente.",
@@ -44468,7 +44468,7 @@
     "source": "CESGRANRIO - PTNM (TRANSPETRO)/TRANSPETRO/Informática/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2690881",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Na Figura a seguir, é mostrado um diagrama E-R.   Admita que os conjuntos a seguir façam parte de um banco de dados cujo esquema foi gerado a partir do modelo E-R acima.   X = { x1, x2, x3 } Y = { y1, y2, y3, y4 } Z = { z1, z2, z3 }   NÃO violam as restrições de cardinalidade presentes nas respectivas relações do modelo E-R acima os seguintes conjuntos U e T:",
     "options": [
       "U = { (x1, y2), (x2, y2), (x3, y2) } T = { (y1, z1), (y2, z1), (y3, z1), (y4, z1) }",
@@ -44505,7 +44505,7 @@
     "source": "CESGRANRIO - PTNS (TRANSPETRO)/TRANSPETRO/Análise de Sistemas/Infraestrutura/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2694720",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Durante o desenvolvimento de um banco de dados, é possível construir uma representação gráfica de uma estrutura de dados, ilustrando as entidades, seus atributos e os relacionamentos entre elas. Tal representação gráfica é a(o)",
     "options": [
       "auditoria de dados",
@@ -44542,7 +44542,7 @@
     "source": "CESGRANRIO - PTNS (TRANSPETRO)/TRANSPETRO/Análise de Sistemas/Processos de Negócios/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2695281",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Sejam A, B e D conjuntos não vazios, diferentes entre si e que atendam às seguintes propriedades:   1. A &#x2282; D ' role=presentation> A ⊂ D A ⊂ D 2. B &#x2282; D ' role=presentation> B ⊂ D B ⊂ D 3. B &#x2229; A &#x2260; &#x2205; ' role=presentation> B ∩ A ≠ ∅ B ∩ A ≠ ∅ 4. B &#x222A; A &#x2260; D ' role=presentation> B ∪ A ≠ D B ∪ A ≠ D   Admita, ainda, que esses conjuntos correspondam às entidades de mesmo nome de um diagrama Entidade-Relaciona- mento (E-R). Qual diagrama E-R satisfaz todas as propriedades apresentadas?",
     "options": [
       "[Figura da alternativa A]",
@@ -44579,7 +44579,7 @@
     "source": "CESGRANRIO - PTNS (TRANSPETRO)/TRANSPETRO/Análise de Sistemas/SAP - Finanças e Contabilidade/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2695422",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Uma agência reguladora é composta por três categorias de funcionários: analistas, auditores e inspetores. De modo geral, um funcionário deve pertencer a uma única categoria, porém alguns auditores também exercem a função de inspetor. Qual diagrama E-R retrata, fidedignamente, a estrutura administrativa dessa agência reguladora?",
     "options": [
       "[Figura da alternativa A]",
@@ -44653,7 +44653,7 @@
     "source": "CESGRANRIO - Tec Cien (BASA)/BASA/Tecnologia da Informação/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/1927614",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "No banco de dados de um banco comercial, há uma tabela TRANSFERENCIA onde são registrados a data, a hora, o minuto e o segundo da transferência, além do valor transferido entre duas contas-correntes desse banco. Essa tabela tem, adicionalmente, duas chaves estrangeiras (FKs) que apontam para a tabela CONTA-CORRENTE. Considere que há, no máximo, uma transferência por segundo entre duas contas-correntes.   A chave primária (PK) da tabela TRANSFERENCIA (data, hora, minuto, segundo, valor, conta-origem, conta-destino) deve ser formada exatamente",
     "options": [
       "pelas duas FKs",
@@ -44690,7 +44690,7 @@
     "source": "CESGRANRIO - Tec Cien (BASA)/BASA/Tecnologia da Informação/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/1928229",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Um banco de dados relacional é composto pelas seguintes tabelas: CREATE TABLE A (      a1 TEXT NOT NULL,      a2 TEXT NOT NULL,      a3 TEXT NOT NULL,      PRIMARY KEY (a1,a2)); CREATE TABLE B (       b1 TEXT NOT NULL,       b2 TEXT NOT NULL,       b3 TEXT NOT NULL,       PRIMARY KEY (b1)); CREATE TABLE R (       a1 TEXT NOT NULL,       a2 TEXT NOT NULL,       b1 TEXT NOT NULL,       PRIMARY KEY (a1,a2),       FOREIGN KEY (a1,a2)            REFERENCES A (a1,a2),        FOREIGN KEY (b1)             REFERENCES B (b1)); Com o intuito de simplificar, considere que todas as colunas de todas as tabelas são do tipo TEXT.   O modelo relacional acima foi obtido por meio da aplicação de regras de transformação sobre um modelo E-R, de modo a preservar a semântica deste. Qual modelo E-R deu origem a essas tabelas?",
     "options": [
       "[Figura da alternativa A]",
@@ -44727,7 +44727,7 @@
     "source": "CESGRANRIO - PNS (ELETRONUCLEAR)/ELETRONUCLEAR/Analista de Sistemas/Aplicações e Segurança de TIC/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2041333",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A Figura a seguir exibe um diagrama ER, que contém uma generalização total e exclusiva.     Um banco de dados relacional, cujo esquema tem por base o modelo conceitual acima, é composto pelos conjuntos A, B, C, D, E, R e T. Uma parte desse banco de dados é exibida a seguir.   A = { a1, a2, a3, a4, a5, a6 } D = { d1, d2 } E = { e1, e2 } R = { (a1, d1), (a1, d2), (a2, d1), (a2, d2), (a4, d2) } T = { (a5, e1), (a6, e2) }   Para que esse banco de dados seja coerente com as relações definidas no modelo ER acima, o conjunto B tem de ser formado pelos elementos",
     "options": [
       "{   }",
@@ -44838,7 +44838,7 @@
     "source": "CEBRASPE (CESPE) - AFE (SEFAZ PR)/SEFAZ PR/Profissional de Tecnologia da Informação/2026",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3877566",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Modelagem de banco de dados é o processo de criar esquema que defina como os dados serão estruturados, organizados e relacionados em um banco de dados, para garantir integridade, consistência e eficiência do sistema.   No contexto da modelagem relacional, uma dependência funcional entre atributos de uma tabela indica que",
     "options": [
       "todos os atributos da tabela são chaves primárias.",
@@ -44875,7 +44875,7 @@
     "source": "CESGRANRIO - Tec Ban III (BANESE)/BANESE/Informática/Desenvolvimento/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3347101",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "No modelo de dados relacional, as tuplas (ou linhas) em uma relação (ou tabela) não possuem ordem definida; entretanto, os atributos (ou colunas) possuem uma ordem arbitrária determinada por seu esquema. Nesse modelo, a característica descrita",
     "options": [
       "implica que a reordenação das colunas não altera o significado dos dados em uma relação.",
@@ -44949,7 +44949,7 @@
     "source": "CEBRASPE (CESPE) - Tec TI (BANRISUL)/BANRISUL/Administração de Banco de Dados/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3455699",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "No modelo relacional de banco de dados, diferentes tipos de chaves são utilizados para garantir a integridade e a unicidade das tuplas nas tabelas. Nesse modelo, superchave é",
     "options": [
       "o único atributo obrigatório em toda tabela relacional, o qual não pode conter valores nulos.",
@@ -45060,7 +45060,7 @@
     "source": "CEBRASPE (CESPE) - AFT (SEFAZ SE)/SEFAZ SE/Geral/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3639410",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Os bancos de dados relacionais",
     "options": [
       "têm estrutura lógica, com dados organizados em tabelas interligadas por chaves primárias e estrangeiras, e suporte à integridade referencial definida no próprio sistema gerenciador de banco de dados (SGBD).",
@@ -45097,7 +45097,7 @@
     "source": "CEBRASPE (CESPE) - AFT (SEFAZ SE)/SEFAZ SE/Geral/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3639419",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considerando as características e funções de uma tabela em um banco de dados relacional, assinale a opção correta .",
     "options": [
       "Uma tabela deve ser indexada automaticamente para todas as consultas, a fim de se garantir performance sem necessidade de intervenção do administrador do banco de dados.",
@@ -45134,7 +45134,7 @@
     "source": "CEBRASPE (CESPE) - AFT (SEFAZ SE)/SEFAZ SE/Geral/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3639431",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Uma chave estrangeira ( foreign key ) de um banco de dados relacional",
     "options": [
       "representa um ou mais campos que, embora possam ser utilizados como chave primária, não foram escolhidos como tal.",
@@ -45319,7 +45319,7 @@
     "source": "CESGRANRIO - TBN (CEF)/CEF/Tecnologia da Informação/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3102810",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "O Modelo Relacional de Dados utiliza conceitos como tabelas, atributos, linhas, chave primária e chave estrangeira. Em particular, nesse modelo, todo atributo de tabela possui um domínio que define",
     "options": [
       "se o atributo faz parte de uma chave primária.",
@@ -45356,7 +45356,7 @@
     "source": "CESGRANRIO - Ana (BNDES)/BNDES/Análise de Sistemas - Desenvolvimento/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3117552",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considere que uma tabela, definida segundo o modelo relacional de dados, possui dados de pessoas físicas (chave primária: CPF).   PESSOA ( CPF, nome, data-nascimento, email)   O atributo RG (número do Registro Geral, principal documento de identificação de pessoas físicas no Brasil) precisa ser adicionado a essa tabela. Diante disso, uma vez adicionado o atributo RG, verifica-se que",
     "options": [
       "a chave primária da tabela passa a ser composta por CPF e RG.",
@@ -45430,7 +45430,7 @@
     "source": "CESGRANRIO - Ana (BNDES)/BNDES/Análise de Sistemas - Desenvolvimento/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3117566",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "No momento da criação de uma tabela em um Sistema Gerenciador de Banco de Dados (SGBD), por meio do comando CREATE TABLE, definem-se regras para o controle de integridade e para a garantia de qualidade dos dados dessa tabela. Considere que W e Y são duas tabelas. A é um atributo de W, e B é um atributo de Y. Foi criada corretamente uma cláusula CHECK no atributo A. Essa cláusula permite verificar se o atributo A",
     "options": [
       "tem valor único em todas as linhas da tabela W.",
@@ -45467,7 +45467,7 @@
     "source": "CESGRANRIO - Ana (BNDES)/BNDES/Ciência de Dados/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3118353",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "O modelo relacional de dados é amplamente utilizado em bancos de dados. A organização de dados em tabelas (relações), com suas respectivas linhas (tuplas) e colunas (atributos), é de fácil compreensão. Os Sistemas Gerenciadores de Bancos de Dados Relacionais (SGBDR) tornam possível persistir dados em tabelas com qualidade e recuperar esses mesmos dados de forma rápida e eficiente. Segundo o modelo relacional de dados, uma tabela pode ter",
     "options": [
       "chaves estrangeiras que admitem valor nulo.",
@@ -45504,7 +45504,7 @@
     "source": "CESGRANRIO - Tec Cien (BASA)/BASA/Tecnologia da Informação/\"Sem Especialidade\"/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3135883",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Em uma tabela definida e organizada segundo o Modelo Relacional de Dados podem ser definidas várias chaves. A respeito dessas chaves, verifica-se que",
     "options": [
       "a ausência de valor em uma chave estrangeira é sempre indicada por um número negativo.",
@@ -45613,7 +45613,7 @@
     "source": "CEBRASPE (CESPE) - Ana Tec II (SEBRAE)/SEBRAE/Banco de Dados/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3166507",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Em bancos de dados, o conceito de domínio em configuração de dados refere-se",
     "options": [
       "à técnica utilizada para normalizar dados e eliminar redundâncias em tabelas relacionais.",
@@ -45649,7 +45649,7 @@
     "source": "CEBRASPE (CESPE) - Ana Tec II (SEBRAE)/SEBRAE/Banco de Dados/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3166524",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Assinale a opção em que é citada a prática mais eficaz para melhorar o desempenho de um banco de dados relacional em um ambiente de produção.",
     "options": [
       "realizar uma análise regular dos planos de execução das consultas mais frequentes para identificar e otimizar gargalos de desempenho",
@@ -45722,7 +45722,7 @@
     "source": "CEBRASPE (CESPE) - Ana (MPE RO)/MPE RO/Sistemas/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2591120",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Na modelagem de dados, o objeto que representa uma entidade do mundo real e contém atributos para descrever suas características é",
     "options": [
       "a função.",
@@ -45981,7 +45981,7 @@
     "source": "CEBRASPE (CESPE) - ACE (TCE-MG)/TCE MG/Ciência da Computação/2026",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3815589",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considerando os princípios das formas normais no modelo relacional, assinale a opção correta a respeito da terceira forma normal (3FN).",
     "options": [
       "Uma relação estará na 3FN somente se não houver a presença de atributos multivalorados.",
@@ -46018,7 +46018,7 @@
     "source": "CESGRANRIO - Tec Ban III (BANESE)/BANESE/Informática/Desenvolvimento/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3347120",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A tabela TAB, apresentada a seguir, armazena informações sobre agências bancárias:   NomeAgencia NumAgencia Conta IdCliente Agencia A 100 001 123456789 Agencia A 100 002 987654321 Agencia B 200 001 111222333 Agencia B 200 002 444555666   Considere que (NumAgencia, Conta) é a única chave candidata para TAB e, também, que as seguintes dependências funcionais (DF) são válidas para TAB:   NumAgencia → NomeAgencia (NumAgencia, Conta) → IdCliente    No cenário apresentado, a tabela TAB não está na segunda forma normal (2FN), pois",
     "options": [
       "TAB aceita atributos multivalorados.",
@@ -46055,7 +46055,7 @@
     "source": "CEBRASPE (CESPE) - Tec TI (BANRISUL)/BANRISUL/Administração de Banco de Dados/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3455700",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Em um banco de dados que armazena informações sobre pedidos de clientes, uma tabela foi criada inicialmente com as seguintes colunas: PedidoID, ClienteNome, ClienteTelefone, ProdutoID, ProdutoNome, Quantidade e PreçoUnitario. Essa estrutura apresenta redundâncias e possíveis anomalias. Nessa situação, a normalização tem como objetivo",
     "options": [
       "garantir que todas as tabelas possuam apenas uma chave primária e nenhuma chave estrangeira.",
@@ -46166,7 +46166,7 @@
     "source": "CEBRASPE (CESPE) - Tec TI (BANRISUL)/BANRISUL/Administração de Banco de Dados/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3455758",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Uma empresa financeira armazena os dados de seus empréstimos em uma única tabela, nomeada como Emprestimos, com a seguinte estrutura simplificada: Emprestimos (CPF_Cliente, Nome_Cliente, Codigo_Emprestimo, Data_Emprestimo, Valor, Nome_Agente, Email_Agente). Durante as operações do sistema, observou-se que, para atualizar o nome de um agente de crédito, seria preciso modificar várias linhas, o que geraria inconsistência caso alguma linha não fosse atualizada corretamente. Nessa situação hipotética, considerados os conceitos de normalização, o problema descrito está relacionado",
     "options": [
       "a atributos não atômicos, sendo resolvido ao se aplicar a 1FN.",
@@ -46277,7 +46277,7 @@
     "source": "CEBRASPE (CESPE) - AECE (TCE MS)/TCE MS/Tecnologia da Informação/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3685179",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Quando toda coluna não-chave de uma tabela depende diretamente da chave primária, considera-se que essa tabela está, no mínimo, na",
     "options": [
       "1.ª forma normal.",
@@ -46314,7 +46314,7 @@
     "source": "CEBRASPE (CESPE) - AECE (TCE MS)/TCE MS/Tecnologia da Informação/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3685180",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "O principal objetivo da 5.ª forma normal é a",
     "options": [
       "eliminação de dependências parciais.",
@@ -46351,7 +46351,7 @@
     "source": "CESGRANRIO - TPP (IPEA)/IPEA/Infraestrutura de Tecnologia da Informação/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2780898",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A tabela PESSOA, criada segundo os conceitos do Modelo Relacional para a realização de estudos na área da saúde, possui os seguintes atributos:   PESSOA (CPF, nome, sexo, idade, RG, renda, município-residência, UF-residência)   A chave primária dessa tabela é o atributo CPF.   Nesse contexto, considere as seguintes dependências funcionais (DF) definidas para alguns dos atributos da tabela   PESSOA: CPF → nome CPF → renda CPF → município-residência Município-residência → UF-residência RG → nome   Considerando-se a definição da primeira, da segunda e da terceira formas normais, 1FN, 2FN e 3FN, respectivamente, a tabela PESSOA NÃO está na",
     "options": [
       "1FN, devido à DF CPF → nome",
@@ -46388,7 +46388,7 @@
     "source": "CEBRASPE (CESPE) - TJ TST/TST/Apoio Especializado/Programação/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2791010",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Em normalização de bancos de dados, a forma em que a tabela não possui atributos transitivamente dependentes da chave primária e em que não há colunas dependentes de outras colunas que não são chaves é denominada",
     "options": [
       "primeira forma normal.",
@@ -46499,7 +46499,7 @@
     "source": "CESGRANRIO - Tec Cien (BASA)/BASA/Tecnologia da Informação/\"Sem Especialidade\"/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3135435",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Tabelas criadas segundo o Modelo Relacional de Dados podem ter a qualidade de seus esquemas avaliada por meio de critérios conhecidos como formas normais. Com base nas chaves primárias (PKs) definidas e nas dependências funcionais (DFs) conhecidas, é possível realizar essa avaliação. Nesse contexto, considere as seguintes tabelas, suas PKs (atributos sublinhados) e suas DFs:   Agencia ( codAgencia , bairro) Cliente ( CPF , nome, endereco) ContaCorrente ( CPF, codAgencia, codConta , saldo, telefone)   CPF → endereco CPF → nome codAgencia → bairro codAgencia → telefone CPF, codAgencia, codConta → saldo   Admita como critérios apenas as três formas normais mais simples:   • primeira forma normal ou 1FN; • segunda forma normal ou 2FN; e • terceira forma normal ou 3FN.   Considerando-se as tabelas apresentadas e esses três critérios, verifica-se que a tabela",
     "options": [
       "Agencia não está na 2FN.",
@@ -46536,7 +46536,7 @@
     "source": "CEBRASPE (CESPE) - Ana Reg (AGER MT)/AGER MT/Ciências da Computação e Sistemas de Informação/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2450382",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Uma tabela de banco de dados que não possui dependências funcionais parciais está na",
     "options": [
       "primeira forma normal (1FN).",
@@ -46573,7 +46573,7 @@
     "source": "CESGRANRIO - PTNS (TRANSPETRO)/TRANSPETRO/Análise de Sistemas/Processos de Negócios/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2695323",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A normalização é um processo muito utilizado na organização de bancos de dados. A esse respeito, o objetivo principal da normalização das estruturas de dados em bancos de dados relacionais é",
     "options": [
       "eliminar as duplicações de dados e garantir que cada informação seja armazenada em uma única tabela.",
@@ -46610,7 +46610,7 @@
     "source": "CEBRASPE (CESPE) - ADP (DPE RO)/DPE RO/Redes e Comunicação de Dados/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/1916045",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Em um modelo de dados, quando todas as colunas não chave de uma tabela dependem da chave primária, a tabela está na",
     "options": [
       "primeira forma normal (1FN).",
@@ -46647,7 +46647,7 @@
     "source": "CESGRANRIO - Tec Cien (BASA)/BASA/Tecnologia da Informação/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/1927609",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considere a tabela não normalizada CLIENTE-v1 (CPF, nome, endereço, cidade, UF, telefone, conta-corrente) que possui as seguintes características:   • a chave primária é o atributo CPF; • o atributo conta-corrente é uma chave estrangeira; • todos os atributos são determinados funcionalmente pelo CPF; • o atributo UF é determinado funcionalmente pelo atributo cidade; e • não há atributos multivalorados.   Qual forma normal foi violada e que tabelas devem ser criadas como consequência dessa violação?",
     "options": [
       "A tabela CLIENTE-v1 não está na primeira forma normal (1FN), e, portanto, devem ser criadas as tabelas CLIENTE-v2 (CPF, nome, endereço, cidade, UF, conta- corrente) e CLIENTE_TELEFONE (CPF, telefone).",
@@ -46684,7 +46684,7 @@
     "source": "CEBRASPE (CESPE) - Esc Pol (PC PB)/PC PB/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2013083",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Em um banco de dados relacional, quando toda coluna não chave de uma tabela depende diretamente da chave primária diz-se que a tabela está, no mínimo, na",
     "options": [
       "primeira forma normal (1FN).",
@@ -46721,7 +46721,7 @@
     "source": "CESGRANRIO - PNS (ELETRONUCLEAR)/ELETRONUCLEAR/Analista de Sistemas/Aplicações e Segurança de TIC/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2041265",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A descrição de esquemas de bancos de dados relacionais pode ser feita por meio da seguinte notação: Uma tabela possui um nome e um conjunto de colunas, separadas por vírgulas. Em uma linha qualquer, os valores referentes às colunas são atômicos e monovalorados. Colunas que compõem a chave primária aparecem sublinhadas. A notação X → Y indica que Y depende funcionalmente de X (ou X determina Y).   Um banco de dados possui uma única tabela, cujo esquema é o seguinte:     Qual é o número mínimo de tabelas que esse banco de dados deve ter para que seu esquema atenda à 1FN e à 2FN, apenas?",
     "options": [
       "1",
@@ -46943,7 +46943,7 @@
     "source": "CEBRASPE (CESPE) - PEB (SEED SE)/SEED SE/Ensino Fundamental e Médio/Informática - Computação/2026",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3793551",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Em uma escola técnica, certo professor está analisando o desempenho dos alunos de informática com base na tabela Desempenho_Alunos , que contém os campos id, nome, turma, nota_projetos, nota_provas, faltas e ano . Esse professor deseja gerar uma lista apenas com os alunos da turma 3A , do ano de 2024 , que tenham nota média — calculada como (nota_projetos + nota_provas)/2 — acima de 8 e menos de 5 faltas.   A partir da situação apresentada, assinale a opção que corresponde ao comando SQL que atende exatamente a esse objetivo.",
     "options": [
       "SELECT nome, media FROM Desempenho_Alunos WHERE turma = '3A' AND ano = 2024 AND media > 8 AND faltas < 5;",
@@ -46980,7 +46980,7 @@
     "source": "CESGRANRIO - Arq (CEF)/CEF/2026",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3804817",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considere que, em um escritório de arquitetura, o banco de dados relacional chamado Atelier já está instalado e ativo, e uma de suas tabelas, chamada Artesaos, já foi criada e está preenchida com os campos: id, nome, especialidade e valor_hora. O coordenador desse escritório solicitou que o valor da hora (valor_hora) dos artesãos da especialidade marcenaria seja reajustado em 10% diretamente na tabela, de forma que os dados originais sejam modificados e o novo valor seja refletido nos registros existentes. Os artesãos das outras especialidades não terão seus valores hora alterados.   Qual comando SQL realiza essa operação de atualização dos dados?",
     "options": [
       "UPDATE Artesaos SET valor_hora = valor_hora * 1.10;",
@@ -47091,7 +47091,7 @@
     "source": "CEBRASPE (CESPE) - AFE (SEFAZ PR)/SEFAZ PR/Profissional de Tecnologia da Informação/2026",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3877429",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Em certa secretaria de fazenda, as tabelas contribuinte e pagamento armazenam, respectivamente, informações cadastrais e registros de pagamentos realizados pelos contribuintes, da seguinte forma.   Tabela contribuinte (id_contribuinte, nome)   Tabela pagamento (id_pagamento, id_contribuinte, valor, data_pagamento)   A administração tributária deve identificar pagamentos cujos valores estejam abaixo da média individual dos pagamentos de cada contribuinte, visando à detecção de possíveis inconsistências ou tentativas de fraude.   Considerando essa situação hipotética, assinale a opção em que é apresentada a instrução SQL por meio da qual a operação visada pela administração tributária será corretamente realizada.",
     "options": [
       "SELECT c.nome, p.valor FROM contribuinte c, pagamento p WHERE p.id_contribuinte = c.id_contribuinte AND p.valor < ALL (   SELECT AVG(valor)   FROM pagamento   GROUP BY id_contribuinte)",
@@ -47165,7 +47165,7 @@
     "source": "CESGRANRIO - Tec Ban III (BANESE)/BANESE/Informática/Desenvolvimento/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3347163",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Um funcionário da área de desenvolvimento trabalha com bancos de dados de diversas áreas de uma empresa. Ele precisa, utilizando o comando CREATE TABLE da linguagem relacional SQL, criar uma tabela em um desses bancos de dados.   A sintaxe correta desse comando é apresentada em",
     "options": [
       "CREATE TABLE Empregados (  IdEmpregado INT PRIME KEY, NomeEmpregado VARCHAR(50), Idade INT, Salario DECIMAL(10,2) );",
@@ -47202,7 +47202,7 @@
     "source": "CESGRANRIO - Tec Ban III (BANESE)/BANESE/Informática/Desenvolvimento/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3347173",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Em bancos de dados relacionais, as visões são tabelas virtuais definidas por consultas SQL que fornecem uma abstração sobre os dados das tabelas-base. Contudo, quando uma visão envolve operações de junção (join) entre duas ou mais tabelas,",
     "options": [
       "a visão deixa de existir virtualmente, pois as junções impedem a realização de qualquer operação de atualização.",
@@ -47276,7 +47276,7 @@
     "source": "CEBRASPE (CESPE) - Sup Ped (UNIVESP)/UNIVESP/Geral/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3432937",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Assinale a opção na qual é apresentada a palavra-chave SQL que retorna a tabela composta apenas pelas linhas de uma tabela A que tenham uma ou mais correspondências com linhas de uma tabela B.",
     "options": [
       "RIGHT OUTER JOIN",
@@ -47313,7 +47313,7 @@
     "source": "CEBRASPE (CESPE) - Tec TI (BANRISUL)/BANRISUL/Administração de Banco de Dados/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3455782",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Assinale a opção em que são corretamente apresentados os comandos necessários para a criação, em um banco de dados relacional, da tabela de nome funcionários, contendo as colunas: id de inteiros e chave primária; nome com VARCHAR(100), obrigatório; salario com DECIMAL(10,2); e data_admissao de DATE.",
     "options": [
       "CREATE funcionarios (id INTEGER PRIMARY KEY, nome VARCHAR(100) NOT NULL, salario DECIMAL(10,2), data_admissao DATE);",
@@ -47387,7 +47387,7 @@
     "source": "CEBRASPE (CESPE) - Tec TI (BANRISUL)/BANRISUL/Administração de Banco de Dados/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3455816",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considerando que, em um sistema de vendas, haja a tabela de nome vendas_completo(vendedor, regiao, valor), em que cada linha registre uma venda feita por determinado vendedor em sua região, assinale a opção em que é corretamente apresentada a consulta SQL que, sem usar JOIN, apresenta como resultado exatamente as seguintes quatro colunas: vendedor; regiao; total_vendas, correspondente à soma de valor por vendedor; e ranking_regiao, de modo que empates estejam na mesma posição e “pulem” postos.",
     "options": [
       "SELECT DISTINCT         vendedor,         regiao,         SUM(valor) OVER (PARTITION BY vendedor, regiao) AS total_vendas,         RANK() OVER (         PARTITION BY regiao        ORDER BY SUM(valor) OVER (PARTITION BY vendedor, regiao) DESC        ) AS ranking_regiao        FROM vendas_completo;",
@@ -47609,7 +47609,7 @@
     "source": "CEBRASPE (CESPE) - Tec TI (BANRISUL)/BANRISUL/Desenvolvimento de Software/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3455937",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Tabela I Clientes IdCliente Nome Endereco Cidade CEP 1 Jose Silva Av Rio Branco 200 Rio de Janeiro 21200 2 Maria Silveira Av Contorno 100 São Paulo 21200 3 Rita Castro Rua Sao Joao 132 Brasilia 71000 Tabela II Pedidos IdOrdem IdCliente IdVendedor Data 101 3 55 2025-03-01 102 23 23 2025-05-02 103 1 67 2025-01-23 104 24 37 2024-12-11 105 2 23 2024-11-10 106 3 21 2025-05-10 Tabela III Resultado Jose Silva Rio de Janeiro 2025-01-23 Maria Silveira São Paulo 2024-11-10 Rita Castro Brasilia 2025-03-01 Rita Castro Brasilia 2025-05-10   Com base nas informações nas tabelas I e II, precedentes, assinale a opção em que são apresentados comandos SQL que permitem a obtenção do resultado demonstrado na tabela III.",
     "options": [
       "SELECT Clientes.Nome, Clientes.Cidade, Pedidos.Data FROM Pedidos LEFT JOIN Clientes ON Pedidos.IdCliente=Clientes.IdCliente;",
@@ -47683,7 +47683,7 @@
     "source": "CEBRASPE (CESPE) - AFT (SEFAZ SE)/SEFAZ SE/Tecnologia da Informação/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3641660",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A tabela VENDAS tem a seguinte estrutura simplificada.   VENDAS(      ID_VENDA    INT,      ID_CLIENTE  INT,      VALOR       DECIMAL(10,2), DATA_VENDA       DATE );   Dessa tabela, deseja-se obter, para cada cliente, o total de vendas realizadas e, em seguida, apresentar o ranking desses clientes, ordenado do maior para o menor valor total.   A partir das informações precedentes, assinale a opção na qual é apresentada a consulta SQL que atenderá ao desejado.",
     "options": [
       "SELECT ID_CLIENTE, SUM(VALOR) AS TOTAL,      RANK() OVER (ORDER BY SUM(VALOR) DESC) AS POSICAO FROM VENDAS ORDER BY ID_CLIENTE;",
@@ -47720,7 +47720,7 @@
     "source": "CEBRASPE (CESPE) - AECE (TCE MS)/TCE MS/Tecnologia da Informação/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3685190",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considerando uma tabela ALUNO com cem registros, a instrução SELECT * FROM ALUNO LIMIT 20 OFFSET 90 apresentará os registros",
     "options": [
       "de 21 a 90.",
@@ -47757,7 +47757,7 @@
     "source": "CESGRANRIO - TPP (IPEA)/IPEA/Ciência de Dados/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2779626",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Para a avaliação de políticas públicas na área de Segurança Alimentar e Nutricional, um município brasileiro utilizou dados persistidos em três relações (tabelas) organizadas de acordo com o seguinte modelo relacional: PRODUTO ( cod-produto , nome-produto, grupo-alimentar) FORNECEDOR ( CNPJ , nome-empresa, tipo) COMPRADO ( CNPJ, cod-produto, data , quantidade, valor)   Os atributos que formam as chaves primárias de cada tabela estão sublinhados. Nesse contexto, considere o comando SQL apresentado a seguir. SELECT P.cod-produto, SUM (quantidade) FROM PRODUTO P, FORNECEDOR F, COMPRADO C WHERE P.cod-produto = C.cod-produto AND C.CNPJ = F.CNPJ AND F.tipo = 'agricultura familiar' GROUP BY P.cod-produto HAVING SUM (quantidade) > 10000 Os resultados produzidos pela execução desse comando apresentam o código do produto e a soma das quantidades compradas dos produtos de",
     "options": [
       "fornecedores com mais de 10.000 produtos distintos.",
@@ -47794,7 +47794,7 @@
     "source": "CESGRANRIO - TPP (IPEA)/IPEA/Infraestrutura de Tecnologia da Informação/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2780882",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considere que um banco de dados foi criado para dar apoio à avaliação de instrumentos e políticas de gestão de trânsito no Brasil, nos últimos cinco anos. Os dados foram organizados e persistidos nas três seguintes tabelas, definidas de acordo com modelo relacional de dados: SINISTRO, com dados dos acidentes de trânsito; MUNICIPIO, com dados de municípios; e RODOVIA, com dados de rodovias estaduais e federais. SINISTRO ( cod-sinistro , data-e-hora, localizacao, cod-rodovia, cod-municipio, quantidade-de-vitimas) RODOVIA ( cod-rodovia , nome, estadual-ou-federal) MUNICIPIO ( cod-municipio , uf, quantidade-de-habitantes)   Os atributos que formam as chaves primárias de cada tabela estão sublinhados.   Na tabela SINISTRO, há duas chaves estrangeiras: cod-rodovia, que indica onde ocorreu o sinistro, caso ele tenha ocorrido em uma rodovia, e cod-municipio, que indica em que municipio ocorreu o sinistro.   Nesse contexto, considere o seguinte comando SQL:   SELECT S.cod-rodovia, S.data-e-hora, quantidade-de-vitimas FROM SINISTRO S WHERE S.cod-rodovia IN (               SELECT R.cod-rodovia               FROM RODOVIA R               WHERE R.estadual-ou-federal = 'federal') AND EXISTS (               SELECT *               FROM MUNICIPIO M               WHERE M.cod-municipio = S.cod-municipio AND M.quantidade-de-habitantes < 50000)   Os resultados produzidos pela execução desse comando apresentam o código da rodovia, a data e hora e a quantidade de vítimas de sinistros ocorridos em",
     "options": [
       "rodovias federais que passam por municípios com menos de 50.000 habitantes.",
@@ -47905,7 +47905,7 @@
     "source": "CEBRASPE (CESPE) - Ana (FINEP)/FINEP/Tecnologia da Informação/Infraestrutura/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2797323",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Na tabela SQL criada pela expressão a seguir, sessao corresponde a uma sessão e a variável duracao corresponde à duração da sessão de certo usuário.   create table sessao (    id integer primary key,    userid integer not null,    duracao decimal not null )   A partir dessas informações, assinale a opção que corresponde ao script utilizado para se obter o tempo médio de duração das sessões dos usuários que tenham mais de uma sessão.",
     "options": [
       "select userid, avg(duracao) from sessao group by userid having count(*)>1",
@@ -48016,7 +48016,7 @@
     "source": "CEBRASPE (CESPE) - Ana (FINEP)/FINEP/Tecnologia da Informação/Software/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2797524",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A respeito da linguagem SQL e da manipulação de dados em um banco de dados relacional Oracle, assinale a opção correta .",
     "options": [
       "A cláusula MODIFY é usada para atualizar registros em uma consulta.",
@@ -48053,7 +48053,7 @@
     "source": "CEBRASPE (CESPE) - Ana (FINEP)/FINEP/Tecnologia da Informação/Software/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2797585",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Texto 6A2-I   A seguir, são apresentadas informações da tabela de nome dep e da tabela de nome emp .   Tendo como referência as informações do texto 6A2-I, assinale a opção correta, com base em SQL ANSI.",
     "options": [
       "A consulta a seguir está sintaticamente correta e retornará uma linha. SELECT * FROM emp WHERE ndep = 10 AND (NOT funcao = 'Encarregado' OR ndep = 20);",
@@ -48090,7 +48090,7 @@
     "source": "CEBRASPE (CESPE) - Tecno (LNA)/LNA/Desenvolvimento e Arquitetura de Software/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2940420",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Assinale a opção em que é apresentada a palavra-chave, em SQL, que deve ser incluída em uma instrução de SELECT para evitar a apresentação de resultados duplicados da tabela.",
     "options": [
       "UNIQUE",
@@ -48127,7 +48127,7 @@
     "source": "CESGRANRIO - SPF (CNU)/CNU/Bloco Temático 2/Tecnologia, Dados e Informação/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3038239",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Para criar uma tabela em um banco de dados relacional, foi utilizado o seguinte comando:   CREATE TABLE PESSOA (        ID INTEGER PRIMARY KEY, NOME VARCHAR(255) );   Qual comando SQL permite modificar a tabela para incluir o campo CPF do tipo VARCHAR(11)?",
     "options": [
       "ALTER TABLE PESSOA ADD COLUMN CPF VARCHAR(11);",
@@ -48238,7 +48238,7 @@
     "source": "CEBRASPE (CESPE) - Ana Sist (CAGEPA)/CAGEPA/Sistemas de TI/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3082603",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considerando que uma tabela de nome Clientes contenha o campo Cidade, assinale a opção em que é apresentado comando SQL que permitirá selecionar todos os registros e mostrar todos os dados dos registros da cidade São Paulo .",
     "options": [
       "SELECT * FROM Clientes WHERE Cidade = 'São Paulo';",
@@ -48312,7 +48312,7 @@
     "source": "CEBRASPE (CESPE) - Tec (CAGEPA)/CAGEPA/Eletrônica/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3089776",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Um técnico em eletrônica de certa empresa utiliza um sistema de banco de dados que registra, em horários específicos, medidas de temperatura, pressão e umidade em um processo realizado pela empresa. A tabela a seguir apresenta parte desse banco de dados, em determinado período de tempo. id nome tipo valor data_leitura 1 sensor01 temperatura 45.5 2024-07-20 10:00:00 2 sensor02 pressão 101.3 2024-07-20 10:05:00 3 sensor03 temperatura 55.2 2024-07-20 10:10:00 4 sensor04 umidade 35.7 2024-07-20 10:15:00 5 sensor05 temperatura 50.0 2024-07-20 10:20:00 6 sensor06 pressão 99.5 2024-07-20 10:25:00 7 sensor07 umidade 40.2 2024-07-20 10:30:00 8 sensor08 temperatura 47.5 2024-07-20 10:35:00 9 sensor09 pressão 102.4 2024-07-20 10:40:00 10 sensor10 umidade 36.0 2024-07-20 10:45:00   A fim de fazer uma pesquisa na tabela apresentada, esse técnico escreveu o seguinte script SQL.   SELECT * FROM Sensores WHERE (nome = 'sensor03' OR nome = 'sensor05') AND valor BETWEEN 46.0 AND 54.0;   Com base na situação apresentada, assinale a opção que corresponde à correta execução do script SQL escrito pelo técnico.",
     "options": [
       "id: 5, nome: sensor05, tipo: temperatura, valor: 50.0, data_leitura: 2024-07-20 10:20:00",
@@ -48349,7 +48349,7 @@
     "source": "CESGRANRIO - Tec Cien (BASA)/BASA/Tecnologia da Informação/\"Sem Especialidade\"/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3135437",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Uma instituição financeira realiza o controle de empréstimos para pessoas físicas por meio de duas tabelas definidas segundo o Modelo Relacional de Dados, apresentadas a seguir.   CLI ( CPF , nome, data-nascimento) EMP ( CPF-cli , data-emp , valor-emp)   A tabela CLI tem dados de clientes da instituição financeira, e a sua chave primária é CPF. A tabela EMP tem dados dos empréstimos realizados para cada cliente, e sua chave primária é formada por CPF-cli e data-emp, ou seja, um cliente pode pegar empréstimos em datas diferentes e não pode pegar mais de um empréstimo em uma mesma data. O valor do empréstimo é expresso em reais.   Um dos programas de controle de empréstimos utiliza o seguinte comando SQL:   SELECT CPF FROM CLI C WHERE NOT EXISTS (   SELECT * FROM EMP E WHERE C.CPF = E.CPF-cli AND valor-emp < 10 )   Esse comando SQL apresenta o CPF dos clientes que",
     "options": [
       "possuem menos de 10 empréstimos.",
@@ -48531,7 +48531,7 @@
     "source": "CEBRASPE (CESPE) - Ana Tec II (SEBRAE)/SEBRAE/Cientista de Dados/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3166976",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Assinale a opção que apresenta corretamente a consulta SQL que retornará a média de salários por departamento de uma empresa, considerada uma tabela funcionarios com colunas departamento e salario.",
     "options": [
       "SELECT departamento, COUNT(salario)      FROM funcionarios     GROUP BY departamento;",
@@ -48604,7 +48604,7 @@
     "source": "CESGRANRIO - Esc BB/BB/Agente de Tecnologia/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2401334",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "O banco de dados de uma empresa que comercializa seguros pessoais possui as seguintes tabelas:   Pessoa ( email, nome, unidadeFederativaNascimento, faixaEtaria) UF ( sigla, nome) Faixa ( nome, menorIdade, maiorIdade)   A coluna \"unidadeFederativaNascimento\" da tabela Pessoa é uma chave estrangeira que referencia a coluna \"sigla\" da tabela UF; a coluna \"faixaEtaria\" da tabela Pessoa é uma chave estrangeira que aponta para a coluna \"nome\" da tabela Faixa.   A tabela Faixa possui os seguintes dados:   nome menorIdade maiorIdade Jovens - não informada - 19 Adultos 20 59 Idosos 60 - não informada -   Considere o seguinte comando:   SELECT COUNT(*) FROM Pessoa P, Faixa F WHERE P.faixaEtaria = F.nome AND P.unidadeFederativaNascimento = 'RJ' AND F.maiorIdade <= 19   Esse comando SQL",
     "options": [
       "apresenta quantas são as pessoas que estão na tabela Pessoa, que são jovens e que nasceram no estado do Rio de Janeiro.",
@@ -48641,7 +48641,7 @@
     "source": "CESGRANRIO - Esc BB/BB/Agente de Tecnologia/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2401337",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "O banco de dados de uma empresa de investimentos financeiros possui as seguintes tabelas:   Empresa ( CNPJ, razaoSocial, endereco) UF ( sigla, nome)   O que o comando SQL \"SELECT CNPJ, sigla FROM Empresa, UF\" recupera desse banco de dados?",
     "options": [
       "A sigla da UF das sedes das empresas cadastradas.",
@@ -48678,7 +48678,7 @@
     "source": "CESGRANRIO - Esc BB/BB/Agente de Tecnologia/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2401339",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A CNAE (Classificação Nacional de Atividades Econômicas), de responsabilidade do IBGE, possui códigos que são utilizados para caracterizar as atividades econômicas das empresas no Brasil. Por exemplo: empresas da área de construção de edifícios utilizam o CNAE de código 4120-4/00 para caracterizar a sua atividade econômica principal.   Considere que existe um banco de dados em uma empresa, que concede empréstimos a outras empresas, com as seguintes tabelas:   Empresa ( CNPJ , razaoSocial, endereco, atividade) CNAE ( codigo , descricao)   A coluna \"atividade\" da tabela Empresa é uma chave estrangeira que referencia a coluna \"codigo\" da tabela CNAE.   Que comando SELECT do SQL retorna apenas o CNPJ e a razão social das empresas cuja atividade econômica principal é a construção de edifícios (código 4120-4/00)?",
     "options": [
       "SELECT *       FROM Empresa E, CNAE C       WHERE E.atividade = C.codigo",
@@ -48715,7 +48715,7 @@
     "source": "CEBRASPE (CESPE) - Ana Reg (AGER MT)/AGER MT/Ciências da Computação e Sistemas de Informação/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2450377",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Assinale a opção em que é apresentada a instrução utilizada para alterar alguma propriedade de campo de uma tabela em um banco de dados.",
     "options": [
       "INSERT",
@@ -48863,7 +48863,7 @@
     "source": "CEBRASPE (CESPE) - Ana (MPE RO)/MPE RO/Sistemas/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2591164",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Sabendo que o Oracle DataBase 21C oferece um tipo de dado nativo com suporte a JSON, assinale a opção que contém o script de criação de uma tabela no Oracle DataBase 21C com esse tipo de dado.",
     "options": [
       "CREATE TABLE processo ( numero INTEGER PRIMARY KEY, desc_processo BLOB );",
@@ -48900,7 +48900,7 @@
     "source": "CEBRASPE (CESPE) - Ana (MPE RO)/MPE RO/Programador/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2593678",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Assinale a opção que apresenta a instrução em SQL que permite substituir por Pedro o nome do advogado atual da parte autora ( nome_adv_autor ) do processo de número 2023001, em uma tabela de nome processo .",
     "options": [
       "UPDATE processo SET nome_adv_autor = 'Pedro' WHERE numero_processo = 2023001;",
@@ -48937,7 +48937,7 @@
     "source": "CESGRANRIO - PTNM (TRANSPETRO)/TRANSPETRO/Informática/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2690885",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Uma empresa aérea possui um sistema de informação para registrar as reservas de passagens de seus passageiros nos voos que oferece. O esquema desse banco de dados foi criado com os seguintes comandos SQL:   CREATE TABLE PASSAGEIRO (             CODIGO                        NUMERIC(5) NOT NULL,              NOME                           TEXT NOT NULL,              PRIMARY KEY (CODIGO)); CREATE TABLE VOO (            NUMERO                        NUMERIC(3) NOT NULL,            ORIGEM                         TEXT NOT NULL,            DESTINO                        TEXT NOT NULL,            NUM_LUGARES              NUMERIC(3) NOT NULL,            PRIMARY KEY (NUMERO)); CREATE TABLE RESERVA (             NUM_VOO                       NUMERIC(3) NOT NULL,             CD_PASS                         NUMERIC(5) NOT NULL,              PRIMARY KEY (NUM_VOO, CD_PASS),              FOREIGN KEY (NUM_VOO)                          REFERENCES VOO(NUMERO),              FOREIGN KEY (CD_PASS)                          REFERENCES PASSAGEIRO(CODIGO));   Na Figura a seguir, são exibidos os estados atuais dessas tabelas.   --------TABELA PASSAGEIRO--------- -------------TABELA VOO----------- --------TABELA RESERVA----- CODIGO NOME NUMERO ORIGEM DESTINO NUM_LUGARES NUM_VOO CD_PASS 11232 FABIO CARNEIRO 357 RIO DE JANEIRO FORTALEZA 30 357 65789 13121 CARLOS AMARAL 635 SALVADOR RIO DE JANEIRO 20 357 13121 22578 ANA MARIA RIOS 784 FORTALEZA BRASILIA 20 357 56390 22667 CECILIA LOPES 998 PORTO ALEGRE CURITIBA 20 357 22578 23799 KAREN RIBEIRO         357 22667 44532 VICENTE DE CARVALHO         357 56123 44677 JULIA VASCONCELOS         357 44909 44909 ALEX MEDEIROS         635 45131 45131 FLAVIA NASCIMENTO         635 89567 51734 EDSON RIBEIRO         635 11232 56123 PEDRO COIMBRA         635 44532 56390 FELIPE DE SOUZA         635 78980 65123 POLIANA PEDROSA         635 44677 65789 JOANA RODRIGUES         784 23799 79980 ROSANA DA SILVA         784 51734 89567 IARA DE MELO         784 65123   Qual comando SQL será executado sem produzir erro?",
     "options": [
       "DELETE FROM PASSAGEIRO WHERE NOME = 'VICENTE DE CARVALHO';",
@@ -48974,7 +48974,7 @@
     "source": "CESGRANRIO - PTNM (TRANSPETRO)/TRANSPETRO/Informática/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2690887",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Na Figura abaixo, é exibido o estado atual de uma tabela que registra as disciplinas de um curso e seus pré-requisitos.   --- TABELA CURSO---- DISCIPLINA PRE_REQUISITO PROJETO DE SISTEMAS BANCO DE DADOS I PROJETO FINAL PROJETO DE SISTEMAS BANCO DE DADOS I MODELAGEM DE DADOS PROGRAMAÇÃO ESTRUTURAS DE DADOS   Uma consulta SQL nessa tabela foi executada e produziu como resposta uma relação com duas linhas, cujos valores são exibidos abaixo. PROJETO DE SISTEMAS BANCO DE DADOS I Qual consulta SQL foi executada?",
     "options": [
       "SELECT DISCIPLINA FROM CURSO     UNION     SELECT PRE_REQUISITO FROM CURSO;",
@@ -49011,7 +49011,7 @@
     "source": "CESGRANRIO - PTNS (TRANSPETRO)/TRANSPETRO/Análise de Sistemas/Processos de Negócios/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2695308",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considere a tabela Familia, apresentada abaixo, que possui as colunas Pai e Filho e uma instância exemplo que permite ilustrar as informações contidas nessa tabela.   Pai Filho Andre Carlos Andre Claudio Bruno Diego Bruno Daniel Carlos Eriko Carlos Fabio Daniel Gustavo Diego Heleno Eriko Isidoro Fabio João Uma consulta SQL feita para exibir os nomes dos netos de Carlos retorna os nomes Isidoro e João. A expressão, em linguagem SQL, dessa consulta é",
     "options": [
       "SELECT f2.filho FROM Familia f1 INNER JOIN Familia f2 ON f1.filho = f2.pai WHERE f1.pai = 'Carlos';",
@@ -49085,7 +49085,7 @@
     "source": "CESGRANRIO - PTNS (TRANSPETRO)/TRANSPETRO/Análise de Sistemas/SAP - Finanças e Contabilidade/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2695428",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Em um banco de dados multidimensional, frequentemente modelado como um cubo de dados, as dimensões são diferentes perspectivas sob as quais os dados podem ser analisados, e os fatos são os dados mais importantes que são analisados ou consultados em relação a essas dimensões.   Considere um esquema multidimensional que envolve automóveis, os fabricantes e as revendedoras de carros, com as tabelas Dimensão apresentadas a seguir:   1. Dim_Automóvel: Modelo_ID (identificador único para cada modelo de carro) Nome_Modelo (por exemplo: Corolla, Civic, Tucson) Tipo (por exemplo: Sedan, SUV, Coupe) Ano_Lançamento 2. Dim_Fabricante: Fabricante_ID (identificador único para cada fabricante) Nome_Fabricante (por exemplo: Toyota, Honda, Ford) País_Origem (por exemplo: Japão, EUA, Alemanha) 3. Dim_Revendedora: Revendedora_ID (identificador único para cada revendedora) Nome_Revendedora Localização (cidade e estado) Tipo_Revenda (por exemplo: autorizada, independente)   A tabela Vendas, que representa fatos, contém as seguintes colunas:   • Modelo_ID (chave estrangeira para Dim_Automóvel) • Fabricante_ID (chave estrangeira para Dim_Fabricante) • Revendedora_ID (chave estrangeira para Dim_Revendedora) • Quantidade_Vendida • Receita_Total (o total em vendas para essa tripla: modelo, fabricante e revendedora) • Data_Venda   Qual das seguintes expressões, na linguagem de consultas SQL, retorna a receita total de vendas de carros do tipo SUV em 2023, agrupada por fabricante, na cidade de São Paulo?",
     "options": [
       "SELECT f.Nome_Fabricante, SUM(v.Receita_Total) AS Receita_Total FROM Tbl_Vendas v JOIN Dim_Automóvel a ON v.Modelo_ID = a.Modelo_ID WHERE a.Tipo = 'SUV' AND r.Localização = 'São Paulo' AND a.Ano_Lançamento = 2023 GROUP BY f.Nome_Fabricante;",
@@ -49159,7 +49159,7 @@
     "source": "CEBRASPE (CESPE) - ADP (DPE RO)/DPE RO/Programação/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/1915061",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Assinale a opção que apresenta o comando SQL usado para excluir todos os registros de uma tabela de nome aluno, mantendo-se a estrutura da tabela.",
     "options": [
       "erase aluno",
@@ -49270,7 +49270,7 @@
     "source": "CESGRANRIO - Tec Cien (BASA)/BASA/Tecnologia da Informação/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/1927607",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considere que em um banco de dados de um banco comercial há duas tabelas:   PESSOA_FISICA (CPF, nome, email, telefone) CLIENTE (CPF, nome, email, telefone).   Um funcionário de TI recebeu a tarefa de identificar corretamente quais pessoas físicas, cadastradas na tabela PESSOA_FISICA, ainda não eram clientes, pois não estavam cadastradas na tabela CLIENTE. Para isso, ele utilizou um comando SELECT em SQL. Que trecho, em SQL, faz parte de uma das possíveis soluções para essa tarefa?",
     "options": [
       "… WHERE PESSOA_FISICA.CPF NOT IN (SELECT CPF FROM CLIENTE…",
@@ -49418,7 +49418,7 @@
     "source": "CESGRANRIO - PNS (ELETRONUCLEAR)/ELETRONUCLEAR/Analista de Sistemas/Aplicações e Segurança de TIC/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2041226",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "O controle diário da utilização de passes de metrô em uma cidade é feito por programas que utilizam um banco de dados composto pelas seguintes tabelas:   CREATE TABLE PASSE ( NUM INTEGER NOT NULL, DATA_EXP DATE NOT NULL, NUM_VIAGENS INTEGER NOT NULL, PRIMARY KEY (NUM))   CREATE TABLE REG_VIAGEM ( NUM INTEGER NOT NULL, NUM_ROLETA INTEGER NOT NULL, DATA_VIAGEM DATE NOT NULL, FOREIGN KEY (NUM) REFERENCES PASSE (NUM))   A tabela PASSE contém uma linha para cada passe vendido pela empresa que administra o metrô. A coluna DATA_EXP informa a data de emissão do passe, e a coluna NUM_VIAGENS informa o número de viagens em que o passe poderá ser usado (número máximo de viagens). Este número não sofre alteração ao longo do tempo.   A tabela REG_VIAGEM contém uma linha para cada viagem em que o passe foi usado. A coluna NUM_ROLETA informa a roleta na qual o passe foi inserido, e a coluna DATA_VIAGEM informa a data em que o usuário inseriu o passe na roleta.     Qual consulta SQL permite obter os números dos passes que nunca foram usados, juntamente com os números dos passes que já esgotaram o número de viagens realizadas?",
     "options": [
       "SELECT A.NUM FROM PASSE A WHERE A.NUM_VIAGENS = (SELECT COUNT(*) FROM REG_VIAGEM WHERE NUM = A.NUM) OR A.NUM NOT IN (SELECT NUM FROM REG_VIAGEM)",
@@ -49455,7 +49455,7 @@
     "source": "CESGRANRIO - PNS (ELETRONUCLEAR)/ELETRONUCLEAR/Analista de Sistemas/Aplicações e Segurança de TIC/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2041326",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "O controle diário da utilização de passes de metrô em uma cidade é feito por programas que utilizam um banco de dados composto pelas seguintes tabelas:   CREATE TABLE PASSE ( NUM INTEGER NOT NULL, DATA_EXP DATE NOT NULL, NUM_VIAGENS INTEGER NOT NULL, PRIMARY KEY (NUM))   CREATE TABLE REG_VIAGEM ( NUM INTEGER NOT NULL, NUM_ROLETA INTEGER NOT NULL, DATA_VIAGEM DATE NOT NULL, FOREIGN KEY (NUM) REFERENCES PASSE (NUM))   A tabela PASSE contém uma linha para cada passe vendido pela empresa que administra o metrô. A coluna DATA_EXP informa a data de emissão do passe, e a coluna NUM_VIAGENS informa o número de viagens em que o passe poderá ser usado (número máximo de viagens). Este número não sofre alteração ao longo do tempo.   A tabela REG_VIAGEM contém uma linha para cada viagem em que o passe foi usado. A coluna NUM_ROLETA informa a roleta na qual o passe foi inserido, e a coluna DATA_VIAGEM informa a data em que o usuário inseriu o passe na roleta.   Qual comando SQL NÃO produzirá um erro de tempo de execução independentemente dos dados existentes nas duas tabelas que fazem parte do banco de dados?",
     "options": [
       "INSERT INTO REG_VIAGEM VALUES (7777, 720, ‘2022-04-21’)",
@@ -49492,7 +49492,7 @@
     "source": "CEBRASPE (CESPE) - Ana (APEX)/ApexBrasil/Operações e Segurança de Tecnologia da Informação e Comunicação/Sistemas e Aplicações/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2165862",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "script 1     script 2     script 3     Considerando que os scripts precedentes foram executados na ordem apresentada, assinale a opção que corresponde ao resultado da execução do script 3.",
     "options": [
       "[Figura da alternativa A]",
@@ -49528,7 +49528,7 @@
     "source": "CEBRASPE (CESPE) - AJ TRT8/TRT 8/Apoio Especializado/Tecnologia da Informação/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2267590",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considere o modelo precedente, em que os campos IdFilme, IdAtor, IdTipoAtuacao e IdCategoria são chaves primárias em suas respectivas tabelas, como referência. Considere ainda que FK descreve que o campo é uma foreign key; AI descreve que o campo é auto incremente; NN descreve que o campo é not null. A partir dessas informações, assinale a opção que apresenta o correto script SQL para criação desta tabela.",
     "options": [
       "CREATE TABLE Categoria (           IdCategoria INT NOT NULL AUTO_INCREMENT,           DeCategoria VARCHAR(45) NULL,           PRIMARY KEY (IdCategoria),               FOREIGN KEY (IdCategoria)               REFERENCES Filme (IdCategoria) ) ENGINE = InnoDB;",
@@ -49565,7 +49565,7 @@
     "source": "CEBRASPE (CESPE) - TJ TRT8/TRT 8/Apoio Especializado/Tecnologia da Informação/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2268429",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considere-se que as tabelas Produto e Categoria, a seguir, tenham sido implementadas em um banco de dados SQL. Produto idProduto DeProduto idCategoria ValorProduto 1 Arroz 2 9 2 Feijão 2 9 3 Detergente 1 7 4 Sabão 1 7 5 Escova 1 7 Categoria idCategoria DeCategoria 1 Limpeza 2 Alimentos Considere-se, ainda, que o script SQL a seguir tenha sido executado no Postgres12. SELECT   C.DeCategoria, AVG(P.ValorProduto) total FROM  Produto P   LEFT OUTER JOIN Categoria C ON P.idCategoria = C.idCategoria GROUP BY P.idCategoria HAVING total > 7; Assinale a opção que contenha a tabela com o resultado correto do script supracitado.",
     "options": [
       "DeCategoria total Alimentos 9",
@@ -49602,7 +49602,7 @@
     "source": "CEBRASPE (CESPE) - Tec TI (BANRISUL)/BANRISUL/Administração de Banco de Dados/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3455784",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Assinale a opção em que é corretamente apresentado o comando DDL que permite criar a tabela de nome itens_pedido e relacionar cada pedido a seus produtos, de modo que: pedido_id e produto_id sejam chaves estrangeiras que referenciem a tabela; quantidade seja um inteiro maior que zero; preco_unitario seja um decimal maior que zero; e a combinação (pedido_id, produto_id) seja a chave primária, garantindo unicidade e não null.",
     "options": [
       "CREATE TABLE itens_pedido (          pedido_id INTEGER REFERENCES pedidos(id),          produto_id INTEGER REFERENCES produtos(id),          quantidade INTEGER CHECK (quantidade > 0),          preco_unitario DECIMAL(10,2) CHECK (preco_unitario > 0),            UNIQUE (pedido_id, produto_id)          );",
@@ -49860,7 +49860,7 @@
     "source": "CEBRASPE (CESPE) - Esc Pol (PC PB)/PC PB/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2013073",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Em banco de dados, para definir as operações básicas em uma tabela, utiliza-se o acrônimo",
     "options": [
       "SQL.",
@@ -50193,7 +50193,7 @@
     "source": "CESGRANRIO - TPP (IPEA)/IPEA/Infraestrutura de Tecnologia da Informação/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2780914",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considere que, em um banco de dados preparado para persistir dados de apoio à realização de estudos na área agropecuária, existem duas tabelas: IMÓVEL ( cod-sncr , denominacao, cod-mun, area-total) MUNICÍPIO ( cod-mun , uf, qtd-imoveis)   A chave primária de um imóvel é o seu código no Sistema Nacional de Cadastro Rural (SNCR), e a de um município é o seu código, segundo o IBGE. A coluna IMÓVEL.cod-mun é chave estrangeira e referencia MUNICÍPIO.cod-mun.   Uma aplicação, ou sistema, realiza regularmente a seguinte transação nesse banco de dados:   Início da transação Inserção dos dados de um novo imóvel na tabela IMÓVEL Atualização de qtd-imoveis na tabela MUNICÍPIO Commit   Nesse exemplo, a propriedade de atomicidade de uma transação garantirá que",
     "options": [
       "a integridade referencial entre as duas tabelas sempre será mantida.",
@@ -50487,7 +50487,7 @@
     "source": "CESGRANRIO - PTNS (TRANSPETRO)/TRANSPETRO/Análise de Sistemas/Infraestrutura/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2694739",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Em um Sistema Gerenciador de Banco de Dados (SGBD) relacional, a gerência de bloqueios é crucial para manter a consistência e a integridade dos dados durante o acesso concorrente por várias transações. Existem diversos níveis e tipos de bloqueio, e eles estão associados ao propósito do bloqueio. A respeito desses diversos níveis e tipos de bloqueio, constata-se que o",
     "options": [
       "bloqueio de linha impede o acesso a várias linhas de dados na tabela, e o bloqueio compartilhado impede leituras simultâneas.",
@@ -51116,7 +51116,7 @@
     "source": "CEBRASPE (CESPE) - AFRE RJ/SEFAZ RJ/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3400214",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "No contexto de data warehousing , o esquema estrela ( star schema ) caracteriza-se como",
     "options": [
       "uma tabela de fatos central conectada a múltiplas tabelas de dimensão desnormalizadas.",
@@ -51301,7 +51301,7 @@
     "source": "CESGRANRIO - TPP (IPEA)/IPEA/Desenvolvimento de Sistema/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2780498",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Um analista de dados está desenvolvendo um data warehouse para uma empresa de varejo. Ele precisa decidir se informações sobre uma venda devem ser armazenadas em uma tabela fato ou em uma tabela dimensão.   Considerando-se as características de modelagem dimensional, uma informação que deve ser armazenada em uma tabela dimensão é a(o)",
     "options": [
       "data da venda",
@@ -51338,7 +51338,7 @@
     "source": "CEBRASPE (CESPE) - Ana Sist (CAGEPA)/CAGEPA/Sistemas de TI/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3082594",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "No data warehouse de uma empresa do segmento de telecomunicações, há uma tabela que armazena registros detalhados de chamadas, incluindo o tempo, o valor e a data de cada chamada.   Nessa situação hipotética, é utilizada uma tabela de",
     "options": [
       "índices.",
@@ -51375,7 +51375,7 @@
     "source": "CEBRASPE (CESPE) - Ana Sist (CAGEPA)/CAGEPA/Sistemas de TI/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3082723",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Com a finalidade de apoiar a análise de volumes extremamente grandes de dados em bancos de dados analíticos, pode ser utilizado o esquema de armazenamento de dados chamado floco de neve ( snow flake schema) . Nesse esquema, se encontram as tabelas de dimensões, as quais contêm",
     "options": [
       "o assunto principal do esquema.",
@@ -51449,7 +51449,7 @@
     "source": "CESGRANRIO - Ana (BNDES)/BNDES/Análise de Sistemas - Desenvolvimento/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3117556",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considere que um dos estados do Brasil resolveu executar obras de infraestrutura em um de seus principais rios. Esse rio percorre um trajeto desde a serra até o mar, passando por 15 municípios desse estado. Todo o percurso do rio foi segmentado em trechos que recebem as obras. Cada trecho pode ter uma ou mais obras, uma obra é realizada em apenas um trecho e em apenas um município. As obras em questão podem demorar de seis meses a dois anos. Mensalmente, todas as obras são avaliadas quanto ao seu valor executado (no mês) comparado ao respectivo valor orçado (para despesas no mesmo mês). Foram criadas quatro tabelas segundo o modelo relacional de dados (as chaves primárias estão sublinhadas; as chaves estrangeiras estão indicadas pelo sinal @ no início do nome do atributo):   OBRA ( ID-obra, @município , @trecho , @mês , valor-orçado, valor-executado) MUNICÍPIO ( ID-município , nome, quantidade-habitantes, IDH) TRECHO ( ID-trecho, extensão-em-km) TEMPO ( ID-mês , mês-calendário, ano-calendário) Considere ainda os domínios de alguns atributos: MUNICÍPIO.quantidade-habitantes [1.000,10.000.000] TRECHO.extensão-em-km [10,1.000] TEMPO.mês-calendário [1,12] Por fim, considere as seguintes dependências funcionais (em que a notação A → B indica que A determina B): ID-município → quantidade-habitantes nome → IDH   O modelo de dados apresentado com quatro tabelas, que implementa um modelo dimensional,",
     "options": [
       "está incorreto pois OBRA.mês deveria apontar para TEMPO.mês-calendário.",
@@ -51596,7 +51596,7 @@
     "source": "CESGRANRIO - Ana Desenv (AgeRIO)/AgeRIO/Tecnologia da Informação/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2462897",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Ao construir um modelo de dados usando a modelagem dimensional para um Data Warehouse, seguindo um modelo estrela, um engenheiro de dados encontrou uma dimensão que se encaixava perfeitamente no conceito de dimensão degenerada, de apenas um atributo.   Qual é a maneira correta de tratar uma dimensão degenerada?",
     "options": [
       "Criar uma tabela dimensão com o produto cartesiano de todas as dimensões degeneradas.",
@@ -51633,7 +51633,7 @@
     "source": "CEBRASPE (CESPE) - Ana (MPE RO)/MPE RO/Sistemas/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2591173",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "O componente do data warehouse que armazena os dados quantitativos como métricas e as chaves estrangeiras ( foreign keys ) é denominado",
     "options": [
       "OLAP.",
@@ -51744,7 +51744,7 @@
     "source": "CEBRASPE (CESPE) - Ana (APEX)/ApexBrasil/Operações e Segurança de Tecnologia da Informação e Comunicação/Sistemas e Aplicações/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2165890",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A estrutura que consiste em uma tabela de fatos com uma única tabela para cada dimensão em Data Warehouse denomina-se",
     "options": [
       "constelação de fatos.",
@@ -53695,7 +53695,7 @@
     "source": "CESGRANRIO - TBN (CEF)/CEF/Tecnologia da Informação/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2901969",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A Figura a seguir exibe uma fila e uma pilha de números inteiros: O código Python a seguir implementa essas estruturas de dados por meio de listas.   pilha = [5, 8, 3, 8, 5] pilAux = [ ] fila = [4, 4]   Admita que o módulo pilha contém as funções push(pil, e) e pop(pil), que implementam as operações usuais sobre uma pilha, e o módulo fila contém as funções enqueue(fila, e) e dequeue (fila), que implementam as operações usuais sobre uma fila. Ambos os módulos serão importados por um programa Python. Após a definição das estruturas de dados, esse programa Python executa uma sequência de comandos, de modo que, ao término da execução, as variáveis pilha e fila referenciam listas iguais.   Qual é essa sequência de comandos?",
     "options": [
       "push(pilAux,pop(pilha))       push(pilAux,pop(pilha))       pop(pilha)       enqueue(fila,pop(pilAux))       enqueue(fila,pop(pilAux))",
@@ -54989,7 +54989,7 @@
     "source": "CESGRANRIO - TPP (IPEA)/IPEA/Ciência de Dados/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2779636",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A partir de dados da pesquisa Perfil do Processado e Produção de Provas nas Ações Criminais por Tráfico de Drogas, realizada em dezembro de 2023 pelo Instituto de Pesquisa Econômica Aplicada (Ipea), é possível levantar informações sociodemográficas sobre os bairros em que o direito à inviolabilidade domiciliar é relativizado. Os resultados revelam que os bairros mais ricos e aqueles de população predominantemente branca são praticamente imunes às entradas em domicílio, as quais se concentram substancialmente nos bairros mais pobres e naqueles com população predominantemente negra ou minoritariamente branca.   Qual técnica de desidentificação de dados sensíveis é a mais adequada para preservar a privacidade dos indivíduos processados, permitindo, ainda, a análise sociodemográfica dos bairros?",
     "options": [
       "Anonimização: remover todos os identificadores diretos dos indivíduos, incluindo nome, CPF, RG e endereço, e também remover qualquer referência a bairro ou características sociodemográficas.",
@@ -55581,7 +55581,7 @@
     "source": "CESGRANRIO - Esc BB/BB/Agente de Tecnologia/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2401266",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Sabendo que existe, na organização em que trabalha, uma base de dados formada por uma grande tabela que contém apenas o id do cliente e colunas do tipo booleano indicando se um cliente possuía ou já tinha possuído cada produto da organização, um funcionário de TI resolveu dividir os clientes em grupos apenas com base nessa informação, utilizando aprendizado de máquina.   Para essa tarefa, o funcionário de TI deve utilizar o aprendizado de máquina",
     "options": [
       "independente",
@@ -56062,7 +56062,7 @@
     "source": "CESGRANRIO - TPP (IPEA)/IPEA/Ciência de Dados/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2779763",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "No gráfico XY, são apresentados pontos que representam duas propriedades de elementos de duas classes, R e S. Os pontos da classe R, representados como círculos, são [(3,5),(3,4),(2,3)], enquanto os pontos da classe S, representados como quadrados, são [(4,3),(4,2),(4,1),(3,1),(2,2)]. É necessário classificar pontos novos, de acordo com o algoritmo K-NN, com K=3, considerando a distância euclidiana.     Nesse contexto, as classes dos pontos [(3,2),(3,3) e (4,4)] são, respectivamente:",
     "options": [
       "[R,R,S]",
@@ -56210,7 +56210,7 @@
     "source": "CESGRANRIO - TPP (IPEA)/IPEA/Ciência de Dados/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2779826",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "As árvores de decisão são um modelo de aprendizado de máquina que opera por meio da construção de uma estrutura em forma de árvore para tomar decisões e que oferece uma compreensão clara da lógica de decisão e da hierarquia de características que contribuem para as predições finais. Elas são versáteis e podem ser usadas tanto para tarefas de classificação quanto para as de regressão. Nesse contexto, considere a construção de uma árvore de regressão usando a classe DecisionTreeRegressor do Scikit-Learn e seu treinamento em um conjunto de dados quadrático com max_depth=2, conforme mostrado a seguir:   from sklearn.tree import DecisionTreeRegressor tree_reg = DecisionTreeRegressor(max_depth=2) tree_reg.fit(X, y)   A árvore resultante é representada na Figura a seguir.   GÉRON, A. Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems. 2 ed. Sebastopol, CA: O’Reilly Media, Inc.: 2019, p. 183.   Considerando-se o cenário apresentado e que se deseja fazer uma predição para uma nova instância, com x1 = 0.6, qual será o valor predito?",
     "options": [
       "0.015",
@@ -56579,7 +56579,7 @@
     "source": "CEBRASPE (CESPE) - Ana Tec II (SEBRAE)/SEBRAE/Cientista de Dados/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3166908",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Considerando a figura precedente, assinale a opção correta em relação ao algoritmo de SVM (support vector machine).",
     "options": [
       "Uma margem mais ampla geralmente indica um melhor desempenho na classificação, pois sugere que o modelo tem uma separação mais clara entre as classes.",
@@ -56906,7 +56906,7 @@
     "source": "CEBRASPE (CESPE) - AJ TRT8/TRT 8/Apoio Especializado/Tecnologia da Informação/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2267576",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Quanto à avaliação de modelos preditivos, assinale a opção correta.",
     "options": [
       "A taxa de acerto da métrica de classificação é o complemento da taxa de erro; valores próximos de 0 são considerados melhores.",
@@ -57017,7 +57017,7 @@
     "source": "CEBRASPE (CESPE) - Ana SN (CAESB)/CAESB/Analista de Sistemas/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3473432",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A respeito das redes neurais artificiais, assinale a opção correta .",
     "options": [
       "Redes neurais artificiais são compostas por uma única camada de neurônios e são incapazes de modelar relações complexas entre os dados.",
@@ -57942,7 +57942,7 @@
     "source": "CEBRASPE (CESPE) - ADP (DPE RO)/DPE RO/Programação/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/1915077",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Na classificação de algoritmos por meio de seu método de design, aquele que reduz a complexidade exponencial para a complexidade polinomial para muitos problemas e mantém uma tabela para subproblemas já resolvidos é denominado",
     "options": [
       "programação dinâmica.",
@@ -58275,7 +58275,7 @@
     "source": "CESGRANRIO - Esc BB/BB/Agente de Tecnologia/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2401421",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A Figura a seguir exibe o conteúdo de três pilhas: P1, P2 e P3.     Admita que um método Java, chamado exibePilha, receba essas três pilhas como parâmetros e execute os seguintes passos:   1. Cria duas pilhas auxiliares, A1 e A2, inicialmente vazias;   2. Remove um elemento de P1 e o insere em A1. Em seguida, remove um elemento de P2 e o insere em A1. Repete esses dois procedimentos até que P1 e P2 fiquem, ambas, vazias;   3. Remove um elemento de P3 e o insere em A1. Repete esse procedimento até que P3 fique vazia;   4. Remove um elemento de A1 e o insere em A2. Repete esse procedimento até que A1 fique vazia;   5. Remove um elemento de A2 e o exibe no console. Repete esse procedimento 4 vezes.   O que será exibido no console, quando o método exibePilha for executado, tendo P1, P2 e P3 sido passadas como parâmetros?",
     "options": [
       "10 15 25 28",
@@ -58312,7 +58312,7 @@
     "source": "CEBRASPE (CESPE) - Ana Reg (AGER MT)/AGER MT/Ciências da Computação e Sistemas de Informação/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2450350",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "As operações push (inserir no topo), pop (retirar do topo) e top (observar o topo) são utilizadas em estruturas de dados do tipo",
     "options": [
       "pilha.",
@@ -58534,7 +58534,7 @@
     "source": "CESGRANRIO - Tec Ban III (BANESE)/BANESE/Informática/Desenvolvimento/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3346854",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Seja a seguinte árvore binária:       Suponha que essa árvore seja percorrida em pós-ordem e que os valores de seus nós sejam inseridos em uma fila à medida que forem visitados. Essa fila corresponde a um array (a) de 10 posições, em que o primeiro elemento é a[0] e o último elemento é a[9]. Qual fila corresponde ao resultado das operações descritas?",
     "options": [
       "[Figura da alternativa A]",
@@ -58608,7 +58608,7 @@
     "source": "CESGRANRIO - TPP (IPEA)/IPEA/Desenvolvimento de Sistema/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2780370",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A Figura a seguir exibe uma árvore binária. Suponha que uma função percorra essa árvore em ordem simétrica e exiba os valores de seus nós no console.   Qual será o sexto valor a ser exibido por essa função?",
     "options": [
       "20",
@@ -58645,7 +58645,7 @@
     "source": "CESGRANRIO - TBN (CEF)/CEF/Tecnologia da Informação/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2901966",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A Figura a seguir exibe uma árvore binária.   Suponha que uma função percorra essa árvore em ordem simétrica e exiba os valores de seus nós no console. Um dos possíveis somatórios do 2º, do 3º e do 4º valores exibidos por essa função é",
     "options": [
       "90",
@@ -58682,7 +58682,7 @@
     "source": "CESGRANRIO - SPF (CNU)/CNU/Bloco Temático 2/Tecnologia, Dados e Informação/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3038290",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A Figura abaixo exibe uma árvore binária de busca balanceada.     Um novo número inteiro foi inserido nessa árvore sem que suas propriedades tenham sido alteradas. Além disso, nenhuma transformação foi necessária para mantê-la balanceada.   Qual foi o número inteiro inserido?",
     "options": [
       "20",
@@ -58719,7 +58719,7 @@
     "source": "CESGRANRIO - Esc BB/BB/Agente de Tecnologia/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2401429",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Um estudante de computação decidiu escrever um método Java para exibir, no console, em pré-ordem, os valores dos nós de uma árvore binária recebida como parâmetro. Ao executar esse método, os seguintes valores foram exibidos no console:   80 84 55 76 72   Considerando os valores exibidos, qual árvore foi recebida como parâmetro?",
     "options": [
       "[Figura da alternativa A]",
@@ -60236,7 +60236,7 @@
     "source": "CESGRANRIO - TBN (CEF)/CEF/Tecnologia da Informação/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3102826",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Durante o desenvolvimento de um software com programação orientada a objetos (OOP), chegou-se à conclusão de que era preciso criar uma classe que representasse um jogador de futebol. Tal classe deveria possuir uma função pública rating() que usasse as estatísticas da temporada para retornar a avaliação do jogador, em uma escala de 0 a 10. Utilizando os princípios de OOP, foi sugerido deixar o software pronto para ser utilizado com um número qualquer de modalidades desportivas, cujas funções rating() serão calculadas, cada uma, com suas fórmulas específicas, criando uma classe genérica Jogador e uma classe específica para cada modalidade (JogadorFutebol, JogadorVolei, etc.), todas contendo sua versão da função rating(). O diagrama de classes da situação descrita é apresentado a seguir.     O princípio de OOP que está sendo usado nesse exemplo é o de",
     "options": [
       "singleton, pois a classe Jogador só pode ter um único objeto.",
@@ -61272,7 +61272,7 @@
     "source": "CESGRANRIO - TPP (IPEA)/IPEA/Desenvolvimento de Sistema/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2780373",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A Figura a seguir exibe um diagrama de classes UML.     Admita que o diagrama acima não contenha erros.",
     "options": [
       "public interface Xpto {         public int att1 = 0;         public int att2 = 0;         public void opX(); } import java.util.ArrayList; public class A implements Xpto {         private String a1;         private String a2;         private ArrayList<R> r;         public void opA() {         }         public void opB() {         } public void opX() { } } import java.util.ArrayList; public class B {        private String b1;        private ArrayList<R> r;        public void opC() {        } } public class R {        private String r1;        private A a;        private B b; }",
@@ -61494,7 +61494,7 @@
     "source": "CESGRANRIO - TBN (CEF)/CEF/Tecnologia da Informação/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2901971",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Seja o diagrama de classes, exibido na Figura a seguir:   Qual conjunto de classes Java é compatível com o diagrama acima?",
     "options": [
       "public class Grt {              private Vst[ ] vst;                public void g1() {              }             public void g2() {             }      }      public class Vst {             private Grt grt;               public void v1() {             }             public void v2() {             }             public void v3() {             }       }",
@@ -61753,7 +61753,7 @@
     "source": "CESGRANRIO - Ana Desenv (AgeRIO)/AgeRIO/Tecnologia da Informação/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2462852",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "As classes Java a seguir são usadas na implementação de árvores binárias.     A classe Main abaixo faz uso da classe Arv.     Admita que o método main acima vá ser executado, e que uma pilha como a mostrada na Figura a seguir vá ser passada como parâmetro para o método percorrePilha. Qual árvore binária fará com que o comando a.exibeArvore() exiba no console os mesmos números inteiros, e na mesma ordem, que o método percorrePilha?",
     "options": [
       "[Figura da alternativa A]",
@@ -61790,7 +61790,7 @@
     "source": "CESGRANRIO - Ana Desenv (AgeRIO)/AgeRIO/Tecnologia da Informação/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2462874",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "O método main, a seguir, ordena um array de empregados em ordem crescente de salários. Quais implementações das classes Pessoa e Empregado complementam o código Java acima, de modo que a ordenação do array de empregados seja executada com sucesso?",
     "options": [
       "[Figura da alternativa A]",
@@ -62012,7 +62012,7 @@
     "source": "CESGRANRIO - PTNS (TRANSPETRO)/TRANSPETRO/Análise de Sistemas/Infraestrutura/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2694190",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Deseja-se escrever um método Java que inverta a ordem dos caracteres existentes em um array recebido como parâmetro, conforme exemplificado na Figura a seguir.   Array antes da chamada do método a b c d e f g Array após a chamada do método g f e d c b a Esse método receberá como parâmetros o array a ser invertido e o índice do primeiro elemento do array, devendo funcionar com arrays de quaisquer comprimentos, inclusive com os de comprimentos iguais a zero. Qual método executa essa inversão da ordem dos caracteres de acordo com as especificações apresentadas?",
     "options": [
       "public static void inverte(char [] vet, int i) {             int m=vet.length / 2;             if(i < m)                       return;             inverte(vet, i+1);             char aux=vet[i];             vet[i]=vet[vet.length - i - 1];             vet[vet.length - i - 1] = aux;     }",
@@ -64729,7 +64729,7 @@
     "source": "CESGRANRIO - TBN (CEF)/CEF/Tecnologia da Informação/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2901986",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Uma equipe de desenvolvimento de um software para gerência de finanças pessoais decidiu adotar uma abordagem ágil, utilizando Histórias do Usuário para capturar requisitos funcionais. Essa técnica tem como característica descrever as funcionalidades do software do ponto de vista do usuário final. Para assegurar uma compreensão comum entre todos os envolvidos no projeto, é fundamental que a equipe entenda os componentes de uma História do Usuário. Os três componentes principais de uma História do Usuário são",
     "options": [
       "Cartão, Conversação e Confirmação",
@@ -65536,7 +65536,7 @@
     "source": "CEBRASPE (CESPE) - Ana C&T (AEB)/AEB/Qualquer Área de Formação/2025",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3366890",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "No que se refere a ferramentas e técnicas de gerenciamento de projetos, aquela que ajuda a melhorar a eficiência e a produtividade do projeto; baseia-se na limitação do trabalho em andamento e na colaboração em tempo real; e utiliza cartões organizados em colunas, os quais representam os diferentes estágios do fluxo de trabalho, é denominada",
     "options": [
       "Kanban.",
@@ -65647,7 +65647,7 @@
     "source": "CESGRANRIO - TBN (CEF)/CEF/Tecnologia da Informação/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3102744",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Uma equipe de desenvolvimento de software de uma organização de grande porte enfrentava questionamentos internos acerca de sua capacidade de resposta. Como as demandas por reparos dos softwares existentes bem como o desenvolvimento de novas soluções mantinham uma tendência de crescimento, o gestor de Tecnologia da Informação decidiu controlar o progresso das atividades de desenvolvimento de software de suas equipes utilizando o método Kanban, com o objetivo de aumentar a produtividade do setor, tornando as entregas aos clientes internos mais produtivas e eficazes. Nesse contexto, o gestor considerou adequada a escolha do Kanban por esse método",
     "options": [
       "limitar o número de tarefas concomitantes (limites WIP – Work In Progress).",
@@ -66048,7 +66048,7 @@
     "source": "CESGRANRIO - PTNS (TRANSPETRO)/TRANSPETRO/Análise de Sistemas/Processos de Negócios/2023",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2695289",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Uma equipe de uma empresa de jogos composta por seis membros precisava decidir qual seria o novo diferencial a ser incluído no jogo mais rentável da empresa. A fim de pensar em novas ideias, um dos membros da equipe propôs usarem uma técnica de criatividade dividida em rodadas (p.ex. cinco minutos por rodada). Na primeira rodada, cada membro da equipe deve escrever em um papel, que cada um deles deve ter recebido, novas ideias para o jogo. Ao terminar o tempo da primeira rodada, cada um deve passar para seu colega localizado ao lado o papel em que escreveu. Com a troca realizada, cada membro da equipe estará com outro papel, que já possui algumas ideias escritas. Na nova rodada, eles poderão lê-las e escrever novas ideias. Ao final da segunda rodada, repete-se a mesma abordagem de trocar o papel e iniciar uma nova rodada para a escrita de novas ideias, até que o dono do papel da primeira rodada volte a tê-lo. Por fim, os papéis são recolhidos e as ideias são apresentadas ao grupo, que irá classificá-las em boas ou impraticáveis.   Qual a técnica de criatividade descrita?",
     "options": [
       "Brainstorm",
@@ -66714,7 +66714,7 @@
     "source": "CESGRANRIO - Tec Cien (BASA)/BASA/Tecnologia da Informação/2022",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/1927644",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Um sistema cliente-servidor precisa tratar de documentos que possuem imagens muito grandes. Essas imagens não são, necessariamente, apresentadas ao usuário sempre que ele carrega um documento, logo, carregar todas as imagens previamente, toda vez que o cliente abre um documento, pode gastar um tempo desnecessário. A melhor estratégia é carregar a imagem apenas quando a visualização é necessária. Ciente desse problema, o desenvolvedor responsável pelo sistema decidiu usar um padrão de projeto que fornece, no cliente, um objeto substituto que controla o acesso ao objeto original.   Qual foi o padrão de projeto utilizado?",
     "options": [
       "Decorator",
@@ -69258,7 +69258,7 @@
     "source": "CESGRANRIO - SPF (CNU)/CNU/Bloco Temático 4/Trabalho e Saúde do Servidor/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/3038603",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Assédio moral no trabalho é caracterizado por comportamentos hostis, repetitivos e prolongados no ambiente profissional. Embora o problema venha sendo estudado há mais de quatro décadas, os aspectos de gerenciamento e prevenção ainda necessitam de maior estudo.   A respeito desse tema constata-se que",
     "options": [
       "situações relacionadas com gênero caracterizam assédio sexual.",
@@ -70059,8 +70059,8 @@
     "selfExplanation": "",
     "selfExplanationAnswer": "",
     "code": "",
-    "image": "",
-    "imageAlt": "Figura da questão"
+    "image": "/exam-diagrams/mt-emigracao-1991-2000.png",
+    "imageAlt": "Gráfico de emigrantes de Mato Grosso por condição de naturalidade e região de destino, comparando 1991 e 2000"
   },
   {
     "id": "sema-mt-ti:69a08bd64e36ca97096e",
@@ -70257,7 +70257,7 @@
     "source": "CESGRANRIO - Ag Uni (UNEMAT)/UNEMAT/Editor de Imagens/2024",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/2837748",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Uma estimativa do Ministério da Agricultura, Pecuária e Abastecimento (Mapa) mostra que, em 2022, o Valor Bruto da Produção Agropecuária (VBP) de Mato Grosso foi de R$ 224,81 bilhões. Com isso, o estado lidera o ranking de maior contribuição para a produção agropecuária, posto que assumiu em 2018.   Disponível em: https://summitagro.estadao.com.br/comercio-exterior/ agronegocio-de-mato-grosso-e-destaque-nacional/. Acesso em: 20 dez. 2023. Adaptado.   As intensas transformações do espaço mato-grossense proporcionadas por sua profunda integração à dinâmica de expansão do capitalismo brasileiro e mundial, com consequências econômicas que hoje se verificam no estado, se iniciaram",
     "options": [
       "na década de 1970, como consequência da modernização conservadora.",
@@ -70516,7 +70516,7 @@
     "source": "CESGRANRIO - Ana (BNDES)/BNDES/Psicologia/2013",
     "sourceUrl": "https://www.tecconcursos.com.br/questoes/136273",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "A violência moral no trabalho é um fenômeno internacional de acordo com levantamento da Organização Internacional do Trabalho (OIT). Tanto a OIT quanto a Organização Mundial da Saúde consideram tenebrosas as perspectivas para as duas próximas décadas, que serão as décadas do “mal-estar na globalização” em que predominam danos psíquicos relacionados às novas políticas de gestão na organização de trabalho, vinculadas às políticas neoliberais. De acordo com as análises críticas da clínica do trabalho, o neoliberalismo favorece o assédio moral, dentre outras causas, porque",
     "options": [
       "denuncia a improdutividade, a ausência de investimento pessoal no trabalho e a falta de engajamento moral de alguns trabalhadores, favorecendo atitudes violentas em relação a eles.",
@@ -71182,7 +71182,7 @@
     "source": "IFMT · Administrador · Edital 133/2023",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Associe: formatação condicional; tabela dinâmica; CONT.SE; PROCV às definições realçar por critério, resumir dados, contar por critério e buscar em coluna.",
     "options": [
       "I, II, III, IV.",
@@ -71284,7 +71284,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:21811d28f936110804be",
+    "id": "tec-2843963",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 1,
@@ -71321,7 +71321,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:0fb1eb7a2f6a5ff45085",
+    "id": "tec-2843969",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 2,
@@ -71358,7 +71358,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:93fc56912afa074bb65c",
+    "id": "tec-3176621",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 3,
@@ -71395,7 +71395,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:a49114a60b3bb642155e",
+    "id": "tec-3076548",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 4,
@@ -71432,7 +71432,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:a4d0910ea6b66c28ccee",
+    "id": "tec-2367819",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 5,
@@ -71469,7 +71469,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:edcb85a15a94e73a5a3c",
+    "id": "tec-3736533",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 6,
@@ -71506,7 +71506,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:a75ff69623a1ad1606d9",
+    "id": "tec-2843924",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 7,
@@ -71543,7 +71543,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:10b12e3e9c735f4e8eac",
+    "id": "tec-1089586",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 8,
@@ -71580,7 +71580,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:1b4368ee898445fbc536",
+    "id": "tec-2843974",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 9,
@@ -71617,7 +71617,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:6ee51f6d53bfe4e1b57f",
+    "id": "tec-2189001",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 10,
@@ -71654,7 +71654,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:06205d3d72e12be17059",
+    "id": "tec-3736507",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 11,
@@ -71691,7 +71691,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:56065bfa143ffcfb034d",
+    "id": "tec-3176624",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 12,
@@ -71700,7 +71700,7 @@
     "source": "COCP IFMT - Ass Adm (IF MT)/IF MT/2024",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "O diagnóstico estratégico compõe uma das fases do planejamento estratégico, na qual é possível promover uma avaliação real da posição da organização. Pararealizá-lo, a organização pode utilizar alguns instrumentos e técnicas para auxiliar nessa fase. A esse respeito, marque a alternativa cujos instrumentos e técnicas podem ser todas utilizadas na fase do diagnóstico estratégico:",
     "options": [
       "Benchmarking e Matriz SWOT.",
@@ -71728,7 +71728,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:94431300453841f16b17",
+    "id": "tec-3076622",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 13,
@@ -71765,7 +71765,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:feb068f4f4239495299f",
+    "id": "tec-1091358",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 14,
@@ -71802,7 +71802,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:014f649e441730e6cb7c",
+    "id": "tec-3177895",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 15,
@@ -71839,7 +71839,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:9741b1c2fc53c2900beb",
+    "id": "tec-2189002",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 16,
@@ -71876,7 +71876,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:eddfb4289c4ab968940a",
+    "id": "tec-2189004",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 17,
@@ -71885,7 +71885,7 @@
     "source": "COCP IFMT - Adm (IF MT)/IF MT/2022",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "De acordo com Djalma de Pinho Rebouças de Oliveira, autor do livro Planejamento Estratégico, o diagnóstico organizacional é a primeira etapa do processo deplanejamento estratégico de uma instituição. Há uma série de ferramentas para diagnóstico que permitem avaliar a organização como um todo para simplificar a tomadade decisão. A figura a seguir é o resultado da diagramação de uma ferramenta de diagnóstico organizacional disponível no Plano de Desenvolvimento Institucional 2019-2023 do IFMT: Marque a alternativa que representa o instrumento de diagnóstico organizacional da figura:",
     "options": [
       "Matriz de MEG.",
@@ -71913,7 +71913,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:dfe277fa97bc20d1eb6d",
+    "id": "tec-3736505",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 18,
@@ -71950,7 +71950,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:8adf451e15bc40214231",
+    "id": "tec-2367816",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 19,
@@ -71987,7 +71987,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:83a6117faa045867c23a",
+    "id": "tec-2843911",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 20,
@@ -72024,7 +72024,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:a1c4586470a7e7cc51fb",
+    "id": "tec-3076463",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 21,
@@ -72061,7 +72061,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:b578d6bf4624953d4f2a",
+    "id": "tec-2189006",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 22,
@@ -72098,7 +72098,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:5e5a682dbd4629aca62d",
+    "id": "tec-1091351",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 23,
@@ -72135,7 +72135,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:db877d3997cac62a6cd8",
+    "id": "tec-1091355",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 24,
@@ -72172,7 +72172,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:e1b30c2ed2ec7f05088d",
+    "id": "tec-3174755",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 25,
@@ -72209,7 +72209,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:0f130168de5009e32a25",
+    "id": "tec-2843916",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 26,
@@ -72246,7 +72246,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:83f63d0bebe598616d34",
+    "id": "tec-2845317",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 27,
@@ -72283,7 +72283,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:96945969e0fb72be4b97",
+    "id": "tec-2189008",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 28,
@@ -72320,7 +72320,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:a0800579d15d70f56d34",
+    "id": "tec-2189010",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 29,
@@ -72357,7 +72357,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:3dcc7213b7d21a4003d7",
+    "id": "tec-1091352",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 30,
@@ -72394,7 +72394,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:52b3037b7b0cc9f6cd7d",
+    "id": "tec-2189003",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 31,
@@ -72431,7 +72431,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:76f3a18604b270d3a820",
+    "id": "tec-3076476",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 32,
@@ -72468,7 +72468,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:24a12a85b67803583ef2",
+    "id": "tec-2843980",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 33,
@@ -72505,7 +72505,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:5fd9fe41151954e53f3f",
+    "id": "tec-3736531",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 34,
@@ -72514,7 +72514,7 @@
     "source": "COCP IFMT - Ass Adm (IF MT)/IF MT/2025",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "O Plano de Desenvolvimento Institucional do IFMT do ciclo 2019-2025, disponível em: https://ifmt.edu.br/conteudo/ pagina/pdi-2019-2023/, estabelece que a“Política de Capacitação do IFMT tem como base o levantamento das necessidades de desenvolvimento de competências identificadas no mapa estratégico e nasnecessidades específicas dos departamentos ou ainda para atender uma demanda de adequação à legislação ou processos internos”. A moderna Gestão Estratégica dePessoas tem a capacitação como um dos principais métodos de permanente desenvolvimento de pessoas e de atualização das organizações. Sobre Treinamento edesenvolvimento (T&D), assinale a alternativa INCORRETA:",
     "options": [
       "Treinamento: são experiências organizadas de aprendizagem. O treinamento amplia a capacidade do servidor ou funcionário de desempenhar suas funções commaior eficiência.",
@@ -72542,7 +72542,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:37266ab84c130c20edef",
+    "id": "tec-2843981",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 35,
@@ -72579,7 +72579,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:cfdcc6d5ba576456aa3f",
+    "id": "tec-3176627",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 36,
@@ -72616,7 +72616,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:941704b9fca97c5611aa",
+    "id": "tec-3076489",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 37,
@@ -72653,7 +72653,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:056c8646ae4d735252b0",
+    "id": "tec-3737224",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 38,
@@ -72690,7 +72690,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:040d68dce7fa218c1de4",
+    "id": "tec-2347667",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 39,
@@ -72727,7 +72727,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:68da8b71dc76c4dc89bf",
+    "id": "tec-2190206",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 40,
@@ -72764,7 +72764,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:6531413b5ef236fa4fdb",
+    "id": "tec-1089798",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 41,
@@ -72801,7 +72801,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:a98e400116e5dbb07a59",
+    "id": "tec-3177860",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 42,
@@ -72838,7 +72838,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:17aeca751c4026ea9a66",
+    "id": "tec-2190233",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 43,
@@ -72875,7 +72875,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:4e4a2468a4ad608f6307",
+    "id": "tec-1089603",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 44,
@@ -72912,7 +72912,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:14298a2c4b11497c3c9d",
+    "id": "tec-1091346",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 45,
@@ -72949,7 +72949,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:7fa2442e3619040dceb7",
+    "id": "tec-3177869",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 46,
@@ -72986,7 +72986,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:afcf97acaea496cac21f",
+    "id": "tec-2348800",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 47,
@@ -73023,7 +73023,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:95b792fea535aed2db9c",
+    "id": "tec-1089604",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 48,
@@ -73060,7 +73060,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:8ca97f83437a4b9ad826",
+    "id": "tec-2189018",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 49,
@@ -73097,7 +73097,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:bf701aebd9319d112db2",
+    "id": "tec-3737111",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 50,
@@ -73134,7 +73134,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:14706341279017d04ce8",
+    "id": "tec-2342980",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 51,
@@ -73171,7 +73171,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:670249b8c3aa3ed1dfed",
+    "id": "tec-2367821",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 52,
@@ -73208,7 +73208,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:8c97b2705fc9d253f267",
+    "id": "tec-2190234",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 53,
@@ -73245,7 +73245,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:0ebb3f5c17d7cf69a3cd",
+    "id": "tec-1089804",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 54,
@@ -73282,7 +73282,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:cdf0feab256940fb73bc",
+    "id": "tec-3174769",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 55,
@@ -73319,7 +73319,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:fdac2b53b27450eea917",
+    "id": "tec-3174770",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 56,
@@ -73356,7 +73356,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:3e661f6bc1f05040fc01",
+    "id": "tec-2844064",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 57,
@@ -73393,7 +73393,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:2ceabbe46132f36992ba",
+    "id": "tec-2189956",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 58,
@@ -73430,7 +73430,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:97d66662974b15f38f0a",
+    "id": "tec-3736530",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 59,
@@ -73467,7 +73467,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:286b6c4914bdfc4e6867",
+    "id": "tec-3177828",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 60,
@@ -73504,7 +73504,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:16911c5ff6568b6d8dc4",
+    "id": "tec-2189012",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 61,
@@ -73541,7 +73541,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:e6c7eae22b825cfecb9e",
+    "id": "tec-1089813",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 62,
@@ -73578,7 +73578,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:5dd261713838db89ca5e",
+    "id": "tec-3737153",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 63,
@@ -73615,7 +73615,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:d13526cdcfb1a4b1ebc6",
+    "id": "tec-1089823",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 64,
@@ -73652,7 +73652,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:d87e3f747bdcb34ed490",
+    "id": "tec-1089816",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 65,
@@ -73689,7 +73689,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:3ef1e5a7651defacaeae",
+    "id": "tec-1089820",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 66,
@@ -73726,7 +73726,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:243a41c127071b1022db",
+    "id": "tec-2342977",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 67,
@@ -73763,7 +73763,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:3dc7d6dfcd8b6813c03f",
+    "id": "tec-2342978",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 68,
@@ -73800,7 +73800,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:3ec8fdec5a9da394f997",
+    "id": "tec-2367826",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 69,
@@ -73837,7 +73837,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:3b675228193e434c3aac",
+    "id": "tec-2188999",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 70,
@@ -73874,7 +73874,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:5fb414eca67245f15cee",
+    "id": "tec-3174767",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 71,
@@ -73911,7 +73911,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:29200dd5774e2d468e80",
+    "id": "tec-3176589",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 72,
@@ -73948,7 +73948,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:3e6f3a5a0c0fea686dbe",
+    "id": "tec-3736528",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 73,
@@ -73985,7 +73985,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:d3cc3affb19bae54ce9f",
+    "id": "tec-3176619",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 74,
@@ -74022,7 +74022,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:86dd0481742ed4b2c079",
+    "id": "tec-2367833",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 75,
@@ -74059,7 +74059,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:339f0c3a910068f9130e",
+    "id": "tec-3177888",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 76,
@@ -74096,7 +74096,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:ab653e328f914784edfc",
+    "id": "tec-3177884",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 77,
@@ -74133,7 +74133,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:25783bf75bdb5302d77b",
+    "id": "tec-3736529",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 78,
@@ -74170,7 +74170,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:9589835ed4b549666612",
+    "id": "tec-3177882",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 79,
@@ -74207,7 +74207,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:2b618552ea32309cea9d",
+    "id": "tec-2342976",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 80,
@@ -74244,7 +74244,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:dbc3f6b37fd73b69f448",
+    "id": "tec-3177885",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 81,
@@ -74281,7 +74281,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:48e6293646c77b23a3f5",
+    "id": "tec-2844007",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 82,
@@ -74318,7 +74318,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:356ab43d31b6c9148de7",
+    "id": "tec-2188995",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 83,
@@ -74355,7 +74355,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:2d5208a14d5a450098f1",
+    "id": "tec-3799011",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 84,
@@ -74392,7 +74392,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:2f2d5594db7cf3e63241",
+    "id": "tec-3174786",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 85,
@@ -74429,7 +74429,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:bb81bfba7504b89f3b9c",
+    "id": "tec-3176383",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 86,
@@ -74466,7 +74466,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:bcbda4f739721a4730c9",
+    "id": "tec-3177848",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 87,
@@ -74503,7 +74503,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:e1a5e1a1649b73b25e69",
+    "id": "tec-3177883",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 88,
@@ -74540,7 +74540,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:58e634a623383c06eac4",
+    "id": "tec-2342309",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 89,
@@ -74577,7 +74577,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:56d5651ed5ba689e614b",
+    "id": "tec-2342929",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 90,
@@ -74614,7 +74614,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:11a9e4434636279f81d4",
+    "id": "tec-2342930",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 91,
@@ -74651,7 +74651,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:5e661d746a9c9b677080",
+    "id": "tec-2843742",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 92,
@@ -74660,7 +74660,7 @@
     "source": "COCP IFMT - Adm (IF MT)/IF MT/2023",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Nos termos do Decreto 1.171/94, julgue as assertivas abaixo: I. Somente nos órgãos e entidades da Administração Pública Federal direta deverá ser criada uma Comissão de Ética, encarregada de orientar e aconselhar sobre aética profissional do servidor, no tratamento com as pessoas e com o patrimônio público, competindo-lhe conhecer concretamente de imputação ou deprocedimento susceptível de censura. II. À Comissão de Ética incumbe fornecer, aos organismos encarregados da execução do quadro de carreira dos servidores, os registros sobre sua conduta ética,para o efeito de instruir e fundamentar promoções e para todos os demais procedimentos próprios da carreira do servidor público. III. A pena aplicável ao servidor público pela Comissão de Ética é a de advertência, e sua fundamentação constará do respectivo parecer, assinado por todos osseus integrantes, com ciência do faltoso. IV. Para fins de apuração do comprometimento ético, entende-se por servidor público todo aquele que, por força de lei, contrato ou de qualquer ato jurídico,preste serviços de natureza permanente, temporária ou excepcional, ainda que sem retribuição financeira, desde que ligado direta ou indiretamente a qualquerórgão do poder estatal, como as autarquias, as fundações públicas, as entidades paraestatais, as empresas públicas e as sociedades de economia mista, ou emqualquer setor em que prevaleça o interesse do Estado. Está correto o que se afirma em:",
     "options": [
       "I e II.",
@@ -74688,7 +74688,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:ca8d6d222a86752b4510",
+    "id": "tec-2844013",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 93,
@@ -74725,7 +74725,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:1d154ebcbce04b39f52b",
+    "id": "tec-3076120",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 94,
@@ -74762,7 +74762,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:f869d77d86a094334d6e",
+    "id": "tec-2189019",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 95,
@@ -74799,7 +74799,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:19e02c7c37cd7d3a017f",
+    "id": "tec-2203112",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 96,
@@ -74836,7 +74836,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:1ecc741450567c94179f",
+    "id": "tec-1088172",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 97,
@@ -74873,7 +74873,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:46237dd5cf18250c799c",
+    "id": "tec-1089522",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 98,
@@ -74910,7 +74910,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:90988866ca535e25dc75",
+    "id": "tec-1089525",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 99,
@@ -74947,7 +74947,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:2af21935890c1b63b965",
+    "id": "tec-1108829",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 100,
@@ -74984,7 +74984,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:e6b910f092cd02aa7204",
+    "id": "tec-2844022",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 101,
@@ -75021,7 +75021,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:6e73c11bc54df11e3f79",
+    "id": "tec-3076611",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 102,
@@ -75058,7 +75058,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:06699714641f8a0496d3",
+    "id": "tec-3076574",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 103,
@@ -75067,7 +75067,7 @@
     "source": "COCP IFMT - PEBTT (IF MT)/IF MT/Administração/2023",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Nas análises da Estrutura de Capital e nos cálculos do Custo de Capital, no Brasil, temos situação diferente entre empresas em função do enquadramento tributáriopara fins de Imposto de Renda (IRPJ) e Contribuição Social sobre o Lucro Líquido (CSLL), sendo que, nas empresas enquadradas como Lucro Real, utiliza-se a taxa T E[ ]= = + (E[ ]− )Ri ri rf βMKTi RMkt rf ]− )βMkti rf βMkti (Alíquota Tributária Média) como redutor do custo dos capitais de terceiros de longo prazo (ELP - Exigível a Longo Prazo), enquanto que, nas empresas do SimplesNacional, ou que são enquadradas como Lucro Presumido, para fins de tributação, esse redutor do custo do ELP não é considerado, pois os tributos pagos tem por base ofaturamento, e não o lucro efetivo. Assim, considerando a seguinte estrutura de capital e seus custos anuais das fontes de recursos (e expectativa de retorno no caso do PL - Patrimônio Líquido), e semconsiderar a hipotética alíquota T média de 30% (ou T=0,30, em decimal), caso do Lucro Presumido e Simples Nacional, temos: Fontes Longo PrazoValor em ReaisParticipação Relativa Custo efetivo a.a. (sem a dedução tributária do ELP) e expectativa de retorno do PL. Parciais ELP 1.200.000,000,60 ou 60% 20,0% 12,0% PL 800.000,000,40 ou 40% 25,0% 10,0% TOTAL 2.000.000,001 ou 100% Custo de Capital a.a.: 22,0% a.a. No caso do Lucro Real, a taxa T deve ser considerada, atuando como um redutor do custo do ELP, pois as despesas financeiras correspondentes, ao serem lançadas,deduzem o lucro tributável. Diante disso, dada a estrutura de capital, calcule o Capital a.a de uma empresa enquadrada como Lucro Real, utilizando-se os valores daestrutura de capital e taxas apresentadas no quadro abaixo, considerando a alíquota T em 0,30 (ou 30%) e o Custo efetivo a.a. sem a dedução tributária do ELP em 20%a.a. Fontes Longo PrazoValor em ReaisParticipação Relativa Custo efetivo a.a. (sem a dedução tributária do ELP) e expectativa de retorno do PL. Parciais ELP 1.200.000,000,60 ou 60% PL 800.000,000,40 ou 40% 25,0% TOTAL 2.000.000,001 ou 100%Custo de Capital a.a.: Assinale a alternativa CORRETA:",
     "options": [
       "22,6% a.a.",
@@ -75095,7 +75095,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:bf468c50281e788b8274",
+    "id": "tec-3149945",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 104,
@@ -75132,7 +75132,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:387edcb9d37e2fe3ce1d",
+    "id": "tec-3177890",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 105,
@@ -75141,7 +75141,7 @@
     "source": "COCP IFMT - Tecno (IF MT)/IF MT/Gestão Pública/2024",
     "sourceUrl": "",
     "referenceText": "",
-    "requiresSource": false,
+    "requiresSource": true,
     "prompt": "Segundo Maximiano e Veroneze (2024), a palavra projeto foi inventada pelos romanos para indicar algo que se lança à frente - pro (frente) + jetar (lançar). Pormeio dos projetos, as pessoas e as sociedades evoluem. Sociedades sem projetos são sociedades estagnadas. Fonte: Maximiano, A. C. A.; Veroneze, F. Gestão de Projetos: preditiva, ágil e estratégica. 6 ed. Atlas, 2024. Em relação aos conceitos básicos da gestão de projetos, analise as alternativas e marque a INCORRETA:",
     "options": [
       "O projeto é um empreendimento de tempo limitado, que tem compromisso com a entrega de um resultado.",
@@ -75169,7 +75169,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:f31cbd950ddf473b611d",
+    "id": "tec-2367827",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 106,
@@ -75206,7 +75206,7 @@
     "imageAlt": "Figura da questão"
   },
   {
-    "id": "administracao-banco-completo:c5e6071f090eb9aa013a",
+    "id": "tec-2189020",
     "notebook": "/administracao-banco-completo",
     "notebookTitle": "Banco Completo de Administração",
     "number": 107,

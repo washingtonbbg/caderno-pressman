@@ -57,6 +57,13 @@
       "when": 1789590022121,
       "tag": "0007_numerous_arclight",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "6",
+      "when": 1790263069312,
+      "tag": "0008_nifty_xorn",
+      "breakpoints": true
     }
   ]
 }

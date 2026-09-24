@@ -390,7 +390,10 @@
     "level": "SEMA-MT · Conhecimentos Gerais · Cesgranrio"
   },
   {
+    "id": "sema-mt-ti:778c020dcb371384dedd",
     "prompt": "Entre 1970 e 1990 a imigração em Mato Grosso foi bastante significativa, com taxas anuais de 6,6% entre 1970 e 1980 e de 5,4% entre 1980 e 1990. Todavia, a partir de 1990 o influxo populacional diminuiu no estado. Em paralelo ao movimento de chegada, a emigração também ocorria.     CUNHA, J. M. P., Dinâmica migratória e o processo de ocupação do Centro-Oeste brasileiro: o caso de Mato Grosso. Campinas, 2004. Relatório de pesquisa. In: REVISTA BRASILEIRA DE ESTUDOS DA POPULAÇÃO. Jun. 2006. Disponível em: https://www.scielo.br/j/rbepop/a/PSp4DcbZ9mXpnFpZVgQzP6F/#. Acesso em: 30 nov. 2023.   Na análise do gráfico, observa-se uma mudança no padrão de emigração da população em Mato Grosso, indicando que, na década de 1990, houve a(o)",
+    "image": "/exam-diagrams/mt-emigracao-1991-2000.png",
+    "imageAlt": "Gráfico de emigrantes de Mato Grosso por condição de naturalidade e região de destino, comparando 1991 e 2000",
     "options": [
       "diminuição significativa da emigração",
       "aumento significativo da emigração",
