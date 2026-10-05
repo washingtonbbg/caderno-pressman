@@ -38,3 +38,7 @@ yarn-error.log*
 /.wrangler/
 /outputs/
 /work/
+
+# Local source extracts and delivery archives are not published source.
+/tmp/
+/output/

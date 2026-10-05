@@ -1,0 +1,8 @@
+import Link from 'next/link';
+import { getChatGPTUser, chatGPTSignInPath, chatGPTSignOutPath } from '../chatgpt-auth';
+
+export const dynamic = 'force-dynamic';
+export default async function StudentHome() {
+  const user = await getChatGPTUser();
+  return <main className="commercialPage commercialStudent"><header className="commercialNav"><Link className="commercialBrand" href="/"><span>CE</span>Cadernos de Estudo</Link><Link href="/acervo">Ver acervo →</Link></header><section className="commercialSection"><p className="commercialEyebrow">ÁREA DE ESTUDO</p><h1>{user ? 'Seu estudo continua aqui.' : 'Comece pela sua próxima questão.'}</h1><p className="commercialLead">{user ? `Olá, ${user.displayName}. Escolha o treino ou retome suas revisões.` : 'Explore os cadernos. Para salvar o histórico de questões e suas anotações, entre com sua conta ChatGPT.'}</p>{!user && <a className="commercialButton" href={chatGPTSignInPath('/aluno')}>Entrar para salvar progresso →</a>}<div className="commercialCards"><article><span>01</span><h2>Praticar e revisar</h2><p>Treine questões e retome os itens do seu histórico de estudo.</p><Link href="/estudar">Abrir estudo →</Link></article><article><span>02</span><h2>Escolher um caderno</h2><p>Encontre o assunto que você quer aprofundar no acervo.</p><Link href="/acervo">Explorar acervo →</Link></article><article><span>03</span><h2>Planejar a preparação</h2><p>Consulte a trilha de Tecnologia da Informação para SEMA-MT.</p><Link href="/sema-mt-ti">Abrir trilha →</Link></article></div>{user && <a className="commercialSecondary" href={chatGPTSignOutPath('/')}>Sair da conta</a>}</section></main>;
+}

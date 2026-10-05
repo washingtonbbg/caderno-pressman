@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "./commercial.css";
 import "./study.css";
 import "./sema-plan.css";
 import "./library.css";
@@ -35,8 +36,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cadernos de Estudo — Engenharia de Software e UML",
-  description: "Questões comentadas e estudo guiado baseados em Pressman e Guedes.",
+  title: "Cadernos de Estudo — Questões e revisão para concursos",
+  description: "Cadernos interativos de computação, IFMT, Administração e SEMA-MT. Pratique questões e organize sua revisão.",
   openGraph: {
     title: "Cadernos de Estudo",
     description: "Do livro à questão. Do erro ao conceito.",

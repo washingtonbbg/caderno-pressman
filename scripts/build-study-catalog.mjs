@@ -26,7 +26,7 @@ function literals(path) {
   return name => declarations.has(name) ? value(declarations.get(name)) : undefined;
 }
 
-const books = literals('app/page.tsx')('books');
+const books = literals('app/acervo/page.tsx')('books');
 const catalog = [];
 function append(book, question, index, graph) {
   if (!question.prompt || !Array.isArray(question.options) || !Number.isInteger(question.answer) || question.answer < 0 || question.answer >= question.options.length) throw Error(`Invalid question ${book.href} #${index + 1}`);
