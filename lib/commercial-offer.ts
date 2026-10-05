@@ -9,10 +9,19 @@ export const commercialOffer = {
   deliveryDescription: '',
 };
 
-export function checkoutUrl(): string | null {
-  if (!commercialOffer.deliveryDescription.trim()) return null;
+export const semaOffer = {
+  name: 'SEMA-MT · Analista em TI',
+  summary: 'Banco de questões, cronograma e revisão para organizar sua preparação.',
+  checkoutUrl: '',
+  priceLabel: '',
+  supportEmail: '',
+  deliveryDescription: '',
+};
+
+export function checkoutUrl(offer = commercialOffer): string | null {
+  if (!offer.deliveryDescription.trim()) return null;
   try {
-    const url = new URL(commercialOffer.checkoutUrl);
+    const url = new URL(offer.checkoutUrl);
     return url.protocol === 'https:' && !url.username && !url.password ? url.href : null;
   } catch { return null; }
 }

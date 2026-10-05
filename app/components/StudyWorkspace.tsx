@@ -282,7 +282,7 @@ export default function StudyWorkspace({questions:initial,config}:{questions:Stu
       <div className="learnIntro"><div><p className="learnEyebrow">SEU ESTUDO, UMA TENTATIVA POR VEZ</p><h1>{config?.introTitle || 'Estudar hoje'}</h1></div><p>{config?.introDescription || <>Recupere da memória. Confira a explicação.<br/>Volte ao conteúdo depois de um intervalo.</>}</p></div>
       {connection==='loading'&&<p role="status">Carregando seu histórico…</p>}
       {connection==='saved'&&<p className="learnStorage">Histórico e anotações salvos na sua conta.</p>}
-      {connection==='guest'&&<div className="learnNotice"><p>Entre para salvar suas revisões e continuar em outro dispositivo. Sem entrar, você pode praticar apenas nesta sessão.</p><a href={config?.sema?"/signin-with-chatgpt?return_to=%2Fsema-mt-ti":"/signin-with-chatgpt?return_to=%2Festudar"} target="_top">Entrar com ChatGPT →</a></div>}
+      {connection==='guest'&&<div className="learnNotice"><p>Entre para salvar suas revisões e continuar em outro dispositivo. Sem entrar, você pode praticar apenas nesta sessão.</p><a href={config?.sema?"/signin-with-chatgpt?return_to=%2Fsema-mt-ti%2Festudar":"/signin-with-chatgpt?return_to=%2Festudar"} target="_top">Entrar com ChatGPT →</a></div>}
       {connection==='error'&&<div className="learnNotice" role="alert"><p>Seu histórico não carregou. A prática ficará temporária até a conexão ser restabelecida; não será adicionada ao histórico salvo.</p><button onClick={()=>window.location.reload()}>Recarregar histórico</button></div>}
       {!session.length&&<>
         {config?.sema&&<SemaPlanner questions={questions} progress={progress} connection={connection} now={now} onStart={start}/>}

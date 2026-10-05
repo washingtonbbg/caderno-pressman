@@ -1,20 +1,44 @@
+
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import catalog from '@/data/study-catalog.json';
-import StudyWorkspace from '../components/StudyWorkspace';
+import { semaTopics, semaTopic } from '@/lib/sema-plan';
+import { semaOffer, checkoutUrl } from '@/lib/commercial-offer';
+import SemaSample from '../components/SemaSample';
 
 export const metadata: Metadata = {
-  title: 'SEMA-MT — Analista em Tecnologia da Informação',
-  description: 'Guia de estudos para o perfil 2 do concurso SEMA-MT 2026, com 842 questões organizadas por eixo.',
+  title: 'SEMA-MT · Analista em TI — Questões, planejamento e revisão',
+  description: 'Conheça o banco de 842 questões para SEMA-MT, experimente uma amostra e explore o cronograma e a revisão pelo histórico.',
 };
+const studyPath = '/sema-mt-ti/estudar';
+const questions = catalog.filter(q => q.notebook === '/sema-mt-ti');
+const topics = semaTopics.map(topic => ({ ...topic, count: questions.filter(q => semaTopic(q) === topic.id).length }));
+const sample = ['fundamentals', 'development', 'data'].flatMap(topic => {
+  const q = questions.find(q => semaTopic(q) === topic && !q.requiresSource && q.prompt.length < 340 && q.options.every((option: string) => option.length < 160));
+  return q ? [q] : [];
+});
 
 export default function SemaMtTiPage() {
-  return <StudyWorkspace
-    questions={catalog.filter(q => q.notebook === '/sema-mt-ti')}
-    config={{
-      defaultExamFocus: false,
-      sema: true,
-      introTitle: 'SEMA-MT · Analista em TI',
-      introDescription: 'Cronograma para iniciantes, prática orientada e acompanhamento do tempo por questão.',
-    }}
-  />;
+  const checkout = checkoutUrl(semaOffer);
+  return <main className="commercialPage salePage semaSalesPage">
+    <div className="saleTopline"><span>PREPARAÇÃO EM TI · PRÁTICA COM CONTINUIDADE</span><Link href={studyPath}>Retomar meus estudos ↗</Link></div>
+    <header className="commercialNav"><Link href="/" className="commercialBrand"><span>CE</span><div>Cadernos de Estudo<small>SEMA-MT · ANALISTA EM TI</small></div></Link><nav aria-label="Navegação principal"><a href="#sema-conteudo">O material</a><a href="#sema-amostra">Experimentar</a><Link href={studyPath}>Área de estudo ↗</Link></nav></header>
+    <section className="semaSalesHero"><div className="semaSalesIntro"><p className="commercialEyebrow">TECNOLOGIA DA INFORMAÇÃO · SEMA-MT</p><h1>Menos estudo solto.<br/><em>Mais direção<br/>na preparação.</em></h1><p className="commercialLead">Transforme o tempo que você tem em uma rotina de questões, revisão e acompanhamento do que ainda precisa aprender.</p><div className="commercialActions"><a className="commercialButton" href={checkout || '#sema-amostra'}>{checkout ? 'Ver condições e comprar →' : 'Experimentar uma questão →'}</a><Link className="commercialSecondary" href={studyPath}>Explorar a plataforma</Link></div><div className="semaHeroProof"><span><b>{questions.length}</b> questões no banco</span><span><b>{topics.length}</b> eixos no planejamento</span><span><b>Online</b> celular e computador</span></div></div>
+      <div className="semaProductVisual" aria-label="Recursos do material SEMA-MT"><div className="semaVisualTop"><span>SUA PREPARAÇÃO, ORGANIZADA</span><span>TI / MT</span></div><div className="semaVisualComposition"><div className="semaProductBook"><span>CADERNOS DE ESTUDO</span><div className="semaBookGraphic"><i/><i/><i/><i/></div><small>ANALISTA EM</small><strong>Tecnologia da<br/>Informação</strong><b>SEMA-MT</b><p>QUESTÕES + PLANEJAMENTO + REVISÃO</p></div><div className="semaRoutineCard"><span>UMA ROTINA POSSÍVEL</span><strong>30 min</strong><small>Exemplo inicial · você ajusta</small><div><b>01</b><p>Praticar a base</p></div><div><b>02</b><p>Retomar os erros</p></div><div><b>03</b><p>Acompanhar a evolução</p></div></div></div><p className="semaVisualCaption">O próximo passo aparece com mais clareza quando você acompanha o que já estudou.</p></div>
+    </section>
+    <section className="semaValueStrip" aria-label="Benefícios"><div><span>01</span><strong>Uma rotina que cabe no seu dia</strong><p>Ajuste dias e minutos disponíveis.</p></div><div><span>02</span><strong>Prática com foco nos assuntos</strong><p>Escolha um eixo para começar.</p></div><div><span>03</span><strong>Histórico para orientar a revisão</strong><p>Retome erros e dúvidas registrados.</p></div></section>
+    <div className="semaSalesBody"><div>
+      <section className="semaSalesSection" id="sema-conteudo"><p className="commercialEyebrow">O QUE VOCÊ ENCONTRA</p><h2>Prática, planejamento<br/>e revisão no mesmo lugar.</h2><div className="semaFeatureList">{[
+        ['Banco de questões com gabarito', `${questions.length} itens de TI e conhecimentos gerais para praticar. As fontes são indicadas; comentários específicos ainda não estão cadastrados neste banco.`],
+        ['Cronograma ajustável', 'Escolha os dias e o tempo de estudo. O plano organiza os próximos sete dias e usa o histórico para recalcular prioridades.'],
+        ['Introduções para começar pela base', 'Orientações e exemplos por eixo ajudam a organizar a leitura antes do treino. São introduções, não aulas completas.'],
+        ['Revisão e acompanhamento', 'Registre confiança, anotações e tentativas. Acompanhe erros, revisões e uma estimativa do tempo ativo de estudo.'],
+      ].map(([title, description], i) => <article key={title}><span>0{i + 1}</span><div><h3>{title}</h3><p>{description}</p></div></article>)}</div></section>
+      <section className="semaSalesSection" id="sema-amostra"><p className="commercialEyebrow">VEJA COMO É NA PRÁTICA</p><h2>Sua próxima questão<br/>pode começar aqui.</h2><p>Escolha uma alternativa e confira o gabarito. Depois, explore o cronograma e a área de estudo completa.</p><SemaSample questions={sample}/><Link className="semaTextLink" href={studyPath}>Abrir questões, cronograma e revisão →</Link></section>
+      <section className="semaSalesSection" id="sema-cobertura"><p className="commercialEyebrow">ESCOLHA COM CLAREZA</p><h2>Conheça a cobertura<br/>antes de começar.</h2><p>Os oito eixos organizam o planejamento. A quantidade de questões não significa cobertura integral do edital.</p><div className="semaCoverage">{topics.map(topic => <details key={topic.id}><summary><span>{topic.title}</span><b>{topic.count ? `${topic.count} questões` : 'Leitura orientada'}</b></summary><p>{topic.syllabus}</p><p><strong>Complementação:</strong> {topic.gap}</p>{!topic.count && <p>Este eixo ainda não tem questões no banco SEMA-MT. O cronograma reserva tempo para leitura.</p>}</details>)}</div></section>
+    </div><aside className="semaSalesAside"><div className="salePurchaseCard"><div className="salePurchaseHeading"><span className="commercialEyebrow">PREPARE SUA ROTINA</span><span className="saleAccessTag">PLATAFORMA ONLINE</span></div><h2>SEMA-MT<br/>Analista em TI</h2><p>Um lugar para organizar a prática e retomar o que merece revisão.</p><ul className="saleBenefits"><li>{questions.length} questões com gabarito</li><li>Planejamento por oito eixos</li><li>Rotina ajustável ao seu tempo</li><li>Histórico, anotações e revisões</li></ul>{checkout && semaOffer.priceLabel && <p className="salePrice">{semaOffer.priceLabel}</p>}{checkout ? <a className="commercialButton" href={checkout}>Ver condições e comprar →</a> : <a className="commercialButton" href="#sema-amostra">Experimentar antes de escolher →</a>}<Link className="saleBrowseLink" href={studyPath}>Acessar a área de estudo</Link><div className="saleAvailability"><span aria-hidden="true">ⓘ</span><p>{checkout ? semaOffer.deliveryDescription : 'A oferta comercial está em preparação. Preço, duração do acesso e entrega serão informados antes da compra.'}</p></div></div><div className="saleDelivery"><span aria-hidden="true">↗</span><p><strong>Continue de onde parou.</strong><br/>Entre com sua conta ChatGPT para salvar rotina, histórico e anotações entre sessões.</p></div><div className="semaAudience"><strong>Para quem este material faz sentido</strong><p>Quem quer estruturar a rotina em TI, praticar questões e revisar com base no próprio desempenho.</p><p>Use junto ao edital, à bibliografia e aos conteúdos necessários para completar as lacunas do banco.</p></div></aside></div>
+    <section className="semaSalesClosing"><p className="commercialEyebrow">O PRIMEIRO PASSO É CONCRETO</p><h2>Conheça o material.<br/>Encontre sua próxima sessão.</h2><p>Experimente uma questão ou abra a plataforma para explorar seu cronograma.</p><div className="commercialActions"><a className="commercialButton" href={checkout || '#sema-amostra'}>{checkout ? 'Ver oferta SEMA-MT →' : 'Experimentar a amostra →'}</a><Link className="commercialSecondary" href={studyPath}>Abrir área de estudo</Link></div></section>
+    <section className="commercialSection saleFaqSection"><div><p className="commercialEyebrow">DÚVIDAS FREQUENTES</p><h2>Antes de escolher.</h2></div><div className="commercialFaq"><details><summary>É um curso completo com aulas e comentários?</summary><p>O formato atual é uma plataforma de prática e organização do estudo. Este banco tem gabaritos, mas ainda não tem comentários específicos cadastrados. As introduções por eixo não substituem aulas completas.</p></details><details><summary>Preciso entrar para experimentar?</summary><p>A amostra pode ser usada sem login. Na área de estudo, você pode praticar na sessão; para salvar sua evolução e acessá-la depois, entre com sua conta ChatGPT.</p></details><details><summary>O planejamento garante que vou cobrir todo o edital?</summary><p>Não. O cronograma organiza a rotina e as revisões. Há lacunas que exigem leitura e material complementar, descritas na cobertura por eixo. Não há promessa de aprovação.</p></details><details><summary>Como funcionará a compra e o acesso?</summary><p>{checkout ? semaOffer.deliveryDescription : 'As vendas ainda não estão abertas. A oferta informará preço, duração, entrega e condições antes da compra. Por enquanto, conheça o material disponível.'}</p></details></div></section>
+    <footer className="commercialFooter"><div><strong>Cadernos de Estudo</strong><p>SEMA-MT · Tecnologia da Informação</p></div><div><Link href="/">Todos os materiais</Link><Link href="/referencias">Referências e método</Link><Link href={studyPath}>Área de estudo</Link><span>Material independente, sem vínculo institucional com a SEMA-MT.</span></div></footer>
+  </main>;
 }
